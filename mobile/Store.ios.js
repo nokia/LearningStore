@@ -122,7 +122,7 @@ export default class Store extends React.Component {
             { carousel.map((item, i) => 
               <TouchableHighlight key={i} onPress = {() =>{
                   if (item.id)
-                    navigate('Item', { itemID:item.id, storeID:item.sid });
+                    navigate('Item', { itemID:item.id, storeID:id });
                   else if (item.url)
                     Linking.openURL(item.url);
                   else if (item.text)
