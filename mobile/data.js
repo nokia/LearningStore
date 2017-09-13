@@ -14,7 +14,7 @@ class Data {
       if (item.ID) {
         this.ids[item.ID] = item;
         this.data.push(item);
-        item.type = item.type || 2;
+        //item.type = item.type || 2;
         if (!item.sid) item.sid = name;
         if (item.Url && item.Url.all) {
           item.Url = item.Url.all; // for compatibility purpose
