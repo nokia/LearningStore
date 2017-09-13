@@ -17,8 +17,9 @@ class Data {
         item.type = item.type || 2;
         if (!item.sid) item.sid = name;
         if (item.Url && item.Url.all) {
-          let tmp = item.Url.all.split('(');
-          item.Url.all = tmp[0].trim();
+          item.Url = item.Url.all; // for compatibility purpose
+          let tmp = item.Url.split('(');
+          item.Url = tmp[0].trim();
           if (tmp[1]) item.btn = tmp[1].split(')')[0];
         }
       }
