@@ -38,7 +38,7 @@ export default class App extends React.Component {
   render() {
     const { navigate } = this.props.navigation;
 
-    let isCollapsed = true;
+//    let isCollapsed = true;
     
     if (this.state.isLoading) {
       return (
