@@ -3,6 +3,12 @@
   background-color: #FFFFFF;
   color: #7C7B7B;
 }
+.rc-menu-horizontal > .rc-menu-item, .rc-menu-horizontal > .rc-menu-submenu > .rc-menu-submenu-title{
+  padding: 10px 20px;
+}
+.rc-menu-vertical > .rc-menu-item, .rc-menu-inline > .rc-menu-item, .rc-menu-vertical > .rc-menu-submenu > .rc-menu-submenu-title, .rc-menu-inline > .rc-menu-submenu > .rc-menu-submenu-title {
+  padding: 10px 8px 10px 20px;
+}
 .navigation .rc-menu-submenu, .navigation .rc-menu-item{
   cursor: pointer;
 }

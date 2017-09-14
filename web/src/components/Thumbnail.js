@@ -11,17 +11,25 @@ class Thumbnail extends React.Component{
     properties = props.props;
     data = props.data;
     url = props.url;
-    console.log(properties);
+    // console.log(properties);
   }
 
+  onClick(){
+    properties.history.push(properties.history.location.pathname + "item/" + data.ID);
+  }
 
   render() {
-    console.log('thumn', data);
+    // console.log('thumn', data);
 
-    
+    var lim = 38;
+    var title = data.Title;
+    if(title.length > lim){
+      title = title.substr(0, lim) + "...";
+    }
+    data.Title = title;
 
     return (
-      <div className="thumbnail" title={data.Title}>
+      <div className="thumbnail" title={data.Title} onClick={this.onClick}>
         <div className="thumbnailLogo">
           <img src={url + "/" + data.Icon} />
         </div>

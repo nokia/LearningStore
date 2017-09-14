@@ -2,11 +2,19 @@
   width: 40%;
   margin: auto;
 }
+.home{
+  position: absolute;
+  width: 100%;
+  background: url('../img/bg.png') center center #F1F1F1;
+  background-size: cover;
+  height: 100%;
+}
   .selectTitle{
-    font-size: 250%;
+    font-size: 300%;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 20px; 
+    font-weight: 300;
   }
   .selectStore a{
     text-decoration: none;
