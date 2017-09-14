@@ -14,7 +14,7 @@ import LS  from './data';
 
 export default class App extends React.Component {
 
-  state = { isLoading:true, isCollapsed:true }
+  state = { isLoading:true }
 
   static navigationOptions = {
     title: 'Nokia Learning Store', 
@@ -38,8 +38,6 @@ export default class App extends React.Component {
   render() {
     const { navigate } = this.props.navigation;
 
-//    let isCollapsed = true;
-    
     if (this.state.isLoading) {
       return (
         <View style={{ flex:1, paddingTop:20 }}>
