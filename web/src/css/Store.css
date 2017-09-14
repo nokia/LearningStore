@@ -1,0 +1,18 @@
+.loading{
+  width: 45px;
+  margin: auto;
+  margin-top: 120px;
+}
+  .loading img{
+    width: 100%;
+  }
+.store{
+  margin-top: 120px;
+  background-color: #F1F1F1;
+}
+.catTitle{
+  font-size: 115%;
+  color: orange;
+}
+.thumbnails{
+}

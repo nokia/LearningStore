@@ -1,0 +1,19 @@
+.thumbnail{
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 17%; 
+  height: 150px;
+  margin-right: 3%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  .thumbnailLogo img{
+    width: 100%;
+  }
+  .thumbnailTitle{
+    padding: 5px;
+  }

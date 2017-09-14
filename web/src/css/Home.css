@@ -1,0 +1,39 @@
+.select {
+  width: 40%;
+  margin: auto;
+}
+  .selectTitle{
+    font-size: 250%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px; 
+  }
+  .selectStore a{
+    text-decoration: none;
+  }
+  .selectStore { 
+    margin: 50px 0px;
+  }
+    .SelectStoreTitle{
+      background-color: orange;
+      text-decoration: none;
+      font-size: 120%;
+      color: #fff;
+      padding: 10px 12px;
+    }
+    .SelectStoreBody{
+      background-color: #fff;
+      padding: 10px 12px;
+      color: #6f6f6f;
+      font-size: 95%;
+    }
+    .SelectStoreButton{
+      background-color: #fff;
+      text-decoration: none;
+      font-size: 100%;
+      color: orange;
+      text-align: right;
+      padding: 10px 12px;
+      border-radius: 0px 0px 5px 5px;
+
+    }

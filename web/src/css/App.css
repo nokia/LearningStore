@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.inline{
+  display: inline;
+}
+.wrapper{
+  width: 990px;
+  margin: auto;
+}
+body{
+  background-color: #F1F1F1;
+}
+.floatRight{
+  float: right !important;
+}
+.floatLeft{
+  float: left !important;
+}
+.bold{
+  font-weight: bold;
+}
+
+
+
+
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
