@@ -4,16 +4,34 @@
   border-radius: 2px;
   cursor: pointer;
   width: 17%; 
-  height: 150px;
-  margin-right: 3%;
+  height: 140px;
+  margin-right: 3.7%;
   display: inline-block;
   vertical-align: top;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 4px solid transparent;
+}
+.thumbnail:nth-child(5n + 1){
+  margin-right: 0px;
+}
+/* .thumbnail:nth-child(5n + 0){
+  margin-left: 0px;
+} */
+.thumbnail:hover{
+  border-top: 4px solid orange;
 }
   .thumbnailLogo img{
     width: 100%;
   }
   .thumbnailTitle{
+    word-break: break-all;
+    word-wrap: break-word;
     padding: 5px;
+    font-size: 80%;
+    color: #383838;
   }

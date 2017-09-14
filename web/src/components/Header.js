@@ -3,7 +3,6 @@ import {Config} from './../config.js';
 import {Data} from './../store.js';
 import {Link} from 'react-router-dom'
 import '../css/Header.css';
-import imgLoading from '../img/loading.gif'
 import imgSearch from '../img/search.png'
 import FaSearch from 'react-icons/lib/fa/search';
 
@@ -27,7 +26,7 @@ class Header extends React.Component {
           <div className="header-input">
             <input type="text" placeholder="Search in the store..." />
             <div className="header-search">
-              <FaSearch color='#ffffff'  style={{ marginTop: '-4px' }}/>
+              <FaSearch color='#ffffff'  style={{ marginTop: '-5px' }}/>
             </div>
           </div>
         </div>

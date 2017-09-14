@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import {Config} from './../config.js';
 import HeaderComponent from './Header';
 import '../css/Home.css';
-import imgLoading from '../img/loading.gif'
 import imgSearch from '../img/search.png'
 import Source from './data';
 import FaAngleRight from 'react-icons/lib/fa/angle-right';
@@ -38,11 +37,13 @@ class Home extends Component {
       )
     });
     return (
-      <div className="select">
-        <div className="selectTitle">
-          {Config.Name}
+      <div className="home">
+        <div className="select">
+          <div className="selectTitle">
+            {Config.Name}
+          </div>
+          {myStores}
         </div>
-        {myStores}
       </div>
     );
   }

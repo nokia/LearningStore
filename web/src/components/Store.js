@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Config} from './../config.js';
 import '../css/Store.css';
-import imgLoading from '../img/loading.gif'
 import imgSearch from '../img/search.png'
 import SliderHome from './SliderHome';
 import Source from './data';
@@ -18,18 +17,15 @@ class Store extends Component {
   state = { isLoadingStore:true }
   constructor(props) {
     super(props);
-    console.log('store', props);
     name = props.match.params.id;
     for (var i = 0, len = props.stores.length; i < len; i++) {
       myStore[props.stores[i].id] = props.stores[i];
     }
     myStore = myStore[name]
-    console.log('els', els);
     
   }
 
   componentDidMount() {
-    console.log('src', Source);
     // Source.fetch('employee', "employee.json" ).then((rep) =>{
     //   this.setState({isLoading:false});
     //   els = Source.get('employee')
@@ -70,18 +66,15 @@ class Store extends Component {
       );
     }
     // console.log(this.state);
-    console.log('els', els);
     const thumbnails = myStore.homepage.map((thumbnail, index) =>{
       const items = thumbnail.items.map((item, index2) =>{
         // console.log(item);
         return (
-          <div key={index2} className="inline">
-            <Thumbnail props={this.props} data={els.getByID(item)} url={myStore.url} />
-          </div>
+          <Thumbnail  key={index2} props={this.props} data={els.getByID(item)} url={myStore.url} />
         );
       });
       return (
-        <div key={index}>
+        <div key={index} className="thumbnails">
           <div className="catTitle">
             {thumbnail.title}
           </div>
@@ -89,7 +82,6 @@ class Store extends Component {
         </div>
       );
     });
-
 
     return (
       <div>
@@ -104,9 +96,7 @@ class Store extends Component {
         <div className="store">
           <div className="wrapper">
             <SliderHome props={this.props} data={myStore}/>
-            <div className="thumbnails">
-              {thumbnails}
-            </div>
+            {thumbnails}
           </div>
         </div>
       </div>
