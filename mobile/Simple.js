@@ -21,7 +21,7 @@ export default class Simple extends React.Component {
 
   render() {
     const { title, html } = this.props.navigation.state.params;
-    console.log(html);
+    // console.log(html);
     return (
       <ScrollView>
         <Content padder>
