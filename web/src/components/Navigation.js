@@ -26,16 +26,16 @@ class Navigation extends React.Component{
         //   link.id = "0" + index;
         // }
         if(link.content){
-          const linksChild = link.content.map((linkChild, index) =>{
-            return <MenuItem key={linkChild.id}>{linkChild.title}</MenuItem>
+          const linksChild = link.content.map((linkChild, index2) =>{
+            return <MenuItem key={index2}>{linkChild.title}</MenuItem>
           });
           return(
-            <SubMenu key={link.id} title={link.title}>
+            <SubMenu key={index} title={link.title}>
               {linksChild}
             </SubMenu>
           )
         }else{
-          return <MenuItem key={link.id}>{link.title}</MenuItem>
+          return <MenuItem key={index}>{link.title}</MenuItem>
         }
       }
     });
@@ -54,7 +54,7 @@ class Navigation extends React.Component{
             return <MenuItem key={linkChild.id}>{linkChild.title}</MenuItem>
           });
           return(
-            <SubMenu className="floatRight" key={link.id} title={<span>{link.title} <FaAngleDown color='#7C7B7B' /></span>}>
+            <SubMenu className="floatRight" key={index} title={<span>{link.title} <FaAngleDown color='#7C7B7B' /></span>}>
               {linksChild}
             </SubMenu>
           )

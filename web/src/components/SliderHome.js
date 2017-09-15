@@ -10,6 +10,7 @@ class SliderHome extends React.Component {
   constructor(props) {
     super(props);
     data = props.data;
+    // console.log('data', data);
   }
   render () {
     var settings = {

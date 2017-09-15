@@ -7,41 +7,39 @@ import Source from './data';
 import Navigation from './Navigation';
 import HeaderComponent from './Header';
 import Thumbnail from './Thumbnail';
+import { Link } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import B from './back';
+
 
 var Loader = require('halogen/PulseLoader');
 var els;
 var myStore = {};
 var name;
+
+
+
 class Store extends Component {
   
   state = { isLoadingStore:true }
   constructor(props) {
     super(props);
-    name = props.match.params.id;
+    name = props.match.params.name;
     for (var i = 0, len = props.stores.length; i < len; i++) {
       myStore[props.stores[i].id] = props.stores[i];
     }
     myStore = myStore[name]
-    
   }
 
+
   componentDidMount() {
-    // Source.fetch('employee', "employee.json" ).then((rep) =>{
-    //   this.setState({isLoading:false});
-    //   els = Source.get('employee')
-    //   // console.log(els.getByID('c.33'));
 
-    // })
-
-    Source.fetch(name, 'employee.json').then((rep) =>{
-      els = Source.get('employee');
+    Source.fetch(name, Config.Source + myStore.id + '.json').then((rep) =>{
+      els = Source.get(myStore.id);
       this.setState({isLoadingStore:false});
-      // console.log(els.getByID('c.33'));
-      console.log('elssss', els);
-
+      B.back = true;
     })
 
-    // console.log(this.state.items);
   
     // setTimeout(function() { 
     //   this.setState({ isLoading:false}); }
@@ -49,8 +47,9 @@ class Store extends Component {
     //   ,500000
     // );
   }
+
   render() {
-    
+
     if (this.state.isLoadingStore) {
       return (
         <div>
@@ -65,12 +64,15 @@ class Store extends Component {
         </div>
       );
     }
-    // console.log(this.state);
-    const thumbnails = myStore.homepage.map((thumbnail, index) =>{
-      const items = thumbnail.items.map((item, index2) =>{
-        // console.log(item);
+
+
+    let thumbnails = myStore.homepage.map((thumbnail, index) =>{
+      let items = thumbnail.items.map((itemID, index2) =>{
+        let item = els.getByID(itemID)
         return (
-          <Thumbnail  key={index2} props={this.props} data={els.getByID(item)} url={myStore.url} />
+          
+          <Thumbnail  key={index2} props={this.props} data={item} store={myStore} />
+          
         );
       });
       return (
@@ -85,6 +87,7 @@ class Store extends Component {
 
     return (
       <div>
+
         <div className="head">
           <HeaderComponent props={this.props} data={myStore}/>
           <div className="menu">

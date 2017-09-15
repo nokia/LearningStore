@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Config} from './../config.js';
-import {Data} from './../store.js';
 import {Link} from 'react-router-dom'
 import '../css/Header.css';
 import imgSearch from '../img/search.png'
@@ -13,6 +12,7 @@ class Header extends React.Component {
     super(props);
     properties = props.props;
     data = props.data;
+    console.log(props);
   }
   render() {
     return (

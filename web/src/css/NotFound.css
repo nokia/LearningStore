@@ -1,0 +1,14 @@
+.notFound{
+  margin-top: 20px;
+}
+.notFound404{
+  text-align: center;
+  font-weight: 300;
+  margin-top: 90px;
+  font-size: 130px;
+}
+.notFoundText{
+  margin-top: 30px;
+  font-size: 120%;
+  text-align: center;
+}

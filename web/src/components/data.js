@@ -9,8 +9,9 @@ class Data {
         item.type = item.type || 2;
         if (!item.sid) item.sid = name;
         if (item.Url && item.Url.all) {
-          let tmp = item.Url.all.split('(');
-          item.Url.all = tmp[0].trim();
+          item.Url = item.Url.all;
+          let tmp = item.Url.split('(');
+          item.Url = tmp[0].trim();
           if (tmp[1]) item.btn = tmp[1].split(')')[0];
         }
       }
@@ -24,10 +25,6 @@ class Store {
   stores = [];
 
   static loading = 'Please wait while data are loading...';
-
-  constructor() {
-    
-  }
   
   get(name) { return this.stores[name]; }
   set(name, data) { 
@@ -37,6 +34,14 @@ class Store {
       // console.log(name, this.stores[name].data.length);
     }
     return this.get(name);
+  }
+
+  getSync(name) {
+    return new Promise( (resolve, reject) => {
+      let store = this.get(name);
+      if (store) resolve(store);
+      else this.synchro = resolve;
+    });
   }
 
   getDef(name) { return this.defs[name]; }
@@ -51,12 +56,14 @@ class Store {
         req.responseType = zip ? 'arraybuffer' : 'text';
         req.onload = (oEvent) => {
           if (req.response) {
+            // console.log(name, url, req, req.responseText);
             let responseJson = JSON.parse(zip ? (req.response, {to: 'string'}) : req.responseText);
             resolve(this.set(name, responseJson));
+            if (this.synchro) this.synchro(this.get(name));
           }
         }
         req.onerror = (oEvent) => { 
-          console.log(oEvent);
+          // console.log(oEvent);
           reject(oEvent); 
         }
         req.send(null);
