@@ -1,24 +1,22 @@
+/*
+  @author Félix Fuin
+  Copyright Nokia 2017. All rights reserved.
+ */
+
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Source from './data';
+
 import '../css/Thumbnail.css';
 
-import { Link } from 'react-router-dom';
-
-class Thumbnail extends React.Component{
-
-  constructor(props) {
-    super(props);
-  }
-
-  // onClick(){
-  //   properties.history.push(properties.history.location.pathname + "item/" + data.ID);
-  // }
+export default class Thumbnail extends Component {
 
   render() {
     let lim = 38;
     let data = this.props.data;
-    let myStore = this.props.store;
+    let store = this.props.store;
 
-    let title = data.Title;
+    let title = Source.format(data.Title);
     if(title.length > lim){
       title = title.substr(0, lim) + "...";
     }
@@ -27,19 +25,18 @@ class Thumbnail extends React.Component{
       <Link
         className="thumbnail"
         to={{
-          pathname: `/${myStore.id}/item/${data.ID}`
+          pathname: `/${store.id}/item/${data.ID}`
         }}
       >
         <div title={data.Title}>
           <div className="thumbnailLogo">
-            <img src={myStore.url + "/" + data.Icon} />
+            <img src={store.url + "/" + data.Icon} alt=''/>
           </div>
           <div className="thumbnailTitle">
-            {title}
+            { title }
           </div> 
         </div>
       </Link>
     );
   }
-};
-export default Thumbnail;
+}

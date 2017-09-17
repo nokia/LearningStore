@@ -5,6 +5,7 @@
   "dependencies": {
     "boron": "^0.2.3",
     "halogen": "^0.2.0",
+    "rc-menu": "^5.1.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-icons": "^2.2.5",
@@ -12,6 +13,7 @@
     "react-router": "^4.2.0",
     "react-router-modal": "^1.1.13",
     "react-scripts": "1.0.13",
+    "react-slick": "^0.15.4",
     "webfontloader": "^1.6.28"
   },
   "scripts": {

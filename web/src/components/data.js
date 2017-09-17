@@ -1,3 +1,8 @@
+/*
+  @author Gilles Gerlinger
+  Copyright Nokia 2017. All rights reserved.
+ */
+
 class Data {
   data = [];
   ids = [];
@@ -86,9 +91,9 @@ class Store {
           item[key].toLowerCase().indexOf(term) > -1)
           return true;
       }
+      return false;
     })
   }
 }
 
-var all;
-export default all = new Store();
+export default new Store();

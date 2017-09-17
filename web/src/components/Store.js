@@ -1,60 +1,43 @@
+/*
+  @author Félix Fuin
+  Copyright Nokia 2017. All rights reserved.
+ */
+
 import React, { Component } from 'react';
+import Loader from 'halogen/PulseLoader';
+
 import {Config} from './../config.js';
 import '../css/Store.css';
-import imgSearch from '../img/search.png'
 import SliderHome from './SliderHome';
 import Source from './data';
 import Navigation from './Navigation';
 import HeaderComponent from './Header';
 import Thumbnail from './Thumbnail';
-import { Link } from 'react-router-dom';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import B from './back';
 
-
-var Loader = require('halogen/PulseLoader');
-var els;
-var myStore = {};
-var name;
-
-
-
-class Store extends Component {
+export default class Store extends Component {
   
-  state = { isLoadingStore:true }
-  constructor(props) {
-    super(props);
-    name = props.match.params.name;
-    for (var i = 0, len = props.stores.length; i < len; i++) {
-      myStore[props.stores[i].id] = props.stores[i];
-    }
-    myStore = myStore[name]
-  }
+  state = { isLoading:true }
 
-
-  componentDidMount() {
-
-    Source.fetch(name, Config.Source + myStore.id + '.json').then((rep) =>{
-      els = Source.get(myStore.id);
-      this.setState({isLoadingStore:false});
+  componentWillMount() {
+    const {name} = this.props.match.params;    
+    console.log('loading', name);
+    Source.fetch(name, Config.Source + name + '.json').then( (rep) => {
+      this.setState({isLoading:false});
       B.back = true;
     })
-
-  
-    // setTimeout(function() { 
-    //   this.setState({ isLoading:false}); }
-    //   .bind(this)
-    //   ,500000
-    // );
   }
 
   render() {
-
-    if (this.state.isLoadingStore) {
+    B.path = this.props.location.pathname;
+    
+    const {name} = this.props.match.params;    
+    let storeDef = Source.getDef(name);
+    if (this.state.isLoading) {
       return (
         <div>
           <div className="head">
-            <HeaderComponent props={this.props} data={myStore}/>
+            <HeaderComponent data={storeDef}/>
           </div>
           <div className="store">
             <div className="loading">
@@ -65,13 +48,13 @@ class Store extends Component {
       );
     }
 
-
-    let thumbnails = myStore.homepage.map((thumbnail, index) =>{
+    let store = Source.get(name);    
+    let thumbnails = storeDef.homepage.map((thumbnail, index) =>{
       let items = thumbnail.items.map((itemID, index2) =>{
-        let item = els.getByID(itemID)
+        let item = store.getByID(itemID)
         return (
           
-          <Thumbnail  key={index2} props={this.props} data={item} store={myStore} />
+          <Thumbnail  key={index2} props={this.props} data={item} store={storeDef} />
           
         );
       });
@@ -87,23 +70,21 @@ class Store extends Component {
 
     return (
       <div>
-
         <div className="head">
-          <HeaderComponent props={this.props} data={myStore}/>
+          <HeaderComponent props={this.props} data={storeDef}/>
           <div className="menu">
             <div className="wrapper">
-              <Navigation props={this.props} data={myStore}/>
+              <Navigation props={this.props} data={storeDef}/>
             </div>
           </div>
         </div>
         <div className="store">
           <div className="wrapper">
-            <SliderHome props={this.props} data={myStore}/>
-            {thumbnails}
+            <SliderHome props={this.props} data={storeDef}/>
+            { thumbnails }
           </div>
         </div>
       </div>
     );
   }
 }
-export default Store;

@@ -1,31 +1,27 @@
+/*
+  @author Félix Fuin
+  Copyright Nokia 2017. All rights reserved.
+ */
+
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import {Config} from './../config.js';
-import HeaderComponent from './Header';
 import '../css/Home.css';
-import imgSearch from '../img/search.png'
-import Source from './data';
 import FaAngleRight from 'react-icons/lib/fa/angle-right';
 
-var data;
-var els;
 class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
-  componentDidMount() {
-    
-  }
   render() {
-    const myStores = this.props.stores.map((store, index) =>{
+    // console.log('Home', this.props.stores.length, this.props.stores)
+    const myStores = this.props.stores.map((store, index) => {
+      console.log('map', store)
       return (
         <div key={index} className="selectStore" title={store.title}>
           <Link to={"/" + store.id + "/"}>
             <div className="SelectStoreTitle">
-              {store.title}
+              { store.title }
             </div>
             <div className="SelectStoreBody">
-              {store.subtitle}
+              { store.subtitle }
             </div>
             <div className="SelectStoreButton">
               Open this store 
@@ -36,13 +32,14 @@ class Home extends Component {
         </div>
       )
     });
+    console.log(myStores)
     return (
       <div className="home">
         <div className="select">
           <div className="selectTitle">
-            {Config.Name}
+            { Config.Name }
           </div>
-          {myStores}
+          { myStores }
         </div>
       </div>
     );
