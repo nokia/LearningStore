@@ -10,27 +10,19 @@ import { ListItem, Toast , Icon, Text, Body, Right } from 'native-base';
 import Accordion from 'react-native-collapsible/Accordion';
 import LS from './data';
 
-const loading = 'Please wait while data are loading...';
 const menuHeight = 35;
-
-var ctx;
-
-click = (item) => {
-  const { id, url } = ctx.state.params;
-  if (item.url) Linking.openURL(item.url);
-  else LS.get(id) ? ctx.navigate('Item', { itemID:item.id, storeID:id }) : Toast.show({
-    text: loading,
-    position: 'bottom',
-    type: 'danger',
-    buttonText: 'OK'
-  });    
-}
 
 export default class SideBar extends React.Component {
 
-  constructor(props) {
-    super(props);
-    ctx = props.ctx;
+  click = (item) => {
+    const { id, url } = this.props.ctx.state.params;
+    if (item.url) Linking.openURL(item.url);
+    else LS.get(id) ? this.props.ctx.navigate('Item', { itemID:item.id, storeID:id }) : Toast.show({
+      text: LS.loading,
+      position: 'bottom',
+      type: 'danger',
+      buttonText: 'OK'
+    });    
   }
 
   _renderHeader(section) {
@@ -44,7 +36,7 @@ export default class SideBar extends React.Component {
       );
 
     return (
-      <TouchableHighlight onPress={() => { click(section) }}>
+      <TouchableHighlight onPress={() => { this.click(section) }}>
         <View style={{ flexDirection: 'row', alignItems:'center' }}> 
           { text }
           {/* <Icon name="arrow-forward" style={{ flex:0.1, fontSize:20, color:'lightgray' }}/> */}
@@ -58,7 +50,7 @@ export default class SideBar extends React.Component {
       return (
         <View style={{ backgroundColor: '#696969' }}>
         { section.content.map((item, i) => 
-          <ListItem key={i} style={{ height:menuHeight+5, flexDirection: 'row', alignItems:'center' }} button onPress={() => { click(item) }}>
+          <ListItem key={i} style={{ height:menuHeight+5, flexDirection: 'row', alignItems:'center' }} button onPress={() => { this.click(item) }}>
             <Text style={ [LS.font, { flex: 0.9, paddingLeft:15, fontSize:15, color:'white' }] }>{ item.title }</Text>
             {/* <Icon name="arrow-forward" style={{ flex:0.1, fontSize:20, color:'lightgray' }}/> */}
           </ListItem>
@@ -71,9 +63,9 @@ export default class SideBar extends React.Component {
     return (
       <ScrollView style = {{ backgroundColor:'gray' }}>
         <Accordion
-          sections={ ctx.state.params.menu }
-          renderHeader={ this._renderHeader }
-          renderContent={ this._renderContent }
+          sections={ this.props.ctx.state.params.menu }
+          renderHeader={ (section) => this._renderHeader(section) }
+          renderContent={ (section) => this._renderContent(section) }
         />
       </ScrollView>
     );
