@@ -339,14 +339,6 @@
     "url": "http://learningstore.nokia.com/employee",
     "carousel": [
         {
-            "img": "img/carousel-gdol2017.jpg",
-            "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/index.aspx"
-        },
-        {
-            "img": "img/carousel-be-cloud-native.jpg",
-            "id": "n.1497274965164"
-        },
-        {
             "img": "img/geps-carousel1.jpg",
             "id": "n.1498045456054"
         },

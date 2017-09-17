@@ -1,0 +1,62 @@
+.head{
+  background-color: #F1F1F1;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 99999;
+}
+  .header-name{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 150%;
+    color: #6f6f6f;
+    font-weight: bold;
+  }
+  .header-search{
+    float: right;
+    height: 34px;
+    cursor: pointer;
+    line-height: 37px;
+    width: 60px;
+    background: #ef6c00;
+    margin-top: 8px;
+    text-align: center;
+  }
+  .header-input{
+    float: right;
+    height: 50px;
+    line-height: 50px;
+  }
+    ::-webkit-input-placeholder { 
+    color:    #B7B7B7;
+    }
+    :-moz-placeholder { 
+      color:    #B7B7B7;
+      opacity:  1;
+    }
+    ::-moz-placeholder { 
+      color:    #B7B7B7;
+      opacity:  1;
+    }
+    :-ms-input-placeholder { 
+      color:    #B7B7B7;
+    }
+    ::-ms-input-placeholder { 
+      color:    #B7B7B7;
+    }
+    .header-input input{
+      width: 400px;
+      padding: 5px 6px;
+      font-size: 98%;
+      border: 1px solid #D8D8D8;
+      color: #666;
+    }
+    .header-input input:focus{
+      outline: none;
+      border: 1px solid #B8B8B8;
+    }
+.menu{
+  background-color: #ffffff;
+}

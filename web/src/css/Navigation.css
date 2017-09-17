@@ -1,0 +1,35 @@
+.navigation .rc-menu{
+  border: none;
+  background-color: #FFFFFF;
+  color: #7C7B7B;
+}
+.rc-menu-horizontal > .rc-menu-item, .rc-menu-horizontal > .rc-menu-submenu > .rc-menu-submenu-title{
+  padding: 10px 20px;
+}
+.rc-menu-vertical > .rc-menu-item, .rc-menu-inline > .rc-menu-item, .rc-menu-vertical > .rc-menu-submenu > .rc-menu-submenu-title, .rc-menu-inline > .rc-menu-submenu > .rc-menu-submenu-title {
+  padding: 10px 8px 10px 20px;
+}
+.navigation .rc-menu-submenu, .navigation .rc-menu-item{
+  cursor: pointer;
+}
+.navigation .rc-menu-item{
+  border-bottom: 2px solid transparent;
+}
+.navigation .rc-menu-submenu-active, .navigation .rc-menu-item-active{
+  border-bottom: 2px solid orange;
+  color: #FFA500;
+  background-color: #F3F5F7;
+}
+.navigation .rc-menu-submenu-active .rc-menu-submenu-title{
+  background-color: #F3F5F7;
+}
+.navigation .rc-menu-item-selected, .navigation .rc-menu-submenu-selected{
+  background-color: #fef6ea;
+}
+.rc-menu-submenu{
+  border-bottom: 2px solid #F3F5F7;
+}
+.chevron{
+  margin-bottom: 2px;
+  margin-left: 3px;
+}
