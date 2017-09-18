@@ -16,22 +16,31 @@ import LS from './data';
 import SideBar from './sidebar';
 import Search from './Search';
 
-var ctx;
-
 export default class Store extends React.Component {
 
   state = { isLoading:true, width:0 }
 
+  static ctx;
   static navigationOptions = ({ navigation }) => ({
     title: `${navigation.state.params.title}`,
     headerTitleStyle: LS.font,
     headerBackTitle: null,
-    headerRight: <Icon style={{ marginRight:10 }} name="list" onPress={() => toggleDrawer()}/>
+    headerRight: <Icon style={{ marginRight:10 }} name="list" onPress={() => Store.toggleDrawer(Store.ctx)}/>
   });
 
+  static toggleDrawer = (ctx) => ctx.menuOn ? Store.closeDrawer(ctx) : Store.openDrawer(ctx);
+  static closeDrawer = (ctx) => {
+    ctx.drawer._root.close();
+    ctx.menuOn = false;
+  }
+  static openDrawer = (ctx) => {
+    ctx.drawer._root.open();
+    ctx.menuOn = true;
+  }    
+    
   componentWillMount() {
-    ctx = this.props.navigation;
-    const { id, url } = ctx.state.params;
+    Store.ctx = this.props.navigation;
+    const { id, url } = Store.ctx.state.params;
     this.store = LS.get(id);
     if (this.store)
       this.setState({ isLoading: false });
@@ -93,9 +102,9 @@ export default class Store extends React.Component {
     
     return (
       <Drawer
-        ref={(ref) => { ctx.drawer = ref; }}
-        content={<SideBar ctx={ ctx }/>}
-        onClose={() => closeDrawer()}
+        ref={(ref) => { Store.ctx.drawer = ref; }}
+        content={<SideBar ctx={ Store.ctx }/>}
+        onClose={() => Store.closeDrawer(Store.ctx)}
         side = 'right' 
       >
         <Header style={{ marginTop:-15, height:55 }} searchBar rounded>
@@ -150,14 +159,4 @@ export default class Store extends React.Component {
     )
   }
 }
-
-toggleDrawer = () => ctx.menuOn ? closeDrawer() : openDrawer();
-closeDrawer = () => {
-  ctx.drawer._root.close();
-  ctx.menuOn = false;
-}
-openDrawer = () => {
-  ctx.drawer._root.open();
-  ctx.menuOn = true;
-}    
 
