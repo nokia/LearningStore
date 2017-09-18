@@ -49,15 +49,12 @@ export default class Store extends Component {
     }
 
     let store = Source.get(name);    
-    let thumbnails = storeDef.homepage.map((thumbnail, index) =>{
-      let items = thumbnail.items.map((itemID, index2) =>{
+    let thumbnails = storeDef.homepage.map((thumbnail, index) => {
+      let items = thumbnail.items.length ?
+       thumbnail.items.map((itemID, index2) =>{
         let item = store.getByID(itemID)
-        return (
-          
-          <Thumbnail  key={index2} props={this.props} data={item} store={storeDef} />
-          
-        );
-      });
+        return <Thumbnail  key={index2} props={this.props} data={item} store={storeDef} />          
+      }) : [];
       return (
         <div key={index} className="thumbnails">
           <div className="catTitle">

@@ -3,14 +3,14 @@
   Copyright Nokia 2017. All rights reserved.
  */
 
-import React from 'react';
+import React, {Component} from 'react';
 import Slider from 'react-slick';
 import {Link} from 'react-router-dom'
 import '../css/slick-theme.min.css';
 import '../css/slick.min.css';
 import '../css/sliderHome.css';
 
-export default class SliderHome extends React.Component {
+export default class SliderHome extends Component {
   render () {
     let dragging = false;
     let settings = {
@@ -35,7 +35,11 @@ export default class SliderHome extends React.Component {
         <a href={slide.url} target='_blank'>
           { img }
         </a>
-      ) : {img}; // slide.html to display Simple popup (cf. mobile Simple.js)
+      ) : (
+        <div>
+          { img }
+        </div>
+      ); // slide.html to display Simple popup (cf. mobile Simple.js)
       return (
         <div key={index} data-rel="lightcase">
           { link }

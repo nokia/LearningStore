@@ -21,13 +21,15 @@ export default class Navigation extends Component {
   render() {
 
     //Generate "Categories" menu
-    const categories = this.props.data.menu.map((link, index) =>{
+    let cat = false;
+    let categories = this.props.data.menu.map((link, index) => {
       if(link.category){
         // if(!link.id){
         //   link.id = "0" + index;
         // }
+        cat = true;
         if(link.content){
-          const linksChild = link.content.map((linkChild) =>{
+          const linksChild = link.content.map((linkChild) => {
             return <MenuItem key={linkChild.id}>{linkChild.title}</MenuItem>
           });
           return(
@@ -43,6 +45,12 @@ export default class Navigation extends Component {
       return null;
     });
 
+    categories = cat ? (
+      <SubMenu key="categories" title={<span>Categories <FaAngleDown color='#7C7B7B' /></span>}>
+        { categories }
+      </SubMenu>
+    ) : null;
+
     //Generate others menus
     const links = this.props.data.menu.map((link, index) =>{
       //There is no category attribute if the link is not in the "categories" menu
@@ -54,7 +62,8 @@ export default class Navigation extends Component {
         //This link is a submenu
         if(link.content){
           const linksChild = link.content.map((linkChild) => {
-            return <MenuItem key={linkChild.id}>{ linkChild.title }</MenuItem>
+            // console.log(linkChild.id, linkChild.title, linkChild.url)
+            return <MenuItem key={linkChild.id || linkChild.url}>{ linkChild.title }</MenuItem>
           });
           return(
             <SubMenu className="floatRight" key={index} title={<span>{link.title} <FaAngleDown color='#7C7B7B' /></span>}>
@@ -76,9 +85,7 @@ export default class Navigation extends Component {
             onClick={ (info) => this.onClick(info) }
             mode="horizontal"
           >
-            <SubMenu key="categories" title={<span>Categories <FaAngleDown color='#7C7B7B' /></span>}>
-              { categories }
-            </SubMenu>
+            { categories }
             { links }
           </Menu>
         </div>

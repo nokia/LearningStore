@@ -53,10 +53,10 @@ class ModalSwitch extends Component {
     return (
       <div>
         <Switch location={isModal ? this.previousLocation : location}>
-          <Route exact path='/:name/item/:id' component={Collection} />
-          <Route exact path='/:name' component={Store} />
+          <Route path='/:name/item/:id' component={Collection} />
+          <Route path='/:name' component={Store} />
         </Switch>
-        {isModal ? <Route exact path='/:name/item/:id' component={Item} /> : null}
+        {isModal ? <Route path='/:name/item/:id' component={Item} /> : null}
       </div>
     )
   }
@@ -98,8 +98,10 @@ export default class App extends Component {
     //   window.location = "#/"+ this.state.items[0].id + "/";
     // }
 
+    let basename = Config.Source.slice(1);
+    console.log('pub', process.env.PUBLIC_URL)
     return (
-      <Router>
+      <Router basename={basename}>
         <Switch>
           <Route 
               exact path='/' 

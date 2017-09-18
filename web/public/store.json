@@ -155,6 +155,10 @@
             "html": "To complement the release of the new Nokia Certifications introduced this month, we have refreshed the look and feel of our Partner Learning Store.  We hope you find the new Store to be clean and easy to navigate. Here are a few key features we'd like you to notice:<BR><img src=http://learningstore.nokia.com/partner/img/partner-page.jpg width=410 height=285 align=right border=0>1. New Featured content found in the 3 Info Boxes on the home page, including a link to the 2016 Partner Learning Store - for partners who want to complete any training already underway.<BR>2. New 2017 Certifications -- find them in the left navigation under Job Roles.<BR>We hope that you enjoy the new Learning Store. Please reach out to your Learning Leads at Nokia EDU if you have any questions or need further assistance. Their contact details can be found at the bottom of the Home page (3)."
         },
         {
+            "img": "img/carousel-partner-catalog.jpg",
+            "url": "http://learningstore.nokia.com/partner/doc/Updated-Partner-Curriculum-Courses-Aug2017.pdf"
+        },
+        {
             "img": "img/carousel-putp.jpg",
             "url": "https://events-na2.adobeconnect.com/content/connect/c1/927561628/en/events/catalog.html?OWASP_CSRFTOKEN=5b734049d72c7e81f7347ae7a10c770754d029943c4831bed33a21ae6cf454bf"
         },
@@ -177,7 +181,7 @@
     ],
     "menu": [
         {
-            "title": "Partner Certification / Job Roles",
+            "title": "Certification / Job Roles",
             "content": [
             {
                 "title": "Sales Associate",
@@ -222,7 +226,7 @@
             ]
         },
         {
-            "title": "Partner Certification / Portfolio",
+            "title": "Cert. / Portfolio",
             "content":[
             {
                 "title": "AirScale Wi-Fi",
@@ -305,7 +309,7 @@
             ]
         },
         {
-            "title": "More Resources",
+            "title": "More",
             "content":[
             {
                 "title": "Additional Training",
