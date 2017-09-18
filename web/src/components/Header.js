@@ -13,7 +13,7 @@ export default class Header extends Component {
     return (
       <div className="header">
         <div className="wrapper">
-          <Link to="/employee/" replace>
+          <Link to={`/${this.props.data.id}/`} replace>
             <div className="header-name" title="Home">
               { this.props.data.title }
             </div>
