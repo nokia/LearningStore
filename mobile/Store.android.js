@@ -70,13 +70,14 @@ export default class Store extends React.Component {
             <List dataArray = { data }
               renderRow = {(item) =>
                 <ListItem key={ item.ID } button onPress={() => {
-                    navigate('Item', LS.itemify(item, url, id));
+                    navigate('Item', { itemID:item.ID, storeID:item.sid });
                   }}>
+                  <View> 
                   <Image 
                     style = { LS.icon }
                     resizeMode = 'stretch'
                     source = {{ uri: url + '/' + item.Icon }}
-                  />
+                  /></View>
                   <Body>
                     <Text style={ LS.font }>{ item.Title }</Text>
                   </Body>
@@ -106,7 +107,7 @@ export default class Store extends React.Component {
               this.searchText = text;
             }}/>
             <Button onPress={() => {
-              navigate('Search', { id:id, text: this.searchText, url:url});
+              navigate('Search', { id:id, data:LS.filter(id, this.searchText), url:url});
               }}>
               <Text style={ LS.font }>Search</Text>
             </Button>

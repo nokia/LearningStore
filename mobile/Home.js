@@ -45,21 +45,21 @@ export default class App extends React.Component {
         </View>
       );
     }
-
     return (
       <List dataArray={this.state.items}
         renderRow={(item) =>
           <ListItem button onPress={() => {
               navigate('Store', item);
             }}>
-            <Thumbnail source={require('./img/logo.png')} />
-            <Body>
-              <Text style={ LS.font }>{item.title}</Text>
-              <Text note style={ LS.font }>{item.subtitle}</Text>
-            </Body>
-            <Right>
-              <Icon name="arrow-forward"/>
-            </Right>
+              
+              <Thumbnail source={require('./img/logo.png')} />
+              <Body>
+                <Text style={ LS.font }>{item.title}</Text>
+                <Text note style={ LS.font }>{item.subtitle}</Text>
+              </Body>
+              <Right>
+                <Icon name="arrow-forward"/>
+              </Right>
           </ListItem>
         }>
       </List>

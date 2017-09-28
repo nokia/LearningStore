@@ -46,7 +46,7 @@ export default class Search extends React.Component {
     }
     
     return (
-      <Text style = { LS.font }>No result...</Text>
+      <Text style = { LS.font }> No result...</Text>
     ); 
   }
 }

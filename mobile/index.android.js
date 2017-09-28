@@ -50,4 +50,4 @@ export default class App extends React.Component {
   }
 }
 
-AppRegistry.registerComponent('android', () => App);
+AppRegistry.registerComponent('FinalFoss', () => App);

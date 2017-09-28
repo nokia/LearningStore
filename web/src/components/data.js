@@ -83,6 +83,7 @@ class Store {
   filter(id, term) {
     term = term.toLowerCase();
   //  console.log('searching', id, 'for', term)
+  //  console.log(this.get(id))
     return this.get(id).data.filter((item) => {
       let keys = Object.keys(item);
       for (let i=0; i<keys.length; i++) {

@@ -17,7 +17,11 @@
   border-top: 4px solid transparent;
   text-decoration: none;
 }
-.thumbnail:nth-child(5n + 1){
+
+.store .thumbnails .thumbnail:nth-child(5n + 1){
+  margin-right: 0px;
+}
+.store .wrapper>.thumbnail:nth-child(5n){
   margin-right: 0px;
 }
 /* .thumbnail:nth-child(5n + 0){

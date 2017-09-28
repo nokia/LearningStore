@@ -11,7 +11,7 @@
   position: relative;
   top: 50%;
   width: 40%;
-  height: 60%;
+  height: 80%;
   margin: auto;
   transform: translateY(-50%);
   background: #fff;
@@ -30,6 +30,23 @@
 .itemClose{
   float: right;
   margin-top: 4px;
+}
+.itemIcon img{
+  width: 180px;
+  margin-top: 10px;
+}
+.itemLaunch{
+  display: block;
+  float: right;
+  margin-top: -95px;
+  border: 1px solid orange;
+  padding: 6px 35px;
+  color: #333;
+  text-decoration: none;
+}
+.itemLaunch:hover{
+  color: #fff;
+  background: orange;
 }
 .itemFields{
   padding: 5px 15px;

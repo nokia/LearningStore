@@ -18,14 +18,22 @@ import B from './back';
 export default class Store extends Component {
   
   state = { isLoading:true }
-
+  search = [];
   componentWillMount() {
     const {name} = this.props.match.params;    
-    console.log('loading', name);
+    // console.log('loading', name);
     Source.fetch(name, Config.Source + name + '.json').then( (rep) => {
       this.setState({isLoading:false});
       B.back = true;
     })
+    console.log('seaerch construc')
+    
+    this.searchInput = this.searchInput.bind(this);
+
+  }
+  searchInput(param) {
+    console.log('SEARCH------------')
+    this.search = Source.filter(this.props.match.params.name, param);
   }
 
   render() {
@@ -37,7 +45,7 @@ export default class Store extends Component {
       return (
         <div>
           <div className="head">
-            <HeaderComponent props={this.props} data={storeDef}/>
+            <HeaderComponent searchInput={this.searchInput} props={this.props} data={storeDef}/>
           </div>
           <div className="store">
             <div className="loading">
@@ -49,26 +57,19 @@ export default class Store extends Component {
     }
 
     let store = Source.get(name);    
-    let thumbnails = storeDef.homepage.map((thumbnail, index) => {
-      let items = thumbnail.items.length ?
-       thumbnail.items.map((itemID, index2) =>{
-        let item = store.getByID(itemID)
-        return <Thumbnail  key={index2} props={this.props} data={item} store={storeDef} />          
-      }) : [];
-      return (
-        <div key={index} className="thumbnails">
-          <div className="catTitle">
-            {thumbnail.title}
-          </div>
-          {items}
-        </div>
-      );
+    console.log(this.search)
+    let thumbnails = this.search.map((item, index2) =>{
+      return <Thumbnail  key={index2} props={this.props} data={item} store={storeDef} />          
     });
+     
+
+    
+  
 
     return (
       <div>
         <div className="head">
-          <HeaderComponent props={this.props} data={storeDef}/>
+          <HeaderComponent searchInput={this.searchInput} props={this.props} data={storeDef}/>
           <div className="menu">
             <div className="wrapper">
               <Navigation props={this.props} data={storeDef}/>
@@ -77,7 +78,6 @@ export default class Store extends Component {
         </div>
         <div className="store">
           <div className="wrapper">
-            <SliderHome props={this.props} data={storeDef}/>
             { thumbnails }
           </div>
         </div>
