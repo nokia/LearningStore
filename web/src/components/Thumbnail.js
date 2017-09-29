@@ -14,16 +14,42 @@ export default class Thumbnail extends Component {
   render() {
     let lim = 38;
     let data = this.props.data;
+    let noMargin = this.props.noMargin;
     let store = this.props.store;
+    let thisClass = "thumbnail";
 
     let title = Source.format(data.Title);
     if(title.length > lim){
       title = title.substr(0, lim) + "...";
     }
-
+    if (noMargin == "yes"){
+      thisClass += " noMarginRight"
+    }
+    
+    console.log(data)
+    if(data.type == 1){
+      return (
+        <Link
+          className={thisClass}
+          to={{
+            pathname: `/${store.id}/item/${data.ID}`
+          }}
+        >
+          <div className="collection"></div>
+          <div title={data.Title}>
+            <div className="thumbnailLogo">
+              <img src={store.url + "/" + data.Icon} alt=''/>
+            </div>
+            <div className="thumbnailTitle">
+              { title }
+            </div> 
+          </div>
+        </Link>
+      );
+    }
     return (
       <Link
-        className="thumbnail"
+        className={thisClass}
         to={{
           pathname: `/${store.id}/item/${data.ID}`
         }}

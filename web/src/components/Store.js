@@ -21,7 +21,7 @@ export default class Store extends Component {
 
   componentWillMount() {
     const {name} = this.props.match.params;    
-    console.log('loading', name);
+    // console.log('loading', name);
     Source.fetch(name, Config.Source + name + '.json').then( (rep) => {
       this.setState({isLoading:false});
       B.back = true;
@@ -48,12 +48,24 @@ export default class Store extends Component {
       );
     }
 
-    let store = Source.get(name);    
+    let store = Source.get(name);   
+    var counter = 0; 
     let thumbnails = storeDef.homepage.map((thumbnail, index) => {
       let items = thumbnail.items.length ?
-       thumbnail.items.map((itemID, index2) =>{
+      
+      thumbnail.items.map((itemID, index2) =>{
         let item = store.getByID(itemID)
-        return <Thumbnail  key={index2} props={this.props} data={item} store={storeDef} />          
+        counter++
+        if(counter % 5 == 0){
+          return (          
+            <Thumbnail  key={index2} noMargin="yes" props={this.props} data={item} store={storeDef} />  
+          );
+        }else{
+          return (          
+            <Thumbnail  key={index2} props={this.props} data={item} store={storeDef} />  
+          );
+        }
+                
       }) : [];
       return (
         <div key={index} className="thumbnails">

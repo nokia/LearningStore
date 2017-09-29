@@ -14,7 +14,8 @@ const item = 'item/';
 export default class Navigation extends Component {
 
   onClick(info) {
-    this.props.props.history.push(this.props.props.history.location.pathname.split(item)[0] + item + info.key);
+    console.log('hustory', this.props.props)
+    this.props.props.history.push('/' + this.props.props.history.location.pathname.split('/')[1] + '/' + item + info.key);
     // window.location = "#/employee/item/" + info.key;
   }
 

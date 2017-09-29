@@ -14,9 +14,14 @@ export default class Header extends React.Component {
     super(props);
     this.search = this.search.bind(this);
     // console.log(this.props);
+    console.log(this.props.props)
     if(this.props.props.match.params.text){
       this.state = {value: this.props.props.match.params.text};
-      this.firstLoad = true
+      this.firstLoad = true;
+    }
+    else if(this.props.props.location.pathname.split('/')[2] == 'search'){
+      this.state = {value: ''};
+      this.firstLoad = true;
     }else{
       this.state = {value: ''};
     }
@@ -28,8 +33,9 @@ export default class Header extends React.Component {
     }
   }
   search(event) {
-    console.log(event.target.value, this.props.props.location.pathname, this.props.props)
+    // console.log(event.target.value, this.props.props.location.pathname, this.props.props)
     this.setState({value: event.target.value});
+    console.log('head', event.target.value, this.props)
     if(this.props.searchInput){
       this.props.searchInput(event.target.value); 
     }

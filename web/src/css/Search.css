@@ -1,0 +1,14 @@
+.loadMore{
+  border: 1px solid orange;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: orange;
+  padding: 10px 8px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 120%;
+}
+.loadMore:hover{
+  background: orange;
+  color: #fff;
+}
