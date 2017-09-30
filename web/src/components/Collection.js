@@ -14,7 +14,6 @@ import B from './back';
 
 export default class Collection extends Component {
 
-  addLim = 40;
   state = { isLoading:true, lim:20  }
   counter = 0;
   storeDef;
@@ -78,13 +77,13 @@ export default class Collection extends Component {
           <div className="loadMore" onClick={this.loadMore}>Load more...</div>
         </div>
       );
-    }else{
-     return ret
     }
+    return ret;
   }
+
   render() {
     
-    if (this.state.isLoading) return null
+    if (this.state.isLoading) return null;
 
     B.path = this.props.location.pathname;
     // console.log(B.path)

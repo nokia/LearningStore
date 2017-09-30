@@ -14,7 +14,7 @@ export default class Header extends Component {
     super(props);
     this.search = this.search.bind(this);
     // console.log(this.props);
-    console.log(this.props.props)
+    // console.log(this.props.props)
     if(this.props.props.match.params.text){
       this.state = {value: this.props.props.match.params.text};
       this.firstLoad = true;
@@ -35,7 +35,7 @@ export default class Header extends Component {
   search(event) {
     // console.log(event.target.value, this.props.props.location.pathname, this.props.props)
     this.setState({value: event.target.value});
-    console.log('head', event.target.value, this.props)
+    // console.log('head', event.target.value, this.props)
     if(this.props.searchInput){
       this.props.searchInput(event.target.value); 
     }

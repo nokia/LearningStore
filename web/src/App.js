@@ -18,6 +18,7 @@ import Home  from './components/Home';
 import B from './components/back';
 
 const item = '/item/';
+const pattern = /\/(item|search)\//;
 
 class ModalSwitch extends Component {
 
@@ -25,9 +26,9 @@ class ModalSwitch extends Component {
 
   componentWillMount() {
     const { location } = this.props;
-    // console.log('willmount', location);
-    if (location.pathname.indexOf(item) > -1) {
-      let url = location.pathname.split(item);
+    // console.log('willmount', location); 
+    if (location.pathname.match(pattern)) {
+      let url = location.pathname.split(pattern);
       let name = url[0].slice(1);
       Source.fetch(name, Config.Source + name + '.json').then( (rep) => this.setState({isLoading:false}) )
     }
@@ -54,6 +55,7 @@ class ModalSwitch extends Component {
     return (
       <div>
         <Switch location={isModal ? this.previousLocation : location}>
+          <Route path='/:name/search/:text' component={Search} />
           <Route path='/:name/item/:id' component={Collection} />
           <Route path='/:name' component={Store} />
         </Switch>
@@ -104,16 +106,9 @@ export default class App extends Component {
     return (
       <Router basename={basename}>
         <Switch>
-          <Route 
-              exact path='/' 
-              render={(props) => (<Home {...props} stores={this.state.items} />)}
+          <Route exact path='/' render={() => (<Home stores={this.state.items} />)}
             />
-          <Route
-            exact path='/:name/search/:text'
-            render={(props) => (<Search {...props} stores={this.state.items} />)}
-          />
           <Route component={ModalSwitch} />
-
         </Switch>
       </Router>  
     );

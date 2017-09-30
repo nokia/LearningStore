@@ -6,7 +6,6 @@
 import React, { Component } from 'react';
 import Loader from 'halogen/PulseLoader';
 
-import {Config} from './../config.js';
 import '../css/Search.css';
 import Source from './data';
 import Navigation from './Navigation';
@@ -14,66 +13,56 @@ import HeaderComponent from './Header';
 import Thumbnail from './Thumbnail';
 import B from './back';
 
+const addLim = 40;
+
 export default class Store extends Component {
   
-  addLim = 40;
   state = { isLoading:true, lim:20 }
   search = [];
   counter = 0;
   storeDef;
   thumbnails;
+
   componentWillMount() {
-    const {name} = this.props.match.params;    
-    // console.log('loading', name);
-    Source.fetch(name, Config.Source + name + '.json').then( (rep) => {
-      this.setState({isLoading:false});
+    const {name, text} = this.props.match.params;    
+    Source.getSync(name)
+    .then( (store) => {
       B.back = true;
-    })
-    // console.log('seaerch construc')
-    
+      this.searchInput(text)
+      this.setState({isLoading:false});
+    });
+    this.storeDef = Source.getDef(name);
     this.searchInput = this.searchInput.bind(this);
     this.loadMore = this.loadMore.bind(this);
     this.map = this.map.bind(this);
-
-    // console.log('const', this.props)
-
-    // if (!this.state.isLoading) {
-      this.storeDef = Source.getDef(this.props.match.params.name);
-      this.searchInput(this.props.match.params.text)
-    // }
-
-
   }
+
   searchInput(param) {
-    console.log('SEARCH------------')
+    // console.log('SEARCH------------')
     this.search = Source.filter(this.props.match.params.name, param);
-    this.setState({lim:this.addLim});
+    this.setState({lim:addLim});
   }
 
-  loadMore(){
+  loadMore() {
     this.setState({lim:this.state.lim + 40});
     this.thumbnails = this.map();
     // console.log(this.thumbnails)
   }
 
-  map(){
+  map() {
     // console.log('ma store', this.props.match.params, this.storeDef)
     this.counter = 0;
     // console.log('mapping', this.counter, this.search)
-
-
     
-    let ret =  this.search.filter(function(item) {
-      if (item.Icon){
-        return item;
-      }
+    let ret =  this.search.filter((item) => {
+      if (item.Icon) return item;
       return null;
     })
-    .map((item, index2) =>{
+    .map((item, index2) => {
       
-      if(item.Icon){
+      if (item.Icon) {
         this.counter++
-        if(this.counter % 5 === 0){
+        if (this.counter % 5 === 0) {
           return (          
             <Thumbnail  key={index2} noMargin="yes" props={this.props} data={item} store={this.storeDef} /> 
           );
@@ -97,15 +86,12 @@ export default class Store extends Component {
           <div className="loadMore" onClick={this.loadMore}>Load more...</div>
         </div>
       );
-    }else{
-     return ret
     }
+    return ret;
   }
+
   render() {
     B.path = this.props.location.pathname;
-    
-    // const {name} = this.props.match.params;    
-    // let storeDef = Source.getDef(name);
     if (this.state.isLoading) {
       return (
         <div>
@@ -121,10 +107,7 @@ export default class Store extends Component {
       );
     }
 
-    // let store = Source.get(name);   
     this.thumbnails = this.map()
-     
-
     
     // console.log(this.thumbnails);
 
