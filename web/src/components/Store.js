@@ -56,7 +56,7 @@ export default class Store extends Component {
       thumbnail.items.map((itemID, index2) =>{
         let item = store.getByID(itemID)
         counter++
-        if(counter % 5 == 0){
+        if(counter % 5 === 0){
           return (          
             <Thumbnail  key={index2} noMargin="yes" props={this.props} data={item} store={storeDef} />  
           );

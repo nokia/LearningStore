@@ -39,7 +39,7 @@ export default class Collection extends Component {
   map(){
     // console.log('ma store', this.props.match.params, this.storeDef)
     this.counter = 0;
-    const { name, id } = this.props.match.params;
+    const { id } = this.props.match.params;
     let store = this.state.store;
     let coll = this.state.store.getByID(id);
     let ret = coll.Solutions.filter(function(itemID, index) {
@@ -47,11 +47,12 @@ export default class Collection extends Component {
       if (item && item.Icon){
         return item;
       }
+      return null;
     })
     .map((itemID, index) => {
       let item = store.getByID(itemID);
       this.counter++
-      if(this.counter % 5 == 0){
+      if(this.counter % 5 === 0){
         // console.log('countrt mod')
         return (          
           <Thumbnail  key={itemID} noMargin="yes" props={this.props} data={item} store={this.storeDef} />
@@ -88,10 +89,9 @@ export default class Collection extends Component {
     B.path = this.props.location.pathname;
     // console.log(B.path)
     
-    const { name, id } = this.props.match.params;
+    const { id } = this.props.match.params;
     // let store = this.state.store;
     // let storeDef = Source.getDef(name);
-    
 
     let coll = this.state.store.getByID(id);
     

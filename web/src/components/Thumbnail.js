@@ -22,12 +22,12 @@ export default class Thumbnail extends Component {
     if(title.length > lim){
       title = title.substr(0, lim) + "...";
     }
-    if (noMargin == "yes"){
+    if (noMargin === "yes"){
       thisClass += " noMarginRight"
     }
     
-    console.log(data)
-    if(data.type == 1){
+    // console.log(data)
+    if(data.Solutions){
       return (
         <Link
           className={thisClass}

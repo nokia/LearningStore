@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 import '../css/Header.css';
 import FaSearch from 'react-icons/lib/fa/search';
 
-export default class Header extends React.Component {
+export default class Header extends Component {
   firstLoad = false;
   constructor(props) {
     super(props);
@@ -19,7 +19,7 @@ export default class Header extends React.Component {
       this.state = {value: this.props.props.match.params.text};
       this.firstLoad = true;
     }
-    else if(this.props.props.location.pathname.split('/')[2] == 'search'){
+    else if(this.props.props.location.pathname.split('/')[2] === 'search'){
       this.state = {value: ''};
       this.firstLoad = true;
     }else{

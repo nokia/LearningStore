@@ -8,7 +8,6 @@ import Loader from 'halogen/PulseLoader';
 
 import {Config} from './../config.js';
 import '../css/Search.css';
-import SliderHome from './SliderHome';
 import Source from './data';
 import Navigation from './Navigation';
 import HeaderComponent from './Header';
@@ -36,7 +35,7 @@ export default class Store extends Component {
     this.loadMore = this.loadMore.bind(this);
     this.map = this.map.bind(this);
 
-    console.log('const', this.props)
+    // console.log('const', this.props)
 
     // if (!this.state.isLoading) {
       this.storeDef = Source.getDef(this.props.match.params.name);
@@ -48,7 +47,7 @@ export default class Store extends Component {
   searchInput(param) {
     console.log('SEARCH------------')
     this.search = Source.filter(this.props.match.params.name, param);
-    this.state.lim = this.addLim;
+    this.setState({lim:this.addLim});
   }
 
   loadMore(){
@@ -68,21 +67,22 @@ export default class Store extends Component {
       if (item.Icon){
         return item;
       }
+      return null;
     })
     .map((item, index2) =>{
       
       if(item.Icon){
         this.counter++
-        if(this.counter % 5 == 0){
+        if(this.counter % 5 === 0){
           return (          
             <Thumbnail  key={index2} noMargin="yes" props={this.props} data={item} store={this.storeDef} /> 
           );
-        }else{
-          return (          
-            <Thumbnail  key={index2} props={this.props} data={item} store={this.storeDef} />  
-          );
         }
-      }         
+        return (          
+          <Thumbnail  key={index2} props={this.props} data={item} store={this.storeDef} />  
+        );
+      }     
+      return null;    
     });
 
     // console.log('ret', ret)
