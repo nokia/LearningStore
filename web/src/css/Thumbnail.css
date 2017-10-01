@@ -30,8 +30,8 @@
 .collection{
   position: absolute;
   margin-top: -18px;
-  margin-left: -6px;
-  width: 12%;
+  /* margin-left: -14px; */
+  width: 10%;
   height: 8px;
   border-radius: 2px 2px 0px 0px;
   background: white;

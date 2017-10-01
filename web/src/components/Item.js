@@ -1,7 +1,7 @@
 /*
   @author Félix Fuin
   Copyright Nokia 2017. All rights reserved.
- */
+*/
 
 import React, { Component } from 'react';
 import B from './back';
@@ -13,20 +13,16 @@ import renderHTML from 'react-render-html';
 import FaAngleRight from 'react-icons/lib/fa/angle-right';
 
 export default class Item extends Component{
-// export default ({ match, history }) => {
 
   state = { isLoading:true }
-  myStore;
-
-  constructor(props) {
-    super(props);
-    this.myStore = Source.getDef(props.match.params.name);
-  }
-
+ 
   componentWillMount() {
     window.scrollTo(0, 0);
     document.body.style.overflow = 'hidden';
-    Source.getSync(this.props.match.params.name)
+
+    const { name } = this.props.match.params;
+    this.url = Source.getDef(name).url;
+    Source.getSync(name)
     .then( (store) => this.setState({isLoading:false, store:store}) )
   }
 
@@ -35,11 +31,11 @@ export default class Item extends Component{
     if (this.state.isLoading) return null;
 
     let item = this.state.store.getByID(this.props.match.params.id)
-    console.log('item', item)
+    // console.log('item', item)
     const back = (e) => {
-      e.stopPropagation()
+      e.stopPropagation();
       document.body.style.overflow = 'auto';
-      if (B.back) this.props.history.goBack()
+      if (B.back) this.props.history.goBack();
     }
     let fields = Config.Mapping.map((field, index) => {
       if(item[field]){
@@ -56,6 +52,7 @@ export default class Item extends Component{
       }
       return null;
     });
+
     return (
       <div className="itemOverlay">
         <div className='modal'>
@@ -66,7 +63,7 @@ export default class Item extends Component{
           
           <div className="itemFields">
             <div className="itemIcon">
-              <img src={this.myStore.url + "/" + item.Icon} alt=''/>
+              <img src={this.url + "/" + item.Icon} alt=''/>
             </div>
             <a className="itemLaunch" href={item.Url} title="Launch" target="_blank">
               Launch

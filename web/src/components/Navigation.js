@@ -1,7 +1,7 @@
 /*
   @author Félix Fuin
   Copyright Nokia 2017. All rights reserved.
- */
+*/
 
 import React, { Component } from 'react';
 import Menu, { SubMenu, Item as MenuItem } from 'rc-menu';
@@ -14,7 +14,7 @@ const item = 'item/';
 export default class Navigation extends Component {
 
   onClick(info) {
-    console.log('hustory', this.props.props)
+    // console.log('history', this.props.props)
     this.props.props.history.push('/' + this.props.props.history.location.pathname.split('/')[1] + '/' + item + info.key);
     // window.location = "#/employee/item/" + info.key;
   }

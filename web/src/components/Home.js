@@ -1,7 +1,7 @@
 /*
   @author Félix Fuin
   Copyright Nokia 2017. All rights reserved.
- */
+*/
 
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
@@ -10,6 +10,7 @@ import '../css/Home.css';
 import FaAngleRight from 'react-icons/lib/fa/angle-right';
 
 export default class Home extends Component {
+
   render() {
     // console.log('Home', this.props.stores.length, this.props.stores)
     const myStores = this.props.stores.map((store, index) => {

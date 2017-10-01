@@ -1,7 +1,7 @@
 /*
   @author Félix Fuin
   Copyright Nokia 2017. All rights reserved.
- */
+*/
 
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';

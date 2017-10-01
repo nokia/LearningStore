@@ -17,8 +17,29 @@ import Source from './components/data';
 import Home  from './components/Home';
 import B from './components/back';
 
+import {saveAs} from 'file-saver';
+
 const item = '/item/';
 const pattern = /\/(item|search)\//;
+
+document.addEventListener("keypress", (event) => {
+  if (event.shiftKey) {
+    event.stopPropagation();
+    switch (event.keyCode) {
+      case 83: // shift-s
+        saveAs(new Blob([localStorage.edit], {type: 'text/plain;charset=utf-8'}), 'store.update.json');
+        break;
+      case 88: // shift-x
+        Source.del();
+        if (B.back) window.history.go(-1);
+        break;
+      case 90: // shift-z      
+        delete localStorage.edit;
+        break;
+      default:
+    }
+  }
+});
 
 class ModalSwitch extends Component {
 

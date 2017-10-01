@@ -1,7 +1,9 @@
 /*
   @author Gilles Gerlinger
   Copyright Nokia 2017. All rights reserved.
- */
+*/
+
+const item = '/item/';
 
 class Data {
   data = [];
@@ -20,7 +22,18 @@ class Data {
           if (tmp[1]) item.btn = tmp[1].split(')')[0];
         }
       }
+      // apply changes if any
     });
+    let storage = localStorage.edit ? JSON.parse(localStorage.edit) : [];
+    let cpt = 0;
+    storage.forEach( (elem) => { 
+      if (elem.store === name) {
+        // console.log(this.ids[elem.item.id])
+        cpt++
+        this.ids[elem.item.id] = elem.item;
+      }        
+    });
+    if (cpt) console.log(name,'-', cpt, 'update(s)');
   }
   getByID(id) { return this.ids[id]; }
 }
@@ -80,11 +93,10 @@ class Store {
     return text ? text.replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').replace(/<.*?>/g, '') : '';
   }
 
-  filter(id, term) {
+  filter(name, term) {
     term = term.toLowerCase();
-  //  console.log('searching', id, 'for', term)
-  //  console.log(this.get(id))
-    return this.get(id).data.filter((item) => {
+    return this.get(name).data.filter((item) => {
+      if (item.del) return false;
       let keys = Object.keys(item);
       for (let i=0; i<keys.length; i++) {
         let key = keys[i];
@@ -94,6 +106,24 @@ class Store {
       }
       return false;
     })
+  }
+
+  del(name, id) {
+    if (!id) {
+      let url = window.location.pathname.split(item);
+      id = url[1];
+      name = url[0].split('/');
+      name = name[name.length-1];
+    }
+    console.log('deleting', id, 'from', name)    
+    this.stores[name].getByID(id).del = true;
+    this.localStorage({store:name, item:{id:id, del:true}});
+  }
+
+  localStorage(item) {
+    let storage = localStorage.edit ? JSON.parse(localStorage.edit) : [];
+    storage.push(item);
+    localStorage.edit = JSON.stringify(storage);
   }
 }
 

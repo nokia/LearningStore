@@ -1,7 +1,7 @@
 /*
   @author Félix Fuin
   Copyright Nokia 2017. All rights reserved.
- */
+*/
 
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
@@ -13,8 +13,6 @@ export default class Header extends Component {
   constructor(props) {
     super(props);
     this.search = this.search.bind(this);
-    // console.log(this.props);
-    // console.log(this.props.props)
     if(this.props.props.match.params.text){
       this.state = {value: this.props.props.match.params.text};
       this.firstLoad = true;
@@ -24,29 +22,29 @@ export default class Header extends Component {
       this.firstLoad = true;
     }else{
       this.state = {value: ''};
-    }
-    
+    }    
   }
+
   componentDidMount(){
     if(this.firstLoad){
       this.nameInput.focus();
     }
   }
+  
   search(event) {
-    // console.log(event.target.value, this.props.props.location.pathname, this.props.props)
     this.setState({value: event.target.value});
-    // console.log('head', event.target.value, this.props)
     if(this.props.searchInput){
       this.props.searchInput(event.target.value); 
-    }
-       
-    this.props.props.history.push('/'+ this.props.props.location.pathname.split('/')[1] + '/search/' + event.target.value )
+    }     
+    this.props.props.history.push('/'+ this.props.props.location.pathname.split('/')[1] + '/search/' + event.target.value );
   }
+
   moveCaretAtEnd(e) {
     var temp_value = e.target.value
     e.target.value = ''
     e.target.value = temp_value
   }
+  
   render() {
     return (
       <div className="header">

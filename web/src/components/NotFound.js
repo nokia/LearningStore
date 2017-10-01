@@ -1,20 +1,9 @@
 import React, { Component } from 'react';
 import '../css/NotFound.css';
 
-var data;
-var properties;
-class NotFound extends React.Component{
+class NotFound extends Component{
 
-  constructor(props) {
-    super(props);
-    properties = props.props;
-    data = props.data;
-  }
-
-  
   render() {
-
-
 
     return (
       <div className="notFound wrapper">
@@ -27,5 +16,6 @@ class NotFound extends React.Component{
       </div>
     );
   }
-};
+}
+
 export default NotFound;

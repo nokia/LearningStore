@@ -1,7 +1,7 @@
 /*
   @author Félix Fuin
   Copyright Nokia 2017. All rights reserved.
- */
+*/
 
 import React, { Component } from 'react';
 import Loader from 'halogen/PulseLoader';
@@ -21,11 +21,8 @@ export default class Store extends Component {
 
   componentWillMount() {
     const {name} = this.props.match.params;    
-    // console.log('loading', name);
-    Source.fetch(name, Config.Source + name + '.json').then( (rep) => {
-      this.setState({isLoading:false});
-      B.back = true;
-    })
+    Source.fetch(name, Config.Source + name + '.json').then( () => this.setState({isLoading:false}) );
+    B.back = true;
   }
 
   render() {

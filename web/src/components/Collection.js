@@ -1,7 +1,7 @@
 /*
   @author Félix Fuin
   Copyright Nokia 2017. All rights reserved.
- */
+*/
 
 import React, { Component } from 'react';
 import renderHTML from 'react-render-html';
@@ -20,39 +20,35 @@ export default class Collection extends Component {
   thumbnails;
 
   componentWillMount() {
-    Source.getSync(this.props.match.params.name)
+    // console.log('coll willmount')
+    const {name} = this.props.match.params;
+    Source.getSync(name)
     .then( (store) => this.setState({isLoading:false, store:store}) )
-
     
-    this.storeDef = Source.getDef(this.props.match.params.name);
+    this.storeDef = Source.getDef(name);
     this.loadMore = this.loadMore.bind(this);
     this.map = this.map.bind(this);
+    B.back = true;
   }
 
   loadMore(){
     this.setState({lim:this.state.lim + 40});
     this.thumbnails = this.map();
-    // console.log(this.thumbnails)
   }
 
-  map(){
-    // console.log('ma store', this.props.match.params, this.storeDef)
+  map(coll){
     this.counter = 0;
-    const { id } = this.props.match.params;
-    let store = this.state.store;
-    let coll = this.state.store.getByID(id);
-    let ret = coll.Solutions.filter(function(itemID, index) {
-      let item = store.getByID(itemID);
-      if (item && item.Icon){
+    let ret = coll.Solutions.filter( (itemID, index) => {
+      let item = this.state.store.getByID(itemID);
+      if (item && item.Icon && !item.del){
         return item;
       }
       return null;
     })
     .map((itemID, index) => {
-      let item = store.getByID(itemID);
-      this.counter++
+      let item = this.state.store.getByID(itemID);
+      this.counter++;
       if(this.counter % 5 === 0){
-        // console.log('countrt mod')
         return (          
           <Thumbnail  key={itemID} noMargin="yes" props={this.props} data={item} store={this.storeDef} />
         );
@@ -63,14 +59,8 @@ export default class Collection extends Component {
       }
     });
 
- 
-
-    // console.log('ret', ret)
-    
     if (ret.length > this.state.lim+1){
-      // console.log('length', this.state.lim, ret.length)
-      ret = ret.slice(0, this.state.lim)
-      // console.log('length', this.state.lim, ret.length)
+      ret = ret.slice(0, this.state.lim);
       return (
         <div>
           <div>{ret}</div>
@@ -86,15 +76,21 @@ export default class Collection extends Component {
     if (this.state.isLoading) return null;
 
     B.path = this.props.location.pathname;
-    // console.log(B.path)
     
     const { id } = this.props.match.params;
-    // let store = this.state.store;
-    // let storeDef = Source.getDef(name);
+    const coll = this.state.store.getByID(id);
+    if (!coll) return (
+      <div className="notFound wrapper">
+        <div className="notFound404">
+          404 error
+        </div>
+        <div className="notFoundText">
+          Page not found...
+        </div>
+      </div>
+    ); 
 
-    let coll = this.state.store.getByID(id);
-    
-    this.thumbnails = this.map()
+    this.thumbnails = this.map(coll);
     return (
       <div>
         <div className="head">
