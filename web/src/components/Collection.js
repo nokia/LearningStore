@@ -15,9 +15,7 @@ import B from './back';
 export default class Collection extends Component {
 
   state = { isLoading:true, lim:20  }
-  counter = 0;
   storeDef;
-  thumbnails;
 
   componentWillMount() {
     // console.log('coll willmount')
@@ -27,36 +25,25 @@ export default class Collection extends Component {
     
     this.storeDef = Source.getDef(name);
     this.loadMore = this.loadMore.bind(this);
-    this.map = this.map.bind(this);
+    // this.map = this.map.bind(this);
     B.back = true;
   }
 
-  loadMore(){
-    this.setState({lim:this.state.lim + 40});
-    this.thumbnails = this.map();
-  }
+  loadMore() { this.setState({lim:this.state.lim + 40}); }
 
-  map(coll){
-    this.counter = 0;
+  map(coll) {
+    let counter = 0;
     let ret = coll.Solutions.filter( (itemID, index) => {
       let item = this.state.store.getByID(itemID);
-      if (item && item.Icon && !item.del){
-        return item;
-      }
-      return null;
+      return item && item.Icon && !item.del ? true : false ;
     })
     .map((itemID, index) => {
       let item = this.state.store.getByID(itemID);
-      this.counter++;
-      if(this.counter % 5 === 0){
-        return (          
-          <Thumbnail  key={itemID} noMargin="yes" props={this.props} data={item} store={this.storeDef} />
-        );
-      }else{
-        return (          
-          <Thumbnail  key={itemID} props={this.props} data={item} store={this.storeDef} />
-        );
-      }
+      counter++;
+      return counter % 5 === 0 ?
+        <Thumbnail  key={itemID} noMargin="yes" props={this.props} data={item} store={this.storeDef} /> 
+        :
+        <Thumbnail  key={itemID} props={this.props} data={item} store={this.storeDef} />
     });
 
     if (ret.length > this.state.lim+1){
@@ -64,7 +51,7 @@ export default class Collection extends Component {
       return (
         <div>
           <div>{ret}</div>
-          <div className="loadMore" onClick={this.loadMore}>Load more...</div>
+          <div className="loadMore" onClick={this.loadMore}>See more...</div>
         </div>
       );
     }
@@ -90,7 +77,6 @@ export default class Collection extends Component {
       </div>
     ); 
 
-    this.thumbnails = this.map(coll);
     return (
       <div>
         <div className="head">
@@ -105,7 +91,7 @@ export default class Collection extends Component {
           <div className="wrapper">
             <h2>{ coll.Title }</h2>
             <div>{ renderHTML(coll.Description || '') } </div>
-            { this.thumbnails }
+            { this.map(coll) }
           </div>
         </div>
       </div>

@@ -48,22 +48,19 @@ export default class Store extends Component {
     let store = Source.get(name);   
     var counter = 0; 
     let thumbnails = storeDef.homepage.map((thumbnail, index) => {
-      let items = thumbnail.items.length ?
-      
-      thumbnail.items.map((itemID, index2) =>{
-        let item = store.getByID(itemID)
-        counter++
-        if(counter % 5 === 0){
-          return (          
+      let items = thumbnail.items.length ? thumbnail.items.map((itemID, index2) =>{
+        let item = store.getByID(itemID);
+        if (!item) return null;
+
+        return ++counter % 5 === 0 ?
+          (          
             <Thumbnail  key={index2} noMargin="yes" props={this.props} data={item} store={storeDef} />  
-          );
-        }else{
-          return (          
+          )
+        : (          
             <Thumbnail  key={index2} props={this.props} data={item} store={storeDef} />  
           );
-        }
-                
       }) : [];
+      
       return (
         <div key={index} className="thumbnails">
           <div className="catTitle">

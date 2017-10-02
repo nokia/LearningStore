@@ -13,33 +13,13 @@ import Store  from './components/Store';
 import Item  from './components/Item';
 import Collection from './components/Collection';
 import Search from './components/Search';
+import Create from './components/Create';
 import Source from './components/data';
 import Home  from './components/Home';
 import B from './components/back';
 
-import {saveAs} from 'file-saver';
-
 const item = '/item/';
 const pattern = /\/(item|search)\//;
-
-document.addEventListener("keypress", (event) => {
-  if (event.shiftKey) {
-    event.stopPropagation();
-    switch (event.keyCode) {
-      case 83: // shift-s
-        saveAs(new Blob([localStorage.edit], {type: 'text/plain;charset=utf-8'}), 'store.update.json');
-        break;
-      case 88: // shift-x
-        Source.del();
-        if (B.back) window.history.go(-1);
-        break;
-      case 90: // shift-z      
-        delete localStorage.edit;
-        break;
-      default:
-    }
-  }
-});
 
 class ModalSwitch extends Component {
 
@@ -78,6 +58,7 @@ class ModalSwitch extends Component {
         <Switch location={isModal ? this.previousLocation : location}>
           <Route path='/:name/search/:text' component={Search} />
           <Route path='/:name/item/:id' component={Collection} />
+          <Route path='/:name/create/:type' component={Create} />
           <Route path='/:name' component={Store} />
         </Switch>
         {isModal ? <Route path='/:name/item/:id' component={Item} /> : null}

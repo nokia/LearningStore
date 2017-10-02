@@ -3,11 +3,12 @@
   Copyright Nokia 2017. All rights reserved.
 */
 
-const item = '/item/';
+import Edit from './edit';
 
 class Data {
   data = [];
   ids = [];
+
   create(name, data) {
     data.forEach( (item) => {
       if (item.ID) {
@@ -22,34 +23,40 @@ class Data {
           if (tmp[1]) item.btn = tmp[1].split(')')[0];
         }
       }
-      // apply changes if any
     });
-    let storage = localStorage.edit ? JSON.parse(localStorage.edit) : [];
-    let cpt = 0;
-    storage.forEach( (elem) => { 
-      if (elem.store === name) {
-        // console.log(this.ids[elem.item.id])
-        cpt++
-        this.ids[elem.item.id] = elem.item;
-      }        
-    });
-    if (cpt) console.log(name,'-', cpt, 'update(s)');
+
+    Edit.load(name);// apply changes if any
+    // window.dbg = this.ids;
   }
+
   getByID(id) { return this.ids[id]; }
+
+  filter(name, term) {
+    term = term.toLowerCase();
+    return this.data.filter((item) => {
+      if (item.del) return false;
+      let keys = Object.keys(item);
+      for (let i=0; i<keys.length; i++) {
+        let key = keys[i];
+        if ((typeof item[key] === 'string' || item[key] instanceof String) &&
+          item[key].toLowerCase().indexOf(term) > -1)
+          return true;
+      }
+      return false;
+    })    
+  }
 }
 
 class Store {
   defs = [];
   stores = [];
 
-  static loading = 'Please wait while data are loading...';
-  
   get(name) { return this.stores[name]; }
   set(name, data) { 
     if (!this.get(name)) {
       this.stores[name] = new Data();
       this.stores[name].create(name, data);
-      // console.log(name, this.stores[name].data.length);
+      console.log('loaded', name, this.stores[name].data.length, 'items');
     }
     return this.get(name);
   }
@@ -81,7 +88,7 @@ class Store {
           }
         }
         req.onerror = (oEvent) => { 
-          // console.log(oEvent);
+          console.log(oEvent);
           reject(oEvent); 
         }
         req.send(null);
@@ -93,38 +100,8 @@ class Store {
     return text ? text.replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').replace(/<.*?>/g, '') : '';
   }
 
-  filter(name, term) {
-    term = term.toLowerCase();
-    return this.get(name).data.filter((item) => {
-      if (item.del) return false;
-      let keys = Object.keys(item);
-      for (let i=0; i<keys.length; i++) {
-        let key = keys[i];
-        if ((typeof item[key] === 'string' || item[key] instanceof String) &&
-          item[key].toLowerCase().indexOf(term) > -1)
-          return true;
-      }
-      return false;
-    })
-  }
+  filter(name, term) { return this.get(name).filter(name, term); }
 
-  del(name, id) {
-    if (!id) {
-      let url = window.location.pathname.split(item);
-      id = url[1];
-      name = url[0].split('/');
-      name = name[name.length-1];
-    }
-    console.log('deleting', id, 'from', name)    
-    this.stores[name].getByID(id).del = true;
-    this.localStorage({store:name, item:{id:id, del:true}});
-  }
-
-  localStorage(item) {
-    let storage = localStorage.edit ? JSON.parse(localStorage.edit) : [];
-    storage.push(item);
-    localStorage.edit = JSON.stringify(storage);
-  }
 }
 
 export default new Store();
