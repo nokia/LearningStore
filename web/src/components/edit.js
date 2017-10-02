@@ -87,9 +87,11 @@ class Edit {
   create(type) {
     let name = window.location.pathname.split(Config.Source)[1];
     if (!name) return;
-    let url = Config.Source + name + '/create/' + type;
-    console.log(url)
-    window.location.pathname = url;
+    name = name.split('/')[0];
+    let url = '/' + name + '/create/' + type;
+    // url = url.replace(/\/\//g, '/');
+    console.log('url3:',url);
+    B.history.push(url);
   }
 
   del() {

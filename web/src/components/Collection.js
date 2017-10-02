@@ -63,6 +63,7 @@ export default class Collection extends Component {
     if (this.state.isLoading) return null;
 
     B.path = this.props.location.pathname;
+    B.history = this.props.history;
     
     const { id } = this.props.match.params;
     const coll = this.state.store.getByID(id);

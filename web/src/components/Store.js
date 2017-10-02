@@ -24,9 +24,26 @@ export default class Store extends Component {
     Source.fetch(name, Config.Source + name + '.json').then( () => this.setState({isLoading:false}) );
     B.back = true;
   }
-
+/*
+  componentDidMount() {
+    console.log('dididididi')
+    document.addEventListener("keypress", (event) => {
+      if (event.shiftKey) {
+        event.stopPropagation();
+        switch (event.keyCode) {
+          case 66: // shift-b
+            this.props.history.push('/employee/create/item');
+            break;
+          default:
+        }
+      }
+    });
+    
+  }
+*/
   render() {
     B.path = this.props.location.pathname;
+    B.history = this.props.history;
     
     const {name} = this.props.match.params;    
     let storeDef = Source.getDef(name);
@@ -60,7 +77,7 @@ export default class Store extends Component {
             <Thumbnail  key={index2} props={this.props} data={item} store={storeDef} />  
           );
       }) : [];
-      
+
       return (
         <div key={index} className="thumbnails">
           <div className="catTitle">
