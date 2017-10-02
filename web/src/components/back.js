@@ -12,6 +12,4 @@ class B {
   }
 }
 
-const b = new B();
-
-export default b;
+export default new B();
