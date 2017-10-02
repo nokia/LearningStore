@@ -110,7 +110,7 @@ class Edit {
     let cur = {sid:item.sid, ID:item.ID, del:true}
     this._push(old, cur);
     this.update(cur);
-    if (B.back) window.history.go(-1);
+    if (B.back) B.history.go(-1);
   }
   
   _push(old, cur) { // old is the item old value stringified
@@ -129,7 +129,7 @@ class Edit {
     if (pos) {
       localStorage.editPos = JSON.stringify(--pos);
       this.update(JSON.parse(localStorage.edit)[pos].old);  
-      window.location.reload();
+      this._reload();
     }
   }
 
@@ -139,14 +139,19 @@ class Edit {
     if (pos < storage.length) {
       this.update(storage[pos].new);
       localStorage.editPos = JSON.stringify(++pos);
-      window.location.reload();
+      this._reload();
     }
   }
 
   reset() {
     localStorage.edit = '[]';
     localStorage.editPos = '0';
-    window.location.reload();
+    window.location.reload(); // so that the user can see
+  }
+
+  _reload() {
+    // window.location.reload();
+    B.component.setState({toggle:!B.component.state.toggle});
   }
 
   update(item) { 
