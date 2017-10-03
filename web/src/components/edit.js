@@ -25,8 +25,14 @@ document.addEventListener("keypress", (event) => {
       case 68: // shift-d
         edit.dump();
         break;
+      case 69: // shift-e
+        edit.modify();
+        break;
       case 78: // shift-n
         edit.create('item');
+        break;
+      case 79: // shift-o
+        edit.open();
         break;
       case 82: // shift-r
         edit.reset();
@@ -48,8 +54,30 @@ document.addEventListener("keypress", (event) => {
   }
 });
 
+const file = document.createElement('input'); // the file reader
+file.setAttribute("type", "file");
+file.addEventListener('change', (evt) => reader.readAsText(file.files[0]) );
+const reader = new FileReader();
+reader.onload = () => {
+  console.log(reader.result);
+  let pos = JSON.parse(localStorage.editPos);  
+  let storage = JSON.parse(localStorage.edit).slice(0, pos);
+  try {
+    let addon = JSON.parse(reader.result);
+    localStorage.edit = JSON.stringify(storage.concat(addon));   
+    localStorage.editPos = JSON.stringify(pos + addon.length);
+
+    window.location.reload(); // since the imported file can contain data for several stores
+  }
+  catch(e) {
+    console.log('file import failed', e);
+  }
+}
+
 class Edit {
 
+  open() { file.click(); }
+  
   load(name) {
     try {
       const storage = JSON.parse(localStorage.edit);
@@ -81,16 +109,31 @@ class Edit {
   saveAs() {
     const pos = JSON.parse(localStorage.editPos);
     let storage = JSON.parse(localStorage.edit).slice(0, pos);
-    saveAs(new Blob([JSON.stringify(storage)], {type: 'text/plain;charset=utf-8'}), 'store.' + localStorage.authorID +'.json');
+    saveAs(new Blob([JSON.stringify(storage)], 
+      {type: 'text/plain;charset=utf-8'}), 'A-' + localStorage.authorID +'.' + new Date().getTime().toString() + '.json');
   }
 
   create(type) {
     let name = window.location.pathname.split(Config.Source)[1];
     if (!name) return;
     name = name.split('/')[0];
-    let url = '/' + name + '/create/' + type;
+    let url = '/' + name + '/edit/' + type;
     // url = url.replace(/\/\//g, '/');
-    console.log('url3:',url);
+    console.log('url:',url);
+    B.history.push(url);
+  }
+
+  modify() {
+    let url = window.location.pathname.split(itemParse);
+    if (url.length === 1) return;
+    const id = url[1];
+    let name = url[0].split('/');
+    name = name[name.length-1];
+
+    let item = Source.get(name).getByID(id);
+    if (item.sid !== name) return;
+    url = '/' + name + '/edit/' + id;
+    console.log('url:',url);
     B.history.push(url);
   }
 
