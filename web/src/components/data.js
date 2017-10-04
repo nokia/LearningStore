@@ -3,7 +3,7 @@
   Copyright Nokia 2017. All rights reserved.
 */
 
-import Edit from './edit';
+import Edit from './editCtl';
 
 class Data {
   data = [];

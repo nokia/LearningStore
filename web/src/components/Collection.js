@@ -11,6 +11,7 @@ import Navigation from './Navigation';
 import HeaderComponent from './Header';
 import Thumbnail from './Thumbnail';
 import B from './back';
+import '../css/NotFound.css';
 
 export default class Collection extends Component {
 
@@ -18,14 +19,12 @@ export default class Collection extends Component {
   storeDef;
 
   componentWillMount() {
-    // console.log('coll willmount')
     const {name} = this.props.match.params;
     Source.getSync(name)
     .then( (store) => this.setState({isLoading:false, store:store}) )
     
     this.storeDef = Source.getDef(name);
     this.loadMore = this.loadMore.bind(this);
-    // this.map = this.map.bind(this);
     B.back = true;
   }
 

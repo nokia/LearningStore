@@ -13,7 +13,7 @@ import Store  from './components/Store';
 import Item  from './components/Item';
 import Collection from './components/Collection';
 import Search from './components/Search';
-import Create from './components/Create';
+import Edit from './components/Edit';
 import Source from './components/data';
 import Home  from './components/Home';
 import B from './components/back';
@@ -58,7 +58,7 @@ class ModalSwitch extends Component {
         <Switch location={isModal ? this.previousLocation : location}>
           <Route path='/:name/search/:text' component={Search} />
           <Route path='/:name/item/:id' component={Collection} />
-          <Route path='/:name/edit/:type' component={Create} />
+          <Route path='/:name/edit/:id' component={Edit} />
           <Route path='/:name' component={Store} />
         </Switch>
         {isModal ? <Route path='/:name/item/:id' component={Item} /> : null}
