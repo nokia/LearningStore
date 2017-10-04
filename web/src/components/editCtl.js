@@ -83,7 +83,7 @@ class Edit {
       let cpt = 0;
       for (let i = 0; i < pos; i++) {
         const item = storage[i];
-        if (item.old.sid === name) {
+        if (item.new.sid === name) {
           cpt++
           this.update(item.new);
         }        
@@ -160,17 +160,31 @@ class Edit {
     let storage = JSON.parse(localStorage.edit);
     storage.slice(0, pos-1); // trim storage to keep up with redo
 
-    let pair = { old:JSON.parse(old), new:cur };
-    storage.push(pair);
+    // check if the item is not already in the list
+    let found = -1;
+    storage.forEach( (item, index) => {
+      if (item.old.ID === cur.ID) found = index;
+    });
+    found = -1;
+    if (found > -1) storage[found].new = cur; 
+    else {
+      storage.push({ old:JSON.parse(old), new:cur });
+      localStorage.editPos = JSON.stringify(++pos);
+    }      
     localStorage.edit = JSON.stringify(storage);   
-    localStorage.editPos = JSON.stringify(++pos);
   }
 
   undo() {
     let pos = JSON.parse(localStorage.editPos);
     if (pos) {
       localStorage.editPos = JSON.stringify(--pos);
-      this.update(JSON.parse(localStorage.edit)[pos].old);  
+      const item = JSON.parse(localStorage.edit)[pos];
+      if (!item.old.sid) { // new element
+        item.old = item.new;
+        item.old.del = true;
+      }
+      console.log('undo', item.old)
+      this.update(item.old);  
       this._reload();
     }
   }
@@ -192,7 +206,7 @@ class Edit {
   }
 
   _reload() {
-    // window.location.reload();
+    // console.log('rendering...')
     B.component.setState({toggle:!B.component.state.toggle});
   }
 

@@ -11,7 +11,7 @@ import Navigation from './Navigation';
 import HeaderComponent from './Header';
 import Thumbnail from './Thumbnail';
 import B from './back';
-import '../css/NotFound.css';
+import NotFound from './NotFound';
 
 export default class Collection extends Component {
 
@@ -33,11 +33,11 @@ export default class Collection extends Component {
   map(coll) {
     let counter = 0;
     let ret = coll.Solutions.filter( (itemID, index) => {
-      let item = this.state.store.getByID(itemID);
+      const item = this.state.store.getByID(itemID);
       return item && item.Icon && !item.del ? true : false ;
     })
     .map((itemID, index) => {
-      let item = this.state.store.getByID(itemID);
+      const item = this.state.store.getByID(itemID);
       counter++;
       return counter % 5 === 0 ?
         <Thumbnail  key={itemID} noMargin="yes" props={this.props} data={item} store={this.storeDef} /> 
@@ -65,16 +65,7 @@ export default class Collection extends Component {
     
     const { id } = this.props.match.params;
     const coll = this.state.store.getByID(id);
-    if (!coll) return (
-      <div className="notFound wrapper">
-        <div className="notFound404">
-          404 error
-        </div>
-        <div className="notFoundText">
-          Page not found...
-        </div>
-      </div>
-    ); 
+    if (!coll) return <NotFound />
 
     return (
       <div>

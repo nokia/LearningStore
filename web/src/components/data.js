@@ -3,7 +3,7 @@
   Copyright Nokia 2017. All rights reserved.
 */
 
-import Edit from './editCtl';
+import editCtl from './editCtl';
 
 class Data {
   data = [];
@@ -25,7 +25,7 @@ class Data {
       }
     });
 
-    Edit.load(name);// apply changes if any
+    editCtl.load(name);// apply changes if any
     // window.dbg = this.ids;
   }
 
@@ -63,7 +63,7 @@ class Store {
 
   getSync(name) {
     return new Promise( (resolve, reject) => {
-      let store = this.get(name);
+      const store = this.get(name);
       if (store) resolve(store);
       else this.synchro = resolve;
     });
@@ -76,7 +76,7 @@ class Store {
     return new Promise( (resolve, reject) => {
       if (this.stores[name]) resolve(this.stores[name]);
       else {
-        let req = new XMLHttpRequest();
+        const req = new XMLHttpRequest();
         req.open('GET', url, true);
         req.responseType = zip ? 'arraybuffer' : 'text';
         req.onload = (oEvent) => {

@@ -9,6 +9,7 @@
     "halogen": "^0.2.0",
     "rc-menu": "^5.1.2",
     "react": "^15.6.1",
+    "react-components-form": "^2.11.2",
     "react-dom": "^15.6.1",
     "react-icons": "^2.2.5",
     "react-render-html": "^0.5.0",

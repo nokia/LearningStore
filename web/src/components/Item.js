@@ -27,7 +27,8 @@ export default class Item extends Component{
   }
 
   render() {
-    
+    B.set(this);
+
     if (this.state.isLoading) return null;
 
     let item = this.state.store.getByID(this.props.match.params.id)

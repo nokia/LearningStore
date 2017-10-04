@@ -28,13 +28,13 @@ export default class Store extends Component {
     Source.getSync(name)
     .then( (store) => {
       B.back = true;
-      this.searchInput(text)
+      // this.searchInput(text)
       this.setState({isLoading:false});
     });
     this.storeDef = Source.getDef(name);
     this.searchInput = this.searchInput.bind(this);
     this.loadMore = this.loadMore.bind(this);
-    this.map = this.map.bind(this);
+    // this.map = this.map.bind(this);
   }
 
   searchInput(param) {
@@ -54,10 +54,7 @@ export default class Store extends Component {
     this.counter = 0;
     // console.log('mapping', this.counter, this.search)
     
-    let ret =  this.search.filter((item) => {
-      if (item.Icon) return item;
-      return null;
-    })
+    let ret =  this.search.filter( (item) => { return item.Icon ? item : null } )
     .map((item, index2) => {
       
       if (item.Icon) {
@@ -91,7 +88,8 @@ export default class Store extends Component {
   }
 
   render() {
-    B.path = this.props.location.pathname;
+    B.set(this);
+    
     if (this.state.isLoading) {
       return (
         <div>
@@ -107,7 +105,9 @@ export default class Store extends Component {
       );
     }
 
-    this.thumbnails = this.map()
+    const {name, text} = this.props.match.params; 
+    this.search = Source.filter(name, text);
+    this.thumbnails = this.map();
     
     // console.log(this.thumbnails);
 
