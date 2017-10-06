@@ -11,6 +11,8 @@ import {Config} from '../config.js';
 
 const itemParse = '/item/';
 
+window.bkLib.onDomLoaded(window.nicEditors.allTextAreas);
+
 localStorage.edit = localStorage.edit || '[]';
 localStorage.editPos = localStorage.editPos || '0';
 localStorage.authorID = localStorage.authorID || new Date().getTime().toString();

@@ -16,6 +16,11 @@
     overflow: hidden;
 }
 
+.RTE {
+    margin-left: 10%;
+    width:50%;
+}
+
 .editSave {
     margin-left: 10%;
     height: 34px;
