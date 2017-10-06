@@ -5,6 +5,7 @@
     "subtitle": "Access the best learning offers for today's products and technologies to help you achieve your business objectives.",
     "icon": "img/.jpg",
     "url": "http://learningstore.nokia.com/customer",
+    "ga": "UA-80984774-1",
     "carousel": [
         {
             "img": "img/carousel-video-demo.jpg",
@@ -148,15 +149,12 @@
     "subtitle": "Learn how Nokia products and technology can help you grow your sales and fulfill your customers' business needs.",
     "icon": "img/.jpg",
     "url": "http://learningstore.nokia.com/partner",
+    "ga": "UA-64708571-1",
     "carousel": [
         {
             "img": "img/carousel-refresh.jpg",
             "title": "We've changed our look!",
             "html": "To complement the release of the new Nokia Certifications introduced this month, we have refreshed the look and feel of our Partner Learning Store.  We hope you find the new Store to be clean and easy to navigate. Here are a few key features we'd like you to notice:<BR><img src=http://learningstore.nokia.com/partner/img/partner-page.jpg width=410 height=285 align=right border=0>1. New Featured content found in the 3 Info Boxes on the home page, including a link to the 2016 Partner Learning Store - for partners who want to complete any training already underway.<BR>2. New 2017 Certifications -- find them in the left navigation under Job Roles.<BR>We hope that you enjoy the new Learning Store. Please reach out to your Learning Leads at Nokia EDU if you have any questions or need further assistance. Their contact details can be found at the bottom of the Home page (3)."
-        },
-        {
-            "img": "img/carousel-partner-catalog.jpg",
-            "url": "http://learningstore.nokia.com/partner/doc/Updated-Partner-Curriculum-Courses-Aug2017.pdf"
         },
         {
             "img": "img/carousel-putp.jpg",
@@ -181,7 +179,7 @@
     ],
     "menu": [
         {
-            "title": "Certification / Job Roles",
+            "title": "Partner Certification / Job Roles",
             "content": [
             {
                 "title": "Sales Associate",
@@ -226,7 +224,7 @@
             ]
         },
         {
-            "title": "Cert. / Portfolio",
+            "title": "Partner Certification / Portfolio",
             "content":[
             {
                 "title": "AirScale Wi-Fi",
@@ -309,7 +307,7 @@
             ]
         },
         {
-            "title": "More",
+            "title": "More Resources",
             "content":[
             {
                 "title": "Additional Training",
@@ -341,22 +339,23 @@
     "subtitle": "Grow your individual talents and expertise in Nokia products, technology and business skills.",
     "icon": "img/.jpg",
     "url": "http://learningstore.nokia.com/employee",
+    "ga": "UA-63841814-1",
     "carousel": [
+        {
+            "img": "img/LS_FBA-Banner.jpg",
+            "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/index.aspx"
+        },
+        {
+            "img": "img/carousel-gdol2017.jpg",
+            "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/index.aspx"
+        },
+        {
+            "img": "img/carousel-be-cloud-native.jpg",
+            "id": "n.1497274965164"
+        },
         {
             "img": "img/geps-carousel1.jpg",
             "id": "n.1498045456054"
-        },
-        {
-            "img": "img/LS_Leader_of_Leaders_Accelerated_Leadership_990x300.jpg",
-            "id": "n.1495172086076"
-        },
-        {
-            "img": "img/LS_Senior_Leaders_Transformational_Leadership_990x300.jpg",
-            "id": "n.1485322890124"
-        },
-        {
-            "img": "img/LS_First_Line_Leaders_LEAD 2-0_990x300.jpg",
-            "id": "n.1462905427391"
         },
         {
             "img": "img/carousel-mandatory-training.jpg",
@@ -366,10 +365,6 @@
             "img": "img/carousel-connected-emp.jpg",
             "id": "n.1486545096146"
         },
-         {
-            "img": "img/carousel-hdye-april20.png",
-            "url": "https://intranet.nokia.com/global/myservices/academy/pages/edu_web_sessions.aspx"
-        },
         {
             "img": "img/slider-privacy-matters.jpg",
             "id": "n.1472562893764"
@@ -377,10 +372,6 @@
         {
             "img": "img/slider-stratey-rebalancing-for-growth.jpg",
             "id": "n.1480345000661"
-        },
-        {
-            "img": "img/3online-books.jpg",
-            "id": "c.35"
         }
    ],
     "homepage": [
@@ -411,7 +402,7 @@
             "id": "n.1486545096146"
         },
         {
-            "title": "Professional Dev.",
+            "title": "Professional Development",
             "category": true,
             "content":[
             {
@@ -564,6 +555,10 @@
                 "title": "Applications & Analytics",
                 "id": "c.23"
             },        
+            {
+                "title": "Finance",
+                "id": "n.1480424143204"
+            },
             {
                 "title": "Cloud Solution",
                 "id": "n.1480424143204"

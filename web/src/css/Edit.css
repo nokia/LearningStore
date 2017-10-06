@@ -1,0 +1,32 @@
+.editLabel {
+    font-size: 110%;
+    width: 10%;
+    float: left;
+    color: #ef6c00;
+}
+
+.editField {
+    /* margin-left: 12%;    
+    margin-top: -20px; */
+    /* flex-grow: 9; */
+    /* float: right; */
+}
+
+.editFlow {
+    overflow: hidden;
+}
+
+.editSave {
+    margin-left: 10%;
+    height: 34px;
+    cursor: pointer;
+    line-height: 37px;
+    width: 10%;
+    color: white;
+    background: #ef6c00;
+    margin-top: 8px;
+    text-align: center;
+    border: 0;
+    box-shadow:none;
+    border-radius: 0px;    
+}

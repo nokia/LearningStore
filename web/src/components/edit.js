@@ -13,6 +13,8 @@ import { Form, TextField, TextareaField, ListField, SubmitField } from 'react-co
 import Ctl from './editCtl';
 // import TINY from '../lib/tiny.editor';
 
+import '../css/Edit.css';
+
 export default class Edit extends Component {
 
   state = { isLoading:true }
@@ -31,48 +33,85 @@ export default class Edit extends Component {
     const item = (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : this.state.store.getByID(id);
     if (!item) return (<NotFound />);
 
-    const old = JSON.stringify(item);
-    let newItem; 
-    if (!item.sid) {
+    let old, newItem; 
+    if (item.sid) old = JSON.stringify(item);
+    else {
       newItem = true;
       item.sid = this.state.name;
       item.ID = 'n.' + new Date().getTime();
+      item.del = true;
+      old = JSON.stringify(item);
+      delete item.del;
       item.Icon = Config.defaultIcon;
       console.log('creating new item', item.ID);
     }
-
+    
     const submitMethod = (model) => {
       //do something with model when submit success
       Ctl._push(old, item);
       if (newItem) Ctl.update(item);
       if (B.back) this.props.history.goBack();
     };
-  
+
+    const header = (
+      <div>
+        <div className='editFlow'>
+          <label className='editLabel'>ID</label>
+          <label className='editField'>{item.ID}</label>
+        </div>
+        <div className='editFlow'>
+          <label className='editLabel'>Title</label>
+          <TextField className='editField' name="Title" fieldAttributes={{size:140}}/>
+        </div>
+        <div className='editFlow'>
+          <label className='editLabel'>Icon</label>
+          <TextField className='editField' name="Icon" fieldAttributes={{size:140}} />
+        </div>  
+      </div>
+    );
   
     if (item.Solutions) {
       return (
         <Form onSubmit={submitMethod} model={item} >
-          <TextField name="Title" label={'Title: '} fieldAttributes={{size:60}}/>
-          <TextField name="Icon" label={'Icon: '} fieldAttributes={{size:60}} />
-          <TextareaField name="Description" label={'Description: '} fieldAttributes={{rows:10, cols:100}}/>
-          <ListField name="Solutions" label={'Items: '}>
-            <TextField  />
-          </ListField>
-          <SubmitField value="Save" />
+          {header}
+          <div className='editFlow'>
+            <label className='editLabel'>Description</label>
+            <TextareaField name="Description" className='editField' fieldAttributes={{rows:10, cols:100}}/>
+          </div>
+          <div className='editFlow'>
+            <label className='editLabel'>Items</label>
+            <div className='editField'>
+              <ListField name="Solutions" >
+                <TextField />
+              </ListField>
+            </div>
+          </div>
+          <SubmitField className='editSave' value="Save" />
           </Form>
       );
     }
 
     const fields = Config.Mapping.map( (field, index) => {
-      return <TextareaField key={index} name={field} label={field + ': '} fieldAttributes={{rows:4, cols:100}} />
+      return (
+        <div className='editFlow'>
+          <label className='editLabel'>{field}</label>
+          <TextareaField className='editField' key={index} name={field} fieldAttributes={{rows:4, cols:140}} />
+        </div>
+      );
     });
+
     return (
       <Form onSubmit={submitMethod} model={item}>
-        <TextField name="Title" label={'Title: '} fieldAttributes={{size:60}}/>
-        <TextField name="Icon" label={'Icon: '} fieldAttributes={{size:60}} />
-        <TextField name="Url" label={'Url: '} fieldAttributes={{size:120}} />
+        {header}
+        <div className='editFlow'>
+          <label className='editLabel'>Url</label>
+          <TextField className='editField' name="Url" fieldAttributes={{size:140}} />
+        </div>
         {fields}
-        <SubmitField value="Save" />
+        <div className='editFlow'>
+          <p className='editLabel'> </p>
+          <SubmitField className='editSave' value="Save" />
+        </div>
       </Form>
     );
 }

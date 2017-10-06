@@ -18,13 +18,9 @@ const addLim = 40;
 export default class Store extends Component {
   
   state = { isLoading:true, lim:20 }
-  search = [];
-  counter = 0;
-  storeDef;
-  thumbnails;
 
   componentWillMount() {
-    const {name, text} = this.props.match.params;    
+    const {name} = this.props.match.params;    
     Source.getSync(name)
     .then( (store) => {
       B.back = true;
@@ -34,7 +30,6 @@ export default class Store extends Component {
     this.storeDef = Source.getDef(name);
     this.searchInput = this.searchInput.bind(this);
     this.loadMore = this.loadMore.bind(this);
-    // this.map = this.map.bind(this);
   }
 
   searchInput(param) {
@@ -46,20 +41,17 @@ export default class Store extends Component {
   loadMore() {
     this.setState({lim:this.state.lim + 40});
     this.thumbnails = this.map();
-    // console.log(this.thumbnails)
   }
 
   map() {
-    // console.log('ma store', this.props.match.params, this.storeDef)
-    this.counter = 0;
-    // console.log('mapping', this.counter, this.search)
+    let counter = 0;
     
     let ret =  this.search.filter( (item) => { return item.Icon ? item : null } )
     .map((item, index2) => {
       
       if (item.Icon) {
-        this.counter++
-        if (this.counter % 5 === 0) {
+        counter++
+        if (counter % 5 === 0) {
           return (          
             <Thumbnail  key={index2} noMargin="yes" props={this.props} data={item} store={this.storeDef} /> 
           );
@@ -71,12 +63,8 @@ export default class Store extends Component {
       return null;    
     });
 
-    // console.log('ret', ret)
-    
-    if (ret.length > this.state.lim+1){
-      // console.log('length', this.state.lim, ret.length)
-      ret = ret.slice(0, this.state.lim)
-      // console.log('length', this.state.lim, ret.length)
+    if (ret.length > this.state.lim+1) {
+      ret = ret.slice(0, this.state.lim);
       return (
         <div>
           <div>{ret}</div>
@@ -105,12 +93,10 @@ export default class Store extends Component {
       );
     }
 
-    const {name, text} = this.props.match.params; 
+    const { name, text } = this.props.match.params; 
     this.search = Source.filter(name, text);
     this.thumbnails = this.map();
     
-    // console.log(this.thumbnails);
-
     return (
       <div>
         <div className="head">

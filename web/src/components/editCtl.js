@@ -16,7 +16,7 @@ localStorage.editPos = localStorage.editPos || '0';
 localStorage.authorID = localStorage.authorID || new Date().getTime().toString();
 
 document.addEventListener("keydown", (event) => {
-  if (event.altKey) {
+  if (event.altKey && event.shiftKey) {
     event.stopPropagation();
     switch (event.keyCode) {
       case 67: // alt-c
@@ -25,7 +25,7 @@ document.addEventListener("keydown", (event) => {
       case 68: // alt-d
         edit.dump();
         break;
-      case 71: // alt-g
+      case 69: // alt-e
         edit.modify();
         break;
       case 78: // alt-n
@@ -178,13 +178,7 @@ class Edit {
     let pos = JSON.parse(localStorage.editPos);
     if (pos) {
       localStorage.editPos = JSON.stringify(--pos);
-      const item = JSON.parse(localStorage.edit)[pos];
-      if (!item.old.sid) { // new element
-        item.old = item.new;
-        item.old.del = true;
-      }
-      console.log('undo', item.old)
-      this.update(item.old);  
+      this.update(JSON.parse(localStorage.edit)[pos].old);
       this._reload();
     }
   }
