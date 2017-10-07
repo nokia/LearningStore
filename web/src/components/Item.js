@@ -23,7 +23,7 @@ export default class Item extends Component{
     const { name } = this.props.match.params;
     this.url = Source.getDef(name).url;
     Source.getSync(name)
-    .then( (store) => this.setState({isLoading:false, store:store}) )
+    .then( store => this.setState({isLoading:false, store:store}) )
   }
 
   render() {
@@ -38,7 +38,7 @@ export default class Item extends Component{
       document.body.style.overflow = 'auto';
       if (B.back) this.props.history.goBack();
     }
-    let fields = Config.Mapping.map((field, index) => {
+    let fields = Config.Mapping.map( (field, index) => {
       if(item[field]){
         return (
           <div className="itemField" key={index}>

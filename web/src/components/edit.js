@@ -11,9 +11,8 @@ import Source from './data';
 import B from './back';
 import NotFound from './NotFound';
 
-import { Form, TextField, ListField, SubmitField } from 'react-components-form';
+import { Form, TextField, ListField, CheckboxField, SubmitField } from 'react-components-form';
 import Ctl from './editCtl';
-// import RTE from './RTE';
 import Quill from './Quill';
 import FaTrash from 'react-icons/lib/fa/trash-o';
 import FaPlus from 'react-icons/lib/fa/plus-square-o';
@@ -26,7 +25,7 @@ export default class Edit extends Component {
 
   componentWillMount() {
     const {name, id} = this.props.match.params;// || this.props.location.state;
-    Source.fetch(name, Config.Source + name + '.json').then( (store) => {
+    Source.fetch(name, Config.Source + name + '.json').then( store => {
       this.item = (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       this.setState({isLoading:false, name:name});
     });
@@ -100,6 +99,12 @@ export default class Edit extends Component {
     const submit = <SubmitField className='editSave' value="Save" />
     const add = <FaPlus />
     const remove = <FaTrash />
+    const wip = (
+      <div className='editFlow'>
+        <label className='editLabel'>Edit Mode</label>
+        <CheckboxField name="Wip" />
+      </div>
+    );
 
     if (item.Solutions) {
       return (
@@ -114,6 +119,7 @@ export default class Edit extends Component {
               </ListField>
             </div>
           </div>
+          {wip}
           {submit}
         </Form>
       );
@@ -133,6 +139,7 @@ export default class Edit extends Component {
           <TextField className='editField' name="Url" />
         </div>
         {fields}
+        {wip}
         {submit}
       </Form>
     );

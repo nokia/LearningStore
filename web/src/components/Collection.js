@@ -22,22 +22,21 @@ export default class Collection extends Component {
     window.scrollTo(0, 0);
     const {name} = this.props.match.params;
     Source.getSync(name)
-    .then( (store) => this.setState({isLoading:false, store:store}) )
+    .then( store => this.setState({isLoading:false, store:store}) )
     
     this.storeDef = Source.getDef(name);
-    this.loadMore = this.loadMore.bind(this);
     B.back = true;
   }
 
-  loadMore() { this.setState({lim:this.state.lim + 40}); }
+  loadMore = () => this.setState({lim:this.state.lim + 40}); 
 
   map(coll) {
     let counter = 0;
     let ret = coll.Solutions.filter( (itemID, index) => {
       const item = this.state.store.getByID(itemID);
-      return item && item.Icon && !item.del ? true : false ;
+      return item && item.Icon && !item.del && !item.Wip ? true : false ;
     })
-    .map((itemID, index) => {
+    .map( (itemID, index) => {
       const item = this.state.store.getByID(itemID);
       counter++;
       return counter % 5 === 0 ?

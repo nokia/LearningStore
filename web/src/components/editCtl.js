@@ -15,7 +15,7 @@ localStorage.edit = localStorage.edit || '[]';
 localStorage.editPos = localStorage.editPos || '0';
 localStorage.authorID = localStorage.authorID || new Date().getTime().toString();
 
-document.addEventListener("keydown", (event) => {
+document.addEventListener("keydown", event => {
   if (event.altKey) {
     event.preventDefault();
     event.stopPropagation();
@@ -61,7 +61,7 @@ document.addEventListener("keydown", (event) => {
 
 const file = document.createElement('input'); // the file reader
 file.setAttribute("type", "file");
-file.addEventListener('change', (evt) => reader.readAsText(file.files[0]) );
+file.addEventListener('change', evt => reader.readAsText(file.files[0]) );
 const reader = new FileReader();
 reader.onload = () => {
   console.log(reader.result);
@@ -215,7 +215,7 @@ class Edit {
 
     // update data for the search and the export
     let tmp = [];
-    Object.keys(ids).forEach( (key) => tmp.push(ids[key]));
+    Object.keys(ids).forEach( key => tmp.push(ids[key]));
     Source.stores[item.sid].data = tmp;
   }
 

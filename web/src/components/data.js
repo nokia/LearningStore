@@ -10,7 +10,7 @@ class Data {
   ids = [];
 
   create(name, data) {
-    data.forEach( (item) => {
+    data.forEach( item => {
       if (item.ID) {
         this.ids[item.ID] = item;
         this.data.push(item);
@@ -22,18 +22,18 @@ class Data {
           item.Url = tmp[0].trim();
           if (tmp[1]) item.btn = tmp[1].split(')')[0];
         }
+        if (item.Solutions) item.Solutions = item.Solutions.filter( id => id ? true : false );
       }
     });
 
     editCtl.load(name);// apply changes if any
-    // window.dbg = this.ids;
   }
 
   getByID(id) { return this.ids[id]; }
 
   filter(name, term) {
     term = term.toLowerCase();
-    return this.data.filter((item) => {
+    return this.data.filter( item => {
       if (item.del) return false;
       let keys = Object.keys(item);
       for (let i=0; i<keys.length; i++) {
@@ -62,7 +62,7 @@ class Store {
   }
 
   getSync(name) {
-    return new Promise( (resolve, reject) => {
+    return new Promise( resolve  => {
       const store = this.get(name);
       if (store) resolve(store);
       else this.synchro = resolve;

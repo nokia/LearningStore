@@ -22,23 +22,21 @@ export default class Store extends Component {
   componentWillMount() {
     const {name} = this.props.match.params;    
     Source.getSync(name)
-    .then( (store) => {
+    .then( store => {
       B.back = true;
       // this.searchInput(text)
       this.setState({isLoading:false});
     });
     this.storeDef = Source.getDef(name);
-    this.searchInput = this.searchInput.bind(this);
-    this.loadMore = this.loadMore.bind(this);
   }
 
-  searchInput(param) {
+  searchInput = (param) => {
     // console.log('SEARCH------------')
     this.search = Source.filter(this.props.match.params.name, param);
     this.setState({lim:addLim});
   }
 
-  loadMore() {
+  loadMore = () => {
     this.setState({lim:this.state.lim + 40});
     this.thumbnails = this.map();
   }
@@ -46,7 +44,7 @@ export default class Store extends Component {
   map() {
     let counter = 0;
     
-    let ret =  this.search.filter( (item) => { return item.Icon ? item : null } )
+    let ret =  this.search.filter( item => item.Icon ? item : null )
     .map((item, index2) => {
       
       if (item.Icon) {

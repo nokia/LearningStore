@@ -12,7 +12,6 @@ export default class Header extends Component {
   firstLoad = false;
   constructor(props) {
     super(props);
-    this.search = this.search.bind(this);
     if(this.props.props.match.params.text){
       this.state = {value: this.props.props.match.params.text};
       this.firstLoad = true;
@@ -31,7 +30,7 @@ export default class Header extends Component {
     }
   }
   
-  search(event) {
+  search = (event) => {
     this.setState({value: event.target.value});
     if(this.props.searchInput){
       this.props.searchInput(event.target.value); 

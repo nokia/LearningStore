@@ -23,23 +23,21 @@ export default class Navigation extends Component {
 
     //Generate "Categories" menu
     let cat = false;
-    let categories = this.props.data.menu.map((link, index) => {
+    let categories = this.props.data.menu.map( (link, index) => {
       if(link.category){
         // if(!link.id){
         //   link.id = "0" + index;
         // }
         cat = true;
-        if(link.content){
-          const linksChild = link.content.map((linkChild) => {
-            return <MenuItem key={linkChild.id}>{linkChild.title}</MenuItem>
-          });
-          return(
+        if (link.content) {
+          const linksChild = link.content.map( linkChild => <MenuItem key={linkChild.id}>{linkChild.title}</MenuItem> );
+          return (
             <SubMenu key={index} title={link.title}>
               {linksChild}
             </SubMenu>
-          )
+          );
         }
-        else{
+        else {
           return <MenuItem key={index}>{link.title}</MenuItem>
         }
       }
@@ -62,17 +60,14 @@ export default class Navigation extends Component {
 
         //This link is a submenu
         if(link.content){
-          const linksChild = link.content.map((linkChild) => {
-            // console.log(linkChild.id, linkChild.title, linkChild.url)
-            return <MenuItem key={linkChild.id || linkChild.url}>{ linkChild.title }</MenuItem>
-          });
+          const linksChild = link.content.map( linkChild  => <MenuItem key={linkChild.id || linkChild.url}>{ linkChild.title }</MenuItem> );
           return(
             <SubMenu className="floatRight" key={index} title={<span>{link.title} <FaAngleDown color='#7C7B7B' /></span>}>
               { linksChild }
             </SubMenu>
           )
         }
-        else{
+        else {
           return <MenuItem className="floatRight" key={link.id}>{ link.title }</MenuItem>
         }
       }

@@ -47,8 +47,8 @@ export default class Store extends Component {
 
     let store = Source.get(name);   
     var counter = 0; 
-    let thumbnails = storeDef.homepage.map((thumbnail, index) => {
-      let items = thumbnail.items.length ? thumbnail.items.map((itemID, index2) =>{
+    let thumbnails = storeDef.homepage.map( (thumbnail, index) => {
+      let items = thumbnail.items.length ? thumbnail.items.map( (itemID, index2) => {
         let item = store.getByID(itemID);
         if (!item) return null;
 
