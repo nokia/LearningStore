@@ -19,6 +19,7 @@ export default class Collection extends Component {
   storeDef;
 
   componentWillMount() {
+    window.scrollTo(0, 0);
     const {name} = this.props.match.params;
     Source.getSync(name)
     .then( (store) => this.setState({isLoading:false, store:store}) )

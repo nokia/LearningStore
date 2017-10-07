@@ -32,7 +32,7 @@ export default class Edit extends Component {
     });
     B.back = true;
   }
-
+/*
   componentDidMount() {
     setTimeout(() => {
       const height = document.getElementById('nlsForm').clientHeight;
@@ -43,7 +43,7 @@ export default class Edit extends Component {
         document.firstElementChild.setAttribute('style', 'overflow-y: hidden');
     }, 100)
   }
-  
+*/  
   render() {
     if (this.state.isLoading) return null;    
     
@@ -103,7 +103,7 @@ export default class Edit extends Component {
 
     if (item.Solutions) {
       return (
-        <Form onSubmit={submitMethod} model={item} id='nlsForm' >
+        <Form onSubmit={submitMethod} model={item} >
           {header}
           <Quill name='Description'/>
           <div className='editFlow'>
@@ -126,7 +126,7 @@ export default class Edit extends Component {
     });
 
     return (
-      <Form onSubmit={submitMethod} model={item} id='nlsForm' >
+      <Form onSubmit={submitMethod} model={item} >
         {header}
         <div className='editFlow'>
           <label className='editLabel'>Url</label>
