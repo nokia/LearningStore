@@ -1,8 +1,12 @@
+.top {
+    margin-top: 100px;
+}    
 .editLabel {
     font-size: 110%;
-    width: 10%;
+    width: 12%;
     float: left;
     color: #ef6c00;
+    padding-left: 10px;
 }
 
 .editField {
@@ -10,19 +14,21 @@
     margin-top: -20px; */
     /* flex-grow: 9; */
     /* float: right; */
+    width:70%;
 }
 
 .editFlow {
     overflow: hidden;
+    padding-top: 5px;
 }
 
 .RTE {
-    margin-left: 10%;
-    width:50%;
+    margin-left: 12%;
+    width:70%;
 }
 
 .editSave {
-    margin-left: 10%;
+    margin-left: 12%;
     height: 34px;
     cursor: pointer;
     line-height: 37px;
@@ -35,3 +41,19 @@
     box-shadow:none;
     border-radius: 0px;    
 }
+
+.listfield {
+    overflow: hidden;
+}
+.delButton {
+    cursor: pointer;
+    float: right;
+    margin-right: 80%;
+    margin-top: -24px;
+}
+.addButton {
+    cursor: pointer;
+    margin-left: 25%;
+}
+
+

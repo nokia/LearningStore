@@ -11,21 +11,23 @@ import {Config} from '../config.js';
 
 const itemParse = '/item/';
 
-window.bkLib.onDomLoaded(window.nicEditors.allTextAreas);
-
 localStorage.edit = localStorage.edit || '[]';
 localStorage.editPos = localStorage.editPos || '0';
 localStorage.authorID = localStorage.authorID || new Date().getTime().toString();
 
 document.addEventListener("keydown", (event) => {
-  if (event.altKey && event.shiftKey) {
+  if (event.altKey) {
+    event.preventDefault();
     event.stopPropagation();
     switch (event.keyCode) {
+      case 65: // alt-a
+        edit.dump();
+        break;
       case 67: // alt-c
-        edit.create('collection');
+        edit.clipboard();
         break;
       case 68: // alt-d
-        edit.dump();
+        edit.create('collection');
         break;
       case 69: // alt-e
         edit.modify();
@@ -54,6 +56,7 @@ document.addEventListener("keydown", (event) => {
       default:
     }
   }
+  return false;
 });
 
 const file = document.createElement('input'); // the file reader
@@ -214,6 +217,20 @@ class Edit {
     let tmp = [];
     Object.keys(ids).forEach( (key) => tmp.push(ids[key]));
     Source.stores[item.sid].data = tmp;
+  }
+
+  clipboard() {
+    const item = this._getItem();
+    console.log(item)
+    if (item) {
+      const tmp = document.createElement("input");
+      document.body.appendChild(tmp);
+      tmp.setAttribute("id", "dummy_id");
+      tmp.setAttribute('value', item.id);
+      tmp.select();
+      document.execCommand("copy");
+      document.body.removeChild(tmp);     
+    }
   }
 }
 

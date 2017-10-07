@@ -25,7 +25,8 @@ const toolbarConfig = {
   ],
   BLOCK_TYPE_BUTTONS: [
     {label: 'UL', style: 'unordered-list-item'},
-    {label: 'OL', style: 'ordered-list-item'}
+    {label: 'OL', style: 'ordered-list-item'},
+    {label: 'Blockquote', style: 'blockquote' }
   ]
 };
 
@@ -45,7 +46,7 @@ class zRTE extends Component {
 						value={this.state.value} //createValueFromString(value)}
 						onChange={ value => {
 							this.setState({value});
-							this.props.onChange(value.toString('html'));
+							this.props.onChange(value.toString('html').replace(/<a /g, '<a target="_blank" '));
 						}}
 						toolbarConfig={toolbarConfig}
 					/>

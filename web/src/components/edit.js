@@ -4,6 +4,8 @@
 */
 import React, { Component } from 'react';
 
+import HeaderComponent from './Header';
+import Navigation from './Navigation';
 import {Config} from '../config.js';
 import Source from './data';
 import B from './back';
@@ -12,6 +14,8 @@ import NotFound from './NotFound';
 import { Form, TextField, ListField, SubmitField } from 'react-components-form';
 import Ctl from './editCtl';
 import RTE from './RTE';
+import FaTrash from 'react-icons/lib/fa/trash-o';
+import FaPlus from 'react-icons/lib/fa/plus-square-o';
 
 import '../css/Edit.css';
 
@@ -23,7 +27,7 @@ export default class Edit extends Component {
     const {name, id} = this.props.match.params;// || this.props.location.state;
     Source.fetch(name, Config.Source + name + '.json').then( (store) => {
       this.item = (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
-      this.setState({isLoading:false});
+      this.setState({isLoading:false, name:name});
     });
     B.back = true;
   }
@@ -48,28 +52,44 @@ export default class Edit extends Component {
     }
     
     const submitMethod = (model) => {
-      Ctl._push(old, item);
-      if (newItem) Ctl.update(item);
+      Ctl._push(old, model);
+      if (newItem) Ctl.update(model);
       if (B.back) this.props.history.goBack();
     };
 
+    const storeDef = Source.getDef(this.state.name);
     const header = (
       <div>
+
+        <div className="head">
+          <HeaderComponent props={this.props} data={storeDef}/>
+          <div className="menu">
+            <div className="wrapper">
+              <Navigation props={this.props} data={storeDef}/>
+            </div>
+          </div>
+        </div>
+        <div className='top'></div>
+
         <div className='editFlow'>
           <label className='editLabel'>ID</label>
           <label className='editField'>{item.ID}</label>
         </div>
         <div className='editFlow'>
           <label className='editLabel'>Title</label>
-          <TextField className='editField' name="Title" fieldAttributes={{size:100}}/>
+          <TextField className='editField' name="Title" />
         </div>
         <div className='editFlow'>
           <label className='editLabel'>Icon</label>
-          <TextField className='editField' name="Icon" fieldAttributes={{size:100}} />
+          <TextField className='editField' name="Icon" />
         </div>  
       </div>
     );
     
+    const submit = <SubmitField className='editSave' value="Save" />
+    const add = <FaPlus />
+    const remove = <FaTrash />
+
     if (item.Solutions) {
       return (
         <Form onSubmit={submitMethod} model={item} >
@@ -77,13 +97,13 @@ export default class Edit extends Component {
           <RTE name='Description'/>
           <div className='editFlow'>
             <label className='editLabel'>Items</label>
-            <div className='editField'>
-              <ListField name="Solutions" >
-                <TextField />
+            <div>
+              <ListField name='Solutions' className='listfield' addButton={{className:'addButton', value:add}} removeButton={{className:'delButton', value:remove}}>
+                <TextField className='item' />
               </ListField>
             </div>
           </div>
-          <SubmitField className='editSave' value="Save" />
+          {submit}
         </Form>
       );
     }
@@ -99,13 +119,10 @@ export default class Edit extends Component {
         {header}
         <div className='editFlow'>
           <label className='editLabel'>Url</label>
-          <TextField className='editField' name="Url" fieldAttributes={{size:140}} />
+          <TextField className='editField' name="Url" />
         </div>
         {fields}
-        <div className='editFlow'>
-          <p className='editLabel'> </p>
-          <SubmitField className='editSave' value="Save" />
-        </div>
+        {submit}
       </Form>
     );
   }
