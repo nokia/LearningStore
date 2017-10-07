@@ -1,3 +1,6 @@
+/* html {
+    overflow-y: scroll; 
+} */
 .top {
     margin-top: 100px;
 }    
@@ -10,11 +13,19 @@
 }
 
 .editField {
-    /* margin-left: 12%;    
-    margin-top: -20px; */
-    /* flex-grow: 9; */
-    /* float: right; */
-    width:70%;
+    width:80%;
+    background-color: #F1F1F1;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    outline-style:none;
+}
+.item {
+    background-color: #F1F1F1;    
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    outline-style:none;
 }
 
 .editFlow {
@@ -24,7 +35,10 @@
 
 .RTE {
     margin-left: 12%;
-    width:70%;
+    width:80%;
+    /* border-style: solid;
+    border-color: lightgray;
+    border-width: 1px; */
 }
 
 .editSave {
@@ -36,6 +50,7 @@
     color: white;
     background: #ef6c00;
     margin-top: 8px;
+    margin-bottom: 30px;
     text-align: center;
     border: 0;
     box-shadow:none;

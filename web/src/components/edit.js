@@ -13,7 +13,8 @@ import NotFound from './NotFound';
 
 import { Form, TextField, ListField, SubmitField } from 'react-components-form';
 import Ctl from './editCtl';
-import RTE from './RTE';
+// import RTE from './RTE';
+import Quill from './Quill';
 import FaTrash from 'react-icons/lib/fa/trash-o';
 import FaPlus from 'react-icons/lib/fa/plus-square-o';
 
@@ -30,6 +31,17 @@ export default class Edit extends Component {
       this.setState({isLoading:false, name:name});
     });
     B.back = true;
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      const height = document.getElementById('nlsForm').clientHeight;
+      // console.log(height)
+      if (height > window.innerHeight)
+        document.firstElementChild.setAttribute('style', 'overflow-y: scroll');
+      else
+        document.firstElementChild.setAttribute('style', 'overflow-y: hidden');
+    }, 100)
   }
   
   render() {
@@ -60,7 +72,6 @@ export default class Edit extends Component {
     const storeDef = Source.getDef(this.state.name);
     const header = (
       <div>
-
         <div className="head">
           <HeaderComponent props={this.props} data={storeDef}/>
           <div className="menu">
@@ -73,7 +84,7 @@ export default class Edit extends Component {
 
         <div className='editFlow'>
           <label className='editLabel'>ID</label>
-          <label className='editField'>{item.ID}</label>
+          <TextField className='editField' name="ID" fieldAttributes={{disabled:true, style:{border:0, fontSize:'110%'}}}/>
         </div>
         <div className='editFlow'>
           <label className='editLabel'>Title</label>
@@ -92,9 +103,9 @@ export default class Edit extends Component {
 
     if (item.Solutions) {
       return (
-        <Form onSubmit={submitMethod} model={item} >
+        <Form onSubmit={submitMethod} model={item} id='nlsForm' >
           {header}
-          <RTE name='Description'/>
+          <Quill name='Description'/>
           <div className='editFlow'>
             <label className='editLabel'>Items</label>
             <div>
@@ -110,12 +121,12 @@ export default class Edit extends Component {
 
     const fields = Config.Mapping.map( (field, index) => {
       return (
-        <RTE name={field} key={index}/>
+        <Quill name={field} key={index}/>
       );
     });
 
     return (
-      <Form onSubmit={submitMethod} model={item}>
+      <Form onSubmit={submitMethod} model={item} id='nlsForm' >
         {header}
         <div className='editFlow'>
           <label className='editLabel'>Url</label>
