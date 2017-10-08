@@ -24,7 +24,7 @@ const origin = [] // contains original item values
 let unsaved = false; // detect any change in the item
 const eventsListener = new FormEventsListener();
 eventsListener.registerEventListener('changeModel', () => unsaved = true );
-window.onbeforeunload = (e) => { if (unsaved) alert('You have unsaved modifications. Do not forget to come back to save them if needed...'); }
+window.onbeforeunload = (e) => { if (unsaved) return 'You have unsaved modifications. Do not forget to come back to save them if needed...'; }
 
 export default class Edit extends Component {
 

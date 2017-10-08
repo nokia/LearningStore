@@ -13,7 +13,7 @@ class B {
     this.pathname = component.props.location.pathname;
     if (window.gtag && this.currentPath !== window.location.pathname) {
       this.currentPath = window.location.pathname;
-      window.gtag('config', Config.trackingID);
+      window.gtag('config', Config.trackingID, {'page_path': window.location.pathname});
       // console.log('ga');
     }    
   }

@@ -66,22 +66,52 @@ document.addEventListener("keydown", event => {
 
 const file = document.createElement('input'); // the file reader
 file.setAttribute("type", "file");
-file.addEventListener('change', evt => reader.readAsText(file.files[0]) );
-const reader = new FileReader();
-reader.onload = () => {
-  console.log(reader.result);
-  let pos = JSON.parse(localStorage.editPos);  
-  let storage = JSON.parse(localStorage.edit).slice(0, pos);
-  try {
-    let addon = JSON.parse(reader.result);
-    localStorage.edit = JSON.stringify(storage.concat(addon));   
-    localStorage.editPos = JSON.stringify(pos + addon.length);
-
+file.setAttribute("multiple", "true");
+file.addEventListener('change', evt => {
+  console.log(file.files.length)
+  reader.index = -1;
+  readFile();
+});
+const readFile = () => {
+  reader.index++;
+  if (reader.index < file.files.length) {
+    reader.fileName = file.files[reader.index].name;
+    reader.readAsText(file.files[reader.index]);
+  }
+  else if (reader.conflicts) window.alert('Conflicts detected. Please check the logs');
+  else {
+    window.alert('The application is about to reload.\nCurrent logs:\n' + 
+      JSON.stringify(logs).replace(/","/g, '"\n"').replace(/\[|\]|"|\\/g, ''));
     window.location.reload(); // since the imported file can contain data for several stores
   }
-  catch(e) {
-    console.log('file import failed', e);
+}
+const reader = new FileReader();
+reader.onload = (file) => {
+  console.log(reader.fileName);
+  edit.log('Importing file ' + reader.fileName);
+  const pos = JSON.parse(localStorage.editPos);  
+  const storage = JSON.parse(localStorage.edit).slice(0, pos);
+  try {
+    const addon = JSON.parse(reader.result);
+    const newIDs = addon.map( pair => pair.new.ID );
+    const conflicts = storage.filter( pair => newIDs.indexOf(pair.new.ID) > -1 ).map( pair => pair.new.ID );
+    const passed = addon.filter( pair => conflicts.indexOf(pair.new.ID) === -1 );
+    if (conflicts.length) {
+      const IDs = JSON.stringify(conflicts);
+      edit.log('Found conflicts on IDs: ' + IDs)
+      reader.conflicts = true;
+    }
+
+    if (passed.length) {
+      localStorage.edit = JSON.stringify(storage.concat(passed));   
+      localStorage.editPos = JSON.stringify(pos + passed.length);
+      edit.log('Item(s) successfully imported: ' + JSON.stringify(passed.map( pair => pair.new.ID )));  
+    }
   }
+  catch(e) {
+    edit.log('File import failed', e);
+  }
+  readFile(); // read next file
 }
 
 class Edit {
@@ -218,11 +248,6 @@ class Edit {
   }
 
   update(item) { 
-    // if (item.del)
-    //   this.log('Deleting item '+ item.ID + ' - ' + item.Title);
-    // else 
-    //   this.log('Creating/Updating item '+ item.ID + ' - ' + item.Title);
-
     let ids = Source.stores[item.sid].ids;
     item.del ? delete ids[item.ID] : ids[item.ID] = item;
 
