@@ -2,16 +2,14 @@
 
 The web version is based on the popular Javascript framework [React](https://facebook.github.io/react/ "React").
 
-It is still in development. A beta version can be found [here](https://nokia.github.io/LearningStore/).
+It is still in development. A live preview can be found [here](https://nokia.github.io/LearningStore/).
 
 ## Installation
 The easiest way to start a Learning Store project is to:
 1. clone the project: `git clone https://github.com/nokia/LearningStore`
-2. go to LearningStore
-3. create a new react application: `create-react-app web2`
-4. copy all files from web to web2 and replace existing files
-5. install all dependencies in [package.json](./package.json)
-6. finally start the project: `npm start`
+2. go to LearningStore\web
+3. install all dependencies: `npm install`
+4. finally start the project: `npm start`
 
 ## Configuration
 The project contains a configuration file in the directory `web/src`.
