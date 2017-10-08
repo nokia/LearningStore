@@ -10,9 +10,9 @@ Sharing is done with the `alt-s` command that saves in a file all the browser sa
 Publishing is achieved with `alt-d` that dumps an entire store into a file. The file can then be uploaded to the Web server directly.
 
 ## Shortcuts
-* `alt-e` edit the current item (collection or single item)
-* `alt-n` create a new (single) item
-* `alt-f` create a new collection (f like folder)
+* `alt-e` edit the current item (collection or single item).
+* `alt-n` create a new (single) item.
+* `alt-f` create a new collection (f like folder).
 * `alt-x` delete the current item (item or collection). This operation is automatically saved.
 * `alt-c` copy the current item ID into the clipboard. This is useful before setting the list of collection items.
 
@@ -44,7 +44,7 @@ Files can be loaded in the browser with the `alt-o` command. Multiple files can 
 ### Conflicts
 Conflicts may be detected during the import operation when two items with the same ID are loaded. The logs can be checked (`alt-l` command) to see the files and item IDs which conflict. 
 
-Conflicting items are not imported.
+**NB:** Conflicting items are not imported.
 Non conflicting items are imported.
 
 However it is safer to reject all imports in case of conflicts, with the `alt-r` command and resolve the conflicts before importing again.
