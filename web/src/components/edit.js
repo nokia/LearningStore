@@ -19,9 +19,9 @@ import FaPlus from 'react-icons/lib/fa/plus-square-o';
 
 import '../css/Edit.css';
 
-const origin = [] // contains original values 
+const origin = [] // contains original item values 
 
-let unsaved = false;
+let unsaved = false; // detect any change in the item
 const eventsListener = new FormEventsListener();
 eventsListener.registerEventListener('changeModel', () => unsaved = true );
 window.onbeforeunload = (e) => { if (unsaved) alert('You have unsaved modifications. Do not forget to come back to save them if needed...'); }
@@ -31,7 +31,7 @@ export default class Edit extends Component {
   state = { isLoading:true }
 
   componentWillMount() {
-    const {name, id} = this.props.match.params;// || this.props.location.state;
+    const {name, id} = this.props.match.params;
     Source.fetch(name, Config.Source + name + '.json').then( store => {
       this.item = (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       this.setState({isLoading:false, name:name});
@@ -39,7 +39,7 @@ export default class Edit extends Component {
     B.back = true;
   }
 
-  componentDidMount() { setTimeout( () => unsaved = false, 100  ); }
+  componentDidMount() { setTimeout( () => unsaved = false, 100  ); } // html can be improved by Quill, but no user changes
 
 /*
   componentDidMount() {

@@ -80,3 +80,7 @@ The standard process flow is the following:
     App.js -> Home.js -> Store.js -> Item.js
 
 `App.js` is the entry point of the application. `Home.js` displays the list of stores available. `Store.js` displays the homepage of the selected store and `Item.js` shows the details of a store item.
+
+## Content Edition
+
+All the stores can be edited directly in a web browser. A set of keyboard shortcuts allows to create, modify, save, upload etc. store items. See [Content Edition](EDITION.md "Content Edition") for more information.
