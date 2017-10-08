@@ -11,7 +11,7 @@ import Source from './data';
 import B from './back';
 import NotFound from './NotFound';
 
-import { Form, TextField, ListField, CheckboxField, SubmitField } from 'react-components-form';
+import { Form, TextField, ListField, CheckboxField, SubmitField, FormEventsListener } from 'react-components-form';
 import Ctl from './editCtl';
 import Quill from './Quill';
 import FaTrash from 'react-icons/lib/fa/trash-o';
@@ -20,6 +20,11 @@ import FaPlus from 'react-icons/lib/fa/plus-square-o';
 import '../css/Edit.css';
 
 const origin = [] // contains original values 
+
+let unsaved = false;
+const eventsListener = new FormEventsListener();
+eventsListener.registerEventListener('changeModel', () => unsaved = true );
+window.onbeforeunload = (e) => { if (unsaved) alert('You have unsaved modifications. Do not forget to come back to save them if needed...'); }
 
 export default class Edit extends Component {
 
@@ -33,6 +38,9 @@ export default class Edit extends Component {
     });
     B.back = true;
   }
+
+  componentDidMount() { setTimeout( () => unsaved = false, 100  ); }
+
 /*
   componentDidMount() {
     setTimeout(() => {
@@ -111,7 +119,7 @@ export default class Edit extends Component {
 
     if (item.Solutions) {
       return (
-        <Form onSubmit={submitMethod} model={item} >
+        <Form onSubmit={submitMethod} model={item} eventsListener={eventsListener} >
           {header}
           <Quill name='Description'/>
           <div className='editFlow'>
@@ -135,7 +143,7 @@ export default class Edit extends Component {
     });
 
     return (
-      <Form onSubmit={submitMethod} model={item} >
+      <Form onSubmit={submitMethod} model={item} eventsListener={eventsListener} >
         {header}
         <div className='editFlow'>
           <label className='editLabel'>Url</label>

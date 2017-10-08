@@ -15,22 +15,27 @@ localStorage.edit = localStorage.edit || '[]';
 localStorage.editPos = localStorage.editPos || '0';
 localStorage.authorID = localStorage.authorID || new Date().getTime().toString();
 
+const logs = [];
+
 document.addEventListener("keydown", event => {
   if (event.altKey) {
     event.preventDefault();
     event.stopPropagation();
     switch (event.keyCode) {
+      case 67: // alt-c
+        edit.clipboard();
+        break;
       case 68: // alt-d
         edit.dump();
         break;
-      case 67: // alt-c
-        edit.clipboard();
+      case 69: // alt-e
+        edit.modify();
         break;
       case 70: // alt-f
         edit.create('collection');
         break;
-      case 69: // alt-e
-        edit.modify();
+      case 76: // alt-l
+        edit.showLog();
         break;
       case 78: // alt-n
         edit.create('item');
@@ -85,18 +90,20 @@ class Edit {
     try {
       const storage = JSON.parse(localStorage.edit);
       const pos = JSON.parse(localStorage.editPos);
-      let cpt = 0;
+      this.log('Found ' + pos + ' local update(s)');
       for (let i = 0; i < pos; i++) {
         const item = storage[i];
         if (item.new.sid === name) {
-          cpt++
+          if (item.new.del)
+            this.log('Applying local update: deleting ' + item.new.ID + ' - ' + item.old.Title);
+          else
+            this.log('Applying local update ' + item.new.ID + ' - ' + item.new.Title);
           this.update(item.new);
         }        
       }
-      if (cpt) console.log(name,'-', cpt, 'update(s)');  
     }
     catch(err) {
-      console.log('error while loading localStorage.edit', err);
+      this.log('error while loading localStorage.edit', err);
     }
   }
 
@@ -129,7 +136,6 @@ class Edit {
 
   _getItem() {
     let url = window.location.pathname.split(itemParse);
-    console.log('urk', url)
     if (url.length === 1) return;
     const id = url[1];
     let name = url[0].split('/');
@@ -166,18 +172,17 @@ class Edit {
     let storage = JSON.parse(localStorage.edit);
     storage.slice(0, pos-1); // trim storage to keep up with redo
 
-    // check if the item is not already in the list
-    let found = -1;
-    storage.forEach( (item, index) => {
-      if (item.old.ID === cur.ID) found = index;
-    });
-    found = -1;
-    if (found > -1) storage[found].new = cur; 
-    else {
-      storage.push({ old:JSON.parse(old), new:cur });
-      localStorage.editPos = JSON.stringify(++pos);
-    }      
-    localStorage.edit = JSON.stringify(storage);   
+    old = JSON.parse(old);
+    storage.push({ old:old, new:cur });
+    localStorage.editPos = JSON.stringify(++pos);
+    localStorage.edit = JSON.stringify(storage);
+
+    if (old.del)
+      this.log('Creating item '+ cur.ID + ' - ' + cur.Title);
+    else if (cur.del)
+      this.log('Deleting item '+ old.ID + ' - ' + old.Title);
+    else
+      this.log('Updating item '+ cur.ID + ' - ' + cur.Title);
   }
 
   undo() {
@@ -186,6 +191,7 @@ class Edit {
       localStorage.editPos = JSON.stringify(--pos);
       this.update(JSON.parse(localStorage.edit)[pos].old);
       this._reload();
+      this.log('Undo last operation');
     }
   }
 
@@ -196,13 +202,14 @@ class Edit {
       this.update(storage[pos].new);
       localStorage.editPos = JSON.stringify(++pos);
       this._reload();
+      this.log('Redo last operation');
     }
   }
 
   reset() {
     localStorage.edit = '[]';
     localStorage.editPos = '0';
-    window.location.reload(); // so that the user can see
+    window.location.reload(); // so that the user can see | clear the logs
   }
 
   _reload() {
@@ -211,6 +218,11 @@ class Edit {
   }
 
   update(item) { 
+    // if (item.del)
+    //   this.log('Deleting item '+ item.ID + ' - ' + item.Title);
+    // else 
+    //   this.log('Creating/Updating item '+ item.ID + ' - ' + item.Title);
+
     let ids = Source.stores[item.sid].ids;
     item.del ? delete ids[item.ID] : ids[item.ID] = item;
 
@@ -222,7 +234,7 @@ class Edit {
 
   clipboard() {
     const item = this._getItem();
-    console.log(item)
+    console.log(item);
     if (item) {
       const tmp = document.createElement("input");
       document.body.appendChild(tmp);
@@ -233,8 +245,16 @@ class Edit {
       document.body.removeChild(tmp);     
     }
   }
+
+  log(text) { logs.push(new Date().toLocaleString() +  ' | ' + text); }
+
+  showLog() {
+    const nw = window.open();
+    nw.document.write('<h3>Edit Logs</h3>');
+    logs.forEach( line => nw.document.write(line + '<br />')); 
+  }
 }
 
 const edit = new Edit();
-
+edit.log('Started');
 export default edit;
