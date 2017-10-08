@@ -9,7 +9,7 @@ import Source from './data';
 import B from './back';
 import {Config} from '../config.js';
 
-const itemParse = '/item/';
+const itemParse = /\/item\/|\/edit\//;
 
 localStorage.edit = localStorage.edit || '[]';
 localStorage.editPos = localStorage.editPos || '0';
@@ -20,13 +20,13 @@ document.addEventListener("keydown", event => {
     event.preventDefault();
     event.stopPropagation();
     switch (event.keyCode) {
-      case 65: // alt-a
+      case 68: // alt-d
         edit.dump();
         break;
       case 67: // alt-c
         edit.clipboard();
         break;
-      case 68: // alt-d
+      case 70: // alt-f
         edit.create('collection');
         break;
       case 69: // alt-e
@@ -129,6 +129,7 @@ class Edit {
 
   _getItem() {
     let url = window.location.pathname.split(itemParse);
+    console.log('urk', url)
     if (url.length === 1) return;
     const id = url[1];
     let name = url[0].split('/');

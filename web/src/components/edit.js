@@ -19,6 +19,8 @@ import FaPlus from 'react-icons/lib/fa/plus-square-o';
 
 import '../css/Edit.css';
 
+const origin = [] // contains original values 
+
 export default class Edit extends Component {
 
   state = { isLoading:true }
@@ -49,21 +51,22 @@ export default class Edit extends Component {
     let item = this.item;
     if (!item) return (<NotFound />);
 
-    let old, newItem; 
-    if (item.sid) old = JSON.stringify(item);
+    let newItem; 
+    if (item.sid) origin[item.ID] = origin[item.ID] || JSON.stringify(item);
     else {
       newItem = true;
       item.sid = this.state.name;
       item.ID = 'n.' + new Date().getTime();
       item.del = true;
-      old = JSON.stringify(item);
+      origin[item.ID] = JSON.stringify(item);
       delete item.del;
       item.Icon = Config.defaultIcon;
       console.log('creating new item', item.ID);
     }
     
     const submitMethod = (model) => {
-      Ctl._push(old, model);
+      Ctl._push(origin[item.ID], model);
+      delete origin[item.ID];
       if (newItem) Ctl.update(model);
       if (B.back) this.props.history.goBack();
     };
