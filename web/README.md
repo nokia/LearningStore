@@ -22,10 +22,13 @@ The file contains the following data:
 
 ## Where to start?
 The first steps are to:
-* edit the file `web/public/store.json` to define the name, menu, carousel and home page of the new store.
+* edit the file `web/public/store.json` to define the id, title subtitle, url, menu, carousel and home page of the new store.
 * edit the file `web/src/config.js` to define the attributes that define a store item (cf. `Mapping` above). Change the default icon as well. 
 * edit the content of the store (see [Content Edition]("EDITION.md") for more information). This is the **main** task!
 * edit the html file `web/public/index.html` file to change the browser tab icon (favicon.ico).
 
 ## Images
 We recommend that images (Icons) are stored in a directory under the directory where the store json file is installed (`public/img` in the example).
+
+## Application size
+React production buils are optimized. The current Javascript application is under 250 Kb and CSS is under 10 Kb.

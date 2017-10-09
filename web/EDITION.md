@@ -52,5 +52,12 @@ Non conflicting items are imported.
 
 However it is safer to reject all imports in case of conflicts, with the `alt-r` command and resolve the conflicts before importing again.
 
+## Local Storage
+The application relies on the HTML5 local storage API. The following names are used to make data persistent:
+* localStorage.authorID: stores the browser / author unique ID.
+* localStorage.edit: contains the saved operations.
+* localStorage.editPos: defines the current position in localStorage.edit after undo / redo operations. 
+
+
 
 
