@@ -30,6 +30,8 @@ The following shorcuts are defined and can be used with the keyboard. They will 
 
 ### Other
 * `alt-l` open the logs of saved operations
+* `alt-w` shows work in progress (WIP) according to the selected store
+* `alt-h` Go Home
 * `alt-r` reset all **saved** operations. Better consult the logs before doing this...
  
 ## File export / import

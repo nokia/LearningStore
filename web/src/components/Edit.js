@@ -3,6 +3,10 @@
   Copyright Nokia 2017. All rights reserved.
 */
 import React, { Component } from 'react';
+import { Form, TextField, ListField, CheckboxField, SubmitField, FormEventsListener } from 'react-components-form';
+import Quill from './Quill';
+import FaTrash from 'react-icons/lib/fa/trash-o';
+import FaPlus from 'react-icons/lib/fa/plus-square-o';
 
 import HeaderComponent from './Header';
 import Navigation from './Navigation';
@@ -10,12 +14,8 @@ import {Config} from '../config.js';
 import Source from './data';
 import B from './back';
 import NotFound from './NotFound';
-
-import { Form, TextField, ListField, CheckboxField, SubmitField, FormEventsListener } from 'react-components-form';
 import Ctl from './editCtl';
-import Quill from './Quill';
-import FaTrash from 'react-icons/lib/fa/trash-o';
-import FaPlus from 'react-icons/lib/fa/plus-square-o';
+import wipC from './wip';
 
 import '../css/Edit.css';
 
@@ -69,6 +69,7 @@ export default class Edit extends Component {
       origin[item.ID] = JSON.stringify(item);
       delete item.del;
       item.Icon = Config.defaultIcon;
+      wipC.push(item.ID);
       console.log('creating new item', item.ID);
     }
     
@@ -76,6 +77,7 @@ export default class Edit extends Component {
       Ctl._push(origin[item.ID], model);
       delete origin[item.ID];
       if (newItem) Ctl.update(model);
+      wipC.push(model.ID);
       if (B.back) this.props.history.goBack();
     };
 

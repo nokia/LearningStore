@@ -5,12 +5,14 @@
 
 import {Config} from '../config.js';
 import editCtl from './editCtl';
+import wip from './wip';
 
 class Data {
-  data = [];
+  data = [wip];
   ids = [];
 
   create(name, data) {
+    this.ids[wip.ID] = wip;
     data.forEach( item => {
       if (item.ID) {
         this.ids[item.ID] = item;

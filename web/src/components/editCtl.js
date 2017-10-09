@@ -8,6 +8,7 @@ import {saveAs} from 'file-saver';
 import Source from './data';
 import B from './back';
 import {Config} from '../config.js';
+import wipC from './wip';
 
 const itemParse = /\/item\/|\/edit\//;
 
@@ -31,8 +32,11 @@ document.addEventListener("keydown", event => {
       case 69: // alt-e
         edit.modify();
         break;
-      case 70: // alt-f
+        case 70: // alt-f
         edit.create('collection');
+        break;
+      case 72: // alt-h
+        B.history.push('/');
         break;
       case 76: // alt-l
         edit.showLog();
@@ -46,8 +50,11 @@ document.addEventListener("keydown", event => {
       case 82: // alt-r
         edit.reset();
         break;
-      case 83: // alt-s
+        case 83: // alt-s
         edit.saveAs();
+        break;
+      case 87: // alt-w
+        edit.gotoWip();
         break;
       case 88: // alt-x
         edit.del();
@@ -126,8 +133,10 @@ class Edit {
         if (item.new.sid === name) {
           if (item.new.del)
             this.log('Applying local update: deleting ' + item.new.ID + ' - ' + item.old.Title);
-          else
+          else {
             this.log('Applying local update ' + item.new.ID + ' - ' + item.new.Title);
+            wipC.push(item.new.ID);
+          }
           this.update(item.new);
         }        
       }
@@ -277,6 +286,12 @@ class Edit {
     const nw = window.open();
     nw.document.write('<h3>Edit Logs</h3>');
     logs.reverse().forEach( line => nw.document.write(line + '<br />')); 
+  }
+
+  gotoWip() {
+    const name = this._getName();
+    if (!name) return;
+    B.history.push(`/${name}/item/wip`);
   }
 }
 
