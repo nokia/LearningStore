@@ -31,7 +31,7 @@ class ModalSwitch extends Component {
     if (location.pathname.match(pattern)) {
       let url = location.pathname.split(pattern);
       let name = url[0].slice(1);
-      Source.fetch(name, Config.Source + name + '.json').then( (rep) => this.setState({isLoading:false}) )
+      Source.fetch(name).then( rep => this.setState({isLoading:false}) )
     }
     else this.setState({isLoading:false});
   }    
@@ -72,8 +72,8 @@ export default class App extends Component {
   componentWillMount() {
     // console.log('loading store.json');
     fetch(Config.Source + 'store.json')
-    .then( (resp) => resp.json())
-    .then( (resp) => {
+    .then( resp => resp.json())
+    .then( resp => {
       Source.setDefs(resp);
       this.setState({ items:resp, isLoading:false });
     })

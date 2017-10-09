@@ -6,7 +6,6 @@
 import React, { Component } from 'react';
 import Loader from 'halogen/PulseLoader';
 
-import {Config} from './../config.js';
 import '../css/Store.css';
 import SliderHome from './SliderHome';
 import Source from './data';
@@ -21,7 +20,7 @@ export default class Store extends Component {
 
   componentWillMount() {
     const {name} = this.props.match.params;    
-    Source.fetch(name, Config.Source + name + '.json').then( () => this.setState({isLoading:false}) );
+    Source.fetch(name).then( () => this.setState({isLoading:false}) );
     B.back = true;
   }
 

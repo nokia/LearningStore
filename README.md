@@ -83,4 +83,4 @@ The standard process flow is the following:
 
 ## Content Edition
 
-All the stores can be edited directly in a web browser. A set of keyboard shortcuts allows to create, modify, save, upload etc. store items. See [Content Edition](EDITION.md "Content Edition") for more information.
+All the stores can be edited directly in a web browser. A set of keyboard shortcuts allows to create, modify, save, upload etc. store items. See [Content Edition](web/EDITION.md "Content Edition") for more information.

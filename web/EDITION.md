@@ -10,6 +10,9 @@ Sharing is done with the `alt-s` command that saves in a file all the browser sa
 Publishing is achieved with `alt-d` that dumps an entire store into a file. The file can then be uploaded to the Web server directly.
 
 ## Shortcuts
+
+The following shorcuts are defined and can be used with the keyboard. They will be added to a Toolbar that can be displayed / hidden in a later version for a better user experience.
+
 * `alt-e` edit the current item (collection or single item).
 * `alt-n` create a new (single) item.
 * `alt-f` create a new collection (f like folder).

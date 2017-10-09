@@ -44,7 +44,7 @@ export default class Store extends Component {
   map() {
     let counter = 0;
     
-    let ret =  this.search.filter( item => item.Icon ? item : null )
+    let ret =  this.search.filter( item => item.Icon )
     .map((item, index2) => {
       
       if (item.Icon) {

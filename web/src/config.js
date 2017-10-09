@@ -3,6 +3,6 @@ export const Config = {
   Source: '/',
   // Source: '/LearningStore/',
   Mapping: ['Audience', 'Description', 'Objectives', 'Duration', 'Prerequisites', 'Testimonials', 'Associates', 'More information'],
-  defaultIcon: 'img/seeMore.png',
+  defaultIcon: 'img/defaultIcon.png',
   trackingID: 'UA-107717760-1' // Google Analytics 
 };

@@ -32,7 +32,7 @@ export default class Edit extends Component {
 
   componentWillMount() {
     const {name, id} = this.props.match.params;
-    Source.fetch(name, Config.Source + name + '.json').then( store => {
+    Source.fetch(name).then( store => {
       this.item = (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       this.setState({isLoading:false, name:name});
     });

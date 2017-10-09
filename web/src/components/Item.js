@@ -21,7 +21,7 @@ export default class Item extends Component{
     document.body.style.overflow = 'hidden';
 
     const { name } = this.props.match.params;
-    this.url = Source.getDef(name).url;
+    this.url = Source.getDef(name).url || '.';
     Source.getSync(name)
     .then( store => this.setState({isLoading:false, store:store}) )
   }

@@ -3,9 +3,7 @@
     "id": "customer",
     "title": "Customer Store",
     "subtitle": "Access the best learning offers for today's products and technologies to help you achieve your business objectives.",
-    "icon": "img/.jpg",
     "url": "http://learningstore.nokia.com/customer",
-    "ga": "UA-80984774-1",
     "carousel": [
         {
             "img": "img/carousel-video-demo.jpg",
@@ -147,9 +145,7 @@
     "id": "partner",
     "title": "Partner Store",
     "subtitle": "Learn how Nokia products and technology can help you grow your sales and fulfill your customers' business needs.",
-    "icon": "img/.jpg",
     "url": "http://learningstore.nokia.com/partner",
-    "ga": "UA-64708571-1",
     "carousel": [
         {
             "img": "img/carousel-refresh.jpg",
@@ -337,9 +333,7 @@
     "id": "employee",
     "title": "Employee Store",
     "subtitle": "Grow your individual talents and expertise in Nokia products, technology and business skills.",
-    "icon": "img/.jpg",
     "url": "http://learningstore.nokia.com/employee",
-    "ga": "UA-63841814-1",
     "carousel": [
         {
             "img": "img/LS_FBA-Banner.jpg",
@@ -402,7 +396,7 @@
             "id": "n.1486545096146"
         },
         {
-            "title": "Professional Development",
+            "title": "Professional Dev.",
             "category": true,
             "content":[
             {

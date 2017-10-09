@@ -3,6 +3,7 @@
   Copyright Nokia 2017. All rights reserved.
 */
 
+import {Config} from '../config.js';
 import editCtl from './editCtl';
 
 class Data {
@@ -22,7 +23,7 @@ class Data {
           item.Url = tmp[0].trim();
           if (tmp[1]) item.btn = tmp[1].split(')')[0];
         }
-        if (item.Solutions) item.Solutions = item.Solutions.filter( id => id ? true : false );
+        if (item.Solutions) item.Solutions = item.Solutions.filter( id => id );
       }
     });
 
@@ -70,13 +71,20 @@ class Store {
   }
 
   getDef(name) { return this.defs[name]; }
-  setDefs(storeJson) { storeJson.forEach( (store) => this.defs[store.id] = store ); }
+  setDefs(storeJson) { storeJson.forEach( store => this.defs[store.id] = store ); }
 
-  fetch(name, url, zip) {
+  fetch(name, zip) {
     return new Promise( (resolve, reject) => {
       if (this.stores[name]) resolve(this.stores[name]);
       else {
+        let url = this.defs[name].url;
+        if (url.indexOf('http://learningstore.nokia.com') === 0) url = `${Config.Source}${name}.json`;
+        else {
+          if (url.charAt(url.length-1) === '/') url = url.slice(0, -1);
+          url = `${Config.Source}${url}/${name}.json`;
+        }
         const req = new XMLHttpRequest();
+        // console.log(url)
         req.open('GET', url, true);
         req.responseType = zip ? 'arraybuffer' : 'text';
         req.onload = (oEvent) => {

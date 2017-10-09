@@ -276,7 +276,7 @@ class Edit {
   showLog() {
     const nw = window.open();
     nw.document.write('<h3>Edit Logs</h3>');
-    logs.forEach( line => nw.document.write(line + '<br />')); 
+    logs.reverse().forEach( line => nw.document.write(line + '<br />')); 
   }
 }
 

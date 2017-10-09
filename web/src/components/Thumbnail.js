@@ -25,6 +25,7 @@ export default class Thumbnail extends Component {
     if (noMargin === "yes"){
       thisClass += " noMarginRight"
     }
+    store.url = store.url || '.';
     
     // console.log(data)
     if(data.Solutions){
