@@ -11,7 +11,7 @@ class Wip {
   constructor(arg) { Object.assign(this, arg); }
 
   save(id) { 
-    console.log('pushing', id, ' to ', this.ID);
+    // console.log('pushing', id, 'to', this.ID);
     if (this.indexOf(id) === -1) this.Solutions.push(id); 
     if (this.unsaved) this.unsaved.remove(this.unsaved.indexOf(id));
   }

@@ -96,7 +96,6 @@ class Store {
         req.responseType = zip ? 'arraybuffer' : 'text';
         req.onload = (oEvent) => {
           if (req.response) {
-            // console.log(name, url, req, req.responseText);
             let responseJson = JSON.parse(zip ? (req.response, {to: 'string'}) : req.responseText);
             resolve(this.set(name, responseJson));
             if (this.synchro) this.synchro(this.get(name));

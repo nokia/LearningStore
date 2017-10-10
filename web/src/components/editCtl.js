@@ -157,13 +157,13 @@ class Edit {
     if (!name) return;
     let store = Source.stores[name];
     if (!store) return;
-    saveAs(new Blob([JSON.stringify(store.data)], {type: 'text/plain;charset=utf-8'}), name +'.json');
+    saveAs(new Blob([JSON.stringify(store.data.filter( item => item.ID != 'wip' && item.ID != 'unsaved'), null, 2)], {type: 'text/plain;charset=utf-8'}), name +'.json');
   }
 
   saveAs() {
     const pos = JSON.parse(localStorage.editPos);
     let storage = JSON.parse(localStorage.edit).slice(0, pos);
-    saveAs(new Blob([JSON.stringify(storage)], 
+    saveAs(new Blob([JSON.stringify(storage, null, 2)], 
       {type: 'text/plain;charset=utf-8'}), 'A-' + localStorage.authorID +'.' + new Date().getTime().toString() + '.json');
   }
 
@@ -259,11 +259,6 @@ class Edit {
   update(item) { 
     let ids = Source.stores[item.sid].ids;
     item.del ? delete ids[item.ID] : ids[item.ID] = item;
-
-    // update data for the search and the export
-    // let tmp = [];
-    // Object.keys(ids).forEach( key => tmp.push(ids[key]));
-    // Source.stores[item.sid].data = tmp;
     Source.stores[item.sid].data = Object.keys(ids).map( key => ids[key]);
   }
 
