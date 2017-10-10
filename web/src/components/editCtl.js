@@ -8,7 +8,7 @@ import {saveAs} from 'file-saver';
 import Source from './data';
 import B from './back';
 import {Config} from '../config.js';
-import wipC from './wip';
+import wipC from './editWip';
 
 const itemParse = /\/item\/|\/edit\//;
 
@@ -135,7 +135,7 @@ class Edit {
             this.log('Applying local update: deleting ' + item.new.ID + ' - ' + item.old.Title);
           else {
             this.log('Applying local update ' + item.new.ID + ' - ' + item.new.Title);
-            wipC.push(item.new.ID);
+            wipC.save(item.new.ID);
           }
           this.update(item.new);
         }        
@@ -261,9 +261,10 @@ class Edit {
     item.del ? delete ids[item.ID] : ids[item.ID] = item;
 
     // update data for the search and the export
-    let tmp = [];
-    Object.keys(ids).forEach( key => tmp.push(ids[key]));
-    Source.stores[item.sid].data = tmp;
+    // let tmp = [];
+    // Object.keys(ids).forEach( key => tmp.push(ids[key]));
+    // Source.stores[item.sid].data = tmp;
+    Source.stores[item.sid].data = Object.keys(ids).map( key => ids[key]);
   }
 
   clipboard() {
@@ -289,8 +290,14 @@ class Edit {
   }
 
   gotoWip() {
+    if (wipC.back) {
+      delete wipC.back;
+      B.history.goBack();
+      return;
+    }
     const name = this._getName();
     if (!name) return;
+    wipC.back = true;
     B.history.push(`/${name}/item/wip`);
   }
 }

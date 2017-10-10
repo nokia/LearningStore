@@ -15,16 +15,23 @@ import Source from './data';
 import B from './back';
 import NotFound from './NotFound';
 import Ctl from './editCtl';
-import wipC from './wip';
+import wipC from './editWip';
 
 import '../css/Edit.css';
 
 const origin = [] // contains original item values 
 
-let unsaved = false; // detect any change in the item
+let ready = false;
+let currentID = '';
 const eventsListener = new FormEventsListener();
-eventsListener.registerEventListener('changeModel', () => unsaved = true );
-window.onbeforeunload = (e) => { if (unsaved) return 'You have unsaved modifications. Do not forget to come back to save them if needed...'; }
+eventsListener.registerEventListener('changeModel', () => {
+  if (!ready) return;
+  wipC.unsave(currentID);
+  setunLoad();
+});
+
+const unload = (e) => { e.returnValue = 'ok'; return 'ok'; }
+const setunLoad = () => window.onbeforeunload = wipC.stay() ? unload : null; 
 
 export default class Edit extends Component {
 
@@ -39,7 +46,11 @@ export default class Edit extends Component {
     B.back = true;
   }
 
-  componentDidMount() { setTimeout( () => unsaved = false, 100  ); } // html can be improved by Quill, but no user changes
+  componentDidMount() { 
+    ready = false;
+    console.log('ready?')
+    setTimeout( () => ready = true, 100  ); // html can be improved by Quill, but no user changes
+  } 
 
 /*
   componentDidMount() {
@@ -59,25 +70,26 @@ export default class Edit extends Component {
     let item = this.item;
     if (!item) return (<NotFound />);
 
-    let newItem; 
     if (item.sid) origin[item.ID] = origin[item.ID] || JSON.stringify(item);
     else {
-      newItem = true;
+      console.log('creating new item', item.ID);
       item.sid = this.state.name;
       item.ID = 'n.' + new Date().getTime();
       item.del = true;
       origin[item.ID] = JSON.stringify(item);
       delete item.del;
       item.Icon = Config.defaultIcon;
-      wipC.push(item.ID);
-      console.log('creating new item', item.ID);
+      Ctl.update(item); // so that it can be searched and stored in the unsaved collection
+      wipC.unsave(item.ID); // new item
+      setunLoad();
     }
+    currentID = item.ID;
     
     const submitMethod = (model) => {
       Ctl._push(origin[item.ID], model);
       delete origin[item.ID];
-      if (newItem) Ctl.update(model);
-      wipC.push(model.ID);
+      wipC.save(model.ID);
+      setunLoad();
       if (B.back) this.props.history.goBack();
     };
 
