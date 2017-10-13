@@ -10,18 +10,23 @@ class Data {
   data = [];
   ids = [];
   create(name, data) {
-    data.forEach( (item) => {
+    data.forEach( item => {
       if (item.ID) {
         this.ids[item.ID] = item;
         this.data.push(item);
-        //item.type = item.type || 2;
+        // item.type = item.type || 2;
+        delete item.type; // not needed anymore
+        // if (!item.Icon) item.Icon = Config.defaultIcon;
         if (!item.sid) item.sid = name;
-        if (item.Url && item.Url.all) {
-          item.Url = item.Url.all; // for compatibility purpose
-          let tmp = item.Url.split('(');
+        if (typeof item.Url === 'object')
+          if (item.Url.all) item.Url = item.Url.all; // old schema
+          else delete item.Url; 
+        if (item.Url) {
+          const tmp = item.Url.split('(');
           item.Url = tmp[0].trim();
           if (tmp[1]) item.btn = tmp[1].split(')')[0];
         }
+        if (item.Solutions) item.Solutions = item.Solutions.filter( id => id );
       }
     });
   }
