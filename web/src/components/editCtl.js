@@ -157,7 +157,7 @@ class Edit {
     if (!name) return;
     let store = Source.stores[name];
     if (!store) return;
-    saveAs(new Blob([JSON.stringify(store.data.filter( item => item.ID != 'wip' && item.ID != 'unsaved'), null, 2)], {type: 'text/plain;charset=utf-8'}), name +'.json');
+    saveAs(new Blob([JSON.stringify(store.data.filter( item => item.ID !== 'wip' && item.ID !== 'unsaved'), null, 2)], {type: 'text/plain;charset=utf-8'}), name +'.json');
   }
 
   saveAs() {

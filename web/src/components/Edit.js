@@ -86,6 +86,7 @@ export default class Edit extends Component {
     currentID = item.ID;
     
     const submitMethod = (model) => {
+      model.date = new Date().getTime();
       Ctl._push(origin[item.ID], model);
       delete origin[item.ID];
       wipC.save(model.ID);
