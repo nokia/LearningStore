@@ -30,7 +30,7 @@ export default class reactStore extends React.Component {
     return (
       <Root>
         <Routes />
-    </Root>    
+      </Root>    
     )
   }
 }
