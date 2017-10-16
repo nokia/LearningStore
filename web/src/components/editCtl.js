@@ -312,9 +312,12 @@ class Edit {
     const pos = JSON.parse(localStorage.editPos);
     let storage = JSON.parse(localStorage.edit).slice(0, pos);
     storage.forEach( item => {
-      console.log('key', 'store/' + item.new.sid + '/' + item.new.ID)
-      gun.get('store/updates').set(gun.get('store/' + item.new.sid + '/' + item.new.ID)
-      .put( {authorID:localStorage.authorID, new:JSON.stringify(item.new)} ));
+      const k = 'store/' + item.new.sid + '/' + localStorage.authorID + '/' + item.new.ID;
+      console.log('key', k)
+      gun.get('store/updates').set(
+        gun.get(k).put({ v:JSON.stringify(item.new) })
+      );
+      logs.push('uploading key ' + k);
     });
   }
 }
