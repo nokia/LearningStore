@@ -48,10 +48,8 @@ export default class Edit extends Component {
 
   componentDidMount() { 
     ready = false;
-    console.log('ready?')
     setTimeout( () => ready = true, 100  ); // html can be improved by Quill, but no user changes
   } 
-
 /*
   componentDidMount() {
     setTimeout(() => {

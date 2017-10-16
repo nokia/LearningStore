@@ -4,6 +4,7 @@
  */
 
 import {saveAs} from 'file-saver';
+import Gun from 'gun';
 
 import Source from './data';
 import B from './back';
@@ -17,6 +18,8 @@ localStorage.editPos = localStorage.editPos || '0';
 localStorage.authorID = localStorage.authorID || new Date().getTime().toString();
 
 const logs = [];
+
+let gun;
 
 document.addEventListener("keydown", event => {
   if (event.altKey) {
@@ -52,6 +55,9 @@ document.addEventListener("keydown", event => {
         break;
         case 83: // alt-s
         edit.saveAs();
+        break;
+      case 85: // alt-u
+        edit.upload();
         break;
       case 87: // alt-w
         edit.gotoWip();
@@ -131,13 +137,16 @@ class Edit {
       for (let i = 0; i < pos; i++) {
         const item = storage[i];
         if (item.new.sid === name) {
-          if (item.new.del)
-            this.log('Applying local update: deleting ' + item.new.ID + ' - ' + item.old.Title);
-          else {
-            this.log('Applying local update ' + item.new.ID + ' - ' + item.new.Title);
-            wipC.save(item.new.ID);
+          const local = JSON.stringify(Source.get(name).getByID(item.new.ID));
+          if (local === JSON.stringify(item.old)) {
+            if (item.new.del)
+              this.log('Applying local update: deleting ' + item.new.ID + ' - ' + item.old.Title);
+            else {
+              this.log('Applying local update ' + item.new.ID + ' - ' + item.new.Title);
+              wipC.save(item.new.ID);
+            }
+            this.update(item.new);
           }
-          this.update(item.new);
         }        
       }
     }
@@ -157,7 +166,8 @@ class Edit {
     if (!name) return;
     let store = Source.stores[name];
     if (!store) return;
-    saveAs(new Blob([JSON.stringify(store.data.filter( item => item.ID !== 'wip' && item.ID !== 'unsaved'), null, 2)], {type: 'text/plain;charset=utf-8'}), name +'.json');
+    saveAs(new Blob([JSON.stringify(Object.keys(store.ids).map( key => store.ids[key] )
+    .filter( item => item.ID !== 'wip' && item.ID !== 'unsaved'), null, 2)], {type: 'text/plain;charset=utf-8'}), name +'.json');
   }
 
   saveAs() {
@@ -180,7 +190,7 @@ class Edit {
     let name = url[0].split('/');
     name = name[name.length-1];
 
-    let item = Source.get(name).getByID(id);
+    const item = Source.get(name).getByID(id);
     if (item.sid !== name) return;
     return { name:name, id:id, item:item }    
   }
@@ -259,7 +269,7 @@ class Edit {
   update(item) { 
     let ids = Source.stores[item.sid].ids;
     item.del ? delete ids[item.ID] : ids[item.ID] = item;
-    Source.stores[item.sid].data = Object.keys(ids).map( key => ids[key]);
+    // Source.stores[item.sid].data = Object.keys(ids).map( key => ids[key]);
   }
 
   clipboard() {
@@ -294,6 +304,18 @@ class Edit {
     if (!name) return;
     wipC.back = true;
     B.history.push(`/${name}/item/wip`);
+  }
+
+  upload() {
+    if (!gun) if (Config.gun) gun = new Gun(Config.gun); else return;
+    
+    const pos = JSON.parse(localStorage.editPos);
+    let storage = JSON.parse(localStorage.edit).slice(0, pos);
+    storage.forEach( item => {
+      console.log('key', 'store/' + item.new.sid + '/' + item.new.ID)
+      gun.get('store/updates').set(gun.get('store/' + item.new.sid + '/' + item.new.ID)
+      .put( {authorID:localStorage.authorID, new:JSON.stringify(item.new)} ));
+    });
   }
 }
 
