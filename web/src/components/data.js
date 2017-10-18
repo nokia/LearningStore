@@ -22,7 +22,7 @@ class Data {
         delete item.type; // not needed anymore
         // if (!item.Icon) item.Icon = Config.defaultIcon;
         if (!item.sid) item.sid = name;
-        if (item.Url)
+        if (typeof item.Url === 'object')
           if (item.Url.all) item.Url = item.Url.all; // old schema
           else delete item.Url; 
         if (item.Url) {
@@ -30,6 +30,7 @@ class Data {
           item.Url = tmp[0].trim();
           if (tmp[1]) item.btn = tmp[1].split(')')[0];
         }
+        // item.date = item.date || -1;
         if (item.Solutions) item.Solutions = item.Solutions.filter( id => id );
       }
     });

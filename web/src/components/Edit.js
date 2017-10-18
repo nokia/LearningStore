@@ -84,11 +84,13 @@ export default class Edit extends Component {
     currentID = item.ID;
     
     const submitMethod = (model) => {
-      model.date = new Date().getTime();
-      Ctl._push(origin[item.ID], model);
+      item.date = new Date().getTime();
+      Ctl._push(origin[item.ID], item);
       delete origin[item.ID];
-      wipC.save(model.ID);
+      wipC.save(item.ID);
+      // console.log(model, item)
       setunLoad();
+
       if (B.back) this.props.history.goBack();
     };
 

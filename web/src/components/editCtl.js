@@ -16,10 +16,15 @@ const itemParse = /\/item\/|\/edit\//;
 localStorage.edit = localStorage.edit || '[]';
 localStorage.editPos = localStorage.editPos || '0';
 localStorage.authorID = localStorage.authorID || new Date().getTime().toString();
+const localify = (data, pos) => {
+  localStorage.edit = JSON.stringify(data);
+  localStorage.editPos = JSON.stringify(pos || data.length);
+}
 
 const logs = [];
 
-let gun;
+const gun = Config.gun ? new Gun(Config.gun) : null;
+// window.gun = gun // for debugging gun
 
 document.addEventListener("keydown", event => {
   if (event.altKey) {
@@ -48,7 +53,7 @@ document.addEventListener("keydown", event => {
         edit.create('item');
         break;
       case 79: // alt-o
-        file.click();
+        edit.open();
         break;
       case 82: // alt-r
         edit.reset();
@@ -91,21 +96,47 @@ const readFile = () => {
     reader.fileName = file.files[reader.index].name;
     reader.readAsText(file.files[reader.index]);
   }
-  else if (reader.conflicts) window.alert('Conflicts detected. Please check the logs');
-  else {
-    window.alert('The application is about to reload.\nCurrent logs:\n' + 
-      JSON.stringify(logs).replace(/","/g, '"\n"').replace(/\[|\]|"|\\/g, ''));
-    window.location.reload(); // since the imported file can contain data for several stores
-  }
+  // else if (reader.conflicts) window.alert('Conflicts detected. Please check the logs');
+  // else {
+  //   window.alert('The application is about to reload.\nCurrent logs:\n' + 
+  //     JSON.stringify(logs).replace(/","/g, '"\n"').replace(/\[|\]|"|\\/g, ''));
+  //   window.location.reload(); // since the imported file can contain data for several stores
+  // }
 }
 const reader = new FileReader();
 reader.onload = (file) => {
   console.log(reader.fileName);
   edit.log('Importing file ' + reader.fileName);
-  const pos = JSON.parse(localStorage.editPos);  
+  let pos = JSON.parse(localStorage.editPos);  
   const storage = JSON.parse(localStorage.edit).slice(0, pos);
   try {
     const addon = JSON.parse(reader.result);
+    const name = edit._getName();
+    addon.forEach( pair => {
+      if (pair.old.sid === name) {
+        const local = Source.get(name).getByID(pair.old.ID);
+        if (compare(local, pair.old)) {
+          storage.push(pair);
+          pos++;
+          if (pair.new.del)
+            edit.log('Import - deleting ' + local.ID + ' - ' + local.Title);
+          else {
+            edit.log('Import - updating ' + local.ID + ' - ' + local.Title);
+            wipC.save(local.ID);
+          }
+          edit.update(pair.new);
+        }
+        else if (compare(local, pair.new)) {        
+          edit.log('Import - skipping ' + local.ID + ' - ' + local.Title);
+        }
+        else {
+          edit.log('Import - refusing ' + pair.new.ID + ' - ' + pair.new.Title);        
+        }  
+      }
+    });
+    localify(storage, pos);
+
+/*
     const newIDs = addon.map( pair => pair.new.ID );
     const conflicts = storage.filter( pair => newIDs.indexOf(pair.new.ID) > -1 ).map( pair => pair.new.ID );
     const passed = addon.filter( pair => conflicts.indexOf(pair.new.ID) === -1 );
@@ -120,6 +151,7 @@ reader.onload = (file) => {
       localStorage.editPos = JSON.stringify(pos + passed.length);
       edit.log('Item(s) successfully imported: ' + JSON.stringify(passed.map( pair => pair.new.ID )));  
     }
+*/    
   }
   catch(e) {
     edit.log('File import failed', e);
@@ -127,18 +159,39 @@ reader.onload = (file) => {
   readFile(); // read next file
 }
 
+const compare = (obj1, obj2) => {
+  // console.log('?', obj1, obj2)
+	for (var p in obj1) {
+    // console.log(p)
+		if (obj1.hasOwnProperty(p) !== obj2.hasOwnProperty(p)) return false; //Check property exists on both objects
+		if (typeof obj1[p] === 'object') { //Deep compare objects
+      if (!compare(obj1[p], obj2[p])) return false;
+    }
+    else if (obj1[p] !== obj2[p]) return false; //Compare values
+  }
+  // console.log('pass 1');
+  for (p in obj2) { //Check object 2 for any extra properties
+    // console.log(p);
+    if (typeof obj1[p] === 'undefined') return false;
+  }
+  // console.log('pass 2');
+  return true;  
+}
+
 class Edit {
 
   load(name) {
     try {
+      const newStorage = [];
       const storage = JSON.parse(localStorage.edit);
       const pos = JSON.parse(localStorage.editPos);
       this.log('Found ' + pos + ' local update(s)');
       for (let i = 0; i < pos; i++) {
         const item = storage[i];
         if (item.new.sid === name) {
-          const local = JSON.stringify(Source.get(name).getByID(item.new.ID));
-          if (local === JSON.stringify(item.old)) {
+          const local = Source.get(name).getByID(item.new.ID);
+          // if (local === JSON.stringify(item.old)) {
+          if (compare(local, item.old)) {
             if (item.new.del)
               this.log('Applying local update: deleting ' + item.new.ID + ' - ' + item.old.Title);
             else {
@@ -146,14 +199,28 @@ class Edit {
               wipC.save(item.new.ID);
             }
             this.update(item.new);
+            newStorage.push(item); // keep this 
+          } 
+          else if (compare(local, item.new)) { // store has been updated accordingly
+            this.log('Store updated: discarding local update ' + item.new.ID + ' - ' + item.old.Title);
+          }
+          else {
+            this.log('Rejecting conflicting item ' + item.new.ID + ' - ' + item.new.Title);
+            newStorage.push(item); // keep this 
           }
         }        
+      }
+      if (newStorage.length < pos) {
+        this.log('Updating pending modifications');
+        localify(newStorage);
       }
     }
     catch(err) {
       this.log('error while loading localStorage.edit', err);
     }
   }
+
+  open() { if (this._getName()) file.click(); }
 
   _getName() {
     let name = window.location.pathname.split(Config.Source)[1];
@@ -166,15 +233,20 @@ class Edit {
     if (!name) return;
     let store = Source.stores[name];
     if (!store) return;
+    const fileName = name +'.json';
+    console.log(store.getByID('n.1489224120111'))
     saveAs(new Blob([JSON.stringify(Object.keys(store.ids).map( key => store.ids[key] )
-    .filter( item => item.ID !== 'wip' && item.ID !== 'unsaved'), null, 2)], {type: 'text/plain;charset=utf-8'}), name +'.json');
+    .filter( item => item.ID !== 'wip' && item.ID !== 'unsaved'), null, 2)], {type: 'text/plain;charset=utf-8'}), fileName);
+    this.log('Saving current store in file ' + fileName);
   }
 
   saveAs() {
     const pos = JSON.parse(localStorage.editPos);
     let storage = JSON.parse(localStorage.edit).slice(0, pos);
+    const fileName = 'A-' + localStorage.authorID +'.' + new Date().getTime().toString() + '.json';
     saveAs(new Blob([JSON.stringify(storage, null, 2)], 
-      {type: 'text/plain;charset=utf-8'}), 'A-' + localStorage.authorID +'.' + new Date().getTime().toString() + '.json');
+      {type: 'text/plain;charset=utf-8'}), fileName);
+    this.log('Saving current modifications in file ' + fileName);
   }
 
   create(type) {
@@ -218,13 +290,12 @@ class Edit {
   
   _push(old, cur) { // old is the item old value stringified
     let pos = JSON.parse(localStorage.editPos);
-    let storage = JSON.parse(localStorage.edit);
-    storage.slice(0, pos-1); // trim storage to keep up with redo
+    let storage = JSON.parse(localStorage.edit).slice(0, pos); // trim storage to keep up with redo
 
-    old = JSON.parse(old);
-    storage.push({ old:old, new:cur });
-    localStorage.editPos = JSON.stringify(++pos);
-    localStorage.edit = JSON.stringify(storage);
+    storage.push({ old:JSON.parse(old), new:cur });
+    // localStorage.editPos = JSON.stringify(++pos);
+    // localStorage.edit = JSON.stringify(storage);
+    localify(storage);
 
     if (old.del)
       this.log('Creating item '+ cur.ID + ' - ' + cur.Title);
@@ -307,15 +378,13 @@ class Edit {
   }
 
   upload() {
-    if (!gun) if (Config.gun) gun = new Gun(Config.gun); else return;
-    
     const pos = JSON.parse(localStorage.editPos);
     let storage = JSON.parse(localStorage.edit).slice(0, pos);
     storage.forEach( item => {
       const k = 'store/' + item.new.sid + '/' + localStorage.authorID + '/' + item.new.ID;
       console.log('key', k)
       gun.get('store/updates').set(
-        gun.get(k).put({ v:JSON.stringify(item.new) })
+        gun.get(k).put({ v:JSON.stringify(item) })
       );
       logs.push('uploading key ' + k);
     });
