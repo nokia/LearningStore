@@ -2,7 +2,6 @@
   {
     "ID": "o.1",
     "Title": "Collections",
-    "type": 1,
     "Description": "This shows the collections included in the store but not displayed in the sidebar",
     "Solutions": [
       "o.1",
@@ -60,15 +59,17 @@
       "n.1497979857071",
       "n.1497979874103",
       "n.1502212754172",
-      "n.1503583562191"
+      "n.1503583562191",
+      "n.1508184082051"
     ]
   },
   {
     "ID": "c.17",
     "Title": "What's New",
-    "type": 1,
     "Description": "This collection shows the latest learning solutions added to the store.",
     "Solutions": [
+      "n.1508184106759",
+      "n.1508184082051",
       "n.1507228752035",
       "n.1503583562191",
       "n.1503349363005",
@@ -78,15 +79,12 @@
       "n.1501098125361",
       "n.1497979874103",
       "n.1497979857071",
-      "n.1497979840616",
-      "n.1497979815369",
-      "n.1497544646399"
+      "n.1497979840616"
     ]
   },
   {
     "ID": "n.1489518469765",
     "Title": "IP Networks",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490011719636",
@@ -108,7 +106,6 @@
   {
     "ID": "n.1489518500406",
     "Title": "Optical Networks",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490084730629",
@@ -125,7 +122,6 @@
   {
     "ID": "n.1489518509000",
     "Title": "Microwave",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490086350227",
@@ -141,7 +137,6 @@
   {
     "ID": "n.1489518518031",
     "Title": "Fixed Networks",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490205073656",
@@ -159,7 +154,6 @@
   {
     "ID": "n.1489518527001",
     "Title": "Passive Optical LAN",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490122282185",
@@ -178,7 +172,6 @@
   {
     "ID": "n.1489518536125",
     "Title": "Software Solutions",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1491044154934",
@@ -197,14 +190,12 @@
   {
     "ID": "n.1489518544532",
     "Title": "Install  and Admin",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": []
   },
   {
     "ID": "n.1489534428476",
-    "Title": "Sales Associate ",
-    "type": 1,
+    "Title": "Sales Associate",
     "Icon": "img/seeMore.png",
     "Description": "<p>Responsible for identifying, developing and closing new business opportunities with Nokia Products, Solutions, and Services.  Engages with customer on the Nokia story; positions the Nokia solution; and proactively manages the relationship on behalf the Partner Company and Nokia.</p>",
     "Solutions": [
@@ -221,8 +212,7 @@
   },
   {
     "ID": "n.1489534441122",
-    "Title": "Sales Engineer Specialist  ",
-    "type": 1,
+    "Title": "Sales Engineer Specialist",
     "Icon": "img/seeMore.png",
     "Description": "<p>Supports the sales engagement technically; positions Nokia products and solutions to the customer; provides technical information on Nokia products and solutions to the customer; obtains customer requirements and translates into a customer specific solution design and/or Nokia  offer; provides supports demos; participates in creation and presentation of offer based on customer requirements; provides recommendation of training and technical support to ensure best customer experience;  utilizes tools and resources to support the engagement and order placement; and, submits orders to Nokia.</p>",
     "Solutions": [
@@ -240,8 +230,7 @@
   },
   {
     "ID": "n.1489534451893",
-    "Title": "Sales Engineer Professional         ",
-    "type": 1,
+    "Title": "Sales Engineer Professional",
     "Icon": "img/seeMore.png",
     "Description": "<p>Building on SE Specialist skills,&nbsp;this person&nbsp;additionally provides technical “vision” which can include intense white boarding sessions with the customer’s technical decision makers; provides expertise in analyzing client requirements, in conjunction with the client’s current network and system capabilities, and ensures technical solutions will accomplish the client's objectives; manage client proof of concept (POC) initiatives, which can require involvement of additional resources, and setup and delivery of the POC; acts as a bridge between the client, delivery resources and project management;  owns the proposed solution, transitions the build / implementation to the delivery team;  remains engaged with the client and returns as a “thought leader” for the next opportunity.</p>",
     "Solutions": [
@@ -254,8 +243,7 @@
   },
   {
     "ID": "n.1489534477892",
-    "Title": "Field Technician                ",
-    "type": 1,
+    "Title": "Field Technician",
     "Icon": "img/seeMore.png",
     "Description": "<p>Installation/commissioning of new products; field maintenance including hardware replacements under the direction of Tech Support L1/L2; Nokia; or a 3rd party.</p>",
     "Solutions": [
@@ -271,7 +259,6 @@
   {
     "ID": "n.1489534488438",
     "Title": "Network Integration Engineer",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Description": "<p>Implement the design in the customer’s network;&nbsp; perform  necessary configurations; establish network connectivity between the network elements; develop and conduct testing plans and procedures based upon system design requirements.&nbsp; Plan, execute, and manage migration or replacement activities including decommissioning obsolete equipment.&nbsp;</p>",
     "Solutions": [
@@ -287,7 +274,6 @@
   {
     "ID": "n.1489534501215",
     "Title": "Level 1 Technical Support",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Description": "<p>Resolves service tickets on settings, alarms, and configuration issues</p>",
     "Solutions": [
@@ -303,7 +289,6 @@
   {
     "ID": "n.1489534509569",
     "Title": "Level 2 Technical Support",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Description": "<p>Builds on Level 1.  Level 2 resolves more complex service tickets including troubleshooting.</p>",
     "Solutions": [
@@ -317,7 +302,6 @@
   {
     "ID": "n.1489534548860",
     "Title": "Government",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490128125655"
@@ -326,7 +310,6 @@
   {
     "ID": "n.1489534553257",
     "Title": "Oil and Gas",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490128491444"
@@ -335,7 +318,6 @@
   {
     "ID": "n.1489534566918",
     "Title": "Transportation",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490128747269",
@@ -346,7 +328,6 @@
   {
     "ID": "n.1489534574537",
     "Title": "Utilities",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490129167590",
@@ -358,7 +339,6 @@
   {
     "ID": "n.1489534588953",
     "Title": "Datacenter Interconnect",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490127783944",
@@ -369,7 +349,6 @@
   {
     "ID": "n.1489534598175",
     "Title": "SCADA",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490129789535"
@@ -377,8 +356,7 @@
   },
   {
     "ID": "n.1489534607720",
-    "Title": "Layer 1 Security      ",
-    "type": 1,
+    "Title": "Layer 1 Security",
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1490128325435",
@@ -388,7 +366,6 @@
   {
     "ID": "n.1489671654710",
     "Title": "My Collection",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Description": "<p>Description of my collection</p>",
     "Solutions": [
@@ -398,11 +375,8 @@
   {
     "ID": "n.1490011719636",
     "Title": "IP Sales Associate",
-    "type": 2,
     "Icon": "img/i.1490023040643.6695.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=6fec237e-4d9d-4294-afaf-b696bf685833"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=6fec237e-4d9d-4294-afaf-b696bf685833",
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "The courses included in this&nbsp;curriculum focus on Nokia's relationship with their Partners, Key to Selling Nokia products, and the IP&nbsp;product portfolio.",
     "Duration": "4.25 H",
@@ -411,11 +385,8 @@
   {
     "ID": "n.1490012133643",
     "Title": "IP Sales Engineer Specialist",
-    "type": 2,
     "Icon": "img/i.1490023265893.9432.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=eaaa6546-4ecf-4714-a084-3f6917337605"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=eaaa6546-4ecf-4714-a084-3f6917337605",
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "The courses included in this&nbsp;curriculum focus on Nokia's Industry Segments, general technology overviews, the IP Routing Product Overviews and the NRS I&nbsp;certification.",
     "Duration": "30.25 H",
@@ -424,11 +395,8 @@
   {
     "ID": "n.1490012871084",
     "Title": "IP Sales Engineer Specialist (including 5620 SAM)",
-    "type": 2,
     "Icon": "img/i.1490023265893.9432.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b0467293-17dd-4719-a164-df82a8786631"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b0467293-17dd-4719-a164-df82a8786631",
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "The courses included in this&nbsp;curriculum focus on Nokia's Industry Segments, general technology overviews, the IP&nbsp;Product Overviews, NRS I certification&nbsp;and Service Aware Manager (SAM).",
     "Duration": "120 H",
@@ -437,12 +405,8 @@
   {
     "ID": "n.1490013551489",
     "Title": "IP Sales Engineer Professional",
-    "type": 2,
     "Icon": "img/i.1490022642371.5189.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=0c591c52-2295-42b6-bc61-f5946d7e170e"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=0c591c52-2295-42b6-bc61-f5946d7e170e",
     "Description": "The courses included in this&nbsp;curriculum focus on IP concepts and Nokia portfolio information. Nokia IP product overview courses, SR-OS and NRS I, NRS II, and IP Routing Product features information.",
     "Duration": "115 H",
     "More information": "<p>This curriculum consists of the following courses: </p><p>•&nbsp;TBU31177W   Partner Learning Series – Nokia in Industry Segments</p><p>• TBU00249W Selling Maintenance to your Customer</p><p>• TER00012W Nokia Routing Product Overview</p><p>• TER36095W  7750 SR 7450 ESS Product Overview </p><p>• TER36084W 7705 SAR Product Overview </p><p>• TER36058W 7210 SAS Product Overview </p><p>• TER36082W 7950 XRS Product Overview </p><p>• 3FL30632AAAAZZZZA Nokia Scalable IP Networks (NRS I Certification)</p><p><p>• TER00035M Nokia Network Routing Specialist I Exam (NRS I Certification)</p><p>• 3FL30633AAAAZZZZA Nokia Interior Routing Protocols (NRS II Certification)</p><p>• TER00038M Nokia Interior Routing Protocols Exam&nbsp;(NRS II Certification)</p><p>• 3FL30635AAAAZZZZA Nokia Multiprotocol Label Switching (NRS II Certification)</p><p>• TER00039M Nokia Multiprotocol Label Switching Exam (NRS II Certification)</p><p>• 3FL30636AAAAZZZZA Nokia Services Architecture (NRS II Certification)</p><p>• TER00040M Nokia Services Architecture Exam (NRS II Certification)</p><p>• TER00037M Nokia Network Routing Specialist II Exam (NRS II Certification)</p>"
@@ -450,12 +414,8 @@
   {
     "ID": "n.1490014651428",
     "Title": "IP Sales Engineer Professional (including 5620 SAM)",
-    "type": 2,
     "Icon": "img/i.1490017327776.4843.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ff2a8aa1-0222-4497-a5cb-0eefc10dcebe"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ff2a8aa1-0222-4497-a5cb-0eefc10dcebe",
     "Description": "The courses included in this&nbsp;curriculum focus on IP concepts and Nokia portfolio information, Nokia IP product overview courses, 5620 SAM,&nbsp;SR-OS, NRS I, NRS&nbsp;II, and IP Routing Product features information.",
     "Duration": "121.5 Hours",
     "More information": "<p>This curriculum consists of the following courses: </p><p>• TBU31177W Partner Learning Series – Nokia in Industry Segments</p><p>• TBU00249W Selling Maintenance to your Customer</p><p>• TER00012W Nokia Routing Product Overview</p><p>• TER36095W 7750 SR 7450 ESS Product Overview </p><p>• TER36084W 7705 SAR Product Overview </p><p>• TER36058W 7210 SAS Product Overview </p><p>• TER36082W 7950 XRS Product Overview </p><p>• TOS36033W 5620 SAM (Service Aware Manager) R13.0 Fundamentals </p><p><p>• 3FL30632AAAAZZZZA Nokia Scalable IP Networks (NRS I Certification)</p><p>• TER00035M Nokia Network Routing Specialist I Exam (NRS I Certification)</p><p>• 3FL30633AAAAZZZZA Nokia Interior Routing Protocols (NRS II Certification)</p><p>• TER00038M Nokia Interior Routing Protocols Exam&nbsp;(NRS II Certification)</p><p>• 3FL30635AAAAZZZZA Nokia Multiprotocol Label Switching (NRS II Certification)</p><p>• TER00039M Nokia Multiprotocol Label Switching Exam (NRS II Certification)</p><p>• 3FL30636AAAAZZZZA Nokia Services Architecture (NRS II Certification)</p><p>• TER00040M Nokia Services Architecture Exam (NRS II Certification)</p><p>• TER00037M Nokia Network Routing Specialist II Exam (NRS II Certification)</p>"
@@ -463,12 +423,8 @@
   {
     "ID": "n.1490016052236",
     "Title": "IP Field Technician",
-    "type": 2,
     "Icon": "img/i.1490016052236.8954.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a5a2827a-0e24-456e-a53c-a93a9ec3e9b1"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a5a2827a-0e24-456e-a53c-a93a9ec3e9b1",
     "Description": "The courses included in this&nbsp;curriculum focus on Nokia Product Overviews, and the Installation and Commissioning of Nokia Products.",
     "Duration": "7.75 H",
     "More information": "<p>This curriculum consists of the following courses: </p><p><p>• LMQ114W ESD and Calibration </p><p>• OAP00050W Inspect-Clean-Inspect-Connect (ICIC) Process </p><p>• TER36095W&nbsp;7750 SR 7450 ESS Product Overview</p><p>• PLE07169M7750 SR/7450 ESS Installation &amp; Commissioning Site Preparation  &nbsp;</p><p>• TER18009 7750 SR / 7450 ESS Installation &amp; Commissioning </p><p>• TER36084W 7705 SAR Product Overview </p><p>• PLE07187M 7705 SAR Installation &amp; Commissioning - Site Preparation </p><p>• TER180107705 SAR Installation &amp; Commissioning</p><p>• TER36058W 7210 SAS Product Overview </p><p>• PLE07188M 7210 SAS Installation &amp; Commissioning - Site Preparation </p><p>• TER18011 7210 SAS Installation &amp; Commissioning </p><p>• TER36082W 7950 XRS Product Overview </p><p><p>• PLE07168M 7950 XRS Installation &amp; Commissioning - Site Preparatio</p><p>• TER18008 7950 SXRS / 7750 SR-12E Installation &amp; Commissioning</p>"
@@ -476,11 +432,8 @@
   {
     "ID": "n.1490016956274",
     "Title": "IP Network Integration&nbsp;Engineer",
-    "type": 2,
     "Icon": "img/i.1490016956274.1239.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=2100d754-9247-4647-99bd-fbc37fbbf16f"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=2100d754-9247-4647-99bd-fbc37fbbf16f",
     "Description": "The courses included in this&nbsp;curriculum focus on Nokia's Product Overviews, IP general technology and concepts, SR-OS, NRS I, NRS II, and SR-OS product configuration courses.",
     "Duration": "125 H",
     "More information": "<p>This curriculum consists of the following courses: </p><p>• TER36095W 7750 SR 7450 ESS Product Overview </p><p>• TER36084W 7705 SAR Product Overview </p><p>• TER36058W 7210 SAS Product Overview </p><p>• TER36082W 7950 XRS Product Overview </p><p>• 3FL30632AAAAZZZZA Nokia Scalable IP Networks (NRS I Certification)</p><p>• TER00035M Nokia Network Routing Specialist I Exam (NRS I Certification)</p><p>• 3FL30633AAAAZZZZA Nokia Interior Routing Protocols (NRS II Certification)</p><p>• TER00038M Nokia Interior Routing Protocols Exam (NRS II Certification)</p><p>• 3FL30635AAAAZZZZA Nokia Multiprotocol Label Switching (NRS II Certification)</p><p>• TER00039M Nokia Multiprotocol Label Switching Exam (NRS II Certification)</p><p>• 3FL30636AAAAZZZZA Nokia Services Architecture (NRS II Certification)</p><p>• TER00040M Nokia Services Architecture Exam (NRS II Certification)</p><p>• TER00037M Nokia Network Routing Specialist II Exam (NRS II Certification)</p><p>• TER36090, TER36091 Nokia NRS II Lab Workshop (NRS II Certification)</p>"
@@ -488,11 +441,8 @@
   {
     "ID": "n.1490017327776",
     "Title": "IP Network Integration Engineer (including 5620 SAM)",
-    "type": 2,
     "Icon": "img/i.1490017327776.4843.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=f34a8e60-c5af-4884-8e6a-67f5a57ebc0f"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=f34a8e60-c5af-4884-8e6a-67f5a57ebc0f",
     "Description": "The courses included in this curriculum focus on Nokia's Product Overviews, IP general technology and concepts, SR-OS, NRS I, NRS II, 5620 SAM&nbsp;and SR-OS product configuration courses..",
     "Duration": "143 H",
     "More information": "<p>This curriculum consists of the following courses: </p><p><p>• TER36095W 7750 SR 7450 ESS Product Overview </p><p>• TER36084W 7705 SAR Product Overview </p><p>• TER36058W 7210 SAS Product Overview </p><p>• TER36082W 7950 XRS Product Overview </p><p>• TOS36033W 5620 SAM (Service Aware Manager) R13.0 Fundamentals </p><p>• 3FL30632AAAAZZZZA Nokia Scalable IP Networks (NRS I Certification)</p><p>• TER00035M Nokia Network Routing Specialist I Exam (NRS I Certification)</p><p>• 3FL30633AAAAZZZZA Nokia Interior Routing Protocols (NRS II Certification)</p><p>• TER00038M Nokia Interior Routing Protocols Exam (NRS II Certification)</p><p>• 3FL30635AAAAZZZZA Nokia Multiprotocol Label Switching (NRS II Certification)</p><p>• TER00039M Nokia Multiprotocol Label Switching Exam (NRS II Certification)</p><p>• 3FL30636AAAAZZZZA Nokia Services Architecture (NRS II Certification)</p><p>• TER00040M Nokia Services Architecture Exam (NRS II Certification)</p><p>• TER00037M Nokia Network Routing Specialist II Exam (NRS II Certification)</p><p>• TER36090, TER36091 Nokia NRS II Lab Workshop</p>"
@@ -500,11 +450,8 @@
   {
     "ID": "n.1490022642371",
     "Title": "IP Technical Support Level 1",
-    "type": 2,
     "Icon": "img/i.1490022642371.5189.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=858085a7-483b-4a98-a9e5-5f342858414e"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=858085a7-483b-4a98-a9e5-5f342858414e",
     "Description": "The courses included in this curriculum focus on Nokia's IP&nbsp;product overviews, understanding the SR-OS, and an understanding level 1 maintenance for SR-OS products",
     "Duration": "69.75 H",
     "More information": "<p>This curriculum consists of the following courses: </p><p>• LMQ114W ESD and Calibration Certification</p><p>• OAP00050W Video: Inspect-Clean-Inspect-Connect (ICIC) Process</p><p>• TER36066W SR-OS Fundamentals </p><p>• TER36095W  7750 SR 7450 ESS Product Overview </p><p>• TER36084W 7705 SAR Product Overview </p><p>• TER36058W 7210 SAS Product Overview </p><p>• TER36082W 7950 XRS Product Overview </p><p>• TER36203 Service Router Product Technology and Features Description</p><p>• TER36204 Service Router Product Configuration and Operation</p><p>• TER36092 Level 1 Maintenance for SR-OS Products</p><p>&nbsp;</p>"
@@ -512,11 +459,8 @@
   {
     "ID": "n.1490023040643",
     "Title": "IP Technical Support Level 1 (including 5620 SAM)",
-    "type": 2,
     "Icon": "img/i.1490023040643.6695.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=6f902535-7f00-44d1-b0fd-88e1d5319b1a"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=6f902535-7f00-44d1-b0fd-88e1d5319b1a",
     "Description": "The courses included in this curriculum focus on Nokia's IP product overviews, understanding the SR-OS,&nbsp;the 5620 SAM and an understanding level 1 maintenance for SR-OS products",
     "Duration": "101.75 H",
     "More information": "<p>This curriculum consists of the following courses: </p><p>• LMQ114W ESD and Calibration Certification</p><p>• OAP00050W Video: Inspect-Clean-Inspect-Connect (ICIC) Process</p><p>• TER36066W SR-OS Fundamentals </p><p>• TER36095W 7750 SR 7450 ESS Product Overview </p><p>• TER36084W 7705 SAR Product Overview </p><p>• TER36058W 7210 SAS Product Overview </p><p>• TER36082W 7950 XRS Product Overview </p><p>• TOS36033W 5620 SAM (Service Aware Manager) R13.0 Fundamentals</p><p>• TER36203 Service Router Product Technology and Features Description</p><p>• TER36204 Service Router Product Configuration and Operation</p><p>• TER36092 Level 1 Maintenance for SR-OS Products</p>"
@@ -524,11 +468,8 @@
   {
     "ID": "n.1490023265893",
     "Title": "IP Technical Support Level 2",
-    "type": 2,
     "Icon": "img/i.1490023265893.9432.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=14183c72-d26e-41e3-b1c3-5c0c8edbaab9"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=14183c72-d26e-41e3-b1c3-5c0c8edbaab9",
     "Description": "The courses included in this curriculum focus on Nokia's SR-OS features and functionality. This advanced curriculum focuses on the NRS I and II certifications.",
     "Duration": "108 H",
     "More information": "<p>This curriculum consists of the following courses:&nbsp; </p><p>• 3FL30632AAAAZZZZA Nokia Scalable IP Networks (NRS I Certification)</p><p>• TER00035M Nokia Network Routing Specialist I Exam (NRS I Certification)</p><p>• 3FL30633AAAAZZZZA Nokia Interior Routing Protocols (NRS II Certification)</p><p>• TER00038M Nokia Interior Routing Protocols Exam (NRS II Certification)</p><p>• 3FL30635AAAAZZZZA Nokia Multiprotocol Label Switching (NRS II Certification)</p><p>• TER00039M Nokia Multiprotocol Label Switching Exam (NRS II Certification)</p><p>• 3FL30636AAAAZZZZA Nokia Services Architecture (NRS II Certification)</p><p>• TER00040M Nokia Services Architecture Exam (NRS II Certification)</p><p>• TER00037M Nokia Network Routing Specialist II Exam (NRS II Certification)</p>"
@@ -536,11 +477,8 @@
   {
     "ID": "n.1490040239951",
     "Title": "IP Technical Support Level 2 (including 5620 SAM)",
-    "type": 2,
     "Icon": "img/i.1490040239951.9845.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ff85f877-d460-4a0a-8cfb-3fa28e27c761"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ff85f877-d460-4a0a-8cfb-3fa28e27c761",
     "Description": "The courses included in this&nbsp;curriculum focus on Nokia's SR-OS features and functionality and the 5620 SAM. This advanced curriculum focuses on the NRS I and II certifications.",
     "Duration": "132 H",
     "More information": "<p>This curriculum consists of the following courses:</p><p>• TOS36025 5620 SAM (Service Aware Manager) Network and Service Troubleshooting&nbsp; </p><p>• 3FL30632AAAAZZZZA Nokia Scalable IP Networks (NRS I Certification)</p><p>• TER00035M Nokia Network Routing Specialist I Exam (NRS I Certification)</p><p>• 3FL30633AAAAZZZZA Nokia Interior Routing Protocols (NRS II Certification)</p><p>• TER00038M Nokia Interior Routing Protocols Exam (NRS II Certification)</p><p>• 3FL30635AAAAZZZZA Nokia Multiprotocol Label Switching (NRS II Certification)</p><p>• TER00039M Nokia Multiprotocol Label Switching Exam (NRS II Certification)</p><p>• 3FL30636AAAAZZZZA Nokia Services Architecture (NRS II Certification)</p><p>• TER00040M Nokia Services Architecture&nbsp;Exam (NRS II Certification)</p><p>• TER00037M Nokia Network Routing Specialist II Exam&nbsp;(NRS II Certification)</p>"
@@ -548,11 +486,8 @@
   {
     "ID": "n.1490084730629",
     "Title": "Optics Sales Associate",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3d28c239-f198-4e99-81b3-d7a24960fc92"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3d28c239-f198-4e99-81b3-d7a24960fc92",
     "Audience": "<p><u><strong></strong></u></p><p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "<p>The courses are focused<span style=\"background-color: rgb(241, 241, 241);\">&nbsp;on Nokia's relationship with their Partners, Key to Selling Optical products, and the Optical product portfolio.&nbsp;</span></p>",
     "Duration": "<p>4.25 H</p>",
@@ -561,11 +496,8 @@
   {
     "ID": "n.1490085085860",
     "Title": "Optics Sales Engineer Specialist",
-    "type": 2,
     "Icon": "img/i.1490085085860.6634.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=e62019b7-be17-4b17-81a6-6554a9fdfd1a"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=e62019b7-be17-4b17-81a6-6554a9fdfd1a",
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "<p>The courses are design for Presales Engineers, it includes: &nbsp;Optical Product Overview, the &nbsp;technical and architectural description of the 1830 PSS equipment and the 1350 OMS network management, there is also a course on the planning tool (EPT)</p>",
     "Duration": "<p>15.25 H</p>",
@@ -574,12 +506,8 @@
   {
     "ID": "n.1490085144820",
     "Title": "Optics Field Technician&nbsp;",
-    "type": 2,
     "Icon": "img/i.1490085144820.2890.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=059192d6-ee85-40f1-a73a-0e9fca21b720"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=059192d6-ee85-40f1-a73a-0e9fca21b720",
     "Description": "<p>The courses are focus on Installation and Commissioning of the 1830 PSS as well as Transport Product Overviews.</p>",
     "Duration": "<p>39 H</p>",
     "More information": "<ul><li>LMQ114W &nbsp; &nbsp; &nbsp;ESD and Calibration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li>OAP00050W &nbsp;Inspect-Clean-Inspect-Connect (ICIC) Process (Video)&nbsp; </li><li>TOP30040W &nbsp;1830 PSS (Photonic Service Switch) 4 Architecture and Hardware - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TOP54079W &nbsp;1830 PSS (Photonic Service Switch) R9.x Introduction&nbsp;&nbsp;</li><li>TOP54080W &nbsp;1830 PSS (Photonic Service Switch) SWDM R9.x Architecture and Hardware&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li>TOP30020W &nbsp;1830 PSS-4 Installation, Test, &amp; Turn-up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TOP54112W  1830 PSS SWDM R9.x Architecture and Hardware    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TOP30043 &nbsp; &nbsp; 1830 PSS 8/16/32 Hardware Engineering &amp; Installation R9.x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></ul>"
@@ -587,11 +515,8 @@
   {
     "ID": "n.1490086120965",
     "Title": "Optics Network Integration Engineer",
-    "type": 2,
     "Icon": "img/i.1490086120965.1208.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=bf046c31-f69b-4842-ae8d-124f0d10aba6"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=bf046c31-f69b-4842-ae8d-124f0d10aba6",
     "Description": "<p>The curriculum includes: Transport Concepts and Portfolio, Transport Product Overviews and Product Configuration and Operation &nbsp;and maintenance courses.</p>",
     "Duration": "<p>82 H</p>",
     "More information": "<ul><li>TOP30040W  1830 PSS (Photonic Service Switch) 4 Architecture and Hardware - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TOP54079W  1830 PSS (Photonic Service Switch) R9.x Introduction&nbsp;&nbsp;&nbsp;</li><li>TOP54080W  1830 PSS (Photonic Service Switch) SWDM R9.x Architecture and Hardware&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TOP30003W &nbsp; &nbsp; 1830 PSS-16/32 R9.x SWDM Operation &amp; Maintenance </li><li>TOP30016W &nbsp; &nbsp; 1830 PSS-4 R9.x WDM Operation &amp; Maintenance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TOP51001W &nbsp; &nbsp; 1830 PSS-8/16II R9.x O&amp;M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TOP54112W &nbsp;1830 PSS 24x SWDM R9.x Architecture &amp; Hardware&nbsp;</li><li>TOP54111 &nbsp; 1830 PSS 24x SWDM R9.x Operation &amp; Maintenance &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li><li>OP00111&nbsp; &nbsp; &nbsp;1350 OMS R14 managed Plane for 1830 PSS-WDM  O&amp;M&nbsp;</li></ul>"
@@ -599,11 +524,8 @@
   {
     "ID": "n.1490086198883",
     "Title": "Optics Technical Support Level 1",
-    "type": 2,
     "Icon": "img/i.1490086198883.8814.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=1180899a-b9da-43fc-8464-de6efc9e4551"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=1180899a-b9da-43fc-8464-de6efc9e4551",
     "Description": "<p>The courses include WDM Technology, the Nokia Optical product overviews, and Level 1 maintenance of optical products.</p>",
     "Duration": "<p>14 H</p>",
     "More information": "<ul><li>LMQ114W      ESD and Calibration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>OAP00050W  Inspect-Clean-Inspect-Connect (ICIC) Process (Video)&nbsp;&nbsp;&nbsp; </li><li>TOP18075W &nbsp;WDM Technology - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li>TOP30040W  1830 PSS (Photonic Service Switch) 4 Architecture and Hardware - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li>TOP54079W  1830 PSS (Photonic Service Switch) R9.x Introduction&nbsp;&nbsp;&nbsp;&nbsp; </li><li>TOP54080W  1830 PSS (Photonic Service Switch) SWDM R9.x Architecture and Hardware&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TOP54112W  1830 PSS SWDM R9.x Architecture and Hardware &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li><li>TOP42018W &nbsp;1830 PSS 16/32 R9.x L1 Maintenance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></ul>"
@@ -611,12 +533,8 @@
   {
     "ID": "n.1490086249300",
     "Title": "Optics Technical Support Level 2",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=f235cb41-d973-4ea2-88af-af3b2002d849"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=f235cb41-d973-4ea2-88af-af3b2002d849",
     "Description": "<p>It is the advanced level of the Optics Technical Support Level 1 that it is a prerequisite for this curriculum, there are advanced operational maintenance course on 1830 PSS and network management with a troubleshooting focus.</p><p>Some courses included in this curriculum are part of the ONC (Optical Certification Program)</p>",
     "Duration": "<p>102 H&nbsp;+ 1 Proctored exam</p>",
     "More information": "<ul><li>TOP30003W 1830 PSS-16/32 R9.x SWDM Operation &amp; Maintenance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TOP30016W 1830 PSS-4 R9.x WDM Operation &amp; Maintenance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li>TOP51001W 1830 PSS-8/16II R9.x O&amp;M&nbsp;</li><li>TOP54111 &nbsp; &nbsp;1830 PSS 24x SWDM R9.x Operation &amp; Maintenance &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li><li>OP00111&nbsp; &nbsp;1350 OMS R14 managed Plane for 1830 PSS-WDM O&amp;M&nbsp;&nbsp;</li><li>TOP00007 &nbsp; &nbsp;Nokia Optical Diagnostics &amp; Troubleshooting &nbsp; &nbsp;(ONC) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li></ul>"
@@ -624,11 +542,8 @@
   {
     "ID": "n.1490086350227",
     "Title": "Microwave Sales Associate",
-    "type": 2,
     "Icon": "img/i.1490086350227.2419.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=c69629f1-8185-4433-9ccd-29fb2b6027fe"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=c69629f1-8185-4433-9ccd-29fb2b6027fe",
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "<p>The courses are focused on Nokia's relationship with their Partners, Key to Selling &nbsp;Microwave products and the Microwave product portfolio. </p>",
     "Duration": "<p>6.25 H</p>",
@@ -637,11 +552,8 @@
   {
     "ID": "n.1490086392920",
     "Title": "Microwave Sales Engineer Specialist",
-    "type": 2,
     "Icon": "img/i.1490086392920.6088.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=2dd7bf52-db1e-4318-908a-e3cfc36c581c(LearnMore)"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=2dd7bf52-db1e-4318-908a-e3cfc36c581c(LearnMore)",
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "<p>The courses are designed for Presales Engineers, it includes:  Microwave Product Overview, the  technical and architectural description of the 9500 MPR equipment and the network managements, there is also a course on the ACM tendering tool</p>",
     "Duration": "<p>Min (Alt. 1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10.75 H</p><p>Max (Alt. 2)&nbsp;&nbsp;&nbsp;&nbsp; 16.75 H</p>",
@@ -650,11 +562,8 @@
   {
     "ID": "n.1490086425143",
     "Title": "Microwave Field Technician",
-    "type": 2,
     "Icon": "img/i.1490086425143.2613.png",
-    "Url": {
-      "all": " https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=93a732a8-e914-4c20-8c1a-072b5ef2f91a(LearnMore)"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=93a732a8-e914-4c20-8c1a-072b5ef2f91a(LearnMore)",
     "Description": "<p>The courses are focused on Installation and Commissioning of the 9500 MPR<span style=\"background-color: rgb(241, 241, 241);\"></span></p>",
     "Duration": "<p>19 H</p>",
     "More information": "<ul><li>TWT18014W &nbsp;9500 MPR Hardware Installation - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TWT18005 &nbsp; &nbsp;&nbsp;9500 MPR Installation, test &amp; turn up (NON NAR)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></ul>"
@@ -662,12 +571,8 @@
   {
     "ID": "n.1490086483848",
     "Title": "Microwave Network Integration Engineer",
-    "type": 2,
     "Icon": "img/i.1490086483848.9558.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=5e7a821c-dbcb-4444-ad09-0504d853f8d1(LearnMore)"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=5e7a821c-dbcb-4444-ad09-0504d853f8d1(LearnMore)",
     "Description": "<p>The courses focus on Microwave Concepts and Portfolio, Microwave Product Overviews, Product Configuration and Operation  and maintenance courses. The student can select one of the two alternative based on the different network management (TSM 8000 or 5620 SAM)&nbsp;</p>",
     "Duration": "<p>Alt. 1 30.75 H</p><p>Alt. 2 41.75 H</p>",
     "More information": "<ul><li>Alternative 1:  TOS00022W  TSM 8000 Fundamentals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>Alternative 2:  TOS36033W  5620 SAM Fundamentals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li>TWT42035W  9500 MPR Global Market Node (MSS-1/MSS-4/MSS-8) R. 6.0 Functional and HW description - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TWT42038W  9500 MPR Global Market Terminal (MPR-e/MSS1-c) -R. 6.0 Functional and HW description - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TWT00004W   9500 MPR-Delta features R6 to R7 Full Indoor Node (MSS-1/MSS-4/MSS-8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li>TWT42036G&nbsp; &nbsp; 9500 MPR (Microwave Packet Radio) R7.1 Global Market Node (MSS-1/MSS-4/MSS-8) Common Functionality Operations and Maintenance  - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li>TWT42037G&nbsp; &nbsp;9500 MPR (Microwave Packet Radio) R7.1 Global Market Ethernet Traffic Operations and Maintenance - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TWT42039 &nbsp; 9500 MPR (Microwave Packet Radio) R6.1 Global Market Terminal (MPR-e/MSS-1c) Operations and Maintenance - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TWT42041G&nbsp; &nbsp; &nbsp;9500 MPR Global Market R. 7.1 Ring Protection O&amp;M - GPP&nbsp;&nbsp;</li></ul>"
@@ -675,12 +580,8 @@
   {
     "ID": "n.1490086517412",
     "Title": "Microwave Technical Support Level 1",
-    "type": 2,
     "Icon": "img/i.1490086517412.4494.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=9a581ec1-1cf6-43fe-9537-6c731c0a5030(LearnMore)"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=9a581ec1-1cf6-43fe-9537-6c731c0a5030(LearnMore)",
     "Description": "<p>The courses include Microwave Technology, the Nokia Microwave product overviews, and Level 1 maintenance of the 9500 MPR products.</p>",
     "Duration": "<p>15.75 H</p>",
     "More information": "<ul><li>TWT63011W &nbsp; Microwave Technology Overview - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TWT42035W &nbsp;9500 MPR Global Market Node (MSS-1/MSS-4/MSS-8) R. 6.0 Functional and HW description - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>TWT42038W &nbsp;&nbsp;9500 MPR Global Market Terminal (MPR-e/MSS1-c) -R. 6.0 Functional and HW description - GPP&nbsp;&nbsp;&nbsp;</li><li>TWT00004W   9500 MPR-Delta features R6 to R7 Full Indoor Node (MSS-1/MSS-4/MSS-8) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li>TWT63045W &nbsp;&nbsp;9500 MPR Node R6.1 L1 Maintenance - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li>TWT63046W &nbsp;&nbsp;9500 MPR Terminal R6.1 L1 Maintenance - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></ul>"
@@ -688,12 +589,8 @@
   {
     "ID": "n.1490086736855",
     "Title": "Optics Sales Engineer Professional",
-    "type": 2,
     "Icon": "img/i.1490086736855.6737.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=726966f4-7dd1-49fb-8f66-3fa79a128165"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=726966f4-7dd1-49fb-8f66-3fa79a128165",
     "Description": "<p>This curriculum is the advanced level of the Sales Engineer Specialist curriculum (prerequisite) and it focus on Optical network design.</p><p>The courses included in this curriculum are part of the ONC (Optical Certification Program)</p>",
     "Duration": "<p>54.0 H&nbsp;&nbsp;+ Proctored exams</p>",
     "More information": "<ul><li>TOP00004 &nbsp;Nokia Fundamentals of Optical Network Design (ONC) &nbsp; &nbsp;&nbsp;</li><li>TOP00005 &nbsp;Nokia Advanced Optical Network Design &nbsp;(ONC) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li></ul>"
@@ -701,11 +598,8 @@
   {
     "ID": "n.1490091402102",
     "Title": "Microwave Field Technician for NAR (North America)",
-    "type": 2,
     "Icon": "img/i.1490091402102.3432.png",
-    "Url": {
-      "all": "(LearnMore)"
-    },
+    "Url": "(LearnMore)",
     "Description": "<p>The courses focus on Installation and Commissioning of the 9500 MPR, this curriculum is designed for NAR (North America). There are different alternatives for the installation : Radio, Antenna, MPR-e</p>",
     "Duration": "<p>WBT (Web Based Training) &nbsp; &nbsp; &nbsp; &nbsp; 1h +</p><p>Alt. 1&nbsp;&nbsp;&nbsp;31 H</p><p>Alt. 2&nbsp;&nbsp; 25 H</p><p>Alt. 3&nbsp;&nbsp; 19 H</p>",
     "More information": "<ul><li>TWT18014W 9500 MPR Hardware Installation - GPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>Alternative 1:  WT Product Deployment for Partners in NAR (Vendor Managed Delivery) RADIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>Alternative 2:  WT Product Deployment for Partners in NAR (Vendor Managed Delivery) ANTENNA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>Alternative 3:  WT Product Deployment for Partners in NAR (Vendor Managed Delivery) MPR-e&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></ul>"
@@ -713,11 +607,8 @@
   {
     "ID": "n.1490122282185",
     "Title": "POL Sales Associate",
-    "type": 2,
     "Icon": "img/i.1490122282185.6434.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=35868e43-ed81-427f-97a7-c2c25b8ad19d"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=35868e43-ed81-427f-97a7-c2c25b8ad19d",
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "The courses for certification as POL Sales Associate",
     "Duration": "2.5 H",
@@ -726,141 +617,102 @@
   {
     "ID": "n.1490127783944",
     "Title": "Cloud Datacenter Interconnect",
-    "type": 2,
     "Icon": "img/i.1490086736855.6737.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3121cecc-3034-4300-9c1b-8ca8680bf00c"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3121cecc-3034-4300-9c1b-8ca8680bf00c",
     "Description": "Enterprises need the ability to grow computing power and storage capacity while controlling costs. Cloud solutions offer the ability to outsource certain functions through virtualized resources while retaining others internally, allowing an enterprise to match business needs and budget. Cloud solutions are built by interconnecting data centers; commonly called Data Center Interconnect (DCI). Learn more about DCI so you can participate as enterprises continue to increase spending on DCI.",
     "Duration": "46 Minutes"
   },
   {
     "ID": "n.1490128125655",
     "Title": "Selling Nokia in the Defense Market",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a7e1e63d-8434-43f1-aadc-2f1b5166b6f6"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a7e1e63d-8434-43f1-aadc-2f1b5166b6f6",
     "Description": "<p>At the end of this course, you should be able to:</p><p>-Identify the best Nokia opportunities to pursue in the Defense market,</p><p>-Know who to contact to begin the conversation in the Defense market.</p>",
     "Duration": "30 Minutes"
   },
   {
     "ID": "n.1490128325435",
     "Title": "Optical Transport Security: Layer 1 Security with Nokia 1830",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=004fec8b-3992-4a56-a819-54714305252e"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=004fec8b-3992-4a56-a819-54714305252e",
     "Description": "Current events have focused on highly publicized security breaches across many industries and governments around the world. The costs are real in terms of lost revenue, interruption of vital services, loss of customer assets, and information. Worse is the loss of confidence. Effective security includes more than data encryption, it includes multiple mechanisms to guard against data theft and network interruption. Optical Transport Partners will learn of the many competitive advantages of the Nokia 1830 PSS and how they can monetize these advantages to grow their business.",
     "Duration": "36 Minutes"
   },
   {
     "ID": "n.1490128491444",
     "Title": "Oil &amp; Gas Pipeline Solution",
-    "type": 2,
     "Icon": "img/i.1490085085860.6634.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=939cc190-3235-4912-8eec-93ed573bb04f"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=939cc190-3235-4912-8eec-93ed573bb04f",
     "Description": "Digital oil and gas field transformation is already underway as energy consumption worldwide is expected to grow 48% until 2040. Oil and Gas companies continue to invest for exploration, extraction and transportation via pipelines regardless of the economic environment. Nokia IP, Optical and Microwave partners are well-positioned for success with Nokia solutions for key requirements in the Oil and Gas sector: Mobility and Onsite Communication; Automation; Security Cloud Services; and Data Analytics.",
     "Duration": "42 Minutes"
   },
   {
     "ID": "n.1490128639022",
     "Title": "Cloud DCI and Layer 1 Security",
-    "type": 2,
     "Icon": "img/i.1490085144820.2890.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ae33e09a-aadb-4378-9001-50f4b06684fc"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ae33e09a-aadb-4378-9001-50f4b06684fc",
     "Description": "This webinar will provide information on two use cases for Nokia’s 1830 PSS: Cloud DCI and Layer 1 security. Cloud DCI is an optical transport application that helps enterprises connect their data centers for workload virtualization and cloud adoption. Nokia helps enterprises build a solution matched to their needs, in private, virtual private or public cloud implementations. Layer 1 security shows how in-flight data can be protected from theft or intrusion through technologies including AES-256 encryption with strong keys, and optical intrusion detection."
   },
   {
     "ID": "n.1490128747269",
     "Title": "Selling into Airports and Air Traffic Control",
-    "type": 2,
     "Icon": "img/i.1490086120965.1208.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=9e4633de-04ba-4e4a-bc29-c64998ffb3ce"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=9e4633de-04ba-4e4a-bc29-c64998ffb3ce",
     "Description": "<p>Nokia has been addressing the need for mission critical infrastructure for transport customers for decades. </p><p>In this session we focus on air transport. </p><p>After an introduction about the airtransport communication market we will explore how to position our solutions in this segment, a segment which is present in every country and every major city. </p><p>We will show how the same products which address the mission critical needs of rail, utilities and other key customers are ideally suited to address challenges such as “ageing networking infrastructure in many air traffic control organizations or network modernization and harmonization of airports”. </p><p>As a good introduction to the specific challenges and Nokia solutions for air transport, the course targets sales, management and presales profiles primarily but is also recommended for any partner employee wishing to get up to speed on this segment and its specifics.</p>",
     "Duration": "30 Minutes"
   },
   {
     "ID": "n.1490128879293",
     "Title": "Selling to Railways",
-    "type": 2,
     "Icon": "img/i.1490086198883.8814.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=1cf213e5-aabe-4078-93a6-54999272b63e"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=1cf213e5-aabe-4078-93a6-54999272b63e",
     "Description": "Globally there is a massive population shift from rural areas to urban areas. Due to this massive shift, transportation projects are underway to balance the need to move the population from point A to point B while reducing the carbon footprint and emissions. Rail projects are expected to grow 2-7% globally as a result of this change. Rail operators know they need to offer new services to their riders which present opportunities. Safety is always paramount which determines how some things can be done. In addition to the need for existing rail operators to offer new services, there are many new opportunities all over the world for mass transit, light rails and high speed lines where Nokia partners can sell a Nokia solution that can help rail operators to ensure safe, on-time and connected journeys.",
     "Duration": "1 Hour"
   },
   {
     "ID": "n.1490129167590",
     "Title": "How to Position and Sell Communication Transformation",
-    "type": 2,
     "Icon": "img/i.1490085144820.2890.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=78015c8d-a263-4678-80fc-e36c99a6fd6b"
-    },
-    "Description": "This course provides an understanding of the challenges and requirements of a Power Utility looking to transform their communications network.   This training is designed to enable the learner to ... - Identify problem areas that encourage utilities to consider transforming their network. - Select indicators of suitable sales opportunities within this market. - Identify the minimum set of equipment required by the Nokia solution to support utility operations in a typical substation. ",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=78015c8d-a263-4678-80fc-e36c99a6fd6b",
+    "Description": "This course provides an understanding of the challenges and requirements of a Power Utility looking to transform their communications network.   This training is designed to enable the learner to ... - Identify problem areas that encourage utilities to consider transforming their network. - Select indicators of suitable sales opportunities within this market. - Identify the minimum set of equipment required by the Nokia solution to support utility operations in a typical substation.",
     "Duration": "30 Minutes"
   },
   {
     "ID": "n.1490129289781",
     "Title": "How to Position and Sell Distribution Automation",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=7b3cabff-515b-4a59-be94-227751c00dd6"
-    },
-    "Description": "This course provides an understanding of the many new opportunities to position and sell Nokia's award winning products.   ",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=7b3cabff-515b-4a59-be94-227751c00dd6",
+    "Description": "This course provides an understanding of the many new opportunities to position and sell Nokia's award winning products.",
     "Duration": "25 Minutes"
   },
   {
     "ID": "n.1490129435743",
     "Title": "How to Position and Sell Utility Broadband",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3ffa4bea-b260-4565-b9e0-0af101c630f6"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3ffa4bea-b260-4565-b9e0-0af101c630f6",
     "Description": "This course provides an understanding of the challenges and requirements of a Power Utility looking to update their communications network to broadband.",
     "Duration": "25 Minutes"
   },
   {
     "ID": "n.1490129616295",
     "Title": "Power Utilities 101",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=efbe7280-7fdc-413e-b85a-44fa9170db79"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=efbe7280-7fdc-413e-b85a-44fa9170db79",
     "Description": "Selling to Power Utilities Sessions is designed to present the “first and best” sales play into the Power Utilities market, based on the Alcatel-Lucent Sales Playbook. Session 1 addresses the Market, Customers and the Opportunities in the power utilities market. The discussion then moves to how to target the right business challenges and the Alcatel-Lucent solutions designed to meet these challenges, focused on the distribution segment of this market. The session concludes with an overview of Session 2 – “Getting Ready to Sell the Alcatel-Lucent Solution.”",
     "Duration": "1 Hour"
   },
   {
     "ID": "n.1490129789535",
     "Title": "Network Solution for Legacy SCADA",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ab9d4d14-91f5-4717-9968-24901320dd0e"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ab9d4d14-91f5-4717-9968-24901320dd0e",
     "Description": "Driven by TDM sunset in telecommunications industry, utilities, transport, and mining are either starting to investigate or plan or migrate their legacy mission-critical grid applications such as SCADA to a new packet-based network. Migrating legacy SCADA traffic requires the new packet-based network to connect to legacy interface like RS-232/V.24 and 4-wire E&amp;M used in legacy SCADA system, transport SCADA traffic with deterministic quality of service, resiliency and security; as well as accommodate the unique multi-drop nature of SCADA communications protocol. This session explores a network architecture based on IP/MPLS, a prevalent packet technology used in mission-critical network, to address these challenges at once."
   },
   {
     "ID": "n.1490205073656",
     "Title": "Fixed&nbsp;Networks Sales Associate&nbsp;",
-    "type": 2,
     "Icon": "img/i.1490205073656.3933.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=6a496656-21df-4a5d-9923-ec36cdfa66c3"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=6a496656-21df-4a5d-9923-ec36cdfa66c3",
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "The courses required to obtain Fixed Access Sales Associate certification",
     "Duration": "2.5 H",
@@ -869,11 +721,8 @@
   {
     "ID": "n.1490205477799",
     "Title": "Fixed Networks Sales Engineer Specialist",
-    "type": 2,
     "Icon": "img/i.1490205477799.4352.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=090b02cc-242c-4107-9fb8-838f5b780876"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=090b02cc-242c-4107-9fb8-838f5b780876",
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "The courses required to obtain the Fixed Access Sales Engineer Specialist certification",
     "Duration": "8 H",
@@ -882,12 +731,8 @@
   {
     "ID": "n.1490205861704",
     "Title": "Fixed Networks Sales Engineer Professional",
-    "type": 2,
     "Icon": "img/i.1490205861704.4415.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b55eca5a-5f63-46c2-aaab-d154ce80b938"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b55eca5a-5f63-46c2-aaab-d154ce80b938",
     "Description": "The courses required to obtain Fixed Access Sales Engineer Professional certification",
     "Duration": "36 H",
     "More information": "<p>TAC60017W LACP &amp; LAG Explained</p><p>TAC60012W STP RSTP MSTP Protocol Introduction</p><p>TAC60006W Multicast and IGMP Basics</p><p>TAC60007W QoS Basics</p><p>TAC05021K ISAM Voice Product Overview</p><p>TAC60004W VOIP &amp; Protocols Overview</p><p>TAC60031  7302-7330 and 7360 ISAM Capabilities</p>"
@@ -895,11 +740,8 @@
   {
     "ID": "n.1490210638519",
     "Title": "Fixed Networks Sales and Sales Engineer Further Learning",
-    "type": 2,
     "Icon": "img/i.1490210638519.5455.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=e0ac51b6-b47b-4036-a386-183e7d545e31"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=e0ac51b6-b47b-4036-a386-183e7d545e31",
     "Description": "The courses listed here provide additional learning options. This curriculum does not result in certification. These courses address the desire for additional learning.",
     "Duration": "11 H",
     "More information": "<p>TAC60057W Market Overview: Passive Optical LAN for Enterprise, Industry and Public Sector</p><p>TAC60002W DSL in Access Networks Technology Introduction</p><p>TAC60001W GPON Evolution in Access Technology Introduction</p><p>TAC60003W ISAM in networking and the Evolution of Access Infrastructure</p><p>TAC60056W Fixed Ultra-Broadband Market and Technology Trends</p><p>TAC60021W Overview of the ISAM family, Remotes and ONTs</p><p>TAC60058W Fixed Ultra-Broadband Access Sales Resources</p><p>TAC60022W FBA Element Management Introduction</p><p>TAC42098W Introduction to IPv6 in Fixed Broadband Access</p><p>TAC42099W G.fast An Introduction</p><p>TAC60004W VOIP &amp; Protocols Overview</p><p>TAC03060W 5529 OAD overview</p><p>TAC03059W 5529 IDM overview</p><p>TAC42103W 5529 SDC Introduction</p><p>TAC42084W Introduction to EPON and DPoE</p><p>TAC60042W Passive Optical LAN Solution Introduction</p><p>TAC42102W NGPON-2 Overview</p><p>TAC42083W 7330 ANSI XD Hardware Overview</p><p>TAC60020W ISAM Micro-Nodes Equipment Overview</p><p>TAC60016W ISAM FX Equipment OverviewTAC60016A\t2.1\tISAM FX Equipment Overview </p>"
@@ -907,11 +749,8 @@
   {
     "ID": "n.1490211192274",
     "Title": "Fixed Networks Field Technician",
-    "type": 2,
     "Icon": "img/i.1490211192274.2122.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=9e3f6e8b-628f-40fa-9744-b500b7cc0af3"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=9e3f6e8b-628f-40fa-9744-b500b7cc0af3",
     "Description": "<p>The courses listed are required to obtain Fixed Access Field Technician certification.</p>",
     "Duration": "23 H",
     "More information": "<p>TAC60001W GPON Evolution in Access Technology Introduction</p><p>TAC60003W ISAM in networking and the Evolution of Access Infrastructure</p><p>TAC60021W Overview of the ISAM family, Remotes and ONTs</p><p>TAC60043W ISAM Generic System Description</p><p>TAC60020W ISAM Micro-Nodes Equipment Overview</p><p>TAC60009W 5520 AMS Description</p><p>TAC60008W GPON Fiber Principles</p><p>TAC60010W Getting started with 5520 AMS</p><p>TAC03065W ISAM HW installation (Aggregate of 9 modules)</p><p>TAC42047  7302-7360 High Cap. NT ISAM/5520 AMS - Basic Commissioning</p><p>TAC42049  7302-7360 ISAM GPON Basic Configuration</p><p>LMQ114W   ESD and Calibration</p><p>TAC60022W FBA Element Management Introduction</p><p>TAC60019W Home Devices Overview</p><p>TAC42077  735x-736x Micronodes / 5520 AMS basic commissioning</p><p>TAC05021K ISAM Voice Product Overview</p><p>TAC42089E ALCNA FBA FTTH Technologies &amp; Products - exam</p>"
@@ -919,11 +758,8 @@
   {
     "ID": "n.1490211579961",
     "Title": "Fixed Networks Network Integration Engineer",
-    "type": 2,
     "Icon": "img/i.1490211579961.4040.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=5136efb2-6958-4ac1-bec0-33e22461c4c0"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=5136efb2-6958-4ac1-bec0-33e22461c4c0",
     "Description": "The listed courses are required to obtain Fixed Access Network Integration certification",
     "Duration": "23 H",
     "More information": "<p>The required courses are:</p><p><p>TAC60001W GPON Evolution in Access Technology Introduction</p><p>TAC60021W Overview of the ISAM family, Remotes and ONTs</p><p>TAC60013W ISAM FD Equipment Overview</p><p>TAC60020W ISAM Micro-Nodes Equipment Overview</p><p>TAC60019W Home Devices Overview</p><p>TAC60009W 5520 AMS Description</p><p>TAC60008W GPON Fiber Principles</p><p>TAC60010W Getting started with 5520 AMS</p><p>TAC42049  7302-7360 ISAM GPON Basic Configuration</p><p>TAC42047  7302-7360 High Cap. NT ISAM/5520 AMS - Basic Commissioning</p><p>TAC42079  7302-7360 ISAM NELT P2P Eth. QoS</p><p>TAC42077  735x-735x Mircro-nodes/5520AMS Basic Commissioning</p><p>LMQ114W   ESD and Calibration</p><p>TAC42105E ALCNP FBA FTTx ISAM standard NT - Integration, Operations &amp; Maintenance - exam</p>"
@@ -931,11 +767,8 @@
   {
     "ID": "n.1490211967676",
     "Title": "Fixed Networks Technical Support Level 1",
-    "type": 2,
     "Icon": "img/i.1490211967676.9458.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=2d0508e2-bb78-4ab7-9cb2-0c58dc6406b2"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=2d0508e2-bb78-4ab7-9cb2-0c58dc6406b2",
     "Description": "The courses required to obtain Fixed Access Technical Support Level 1 certification",
     "Duration": "25 H",
     "More information": "<p>The required courses are</p><p><p>TAC60022W FBA Element Management Introduction</p><p>TAC60018W Fiber Access Feature and Concepts</p><p>TAC60001W GPON Evolution in Access Technology Introduction</p><p>TAC60021W Overview of the ISAM family, Remotes and ONTs</p><p>TAC60013W ISAM FD Equipment Overview</p><p>TAC60020W ISAM Micro-Nodes Equipment Overview</p><p>TAC60019W Home Devices Overview</p><p>TAC60009W 5520 AMS Description</p><p>TAC60010W Getting started with 5520 AMS</p><p>TAC03065W ISAM HW installation (Aggregate of 9 modules)</p><p>TAC42047  7302-7360 High Cap. NT ISAM/5520 AMS - Basic Commissioning</p><p>TAC42079  7302-7360 ISAM NELT P2P Eth. QoS</p><p>TAC42049  7302-7360 ISAM GPON Basic Configuration</p><p>TAC42077  735x-736x Micronodes / 5520 AMS basic commissioning</p><p>TAC42089E ALCNA FBA FTTH Technologies &amp; Products - exam</p>"
@@ -943,11 +776,8 @@
   {
     "ID": "n.1490212138851",
     "Title": "Fixed Networks Technical Support Level 2",
-    "type": 2,
     "Icon": "img/i.1490212138851.5049.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ef246237-a657-4353-b336-330595b2570b"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ef246237-a657-4353-b336-330595b2570b",
     "Description": "The list of courses required to obtain Fixed Access Technical Support Level 2",
     "Duration": "52 H",
     "More information": "<p>The required courses are</p><p><p>TAC60012W STP RSTP MSTP Protocol Introduction Exam</p><p>TAC60006W Multicast and IGMP Basics</p><p>TAC60007W QoS Basics</p><p>TAC60017W LACP &amp; LAG Explained</p><p>TAC42087W Introduction to VDSL2 Vectoring</p><p>TAC42051  7302-7360 ISAM High Cap. NT /5520 AMS - </p><p>High CAP L2 &amp; PPPoX Forwarding</p><p>TAC42059  7302-7360 ISAM High Cap. NT / </p><p>5520 AMS redundancy configurations</p><p>TAC42057  7302-7360 ISAM High Cap. NT /</p><p> 5520 AMS L2+ &amp; L3 Configurations</p><p>TAC42054  7302-7360 ISAM High. Cap. NT: Configuration of QoS,</p><p> Video (MC) and VoIP for GPON deployments</p><p>TAC42055  7302-7330-7360 ISAM Software Management &amp;</p><p> Performance Monitoring with 5520 AMS</p><p>TAC05021K ISAM Voice Product Overview</p><p>TAC42105E ALCNP FBA FTTx ISAM standard NT - Integration, Operations &amp; Maintenance - exam</p>"
@@ -955,11 +785,8 @@
   {
     "ID": "n.1490212437255",
     "Title": "Fixed Networks Technical Further Learning",
-    "type": 2,
     "Icon": "img/i.1490212437255.3568.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=f45a1054-0b7d-49d0-a5a2-bdb11fa29db3"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=f45a1054-0b7d-49d0-a5a2-bdb11fa29db3",
     "Description": "The courses listed here are additional training that may be taken to provide additional knowledge",
     "Duration": "97.25 H",
     "More information": "<p>The list of optional courses are</p><p><p>TAC42098W Introduction to IPv6 in Fixed Broadband Access</p><p>TAC60004W VOIP &amp; Protocols Overview</p><p>TAC60010W Getting started with 5520 AMS</p><p>TAC60022W FBA Element Management Introduction</p><p>TAC03017  5520 AMS Administration</p><p>TAC60047W 5571 POLCommand Center Introduction</p><p>TAC60052W 5529 IDM Administration</p><p>TAC60055W 5529 APC Administration</p><p>TAC60054W 5529 SDC Administration</p><p>TAC42048  7302-7330 ISAM DSL basic configuration</p><p>TAC42060  7302-7330-735x ISAM xDSL advanced configurations</p><p>TAC42087W Introduction to VDSL2 Vectoring</p><p>TAC42099W G.fast An Introduction</p><p>TAC03056  VDSL2 ARQ &amp; Vectoring expert workshop</p><p>3FL00452AAAAZZZZA VDSL2 expert workshop</p><p>TAC42120  G.fast Expert Workshop</p><p>TAC60002W DSL in Access Networks Technology Introduction</p><p>TAC60014W DSL Features and Concepts</p><p>TAC60015W DSL Modulation technology</p><p>TAC60045W Introduction to Precision Time Protocol with ToD</p><p>TAC60018W Fiber Access Feature and Concepts</p><p>TAC42061  7302-7360 ISAM PON Advanced Features</p><p>TAC42068  7360 ISAM EPON DPoE Basic Configuration</p><p>TAC42084W Introduction to EPON and DPoE</p><p>TAC42085W EPON Technology Overview</p><p>TAC42086W DPoE Technology Overview</p><p>TAC42102W NGPON-2 Overview</p><p>TAC60008W GPON Fiber Principles</p><p>TAC60042W Passive Optical LAN Solution Introduction</p><p>TAC60003W ISAM in networking and the Evolution of Access Infrastructure</p><p>TAC42070  ISAM Delta High Cap. NT to Std NT Basic Commissioning</p><p>TAC42077  735x-735x Mircro-nodes/5520AMS Basic Commissioning</p><p>TAC42079  7302-7360 ISAM NELT P2P Eth. QoS</p><p>TAC42083W 7330 ANSI XD Hardware Overview</p><p>TAC60016W ISAM FX Equipment Overview</p><p>TAC60019W Home Devices Overview</p><p>TAC60020W ISAM Micro-Nodes Equipment Overview</p><p>TAC60021W Overview of the ISAM family, Remotes and ONTs</p>"
@@ -967,11 +794,8 @@
   {
     "ID": "n.1490212902848",
     "Title": "POL Sales Engineer Specialist",
-    "type": 2,
     "Icon": "img/i.1490212902848.3526.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=d18661df-7327-4f82-9a0f-0ff1eb2e8b4d"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=d18661df-7327-4f82-9a0f-0ff1eb2e8b4d",
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "The courses required to obtain POL Sales Engineer Specialist certification",
     "Duration": "2.25 Hours",
@@ -980,12 +804,8 @@
   {
     "ID": "n.1490213085826",
     "Title": "POL Sales Engineer Professional",
-    "type": 2,
     "Icon": "img/i.1490213085826.1414.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=40443423-a9ab-4b92-b867-56eb9441b518"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=40443423-a9ab-4b92-b867-56eb9441b518",
     "Description": "The courses listed here are required for POL Sales Engineer Professional certification",
     "Duration": "18 Hours",
     "More information": "<p>The courses required are</p><p><p>TAC42112 POL HW Configuration</p><p>TAC42113 POL Basic GPON Configuration</p><p>TAC42114 POL L2 Service Configurations</p>"
@@ -993,12 +813,8 @@
   {
     "ID": "n.1490213192331",
     "Title": "POL Sales and Sales Engineer Further Learning",
-    "type": 2,
     "Icon": "img/i.1490213192331.3739.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=19fe225a-561f-44c0-99f1-3b0f19707d87"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=19fe225a-561f-44c0-99f1-3b0f19707d87",
     "Description": "<p>The courses listed here are optional and intended to augment learning for the POL Sales and Sales Engineer job roles.</p>",
     "Duration": "26.25 H",
     "More information": "The optional course list includes:<p>TAC42112 POL HW Configuration</p><p>TAC42113 POL Basic GPON Configuration</p><p>TAC42114 POL L2 Service Configurations</p><p>TAC42116 POL Advanced Configurations</p><p>TAC60022W FBA Element Management Introduction</p><p>TAC60009W 5520 AMS Description</p><p>TAC60049W POL Fiber Concepts and Principles</p><p>TAC60042W Passive Optical LAN Solution Introduction</p><p>TAC60059W ANSI Configuration Tool</p><p>TAC60057W Market Overview: Passive Optical LAN for Enterprise, Industry and Public Sector</p>"
@@ -1006,11 +822,8 @@
   {
     "ID": "n.1490213384068",
     "Title": "POL Field Technician",
-    "type": 2,
     "Icon": "img/i.1490213384068.4624.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=219d2707-1079-43cd-996a-769b69fb622b"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=219d2707-1079-43cd-996a-769b69fb622b",
     "Description": "The courses listed are mandatory for POL Field Technician certification",
     "Duration": "9.25 Hours",
     "More information": "<p>The required courses are</p><p><p>TAC60042W Passive Optical LAN Solution Introduction</p><p>TAC60048W Passive Optical LAN System Overview and Architecture</p><p>TAC60047W 5571 POLCommand Center Introduction</p><p>TAC60050W ISAM POL HW Installation</p><p>TAC42112  POL HW Configuration</p><p>TAC42113  POL Basic GPON ConfigurationTAC42113A\t1.0\tPOL Basic GPON Configuration Exam</p><p>LMQ114W   ESD and Calibration</p>"
@@ -1018,11 +831,8 @@
   {
     "ID": "n.1490213566423",
     "Title": "POL Network Integration Engineer",
-    "type": 2,
     "Icon": "img/i.1490213566423.7051.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=e4352fe4-c959-400e-a74e-51329e4452bb"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=e4352fe4-c959-400e-a74e-51329e4452bb",
     "Description": "These courses are mandatory for the POL Network Integration Engineer certification",
     "Duration": "18.5 Hours",
     "More information": "<p>The courses required are</p><p><p>TAC60048W Passive Optical LAN System Overview and Architecture</p><p>TAC60047W 5571 POLCommand Center Introduction</p><p>TAC60050W ISAM POL HW Installation</p><p>TAC42113  POL Basic GPON Configuration</p><p>TAC42112  POL HW Configuration</p><p>TAC42116  POL Advanced Configurations</p><p>TAC42115  POL Troubleshooting</p><p>TAC42114  POL L2 Service Configurations</p><p>LMQ114W   ESD and Calibration</p>"
@@ -1030,11 +840,8 @@
   {
     "ID": "n.1490213721595",
     "Title": "POL Technical Support Level 1",
-    "type": 2,
     "Icon": "img/i.1490213721595.2829.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=7d8b3a6d-ef67-4772-91a9-3427fcb1022c"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=7d8b3a6d-ef67-4772-91a9-3427fcb1022c",
     "Description": "These courses are mandatory for the POL Technical Support Level 1 certification",
     "Duration": "8.5 Hours",
     "More information": "<p>The required courses are</p><p><p>TAC60048W Passive Optical LAN System Overview and Architecture</p><p>TAC60047W 5571 POLCommand Center Introduction</p><p>TAC60049W POL Fiber Concepts and Principles</p><p>TAC60050W ISAM POL HW Installation</p><p>TAC42112  POL HW Configuration</p><p>TAC42113  POL Basic GPON Configuration</p>"
@@ -1042,11 +849,8 @@
   {
     "ID": "n.1490213874889",
     "Title": "POL Technical Support Level 2",
-    "type": 2,
     "Icon": "img/i.1490213874889.2002.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a7621802-74a2-4187-86be-0a5f01fff04f"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a7621802-74a2-4187-86be-0a5f01fff04f",
     "Description": "These courses are required to obtain POL Technical Support Level 2 certification",
     "Duration": "24.0 H",
     "More information": "<p>The required courses are</p><p><p>TAC42116 POL Advanced Configurations</p><p>TAC42115 POL Troubleshooting</p><p>TAC42114 POL L2 Service Configurations</p>"
@@ -1054,11 +858,8 @@
   {
     "ID": "n.1490213993250",
     "Title": "POL Technical Further Learning",
-    "type": 2,
     "Icon": "img/i.1490213993250.3534.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b7257b26-e23c-4e83-8b85-6d4c24329785"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b7257b26-e23c-4e83-8b85-6d4c24329785",
     "Description": "These courses are listed here as optional learning for technical job roles",
     "Duration": "31.75 H",
     "More information": "Optional learning for POL technical job roles includes:<p>TAC42115  POL Troubleshooting</p><p>TAC42116  POL Advanced Configurations</p><p>TAC42114  POL L2 Service Configurations</p><p>TAC60042W Passive Optical LAN Solution Introduction</p><p>TAC60049W POL Fiber Concepts and Principles</p><p>TAC60032W IP/Ethernet Demystification Part 1</p><p>TAC60033W IP/Ethernet Demystification Part 2</p><p>TAC42098W Introduction to IPv6 in Fixed Broadband Access</p>"
@@ -1066,11 +867,8 @@
   {
     "ID": "n.1490283486311",
     "Title": "Segments and Solutions",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=77094b4a-1d86-4a2f-82a9-932bc6e3bbc8"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=77094b4a-1d86-4a2f-82a9-932bc6e3bbc8",
     "Audience": "<p><strong><u>Note: In order to obtain a sales associate or sales engineer certification, you must also successfully complete the Segments curriculum.</u></strong></p>",
     "Description": "<p>This is the Segment and Solutions Curriculum which is required for partners who want to be certified as a Sales Associate or Sales Engineer. </p><p>The courses within this curriculum covers Nokia's solutions specific to the Global Enterprise and Public Sector markets. </p>",
     "Duration": "1 Hour",
@@ -1079,22 +877,16 @@
   {
     "ID": "n.1491041773757",
     "Title": "Software Solutions - Vital Suite Sales Engineer Specialist",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=204b922d-5e6d-44ed-bd3e-0a08b787a394"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=204b922d-5e6d-44ed-bd3e-0a08b787a394",
     "Description": "The courses included in this curriculum focus on the technical details of the products in the VitalSuite product portfolio.",
     "More information": "<ul><li>TAP00007W 1.0 VitalNet 14 Overview</li><li>TAP00008W 1.0 VitalNet Real Time 14 Overview</li><li>TAP00009W 1.0 VitalFlow 14 Overview</li><li>TAP00010W 1.0 VitalApps 14 Overview</li><li>TAP00011W 1.0 VitalART 14 Overview</li><li>TAP00012W 1.0 VitalSuite Pre-Sales Technical Overview</li><li>TAP00013W 1.0 Difficulty in Identifying Network Issues</li><li>TAP00014W 1.0 VOIP Quality Issues</li><li>TAP00015W 1.0 Monitoring IPV6 Devices</li><li>TAP00016W 1.0 Application Mapping</li><li>TAP00017W 1.0 Traps</li><li>TAP00018W 1.0 VM Environment</li><li>TAP00019W 1.0 Real-Time Application Performance</li><li>TOS00001V 1.0 VitalSuite Pricing and Sizing</li></ul>"
   },
   {
     "ID": "n.1491042545004",
     "Title": "Software Solutions - VitalSuite Sales Associate",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=02e043c0-0b31-4b54-9b56-6acd53e69f59"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=02e043c0-0b31-4b54-9b56-6acd53e69f59",
     "Description": "The courses included in this curriculum focus on Nokia's relationship with their Partners, Key to Selling Nokia products, and the VitalSuite product portfolio.",
     "Duration": "5 H",
     "More information": "<ul><li>TBU00071W Nokia and Partners - Opportunities together</li><li>TAP00004W VitalSuite Sales - Performance management and the market</li><li>TAP00005W VitalSuite Sales - Understanding the market</li><li>TAP00006W VitalSuite Sales - Selling the VitalSuite solution</li><li>TAP00007W VitalNet 14 Overview</li><li>TAP00008W VitalNet Real Time 14 Overview</li><li>TAP00009W VitalFlow 14 Overview</li><li>TAP00010W VitalApps 14 Overview</li><li>TAP00011W VitalART 14 Overview</li><li>TBU31159W GPP Deal Registration Training for Partners</li></ul>"
@@ -1102,11 +894,8 @@
   {
     "ID": "n.1491043077800",
     "Title": "Software Solutions - VitalSuite Installation",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=09d50b42-e02b-4170-9493-ebd72c204953"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=09d50b42-e02b-4170-9493-ebd72c204953",
     "Description": "The course included in this curriculum focuses installation of the&nbsp;in the VitalSuite product portfolio.",
     "Duration": "30 H",
     "More information": "<ul><li>TOS00050 VitalSuite Installation and Administration</li></ul>"
@@ -1114,11 +903,8 @@
   {
     "ID": "n.1491043469779",
     "Title": "Software Solutions - VitalSuite Administration",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=8df95ccd-5fe7-4a54-9f9e-56102161bcec"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=8df95ccd-5fe7-4a54-9f9e-56102161bcec",
     "Description": "he course included in this curriculum focuses installation of the in the VitalSuite product portfolio.",
     "Duration": "30 H",
     "More information": "<p>•TOS00050 VitalSuite Installation and Administration </p>"
@@ -1126,24 +912,17 @@
   {
     "ID": "n.1491043749021",
     "Title": "Software Solutions - VitalSuite User",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=52f8513b-9c67-4ab1-abcd-1a0143e3e9d5"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=52f8513b-9c67-4ab1-abcd-1a0143e3e9d5",
     "Description": "<p>The course included in this curriculum focuses installation of the in the VitalSuite product portfolio.</p>",
     "Duration": "30 H",
     "More information": "<p>•TOS00050 VitalSuite Installation and Administration</p>"
   },
   {
     "ID": "n.1491044154934",
-    "Title": "Software Solutions - VitalQIP Sales Associate ",
-    "type": 2,
+    "Title": "Software Solutions - VitalQIP Sales Associate",
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b2666f00-e60d-4a15-bbc2-09ef28071a17"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b2666f00-e60d-4a15-bbc2-09ef28071a17",
     "Description": "The courses included in this curriculum focus on Nokia's relationship with their Partners, Key to Selling Nokia products, and the VitalQIP product.",
     "Duration": "1.5 H",
     "More information": "<ul><li>TBU00071W Nokia and Partners - Opportunities together</li><li>TAP00020W VitalQIP Sales</li><li>TBU31159W GPP Deal Registration Training for Partners</li></ul>"
@@ -1151,12 +930,8 @@
   {
     "ID": "n.1491044543892",
     "Title": "Software Solutions - VitalQIP Sales Engineer Specialist",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3aa64dd6-c132-48a0-97ab-7c73f66775e1"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3aa64dd6-c132-48a0-97ab-7c73f66775e1",
     "Description": "The courses included in this curriculum focus on the technical details of the VitalQIP product.",
     "Duration": "3.5 H",
     "More information": "<ul><li>TAP00020W VitalQIP Sales</li><li>TAP00021W VitalQIP Pre-Sales</li><li>TAP00022W VitalQIP Appliance Overview</li><li>TAP00023W VitalQIP_8.1_Release_Update</li></ul>"
@@ -1164,23 +939,17 @@
   {
     "ID": "n.1491044781276",
     "Title": "Software Solutions - VitalQIP Installation",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=47e6d739-76e3-4bf6-9e84-5fd09b757078"
-    },
-    "Description": "The course included in this curriculum focuses installation of the VitalQIP product. ",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=47e6d739-76e3-4bf6-9e84-5fd09b757078",
+    "Description": "The course included in this curriculum focuses installation of the VitalQIP product.",
     "Duration": "1.5 H",
     "More information": "<ul><li>TOS00201W VitalQIP Installation</li></ul>"
   },
   {
     "ID": "n.1491045039298",
     "Title": "Software Solutions - VitalQIP - Administration",
-    "type": 2,
     "Icon": "img/seeMore.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=89191456-dc75-480a-88bc-a99f80ff6888"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=89191456-dc75-480a-88bc-a99f80ff6888",
     "Description": "<p>The course included in this curriculum focuses installation of the VitalQIP product. </p>",
     "Duration": "1.5 H",
     "More information": "<p>•TOS00201W VitalQIP Installation</p>"
@@ -1188,19 +957,15 @@
   {
     "ID": "n.1491045157249",
     "Title": "Software Solutions - VitalQIP User",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=8ce105e1-ffcc-42fd-a852-70615219a814"
-    },
-    "Description": "The course included in this curriculum focuses installation of the VitalQIP product. ",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=8ce105e1-ffcc-42fd-a852-70615219a814",
+    "Description": "The course included in this curriculum focuses installation of the VitalQIP product.",
     "Duration": "1.5 H",
     "More information": "•TOS00201W VitalQIP Installation"
   },
   {
     "ID": "n.1491585849503",
     "Title": "Partner Tools",
-    "type": 1,
     "Icon": "img/i.1491585849503.1597.jpg",
     "Solutions": [
       "n.1473429667111",
@@ -1223,7 +988,6 @@
   {
     "ID": "n.1491585944083",
     "Title": "Product Videos on YouTube",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1466703913184",
@@ -1241,7 +1005,6 @@
   {
     "ID": "n.1491585983874",
     "Title": "Powering up the Partner",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Description": "<p>Powering up the Partner webcasts bring subject matter experts on the topics that are important to partners: product updates, partner tools, and industry news. You pick your topics. New webcasts will be added frequently.</p>",
     "Solutions": [
@@ -1287,160 +1050,112 @@
   {
     "ID": "n.1474899169812",
     "Title": "Nokia.com Status and Invoice Order Tools For Global&nbsp;Partners&nbsp;",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=24b3a72d-2a3c-4e74-8fbe-ad37ea2eaf82"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=24b3a72d-2a3c-4e74-8fbe-ad37ea2eaf82",
     "Description": "<p>Today’s webast will contain an overview of the Nokia Order Status/Invoice Services extranet tools for partners/customers not located in the US. An overview of both the Order Status Query functions and Invoice Status Query functions will be presented. The extranet tools presented contain the information direct from the Nokia order processing system with a one day batch cycle delay. After attending today’s session each participant will have the ability to track order status direct within the extranet tool</p><p>Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/Nokia.Com+Order+and+Invoice+Status+Tools+Overview+for+Partners++Non+US/4c48a7b1-01e2-4159-939c-d0853314a28a\" target=\"_blank\">here</a> for Guide </p>"
   },
   {
     "ID": "n.1472826276151",
     "Title": "Learning More About Segments and Solutions Sales Training",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=d41ab398-7cfb-4bf2-83c4-cde08fa2bc68"
-    },
-    "Description": "You are invited to join Partner Learning Leads for NokiaEDU, for Rev Up: Segment &amp; Solutions. In this live webcast, find out about Segment &amp; Solutions training modules that are short, instructive and packed with helpful information for your Company. A Q&amp; A segment will be included in this webinar. In addition to our main topic, you are encouraged to ask about The Learning Store, related training, MyPLE and Nokia Certification. Rev Up: Segment &amp; Solutions is free of charge – sign up today! "
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=d41ab398-7cfb-4bf2-83c4-cde08fa2bc68",
+    "Description": "You are invited to join Partner Learning Leads for NokiaEDU, for Rev Up: Segment &amp; Solutions. In this live webcast, find out about Segment &amp; Solutions training modules that are short, instructive and packed with helpful information for your Company. A Q&amp; A segment will be included in this webinar. In addition to our main topic, you are encouraged to ask about The Learning Store, related training, MyPLE and Nokia Certification. Rev Up: Segment &amp; Solutions is free of charge – sign up today!"
   },
   {
     "ID": "n.1472826075706",
     "Title": "Product Support Portal Overview",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b1978e61-b813-4724-9db7-27e6150ffd38"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b1978e61-b813-4724-9db7-27e6150ffd38",
     "Description": "<p> John will cover key highlights of the Product Support Portal and support collateral that is available through the search engine. The use of search refinement and filter sets will also be covered. </p>"
   },
   {
     "ID": "n.1472825421378",
     "Title": "Nokia.Com Order and Invoice Status Tools Overview for US Partners",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=5b5696bf-3d5b-4301-8c4a-714a809a4305"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=5b5696bf-3d5b-4301-8c4a-714a809a4305",
     "Description": "Today’s webcast will contain an overview of the Nokia North America Order Status/Order Invoice Services extranet tool for US customers/partners only. The extranet tools presented contain the information direct from the Nokia order processing system with a one day batch cycle delay. After attending today’s session each participant will have the ability to track order status direct within the extranet tool."
   },
   {
     "ID": "n.1473429667111",
     "Title": "Co-Marketing Tool",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a0bf7049-d3b2-4c07-a657-38dde20a16c6"
-    },
-    "Description": "The Nokia Co-Marketing Platform – Enabling Growth with Integrated, Co-Branded Marketing and Lead Generation The Nokia Co-Marketing Platform enables our partners to create, customize, deliver and track fully integrated ,co-branded marketing and lead generation campaigns. This tool can help extend Nokia partner’s reach into new markets and increase business with existing customers . In this session we will discuss the features and functionality of the tool and how best it can be used to promote Nokia products and solutions and generate leads. "
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a0bf7049-d3b2-4c07-a657-38dde20a16c6",
+    "Description": "The Nokia Co-Marketing Platform – Enabling Growth with Integrated, Co-Branded Marketing and Lead Generation The Nokia Co-Marketing Platform enables our partners to create, customize, deliver and track fully integrated ,co-branded marketing and lead generation campaigns. This tool can help extend Nokia partner’s reach into new markets and increase business with existing customers . In this session we will discuss the features and functionality of the tool and how best it can be used to promote Nokia products and solutions and generate leads."
   },
   {
     "ID": "n.1476719876800",
     "Title": "Mission Critical Network for Industries and Public Sector",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ff930456-4ad5-4ff2-ac52-43485c983679"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ff930456-4ad5-4ff2-ac52-43485c983679",
     "Description": "This webcast will introduce you to the Nokia mission-critical WAN solution and cover key customer cases across different verticals. Customers in industries and public sector rely on secure, reliable and flexible mission-critical networks to enable operational technology and IT/corporate services. Nokia has proven experience and is committed to these markets, including products and features tailored for industry applications. The IP/MPLS and Packet Optical solutions are well positioned to capture opportunities such as new network deployment, TDM to packet network migration, and private WAN refresh.",
     "Duration": "<p>35 minutes</p>"
   },
   {
     "ID": "n.1476719752085",
-    "Title": "Subject Matter Expert (SME)&nbsp;on Demand! ",
-    "type": 2,
+    "Title": "Subject Matter Expert (SME)&nbsp;on Demand!",
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=da88a13e-789b-4fc6-ab10-fcf223abaa1a"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=da88a13e-789b-4fc6-ab10-fcf223abaa1a",
     "Description": "Join this webcast to learn about Nokia’s SME On-Demand offerings and how to access them. SME On-Demand is an open approach to optional Partner Learning that is available to every partner employee. You can benefit from the expertise and knowledge of Nokia Subject Matter Experts on topics that appeal to you. Certification Training continues to be assigned by NokiaEDU."
   },
   {
     "ID": "n.1477666810140",
     "Title": "Nokia Partner Portal Access Management Training",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=644c48b0-14f2-41f5-806d-70711c7f7e88"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=644c48b0-14f2-41f5-806d-70711c7f7e88",
     "Description": "<p>Join this live Nokia Partner Portal Access Management Training with Beatriz Rios-Mckee as she guides you step-by-step on the process to add, change or remove employee access to the Nokia Partner Portal. You will also learn how to request access to additional resources such as Configurators, Coop, and Order Management and how to run reports.</p><p> </p><p> </p>"
   },
   {
     "ID": "n.1478276124793",
     "Title": "Network Solution for Legacy SCADA",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ab9d4d14-91f5-4717-9968-24901320dd0e"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ab9d4d14-91f5-4717-9968-24901320dd0e",
     "Description": "Driven by TDM sunset in telecommunications industry, utilities, transport, and mining are either starting to investigate or plan or migrate their legacy mission-critical grid applications such as SCADA to a new packet-based network. Migrating legacy SCADA traffic requires the new packet-based network to connect to legacy interface like RS-232/V.24 and 4-wire E&amp;M used in legacy SCADA system, transport SCADA traffic with deterministic quality of service, resiliency and security; as well as accommodate the unique multi-drop nature of SCADA communications protocol. This session explores a network architecture based on IP/MPLS, a prevalent packet technology used in mission-critical network, to address these challenges at once."
   },
   {
     "ID": "n.1478276444999",
     "Title": "Cloud DCI and Layer 1 Security",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ae33e09a-aadb-4378-9001-50f4b06684fc"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ae33e09a-aadb-4378-9001-50f4b06684fc",
     "Description": "This webinar will provide information on two use cases for Nokia’s 1830 PSS: Cloud DCI and Layer 1 security. Cloud DCI is an optical transport application that helps enterprises connect their data centers for workload virtualization and cloud adoption. Nokia helps enterprises build a solution matched to their needs, in private, virtual private or public cloud implementations. Layer 1 security shows how in-flight data can be protected from theft or intrusion through technologies including AES-256 encryption with strong keys, and optical intrusion detection."
   },
   {
     "ID": "n.1481046901332",
     "Title": "Enhance Business Performance With Nokia's Passive Optical Lan&nbsp;",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3556087f-37ef-4ca6-b94b-e68f42b4ec5b"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3556087f-37ef-4ca6-b94b-e68f42b4ec5b",
     "Description": "Nokia’s Passive Optical LAN solution leverages widely deployed fiber technology to provide a new approach to LAN connectivity. A POL deployment offers a future-proof investment in fiber that provides advantages today and scales to support growing bandwidth needs for tomorrow. POL can address a wide array of applications, providing partners with opportunities to position complementary products and services."
   },
   {
     "ID": "n.1481555026349",
     "Title": "Introduction to CSOD, Nokia's New Learning Platform",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b020f5bf-241d-498c-bc64-f1c297166558"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=b020f5bf-241d-498c-bc64-f1c297166558",
     "Description": "Nokia is moving to a new learning platform that will simplify access to required and optional learning. Join this session, led by our Partner Learning Leads, for a demonstration of the new platform and the improvements it will bring to Partner training."
   },
   {
     "ID": "n.1486394932231",
-    "Title": "The New Partner Prime! ",
-    "type": 2,
+    "Title": "The New Partner Prime!",
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ea4e8b1e-ed3d-49e2-bda9-8d06aaed7772"
-    },
-    "Audience": "",
-    "Description": "Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/Partner+Prime+Webinar+-+How+to+use+admin+function+in+portal/e3f95d25-b1e1-4b42-9fc6-0e18c1fdf8cb\" target=\"_blank\">here</a> for guide "
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=ea4e8b1e-ed3d-49e2-bda9-8d06aaed7772",
+    "Description": "Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/Partner+Prime+Webinar+-+How+to+use+admin+function+in+portal/e3f95d25-b1e1-4b42-9fc6-0e18c1fdf8cb\" target=\"_blank\">here</a> for guide"
   },
   {
     "ID": "n.1490717620848",
     "Title": "Where to Find Partner Pricing",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=15157d3f-dec1-43c9-bcb6-b012fb9a69d5"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=15157d3f-dec1-43c9-bcb6-b012fb9a69d5",
     "Description": "<p>Learn Where To Find Partner Pricing: a detailed walk-through showing where to find pricing for all the technologies on the Partner Portal. </p><p>Click<a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/How+to+find+partner+pricing/d7f1a0d3-792a-435f-a6be-159947db15c7\" target=\"_blank\"> here</a> for guide. </p>"
   },
   {
     "ID": "n.1482250051942",
     "Title": "Introducing Your Intuitive Tool to View the Size of the Market Accessible to You.&nbsp;",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=d564624b-aeaa-4c5d-a7a6-a42aafa446e9"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=d564624b-aeaa-4c5d-a7a6-a42aafa446e9",
     "Description": "<p>Larger partners will often evolve their operations over time extending their operations from a single segment in their home market to a multi-country, multi-segment operation. The step by step evolution of such partners will very much be based on business considerations, comparing additional revenue potential with the additional effort. When considering such evolutions, Nokia has seen recurring requests to get access to “revenue data” to help validate each step in this evolution. To meet such requests, Nokia has developed a tool specifically designed to support this step by step partner evolution. This highly intuitive tool allows a partner to enter any combination of markets and segments and will provide a view of the size of their market across the different technology areas. The session consists of three parts </p><p>• A user training to introduce any interested parties to the use of the intuitive tool and the different outputs made accessible</p><p>&nbsp;• A number of recurring usage scenarios based on experience with partners who have been given access to previous versions of the tool </p><p>• Background on the source of the data used for the tool and field experience A tool highly recommended for any partner looking to verifying the potential of existing coverage and looking to extending their coverage</p>"
   },
   {
     "ID": "n.1491586063871",
     "Title": "Partner Sales Skills",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1492548248452",
@@ -1451,7 +1166,6 @@
   {
     "ID": "n.1491586074193",
     "Title": "Segment Sales Training",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Description": "<p>The training in this section will focus on the industry segments.</p>",
     "Solutions": []
@@ -1459,7 +1173,6 @@
   {
     "ID": "n.1491587531656",
     "Title": "Elective Training",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Description": "<p>Additional courses to learn more about each technology.  You may take one or more courses out of any of these lists.</p>",
     "Solutions": [
@@ -1474,7 +1187,6 @@
   {
     "ID": "n.1492547660000",
     "Title": "Service Desk Clerk",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Description": "<p>The Service Desk Clerk is the \"voice to the customer\" within the Partner's Tech Support Help Desk. This person interacts with each customer calling in to collect all necessary information to provide the best experience for both the Partner and Nokia. The information captured by this person allows the appropriate Technical Support team to resolve an incident without having to repeatedly contact the customer for additional information.</p>",
     "Solutions": [
@@ -1484,7 +1196,6 @@
   {
     "ID": "n.1492547723335",
     "Title": "Services Sales",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Description": "<p>The Services Sales Associate is responsible for selling Nokia services products.</p>",
     "Solutions": [
@@ -1494,7 +1205,6 @@
   {
     "ID": "n.1492547772171",
     "Title": "Partner Relationship",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1496689073244"
@@ -1503,19 +1213,15 @@
   {
     "ID": "n.1492548248452",
     "Title": "Why Sell Training to your Customers?",
-    "type": 2,
     "Icon": "img/seeMore.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a6071619-37ce-4b48-8318-bb90fb89ba4b"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a6071619-37ce-4b48-8318-bb90fb89ba4b",
     "Audience": "<p>for Global Partners</p>",
     "Description": "<p>This course (# TBU00075W) outlines the benefits training can bring to our partner customer’s business and to our partner's business, explains how our partners can capture new sales opportunities, and describes the Nokia’s learning solution offer.</p>",
     "Duration": "<p>20 Minutes</p>"
   },
   {
     "ID": "n.1492618723529",
-    "Title": "AirScale Wi-Fi  ",
-    "type": 1,
+    "Title": "AirScale Wi-Fi",
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1492686030893",
@@ -1527,12 +1233,8 @@
   {
     "ID": "n.1492686030893",
     "Title": "Airscale Wi-Fi Sales Associate",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=f8af7cb5-f340-4499-bd2d-6d2327a2fe71"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=f8af7cb5-f340-4499-bd2d-6d2327a2fe71",
     "Description": "The courses included in this curriculum focus on Nokia's relationship with their Partners, Key to Selling Nokia products, and the Airscale Wi-Fi&nbsp;product portfolio.",
     "Duration": "1.5 H",
     "More information": "<ul><li>TBU00071W Nokia and Partners - Opportunities together</li><li>TBU31159W GPP Deal Registration Training for Partners</li><li>TMO00432W Nokia Airscale Wi-Fi Sales training</li></ul>"
@@ -1540,128 +1242,94 @@
   {
     "ID": "n.1493035788390",
     "Title": "Selling Maintenance to Your Customer",
-    "type": 2,
     "Icon": "img/i.1490085144820.2890.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=c4b14f08-6476-4515-8815-494e89cdff00"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=c4b14f08-6476-4515-8815-494e89cdff00",
     "Description": "<p>This course is designed to help Partners know the value of Nokia maintenance services to their customers and prospects.</p><p>Course outline:</p><ul><li> How a Maintenance contract protects your customer </li><li>Nokia Maintenance portfolio</li><li>Understanding Nokia added values</li><li>In closing</li></ul>",
     "Duration": "20 Min"
   },
   {
     "ID": "n.1466703913184",
     "Title": "4000 IP Interconnect Solution",
-    "type": 2,
     "Icon": "img/youtube.jpg",
-    "Url": {
-      "all": "https://www.youtube.com/watch?v=XCFtXCNiNc4&feature=youtu.be"
-    },
+    "Url": "https://www.youtube.com/watch?v=XCFtXCNiNc4&feature=youtu.be",
     "Description": "Buckle Up, This is Going to be Fast: introducing&nbsp;&nbsp;400G IP. Watch video to see 400G IP line card in action.",
     "Duration": "1:39"
   },
   {
     "ID": "n.1466703686540",
     "Title": "Analyst Sterling Perrin Interviews Steve Vogelsang&nbsp;",
-    "type": 2,
     "Icon": "img/youtube.jpg",
-    "Url": {
-      "all": "https://www.youtube.com/watch?v=lRlQA5iL6EU"
-    },
+    "Url": "https://www.youtube.com/watch?v=lRlQA5iL6EU",
     "Description": "<p>The Network Services Platform is purpose built to leverage Carrier SDN technologies and bridges the gap between service provisioning and network engineering. The NSP allows operators to provision services in seconds, cut development time and costs by over 50%, and increase revenue-generating traffic. See the interview between HeavyReading Analyst Sterling Perrin and Alcatel-Lucent's IPRT CTO Steve Vogelsang.</p><p>For more information, updates and useful links, please visit: www.alcatel-lucent.com/products/network-­services-platform</p>",
     "Duration": "5:02"
   },
   {
     "ID": "n.1466704212263",
-    "Title": "Computing a Path to more Profits with Bell Labs Self-Tuned Adaptive Routing ",
-    "type": 2,
+    "Title": "Computing a Path to more Profits with Bell Labs Self-Tuned Adaptive Routing",
     "Icon": "img/youtube.jpg",
-    "Url": {
-      "all": "https://www.youtube.com/watch?v=h_Dhip_JbzY"
-    },
+    "Url": "https://www.youtube.com/watch?v=h_Dhip_JbzY",
     "Description": "Compute a Path to More Profits with Alcatel-Lucent. Run a balanced and elastic IP routing infrastructure using the Bell Labs Self-Tuned Adaptive Routing (STAR) algorithm. Bell Labs STAR helps you deliver on-demand services quickly, cost-effectively and with efficient use of network resources",
     "Duration": "2:35"
   },
   {
     "ID": "n.1467127983219",
     "Title": "Gigabit Express Animation",
-    "type": 2,
     "Icon": "img/youtube.jpg",
-    "Url": {
-      "all": "https://www.youtube.com/watch?v=xMA8ueQkrqc"
-    },
+    "Url": "https://www.youtube.com/watch?v=xMA8ueQkrqc",
     "Description": "\"Gigabit Express\", a solution to help municipalities and local broadband providers in the United States accelerate the creation of new Gigabit communities.",
     "Duration": "3:51"
   },
   {
     "ID": "n.1467128078210",
-    "Title": "History of Missed Opportunities ",
-    "type": 2,
+    "Title": "History of Missed Opportunities",
     "Icon": "img/youtube.jpg",
-    "Url": {
-      "all": "https://www.youtube.com/watch?v=I25QA45Xdec"
-    },
+    "Url": "https://www.youtube.com/watch?v=I25QA45Xdec",
     "Description": "Here's a collection of missed business opportunities from the Light Bulb to the Car to the PC. Now, don't miss out on Fiber for your Cable business.",
     "Duration": "1:57"
   },
   {
     "ID": "n.1467127813972",
     "Title": "Light Up The Fiber",
-    "type": 2,
     "Icon": "img/youtube.jpg",
-    "Url": {
-      "all": "https://www.youtube.com/watch?v=8whr7-LAx5w"
-    },
+    "Url": "https://www.youtube.com/watch?v=8whr7-LAx5w",
     "Description": "Nokia powers some of the largest and most advanced broadband networks in the world. We help broadband providers and communities deliver gigabit services to people like Granny and Sophie - so they can enjoy all the benefits of a digital society",
     "Duration": "2:24"
   },
   {
     "ID": "n.1467127644900",
     "Title": "Micro-Nodes: Fire Proof, Water Proof, Sophie Proof",
-    "type": 2,
     "Icon": "img/youtube.jpg",
-    "Url": {
-      "all": "https://www.youtube.com/watch?v=GQwJ73TinOA"
-    },
+    "Url": "https://www.youtube.com/watch?v=GQwJ73TinOA",
     "Description": "Our new micro-nodes are designed to survive the many perils of the city....but will they survive Sophie?",
     "Duration": "1:30"
   },
   {
     "ID": "n.1466703084436",
     "Title": "Network Services Platform: Carrier SDN For the On-Demand Network&nbsp;",
-    "type": 2,
     "Icon": "img/youtube.jpg",
-    "Url": {
-      "all": "https://www.youtube.com/watch?v=6bQNOdAqOz0&list=PLbNqzgv-Xo7nd4SK48zQnDXEt388EyjtM"
-    },
+    "Url": "https://www.youtube.com/watch?v=6bQNOdAqOz0&list=PLbNqzgv-Xo7nd4SK48zQnDXEt388EyjtM",
     "Description": "Be dynamic in your service delivery. See how our Network Services Platform can help you transform your network services for an on-demand world. A unified approach to automation and control of IP/optical networks.",
     "Duration": "2:00"
   },
   {
     "ID": "n.1467128367224",
     "Title": "VPN Designed for Cloud",
-    "type": 2,
     "Icon": "img/youtube.jpg",
-    "Url": {
-      "all": "https://www.youtube.com/watch?v=mG5by2pgYMY&feature=youtu.be"
-    },
+    "Url": "https://www.youtube.com/watch?v=mG5by2pgYMY&feature=youtu.be",
     "Description": "<p>Nuage Networks Virtualized Network Services (VNS) is a complementary service to your existing IP and Carrier Ethernet (CE) VPN services. However unlike those VPN services, Nuage Networks VNS was specifically developed to serve enterprises that are adopting a cloud-based IT consumption model.</p><p>Nuage Networks VNS aligns the network service to the needs of the enterprise and provides the flexibility to deliver an unconstrained network experience that matches the dynamic cloud environment.</p><p>Traditional VPN services are tightly connected to a dedicated network infrastructure. Nuage Networks VNS is based on an overlay model that uses any IP network to provide connectivity between sites, including your existing VPN, fixed broadband or mobile broadband. </p><p>This gives your customers maximum flexibility and the option to choose from available access/last-mile technologies including copper, fiber or wireless.</p>",
     "Duration": "1:50"
   },
   {
     "ID": "d.127",
-    "Title": "Think Fast, Talk Smart: Communication Techniques ",
-    "type": 2,
+    "Title": "Think Fast, Talk Smart: Communication Techniques",
     "Icon": "img/youtube.jpg",
-    "Url": {
-      "all": "https://www.youtube.com/watch?v=HAnw168huqA"
-    },
+    "Url": "https://www.youtube.com/watch?v=HAnw168huqA",
     "Description": "Communication is critical to success in business and life. Concerned about an upcoming interview? Anxious about being asked to give your thoughts during a meeting? Fearful about needing to provide critical feedback in the moment? (This video is a TED Talk video)",
     "Duration": "60 mins"
   },
   {
     "ID": "n.1487095273599",
     "Title": "Partner Portal Access Management Tools&nbsp;",
-    "type": 1,
     "Icon": "img/i.1487095273599.4801.jpg",
     "Solutions": [
       "n.1486394932231",
@@ -1671,26 +1339,19 @@
   },
   {
     "ID": "n.1487689542881",
-    "Title": "Salesforce.com Deal Registration for Partners ",
-    "type": 2,
-    "Icon": "img/putp.jpg",
-    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=3e3c8faf-99d6-4310-ad0a-660fd62ea922"
+    "Title": "Salesforce.com Deal Registration for Partners",
+    "Icon": "img/putp.jpg"
   },
   {
     "ID": "n.1490717574047",
-    "Title": "SAM 14 Workaround ",
-    "type": 2,
+    "Title": "SAM 14 Workaround",
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=caa2e6b5-6cb7-409b-94e4-f2567789192d"
-    },
-    "Audience": "",
-    "Description": "Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2787891/9133766/Nebula+quick+start+guide/97b5057a-d2d2-42cb-8122-5a327aa37bc6\" target=\"_blank\">here</a> to see the guide. "
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=caa2e6b5-6cb7-409b-94e4-f2567789192d",
+    "Description": "Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2787891/9133766/Nebula+quick+start+guide/97b5057a-d2d2-42cb-8122-5a327aa37bc6\" target=\"_blank\">here</a> to see the guide."
   },
   {
     "ID": "n.1493796513770",
     "Title": "Optical Network Additional",
-    "type": 1,
     "Icon": "img/i.1490213384068.4624.png",
     "Description": "<p>Additional Training for Optical Network products</p>",
     "Solutions": [
@@ -1702,7 +1363,6 @@
   {
     "ID": "n.1493796609741",
     "Title": "1830 PSS Additional&nbsp;",
-    "type": 1,
     "Icon": "img/i.1490213384068.4624.png",
     "Solutions": [
       "n.1493796880748",
@@ -1713,7 +1373,6 @@
   {
     "ID": "n.1493796652422",
     "Title": "1830 TDMX(C)",
-    "type": 1,
     "Icon": "img/i.1490084730629.5068.png",
     "Solutions": [
       "n.1493798009431"
@@ -1722,7 +1381,6 @@
   {
     "ID": "n.1493796822370",
     "Title": "1830 LX",
-    "type": 1,
     "Icon": "img/i.1490213993250.3534.png",
     "Description": "<p>1830 Link Extender</p>",
     "Solutions": [
@@ -1732,7 +1390,6 @@
   {
     "ID": "n.1493796880748",
     "Title": "1830 PSS 4/8/16/32",
-    "type": 1,
     "Icon": "img/i.1490084730629.5068.png",
     "Solutions": [
       "n.1493797441596",
@@ -1744,7 +1401,6 @@
   {
     "ID": "n.1493796960690",
     "Title": "1850 TSS Additional",
-    "type": 1,
     "Icon": "img/i.1490213993250.3534.png",
     "Solutions": [
       "n.1493796977954",
@@ -1754,7 +1410,6 @@
   {
     "ID": "n.1493796977954",
     "Title": "1850 TSS 5C/R",
-    "type": 1,
     "Icon": "img/i.1490213993250.3534.png",
     "Solutions": [
       "n.1493798668424",
@@ -1766,7 +1421,6 @@
   {
     "ID": "n.1493797007714",
     "Title": "1850 TSS 160/320&nbsp;",
-    "type": 1,
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1493799602443",
@@ -1776,9 +1430,7 @@
   {
     "ID": "n.1493797441596",
     "Title": "1830 PSS L2 Networking",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {},
     "Description": "<p>The Operational &amp; Maintenance course for the 1830 PSS L2 cards</p>",
     "Duration": "<p>2 days</p>",
     "More information": "<p>TOP63102 1830 PSS 4/8/16/32 L2 Networking O&amp;M</p>"
@@ -1786,53 +1438,41 @@
   {
     "ID": "n.1493797637033",
     "Title": "Optical Network Additional b",
-    "type": 1,
     "Icon": "img/i.1490213192331.3739.png",
-    "Description": "",
     "Solutions": []
   },
   {
     "ID": "n.1493797928557",
     "Title": "1830 LX O&amp;M&nbsp;",
-    "type": 2,
     "Icon": "img/i.1490085144820.2890.png",
-    "Url": {},
     "Duration": "<p>2 Days</p>",
     "More information": "<p>TOP18200 &nbsp; &nbsp;1830 LX (Link Extender) O&amp;M &nbsp; &nbsp; &nbsp;[2d]</p>"
   },
   {
     "ID": "n.1493798009431",
     "Title": "1830 TDMX(C) Operation and Maintenance",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {},
     "Duration": "<p>3 Days</p>",
     "More information": "<p>TOP52610 &nbsp; 1830 TDMX-C Overview &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[1d]</p><p>TOP52611 &nbsp; 1830 TDMX-C SDH Operation &nbsp; &nbsp;[1d]</p><p>TOP52612 &nbsp; &nbsp;1830 TDMX-C Maintenance &nbsp; &nbsp; &nbsp; [1d]</p>"
   },
   {
     "ID": "n.1493798248800",
     "Title": "1830 PSS Diag",
-    "type": 2,
     "Icon": "img/i.1490213993250.3534.png",
-    "Url": {},
     "Description": "<p>Descr</p>",
     "More information": "<p><a href=\"http://learningstore.eecloud.dynamic.nsn-net.net/partner3/test/#?item=n.1493796880748\" target=\"_blank\">1830 PSS 4/8/16/32</a></p><p><a href=\"http://learningstore.eecloud.dynamic.nsn-net.net/partner3/test/#?item=n.1493796822370\" target=\"_blank\">1830 LX</a></p>"
   },
   {
     "ID": "n.1493798668424",
     "Title": "1850 TSS 5R Operation",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {},
     "Description": "<p>1850 TSS 5R Operation</p>",
     "More information": "<p>TOP52703 &nbsp; 1850 TSS 5R &nbsp;Overview</p><p>TOP52704 &nbsp; 1850 TSS 5R &nbsp;Operation&nbsp;</p>"
   },
   {
     "ID": "n.1493798952649",
     "Title": "1850 TSS 5R Maintenance",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {},
     "Description": "<p>1850 TSS 5R Maintenance</p>",
     "Duration": "<p>2 Days</p>",
     "More information": "<p>TOP52703 &nbsp; 1850 TSS 5R Overview</p><p>TOP52705 &nbsp; 1850 TSS 5R Maintenance</p>"
@@ -1840,46 +1480,35 @@
   {
     "ID": "n.1493799148831",
     "Title": "1850 TSS 5C Operation",
-    "type": 2,
     "Icon": "img/seeMore.png",
-    "Url": {},
     "Duration": "<p>4 Days</p>",
     "More information": "<p>TOP52506 &nbsp; 1850 TSS -5C Overview</p><p>TOP52507 &nbsp; 1850 TSS -5C Operation</p>"
   },
   {
     "ID": "n.1493799261908",
     "Title": "1850 TSS 5C Maintenance",
-    "type": 2,
     "Icon": "img/seeMore.png",
-    "Url": {},
     "Duration": "<p>2 Days</p>",
     "More information": "<p>TOP52506 &nbsp; 1850 TSS -5C Overview</p><p>TOP52508 &nbsp; 1850 TSS -5C Maintenance</p>"
   },
   {
     "ID": "n.1493799602443",
     "Title": "1850 TSS 320-160 Operation",
-    "type": 2,
     "Icon": "img/seeMore.png",
-    "Url": {},
-    "Description": "",
     "Duration": "<p>8 Days</p>",
     "More information": "<p>TOP63049W &nbsp; 1850 TSS 320/160 ETSI Overview &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[1h]</p><p>TOP63073 &nbsp; &nbsp; &nbsp;1850 TSS 320/160 ETSI SDH-WDM Operation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[3d]</p><p>TOP63074 &nbsp; &nbsp; &nbsp;1850 TSS 320/160 ETSI Ethernet and Bridge Operation &nbsp; [2d]</p><p>TOP63075 &nbsp; &nbsp; &nbsp;1850 TSS 320/160 ETSI T_MPLS/MPLS-TP Operation &nbsp; &nbsp; &nbsp; [3d]</p>"
   },
   {
     "ID": "n.1493799930662",
     "Title": "1850 TSS 320-160 Maintenance",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {},
     "Duration": "<p>1 Day</p>",
     "More information": "<p>TOP63049W &nbsp;1850 TSS 320/160 Overview &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [1 Days]</p><p>TOP63077 &nbsp; &nbsp; 1850 TSS 320/160 Maintenance &nbsp; &nbsp; [1 Days]</p>"
   },
   {
     "ID": "n.1493800262035",
     "Title": "1830 PSS 36/64 OCS",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {},
     "Description": "<p>1830 PSS 36/64  OCS are the OTH switches of the 1830 PSS family</p>",
     "Duration": "<p>3 Days</p>",
     "More information": "<p>TOP54079W &nbsp; 1830 PSS Introduction &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [1h]</p><p>TOP54067 &nbsp; &nbsp; &nbsp;1830 PSS 36/64 OCS O&amp;M &nbsp; &nbsp; [3d]</p>"
@@ -1887,9 +1516,7 @@
   {
     "ID": "n.1493800438542",
     "Title": "1830 PSS 24x",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {},
     "Description": "<p>1830 PSS 24 enable WDM and OCS switching in a single shelf</p>",
     "Duration": "<p>2 Days</p>",
     "More information": "<p>TOP54079W &nbsp; 1830 PSS Introduction &nbsp; &nbsp; [1h]</p><p>TOP54111 &nbsp; &nbsp; &nbsp;1830 PSS-24X O&amp;M &nbsp; &nbsp; &nbsp; &nbsp; [2d]</p>"
@@ -1897,9 +1524,7 @@
   {
     "ID": "n.1493800773197",
     "Title": "1830 PSS Network Design",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {},
     "Description": "<p>The EPT is the planning tool for 1830 PSS WDM, the 1390 NPT is the planning tool for 1830 PSS WDM and OCS</p>",
     "Duration": "<p>Based on your selection</p>",
     "More information": "<p>TOP63103 &nbsp; &nbsp; Advanced on DWDM network dimensioning &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [2d]</p><p>TOP30021 &nbsp; &nbsp;1830 PSS Engineer and Planning Tool (EPT) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[2d]</p><p>TOP30044 &nbsp; &nbsp;1830 PSS Engineer and Planning Tool Advanced (EPT) &nbsp; &nbsp;[2d]</p><p>TOP63096 &nbsp; &nbsp; 1390 NPT Multilayer Network and Planning tool &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[2d]</p>"
@@ -1907,7 +1532,6 @@
   {
     "ID": "n.1493801380657",
     "Title": "1350 OMS Network Manager Additional",
-    "type": 1,
     "Icon": "img/i.1490023265893.9432.png",
     "Solutions": [
       "n.1493801496584",
@@ -1917,24 +1541,19 @@
   {
     "ID": "n.1493801496584",
     "Title": "1350 OMS - ESM &nbsp;Ethernet Service Management",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {},
     "Duration": "<p>3 Days</p>",
     "More information": "<p>1350 OMS - ESM (Ethernet Service Management) &nbsp;O&amp;M &nbsp; &nbsp;[3d]</p>"
   },
   {
     "ID": "n.1493801627163",
     "Title": "1350 OMS for 1830 PSS OCS&nbsp;",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {},
     "More information": "<p>TOP63112 &nbsp;1350 OMS - Managed plane for 1830 PSS WDM &amp; OCS O&amp;M &nbsp; [5d]</p>"
   },
   {
     "ID": "n.1494332917491",
     "Title": "Microwave Additional",
-    "type": 1,
     "Icon": "img/i.1490091402102.3432.png",
     "Solutions": [
       "n.1494332945522",
@@ -1944,7 +1563,6 @@
   {
     "ID": "n.1494332945522",
     "Title": "9500 MPR Additional",
-    "type": 1,
     "Icon": "img/i.1490086350227.2419.png",
     "Solutions": [
       "n.1494334121556",
@@ -1954,14 +1572,12 @@
   {
     "ID": "n.1494332972438",
     "Title": "5620 SAM Additional",
-    "type": 1,
     "Icon": "img/i.1490086517412.4494.png",
     "Solutions": []
   },
   {
     "ID": "n.1494333028558",
     "Title": "7705 SAR and 9500 MPR-e",
-    "type": 1,
     "Icon": "img/i.1490086517412.4494.png",
     "Solutions": [
       "n.1494338553776"
@@ -1970,83 +1586,61 @@
   {
     "ID": "n.1494334121556",
     "Title": "9500 MPR Web Interface",
-    "type": 2,
     "Icon": "img/i.1490085144820.2890.png",
-    "Url": {},
     "Description": "<p>The web user interface for the 9500MPR</p>",
     "More information": "<p>TWT00011 &nbsp; &nbsp; 9500MPR Global Market MSS8-MSS4 Common functionality Web CT OAM &nbsp;(2d)</p>"
   },
   {
     "ID": "n.1494334319705",
     "Title": "5620 SAM for 9500MPR Management",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {},
     "Description": "<p>5620 SAM for 9500 MPR Management</p>",
     "More information": "<p>TWT42034 &nbsp; &nbsp;5620 SAM for 9500 MPR Management (4d)</p>"
   },
   {
     "ID": "n.1494338553776",
     "Title": "7705 and 9500 MPR-e",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {},
     "More information": "<p>TW63052 &nbsp; &nbsp; &nbsp; &nbsp;7705 SAR R7.0 and 9500 MPR-e R6 Integration &nbsp; (2d)</p>"
   },
   {
     "ID": "n.1494330871007",
-    "Title": "Nokia's New Maintenance Offerings for Partners&nbsp; ",
-    "type": 2,
+    "Title": "Nokia's New Maintenance Offerings for Partners&nbsp;",
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://extrafed.ext.net.nokia.com/idp/profile/SAML2/Unsolicited/SSO?providerId=https://nokialearn.csod.com&target=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253df6e152dc-8f0b-4475-9351-39f609a0d995"
-    },
-    "Description": "The focus of the Webcast is to provide an overview of the 2017 Partner Maintenance offers, including their accreditation requirements, partner assessment process and discount structure. Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/PUTP+Direct+VAR+Maintenance+Program/481ecc5a-2b1b-419e-9f0b-337d8d7292b4\" target=\"_blank\">here</a> for Guide. "
+    "Url": "https://extrafed.ext.net.nokia.com/idp/profile/SAML2/Unsolicited/SSO?providerId=https://nokialearn.csod.com&target=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253df6e152dc-8f0b-4475-9351-39f609a0d995",
+    "Description": "The focus of the Webcast is to provide an overview of the 2017 Partner Maintenance offers, including their accreditation requirements, partner assessment process and discount structure. Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/PUTP+Direct+VAR+Maintenance+Program/481ecc5a-2b1b-419e-9f0b-337d8d7292b4\" target=\"_blank\">here</a> for Guide."
   },
   {
     "ID": "n.1494331200893",
     "Title": "Global Partner&nbsp;Co-op Program 2017",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://extrafed.ext.net.nokia.com/idp/profile/SAML2/Unsolicited/SSO?providerId=https://nokialearn.csod.com&target=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d3f6f164a-7a03-455c-97fc-86229a963da8"
-    },
+    "Url": "https://extrafed.ext.net.nokia.com/idp/profile/SAML2/Unsolicited/SSO?providerId=https://nokialearn.csod.com&target=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d3f6f164a-7a03-455c-97fc-86229a963da8",
     "Description": "Yvonne Locke and PUTP presents \"Global Partner Co-op Program 2017\". Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/Global+Co-Op+Program+overview+May+2017/c29ce156-a94a-430f-a8a0-f5f81405da65\" target=\"_blank\">here</a> for Guide.&nbsp;"
   },
   {
     "ID": "n.1494943268973",
-    "Title": "Press Releases and Success Stories for Nokia Partners ",
-    "type": 2,
+    "Title": "Press Releases and Success Stories for Nokia Partners",
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=8259b593-a051-4d77-8542-7635b6279048"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=8259b593-a051-4d77-8542-7635b6279048",
     "Description": "Nokia is a globally recognized brand, and as a company Nokia is very protective of its brand and how it is used. Nokia also highly values its partners as an important channel to the market. This session will go over the framework Nokia has put in place to guide communications around key milestones in the partner relationship, from announcing that a particular company has joined the Nokia Global Partner Program, to the introduction of new products or entry into new markets, to customer successes. We will explore how these guidelines can simplify the communications process, and ensure that both Nokia and the partner mutually benefit from the exchange."
   },
   {
     "ID": "n.1495114016981",
     "Title": "How to Generate Demand with Nokia Marketing Campaigns",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=7a288892-bd4f-4fd0-90a4-6447f9807eb8"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=7a288892-bd4f-4fd0-90a4-6447f9807eb8",
     "Description": "Attend this session to learn more about our Marketing campaigns for partners designed to help create demand, generate sales leads and realize revenue potential. Campaigns for DataCenter Interconnect, Passive Optical LAN, and Airscale Wi-Fi will be featured, along with the tools to simplify co-marketing campaign execution."
   },
   {
     "ID": "n.1495114177698",
-    "Title": "How to Access and Use OLCS ",
-    "type": 2,
+    "Title": "How to Access and Use OLCS",
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a46b15f4-edeb-44eb-bf4e-cb51714c74b3"
-    },
-    "Description": "Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/OLCS+2017/574a81fe-da7d-401f-987d-d0da672a1119\" target=\"_blank\">here</a> for the Guide "
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a46b15f4-edeb-44eb-bf4e-cb51714c74b3",
+    "Description": "Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/OLCS+2017/574a81fe-da7d-401f-987d-d0da672a1119\" target=\"_blank\">here</a> for the Guide"
   },
   {
     "ID": "n.1495114205593",
     "Title": "Portfolio Webinar Series for NAM Partners",
-    "type": 1,
     "Icon": "img/i.1495114205593.0362.jpg",
     "Solutions": [
       "n.1495114300360"
@@ -2054,55 +1648,38 @@
   },
   {
     "ID": "n.1495114300360",
-    "Title": "New IP, Optical, and SDN Products ",
-    "type": 2,
+    "Title": "New IP, Optical, and SDN Products",
     "Icon": "img/i.1495114300360.2825.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=50496294-f632-4ce2-b3e1-be4c8f763afe"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=50496294-f632-4ce2-b3e1-be4c8f763afe",
     "Description": "This 90-minute session provides an overview of new IP, Optical and SDN products in 2017 which are relevant to the Energy, Transportation and Public Sector market segments as well a discussion on segment-specific case studies."
   },
   {
     "ID": "n.1495114741436",
     "Title": "How to Use Partner Pricing",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/default.aspx?p=nokialearn&c=anon&dlink=%2fDeepLink%2fProcessRedirect.aspx%3fmodule%3dloRegisterAndLaunch%26lo%3d35fa3f1b-df07-4be8-ad7d-f568058cd5e0"
-    },
-    "Description": "New Partner Pricing Incentives [Global Partner Program 3.0 PPA Direct Value Added Resellers] Configure/Price/Quote process sample New: Partner Demo and TEST LAB Equipment offer New Incoterms. Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/How+to+use+Partner+Pricing-Direct+VARs/d0fb7ac2-c2cc-44d1-b1e8-c5230ec050b6\" target=\"_blank\">here</a> for Guide "
+    "Url": "https://nokialearn.csod.com/default.aspx?p=nokialearn&c=anon&dlink=%2fDeepLink%2fProcessRedirect.aspx%3fmodule%3dloRegisterAndLaunch%26lo%3d35fa3f1b-df07-4be8-ad7d-f568058cd5e0",
+    "Description": "New Partner Pricing Incentives [Global Partner Program 3.0 PPA Direct Value Added Resellers] Configure/Price/Quote process sample New: Partner Demo and TEST LAB Equipment offer New Incoterms. Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/How+to+use+Partner+Pricing-Direct+VARs/d0fb7ac2-c2cc-44d1-b1e8-c5230ec050b6\" target=\"_blank\">here</a> for Guide"
   },
   {
     "ID": "n.1496117608831",
     "Title": "DCI Overview and a Special DCI Configuration Tool &nbsp;",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokia.sharepoint.com/sites/GPOandNokiaEDU/SitePages/Home.aspx?RootFolder=%2Fsites%2FGPOandNokiaEDU%2FShared%20Documents%2FPUTP&FolderCTID=0x0120007EA34FAC30804F47AA14875ADEED36D9&View=%7B5F8F933A%2D9770%2D4287%2D93F7%2D2C893F502E05%7D&InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence"
-    },
-    "Audience": "",
+    "Url": "https://nokia.sharepoint.com/sites/GPOandNokiaEDU/SitePages/Home.aspx?RootFolder=%2Fsites%2FGPOandNokiaEDU%2FShared%20Documents%2FPUTP&FolderCTID=0x0120007EA34FAC30804F47AA14875ADEED36D9&View=%7B5F8F933A%2D9770%2D4287%2D93F7%2D2C893F502E05%7D&InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence",
     "Description": "<p>Tim Drake will review the 1830 PSS Datacenter Interconnect portfolio and provide a tutorial on the DCI Configuration Tool. This DCI Configuration Tool allows you to build a simple point-to-point configuration that can even be done in a meeting with a customer.</p>"
   },
   {
     "ID": "n.1496158577651",
     "Title": "Service Desk Clerk Module",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=62a97d2a-1410-441a-b344-eb1917f3b0e6"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=62a97d2a-1410-441a-b344-eb1917f3b0e6",
     "Description": "<p>This module is designed to help in Nokia Customer Service Desk interactions with Nokia customers requesting Maintenance support. </p><p> This course covers the importance of the Service Desk Clerk, identifies the benefits a Service Desk brings to customers, and explains what the in house Technical Support resources will need to resolve customer tickets.</p>",
     "Duration": "30 min"
   },
   {
     "ID": "n.1496245971916",
     "Title": "AirScale Wi-Fi Sales Engineer Specialist",
-    "type": 2,
     "Icon": "img/i.1490084730629.5068.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=dd30cd75-05f4-48d8-a5fa-448359b3220b"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=dd30cd75-05f4-48d8-a5fa-448359b3220b",
     "Description": "<p>The courses included in this curriculum are designed for Presales Engineer Specialists for the Nokia AirScale Wi-Fi product portfolio.</p>",
     "Duration": "1,5 Hr",
     "More information": "<p>TMO00432W Nokia AirScale Wi-Fi Sales training</p><p>TMO00405W Nokia AirScale Wi-Fi Product Overview</p><p>TMO00406W Nokia AirScale Wi-Fi Features Overview</p>"
@@ -2110,43 +1687,29 @@
   {
     "ID": "n.1496673519867",
     "Title": "Nokia Partner Accreditation and Certifications 2017",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/LMS/Video/LaunchVideo.aspx?loid=d8c28a9a-d7ef-492b-aa5d-d36ab15286ae"
-    },
+    "Url": "https://nokialearn.csod.com/LMS/Video/LaunchVideo.aspx?loid=d8c28a9a-d7ef-492b-aa5d-d36ab15286ae",
     "Description": "Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/2017+Partner+Training+and+Certification/1408ba4c-1361-4b85-b785-393e62ef1330\" target=\"_blank\">here</a> for guide"
   },
   {
     "ID": "n.1496674419235",
     "Title": "Nokia Portfolio Demo Kits (PDK)",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/LMS/UserTranscript/VideoView.aspx?qs=%5e%5e%5epmGbt08Mz8luC%2bLrH5xbPG6NsV2dpcEWkXJirO6adQbCaW0Wq58STi3O2NiCqevT%2b26GwYfR51wX6fcwMGVrZjAkZpKR8Gz%2f29t9JnwAz88dteis6%2fS2AUYO0V9suxCbDRSUUl%2frn%2bm6Hjf0dzviCA%3d%3d"
-    },
+    "Url": "https://nokialearn.csod.com/LMS/UserTranscript/VideoView.aspx?qs=%5e%5e%5epmGbt08Mz8luC%2bLrH5xbPG6NsV2dpcEWkXJirO6adQbCaW0Wq58STi3O2NiCqevT%2b26GwYfR51wX6fcwMGVrZjAkZpKR8Gz%2f29t9JnwAz88dteis6%2fS2AUYO0V9suxCbDRSUUl%2frn%2bm6Hjf0dzviCA%3d%3d",
     "Description": "Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/Partner+Demo+Kits/de939b19-5842-4144-a30b-de1f9f84de04\" target=\"_blank\">here</a> for Guide"
   },
   {
     "ID": "n.1496674803828",
     "Title": "2017 Global Partner Program Updates for VAR &nbsp;&nbsp;",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/LMS/Video/LaunchVideo.aspx?loid=cacc03c1-102b-40bc-ae0c-08d1adb4b74c"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/LMS/Video/LaunchVideo.aspx?loid=cacc03c1-102b-40bc-ae0c-08d1adb4b74c",
     "Description": "Click <a href=\"https://my-home.alcatel-lucent.com/portal/documents/2788036/9244512/2017+Partner+Program+Global+version/e41fb437-e0ac-4935-ac0b-022ae52ca695\" target=\"_blank\">here</a> for Guide"
   },
   {
     "ID": "n.1496689073244",
     "Title": "Partner Relationship Manager",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=2d720b12-73bb-4ae7-a28e-0a982a4f18e9"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=2d720b12-73bb-4ae7-a28e-0a982a4f18e9",
     "Description": "<p>Primary point of contact to Nokia, this person manages the relationship between the Partner and Nokia. This person is familiar with Nokia’s value propositions in the market; is familiar with the Nokia products sold by the Partner and their competitive positioning; and is familiar with Nokia processes, tools, and requirements.</p>",
     "Duration": "10.5H",
     "More information": "<p>TBU00280D New Nokia Partner Portal Tutorial</p><p>TBU00118W Nokia Partner Portal Access Management System Training</p><p>TBU00192D CSOD tool</p><p>TBU31159W GPP Deal Registration Training for Partners</p><p>TBU00071W Nokia and Partners - Opportunities Together</p><p>TBU00075W How to sell Nokia training services</p><p>TBU00249W Selling Maintenance to your Customer</p><p>SMAAAGG-D-1705 OLCS demo</p><p>TBU00152D Nokia.com Order and Invoice Status Tools Overview for Partners</p><p>TBU00138D Nokia.Com Order and Invoice Status Tools Overview for US Partners</p><p>TER00012W Nokia Routing Product Overview</p><p>TOP00008W Nokia Optical Product Overview</p><p>TOP00010W Microwave Portfolio Overview</p><p>TAC60056W Fixed Ultra-Broadband Market and Technology trends</p><p>TAC60042W Passive Optical LAN Solution Introduction</p><p>TMO00432W Nokia Airscale Wi-Fi Sales training</p>"
@@ -2154,11 +1717,8 @@
   {
     "ID": "n.1497252213938",
     "Title": "AirScale Wi-Fi Field Technician",
-    "type": 2,
     "Icon": "img/i.1490085144820.2890.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a51ec11e-9dcf-463c-abf3-9f365b19b18b"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a51ec11e-9dcf-463c-abf3-9f365b19b18b",
     "Description": "The courses listed are required to obtain AirScale Wi-Fi Field Technician certification",
     "Duration": "1.0 Hr",
     "More information": "<p>RN00144-W Nokia AirScale Wi-Fi Access Point Installation</p><p>RN00145-V Nokia Health and Safety Expectations </p>"
@@ -2166,11 +1726,8 @@
   {
     "ID": "n.1497252752651",
     "Title": "AirScale Wi-Fi Technical Support Level 1",
-    "type": 2,
     "Icon": "img/i.1490086249300.0667.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=56e967d9-cca4-498e-875f-d15b423059df"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=56e967d9-cca4-498e-875f-d15b423059df",
     "Description": "The courses listed are required to obtain an AirScale Wi-Fi Technical Support Level&nbsp;1 certification",
     "Duration": "2.5 Hrs",
     "More information": "<p>TMO00405W Nokia AirScale Wi-Fi Product Overview</p><p>TMO00406W Nokia AirScale Wi-Fi Features Overview</p><p>RN00160-W Nokia AirScale Wi-Fi Access Point Troubelshooting</p><p>RN00161-W Nokia AirScale Wi-Fi On Premise Controller  Troubleshooting</p>"
@@ -2178,27 +1735,19 @@
   {
     "ID": "n.1497016742000",
     "Title": "Community Broadband",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a18104f8-bd1f-4860-a1f4-8186d925d923"
-    },
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a18104f8-bd1f-4860-a1f4-8186d925d923",
     "Description": "As the world is rapidly moving towards Ultra-broadband, it is essential to ensure that no one is left behind. Community Broadband initiatives are playing a key role in accelerating the availability of broadband services outside of major metropolitan areas. Join this webcast to hear how Nokia provides all the building blocks that you will need to sell into communities wanting to build a high capacity broadband network that will be attractive for both businesses and citizens for decades to come."
   },
   {
     "ID": "n.1497544646399",
     "Title": "Generate New Revenue with you customers with Performance Reporting",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=49d237de-8207-4230-a422-489e6f9d6d2c"
-    },
-    "Audience": ""
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=49d237de-8207-4230-a422-489e6f9d6d2c"
   },
   {
     "ID": "n.1497979815369",
-    "Title": "PUTP Tools ",
-    "type": 1,
+    "Title": "PUTP Tools",
     "Icon": "img/putp.jpg",
     "Solutions": [
       "n.1473429667111",
@@ -2226,7 +1775,6 @@
   {
     "ID": "n.1497979840616",
     "Title": "PUTP Solutions",
-    "type": 1,
     "Icon": "img/putp.jpg",
     "Solutions": [
       "n.1490128639022",
@@ -2239,7 +1787,6 @@
   {
     "ID": "n.1497979857071",
     "Title": "PUTP Products",
-    "type": 1,
     "Icon": "img/putp.jpg",
     "Solutions": [
       "n.1481046901332",
@@ -2249,7 +1796,6 @@
   {
     "ID": "n.1497979874103",
     "Title": "PUTP Programs",
-    "type": 1,
     "Icon": "img/putp.jpg",
     "Solutions": [
       "n.1496674803828",
@@ -2263,37 +1809,26 @@
   {
     "ID": "n.1501098125361",
     "Title": "Nokia Learning Hub",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=c2526637-94e9-422c-8978-81d57c804713"
-    },
-    "Description": "PUTP Presents The Nokia Learning Hub "
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=c2526637-94e9-422c-8978-81d57c804713",
+    "Description": "PUTP Presents The Nokia Learning Hub"
   },
   {
     "ID": "n.1501102565656",
     "Title": "Nokia Learning Hub",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/LMS/Video/LaunchVideo.aspx?loid=c2526637-94e9-422c-8978-81d57c804713"
-    }
+    "Url": "https://nokialearn.csod.com/LMS/Video/LaunchVideo.aspx?loid=c2526637-94e9-422c-8978-81d57c804713"
   },
   {
     "ID": "n.1502286810775",
     "Title": "Partner Marketing Manager",
-    "type": 2,
     "Icon": "img/seeMore.png",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=08ef1b18-da5e-4f3e-9006-f3729053c40c"
-    },
-    "Audience": "",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=08ef1b18-da5e-4f3e-9006-f3729053c40c",
     "Description": "<p>This is the Partner Marketing Manager curriculum that is part of the Global Partner Program.</p>"
   },
   {
     "ID": "n.1502212754172",
     "Title": "NokiaEDU",
-    "type": 1,
     "Icon": "img/putp.jpg",
     "Solutions": [
       "n.1496673519867"
@@ -2302,16 +1837,12 @@
   {
     "ID": "n.1503349363005",
     "Title": "IPR Pricing DEMO",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=1d266863-3e16-490d-8a54-db641361061e"
-    }
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=1d266863-3e16-490d-8a54-db641361061e"
   },
   {
     "ID": "n.1503583562191",
     "Title": "Partner Tools Support Videos",
-    "type": 1,
     "Icon": "img/i.1490086249300.0667.png",
     "Solutions": [
       "n.1495114177698",
@@ -2325,12 +1856,25 @@
   {
     "ID": "n.1507228752035",
     "Title": "Selling to Highway Agencies and Departments of Transportation| GP00601-W-1710",
-    "type": 2,
     "Icon": "img/putp.jpg",
-    "Url": {
-      "all": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=1920d240-d72b-42a7-bb56-edbdfc50af56"
-    },
-    "Description": "<p>By attending this training, you will understand the challenges of highway operations that highway agencies and departments of transportation face every day, and you will also understand the according requirements for their communications infrastructure. You will learn how to identify target customers and how to engage with them. You will understand the Nokia value proposition including value drivers and key competitive differentiators; and you will understand the Nokia portfolio for intelligent highways. You will get an introduction to selected reference cases and you will know where to find further information for your engagements with customers.</p>",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=1920d240-d72b-42a7-bb56-edbdfc50af56",
+    "Description": "<p>By attending this training you will understand the challenges of highway operations that highway agencies and departments of transportation face every day, and you will also understand the according requirements for their communications infrastructure. You will learn how to identify target customers and how to engage with them. You will understand the Nokia value proposition including value drivers and key competitive differentiators; and you will understand the Nokia portfolio for intelligent highways. You will also get an introduction to selected reference cases and you will know where to find further information for your engagements with customers.</p>",
     "Duration": "<p>1 H</p>"
+  },
+  {
+    "ID": "n.1508184082051",
+    "Title": "Introduction Video",
+    "Icon": "img/putp.jpg",
+    "Solutions": [
+      "n.1508184106759"
+    ]
+  },
+  {
+    "ID": "n.1508184106759",
+    "Title": "Introduction to the Nokia Partner Training Program",
+    "Icon": "img/i.1490086249300.0667.png",
+    "Url": "http://training-server1.alcatel-lucent.com/secure/aicc/courses/attachments/wbt/JAS/Introduction_to_the_Nokia_Partner_Training_Program_New.wmv",
+    "Description": "<p>The following video provides a brief introduction to the Nokia Partner Training Program and the Nokia Partner Certification Program.</p>",
+    "Duration": "<p>8 mins</p>"
   }
 ]

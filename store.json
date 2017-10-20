@@ -336,12 +336,16 @@
     "url": "http://learningstore.nokia.com/employee",
     "carousel": [
         {
-            "img": "img/LS_FBA-Banner.jpg",
-            "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/index.aspx"
+            "img": "img/LS Top Banner - MNT.png",
+            "id": "n.1507731846549"
         },
         {
-            "img": "img/carousel-gdol2017.jpg",
-            "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/index.aspx"
+            "img": "img/carousel-ipm-day.jpg",
+            "url": "https://www.iil.com/emailfiles/ipmday-2017/nokia.html"
+        },
+        {
+            "img": "img/LS_FBA-Banner.jpg",
+            "id": "n.1505141645980"
         },
         {
             "img": "img/carousel-be-cloud-native.jpg",
@@ -371,7 +375,7 @@
     "homepage": [
         {
             "title": "Featured Learning - Key Skills in a Connected World",
-            "items": ["n.1480939226179", "n.1460033206023", "n.1480938993052", "n.1489224201154", "n.1489224120111"]
+            "items": ["n.1480939226179", "n.1460033206023", "n.1480938993052", "n.1489224201154", "n.1489224120111", "n.1507556919365"]
         },
         {
             "title": "\"How Do You EDU?\" Web Sessions",
