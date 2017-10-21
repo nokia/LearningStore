@@ -12,6 +12,8 @@ import MdClose from 'react-icons/lib/md/close';
 import renderHTML from 'react-render-html';
 import FaAngleRight from 'react-icons/lib/fa/angle-right';
 
+const urlDelim = '>>';
+
 export default class Item extends Component{
 
   state = { isLoading:true }
@@ -54,6 +56,7 @@ export default class Item extends Component{
       return null;
     });
 
+    const url = item.Url ? item.Url.split(urlDelim) : [''];
     return (
       <div className="itemOverlay">
         <div className='modal'>
@@ -66,8 +69,8 @@ export default class Item extends Component{
             <div className="itemIcon">
               <img src={this.url + "/" + item.Icon} alt=''/>
             </div>
-            <a className="itemLaunch" href={item.Url} title="Launch" target="_blank">
-              Launch
+            <a className="itemLaunch" href={url[0]} title="Launch" target="_blank">
+              { url[1] || 'Launch' }
               <FaAngleRight style={{marginTop: '-4px', marginLeft: '6px'}} />
             </a>
             { fields }
