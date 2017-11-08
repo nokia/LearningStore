@@ -390,7 +390,7 @@
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "The courses included in this&nbsp;curriculum focus on Nokia's Industry Segments, general technology overviews, the IP Routing Product Overviews and the NRS I&nbsp;certification.",
     "Duration": "30.25 H",
-    "More information": "<p>This curriculum consists of the following courses: </p><p>• TBU31177W   Partner Learning Series – Nokia in Industry Segments </p><p>• TBU00249W Selling Maintenance to your Customer</p><p>• TER00012W Nokia Routing Product Overview </p><p>• TER36095W 7750 SR 7450 ESS Product Overview </p><p>• TER36084W 7705 SAR Product Overview </p><p>• TER36058W 7210 SAS Product Overview </p><p>• TER36082W 7950 XRS Product Overview </p><p>• 3FL30632AAAAZZZZA Nokia Scalable IP Networks (NRS I Certification)</p><p>• TER00035M Nokia Network Routing Specialist I Exam (NRS I Certification)</p><p>• TER00013W, TER00014W, TER00015W Nebula Training </p>"
+    "More information": "<p>This curriculum consists of the following courses: </p><p>• TBU31177W   Partner Learning Series – Nokia in Industry Segments </p><p>• TBU00249W Selling Maintenance to your Customer</p><p>• TER00012W Nokia Routing Product Overview </p><p>• TER36095W 7750 SR 7450 ESS Product Overview </p><p>• TER36084W 7705 SAR Product Overview </p><p>• TER36058W 7210 SAS Product Overview </p><p>• TER36082W 7950 XRS Product Overview </p><p>• 3FL30632AAAAZZZZA Nokia Scalable IP Networks (NRS I Certification)</p><p>• TER00035M Nokia Network Routing Specialist I Exam (NRS I Certification)</p>"
   },
   {
     "ID": "n.1490012871084",
@@ -400,7 +400,7 @@
     "Audience": "<p><strong><em>Note: In order to obtain this certification, you must also successfully complete the Segments curriculum.</em></strong></p>",
     "Description": "The courses included in this&nbsp;curriculum focus on Nokia's Industry Segments, general technology overviews, the IP&nbsp;Product Overviews, NRS I certification&nbsp;and Service Aware Manager (SAM).",
     "Duration": "120 H",
-    "More information": "<p>This curriculum consists of the following courses: </p><p>• TBU31177W   Partner Learning Series – Nokia in Industry Segments </p><p>• TBU00249W Selling Maintenance to your Customer</p><p>• TER00012W Nokia Routing Product Overview </p><p>• TER36095W 7750 SR 7450 ESS Product Overview </p><p>• TER36084W 7705 SAR Product Overview </p><p>• TER36058W 7210 SAS Product Overview </p><p>• TER36082W 7950 XRS Product Overview </p><p>• 3FL30632AAAAZZZZA Nokia Scalable IP Networks (NRS I Certification)</p><p>• TER00035M Nokia Network Routing Specialist I Exam (NRS I Certification)</p><p>• TOS36033W 5620 SAM (Service Aware Manager) R13.0 Fundamentals </p><p>• TER00013W, TER00014W, TER00015W Nebula Training </p>"
+    "More information": "<p>This curriculum consists of the following courses: </p><p>• TBU31177W   Partner Learning Series – Nokia in Industry Segments </p><p>• TBU00249W Selling Maintenance to your Customer</p><p>• TER00012W Nokia Routing Product Overview </p><p>• TER36095W 7750 SR 7450 ESS Product Overview </p><p>• TER36084W 7705 SAR Product Overview </p><p>• TER36058W 7210 SAS Product Overview </p><p>• TER36082W 7950 XRS Product Overview </p><p>• 3FL30632AAAAZZZZA Nokia Scalable IP Networks (NRS I Certification)</p><p>• TER00035M Nokia Network Routing Specialist I Exam (NRS I Certification)</p><p>• TOS36033W 5620 SAM (Service Aware Manager) R13.0 Fundamentals </p>"
   },
   {
     "ID": "n.1490013551489",
@@ -1237,7 +1237,7 @@
     "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=f8af7cb5-f340-4499-bd2d-6d2327a2fe71",
     "Description": "The courses included in this curriculum focus on Nokia's relationship with their Partners, Key to Selling Nokia products, and the Airscale Wi-Fi&nbsp;product portfolio.",
     "Duration": "1.5 H",
-    "More information": "<ul><li>TBU00071W Nokia and Partners - Opportunities together</li><li>TBU31159W GPP Deal Registration Training for Partners</li><li>TMO00432W Nokia Airscale Wi-Fi Sales training</li></ul>"
+    "More information": "<ul><li>TBU00071W Nokia and Partners - Opportunities Together</li><li>TBU31159W GPP Deal Registration Training for Partners</li><li>TMO00432W Nokia Airscale Wi-Fi Sales training</li></ul>"
   },
   {
     "ID": "n.1493035788390",
@@ -1719,7 +1719,7 @@
     "Title": "AirScale Wi-Fi Field Technician",
     "Icon": "img/i.1490085144820.2890.png",
     "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=a51ec11e-9dcf-463c-abf3-9f365b19b18b",
-    "Description": "The courses listed are required to obtain AirScale Wi-Fi Field Technician certification",
+    "Description": "<p>The courses listed below are required to obtain AirScale Wi-Fi Field Technician certification.</p>",
     "Duration": "1.0 Hr",
     "More information": "<p>RN00144-W Nokia AirScale Wi-Fi Access Point Installation</p><p>RN00145-V Nokia Health and Safety Expectations </p>"
   },
@@ -1728,7 +1728,7 @@
     "Title": "AirScale Wi-Fi Technical Support Level 1",
     "Icon": "img/i.1490086249300.0667.png",
     "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=56e967d9-cca4-498e-875f-d15b423059df",
-    "Description": "The courses listed are required to obtain an AirScale Wi-Fi Technical Support Level&nbsp;1 certification",
+    "Description": "<p>The courses listed below are required to obtain an AirScale Wi-Fi Technical Support Level&nbsp;1 certification</p>",
     "Duration": "2.5 Hrs",
     "More information": "<p>TMO00405W Nokia AirScale Wi-Fi Product Overview</p><p>TMO00406W Nokia AirScale Wi-Fi Features Overview</p><p>RN00160-W Nokia AirScale Wi-Fi Access Point Troubelshooting</p><p>RN00161-W Nokia AirScale Wi-Fi On Premise Controller  Troubleshooting</p>"
   },
