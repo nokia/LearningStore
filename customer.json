@@ -4,18 +4,18 @@
     "Title": "What's New",
     "Description": "This collection shows the latest learning solutions added to the store.",
     "Solutions": [
-      "n.1508413017577",
-      "n.1508166177216",
-      "n.1508162312407",
-      "n.1508161582316",
-      "n.1508158556484",
-      "n.1508156030727",
-      "n.1507306165376",
-      "n.1507305890850",
-      "n.1507018260428",
-      "n.1506956970039",
-      "n.1506372064689",
-      "n.1506371447855"
+      "n.1510133143553",
+      "n.1510132259405",
+      "n.1510131959369",
+      "n.1510094161537",
+      "n.1510093716536",
+      "n.1510088035384",
+      "n.1510087156969",
+      "n.1510072006319",
+      "n.1510071806797",
+      "n.1510045915809",
+      "n.1509631150752",
+      "n.1509628862645"
     ]
   },
   {
@@ -326,13 +326,9 @@
       "n.1492532353735",
       "n.1493041512370",
       "n.1493041711776",
-      "n.1493416587657",
-      "n.1493416618171",
       "n.1493416748928",
-      "n.1493416850204",
       "n.1493416890027",
       "n.1493416925570",
-      "n.1493416999095",
       "n.1494508676230",
       "n.1494510417283",
       "n.1494514742351",
@@ -403,7 +399,10 @@
       "n.1506363195597",
       "n.1506368836687",
       "n.1506370934593",
-      "n.1507306165376"
+      "n.1507306165376",
+      "n.1509007767477",
+      "n.1509093197095",
+      "n.1510132259405"
     ]
   },
   {
@@ -600,7 +599,8 @@
       "n.1478283856292",
       "n.1490283230192",
       "n.1478332368710",
-      "n.1498806935085"
+      "n.1498806935085",
+      "n.1510132259405"
     ]
   },
   {
@@ -1898,7 +1898,7 @@
   },
   {
     "ID": "n.1479373378344",
-    "Title": "1830 PSS (Photonic Service Switch) Network Maintenance",
+    "Title": "1830 PSS (Photonic Service Switch)",
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1479373402383",
@@ -2793,16 +2793,6 @@
     "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=087760ce-19db-4d7c-9ff7-69feb9b2ba86\" target=\"_blank\">NT HLR Introduction</a> (Curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory Fundamental</a> (Curriculum)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0c76578b-35d0-4119-881e-3732488eca49\" target=\"_blank\">One-NDS 17 Provisioning, Operations and Maintenance</a> (ILT&nbsp;2 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=5f5e6e7e-5120-46d4-86e2-4a7ff4ee08ba\" target=\"_blank\">NT HLR 16.5 Mobile Subscriber Provisioning and Administration</a>  (ILT 2 days)</p><p>&nbsp; </p>"
   },
   {
-    "ID": "n.1480338495266",
-    "Title": "One-EIR 17 OAM Specialist on Telco Cloud | CUCN2036-17",
-    "Icon": "img/i.1472887514849.5742.png",
-    "Url": "#getQuote",
-    "Description": "<p>The participant is able to perform all standard and extended operation and maintenance, and administration tasks of One-EIR.</p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li>CUCN2014-01A_Subscriber Data Management Fundamentals v2</li><li>CUTM8012-01A_Telco Cloud Starter</li><li>OAM Specialist</li></ul>",
-    "Duration": "42.00h",
-    "Prerequisites": "Good general understanding of core network technology regarding protocols, interfaces and procedures for subscriber data management with various applications.",
-    "More information": "<a href='https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&lo=f3742205-9274-453d-8376-2044734790fb'>One-EIR 17 OAM Specialist on Telco Cloud | CUCN2036-17</a>"
-  },
-  {
     "ID": "n.1480339470225",
     "Title": "Cloud VNF Maintenance",
     "Icon": "img/i.1472887514849.5742.png",
@@ -2834,7 +2824,9 @@
       "n.1481640272004",
       "n.1481104881136",
       "n.1481104402397",
-      "n.1500658938988"
+      "n.1500658938988",
+      "n.1509567165546",
+      "n.1509631150752"
     ]
   },
   {
@@ -3439,6 +3431,7 @@
     "Title": "LTE BTS Installation, Commissioning, Maintenance and Operation",
     "Icon": "img/i.1472887595746.7874.png",
     "Solutions": [
+      "n.1510045915809",
       "n.1492533937238",
       "n.1492533215361",
       "n.1481633904727",
@@ -4047,16 +4040,6 @@
     "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=087760ce-19db-4d7c-9ff7-69feb9b2ba86\" target=\"_blank\">NT HLR Introduction</a> (Curriculum)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory&nbsp;Fundamental </a>(Curriculum)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0c76578b-35d0-4119-881e-3732488eca49\" target=\"_blank\">One-NDS 17 Provisioning, Operations and Maintenance</a> (ILT&nbsp;2 days)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=5f5e6e7e-5120-46d4-86e2-4a7ff4ee08ba\" target=\"_blank\">NT HLR 16.5 Mobile Subscriber Provisioning and Administration</a> (ILT 2 days)</p>"
   },
   {
-    "ID": "n.1481104201351",
-    "Title": "One-EIR 16 Installation (HP) | CUCN2035-16A",
-    "Icon": "img/i.1481104201351.3564.png",
-    "Url": "#getQuote",
-    "Description": "<p>The participant is able to perform all standard and extended installation, commissioning and configuration tasks of One-EIR 16 (HP). </p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li>One-NDS 16 HP Installation </li></ul>",
-    "Duration": "10 days + 4 hours",
-    "Prerequisites": "Good general understanding of core network technology regarding protocols, interfaces and procedures for subscriber data management with various applications. Underpinning knowledge Unix/Solaris.",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=ab6ce86d-14e0-4b17-bdac-7b62f152272b\" target=\"_blank\">One-NDS 16 HP Installation, Commissioning and Configuration HP Line</a> (ILT 5 days)</p>"
-  },
-  {
     "ID": "n.1481104402397",
     "Title": "One-EIR 16/17 OAM Specialist on Bare Metal and Telco Cloud | CUCN2038-167",
     "Icon": "img/i.1481104402397.7667.png",
@@ -4068,14 +4051,13 @@
   },
   {
     "ID": "n.1481104881136",
-    "Title": "One-MNP 16/17 OAM Specialist on Bare Metal and Telco Cloud | CUCN2040-",
+    "Title": "One-MNP&nbsp;18 OAM Specialist on Telco Cloud | CUCN2041-K-18",
     "Icon": "img/i.1481104881136.5282.png",
     "Url": "#getQuote",
-    "Audience": "One-MNP 16/17 OAM Specialist on Bare Metal and Telco Cloud | CUCN2040",
-    "Description": "<p>The participant is able to perform all standard and extended operation and maintenance tasks of One-MNP 16/17. </p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li> One-NDS 17 Platform Directory Fundamental  </li><li>One-NDS Directory Platform and Operation</li><li>One-MNP 16.5 Operation</li></ul>",
-    "Duration": "5&nbsp;days",
-    "Prerequisites": "<p>Good general understanding of core network technology regarding protocols, interfaces and procedures for subscriber data management with various applications.</p><p><strong>Optional:</strong></p><ul><li>Telco Cloud and CloudBand Overview</li></ul>",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory Fundamental</a> (Curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=40330938-6470-4756-970f-42ef8c00e548\" target=\"_blank\">One-NDS 16 Directory Platform and Operation  </a>(ILT 3 days)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0c76578b-35d0-4119-881e-3732488eca49\" target=\"_blank\">One-NDS 17 Provisioning, Operations and Maintenance</a> ( 2 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=3a04efeb-2b8a-4b1c-a1cc-c8071cc95f1d\" target=\"_blank\">One-MNP 16.5 Operation</a>  (ILT 2 days)</p><p>&nbsp;&nbsp;</p>"
+    "Description": "<p>This curriculum provides the skills needed to successfully perform all standard administration and operation tasks concerning One-MNP. </p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li> One-NDS 17 Platform Directory Fundamental&nbsp;</li><li>One-MNP 16.5 Operation</li></ul>",
+    "Duration": "3&nbsp;days plus 3 hours&nbsp;",
+    "Prerequisites": "<p>Good general understanding of core network technology regarding protocols, interfaces and procedures for subscriber data management with various applications.</p><p><strong>Optional:</strong></p><ul><li>Telco Cloud and CloudBand Overview| TAP00024W</li></ul>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory Fundamental</a> (Curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=3a04efeb-2b8a-4b1c-a1cc-c8071cc95f1d\" target=\"_blank\">One-MNP 16.5 Operation</a>  (ILT 2 days)</p><p>&nbsp; </p>"
   },
   {
     "ID": "n.1481105002800",
@@ -4112,26 +4094,29 @@
       "n.1495556876431",
       "n.1481102575727",
       "n.1499279142048",
-      "n.1501597334418"
+      "n.1501597334418",
+      "n.1508782654547",
+      "n.1508859544101",
+      "n.1509053177106",
+      "n.1510087156969",
+      "n.1510088035384"
     ]
   },
   {
     "ID": "n.1481105267971",
-    "Title": "Subscriber Data Management Installation &amp; Commissioning",
+    "Title": "Subscriber Data Management Installation & Commissioning",
     "Icon": "img/i.1472887445473.9264.png",
     "Description": "The Subscriber Data Management&nbsp;installation&nbsp;&amp; Commissioning&nbsp;curriculum contains trainings paths for One-NDS and various application Front-Ends applications.",
     "Solutions": [
-      "n.1481101212469",
-      "n.1481104201351"
+      "n.1481101212469"
     ]
   },
   {
     "ID": "n.1481105313674",
-    "Title": "Subscriber Data Management Configuration &amp; Administration",
+    "Title": "Subscriber Data Management Configuration & Administration",
     "Icon": "img/i.1472887445473.9264.png",
     "Description": "Subscriber Data Management Configuration &amp; Administration curriculum contains trainings paths for One-NDS, HLR and CMS8200.",
     "Solutions": [
-      "n.1481101000734",
       "n.1480337143026",
       "n.1481103882489",
       "n.1480337974762",
@@ -4139,7 +4124,19 @@
       "n.1481103939665",
       "n.1481105137531",
       "n.1499443551365",
-      "n.1500658938988"
+      "n.1500658938988",
+      "n.1509565600301",
+      "n.1509567165546",
+      "n.1509568569460",
+      "n.1481104881136",
+      "n.1499279142048",
+      "n.1509628862645",
+      "n.1509631150752",
+      "n.1481104402397",
+      "n.1510071806797",
+      "n.1510072006319",
+      "n.1510093716536",
+      "n.1510094161537"
     ]
   },
   {
@@ -4148,16 +4145,20 @@
     "Icon": "img/i.1472887445473.9264.png",
     "Description": "The Subscriber Data Management Operations curriculum contains trainings paths for One-NDS and various application Front-Ends applications. (One-NDS, HLR, One-EIR, One-MNP & One-AAA).",
     "Solutions": [
-      "n.1481101000734",
       "n.1480337974762",
       "n.1481103939665",
       "n.1482308397671",
       "n.1482308577871",
-      "n.1481104881136",
       "n.1481104402397",
       "n.1481105137531",
       "n.1499443551365",
-      "n.1499279142048"
+      "n.1509568569460",
+      "n.1481104881136",
+      "n.1499279142048",
+      "n.1509628862645",
+      "n.1509631150752",
+      "n.1510071806797",
+      "n.1510072006319"
     ]
   },
   {
@@ -4166,14 +4167,19 @@
     "Icon": "img/i.1472887445473.9264.png",
     "Description": "The Subscriber Data Management Maintenance curriculum contains trainings paths for One-NDS and various application Front-Ends applications. (One-NDS, HLR, One-EIR, One-MNP & One-AAA).",
     "Solutions": [
-      "n.1481101000734",
       "n.1481103042800",
       "n.1481105137531",
       "n.1481104402397",
       "n.1480337974762",
-      "n.1481104881136",
       "n.1481103939665",
-      "n.1499443551365"
+      "n.1499443551365",
+      "n.1509568569460",
+      "n.1481104881136",
+      "n.1499279142048",
+      "n.1509628862645",
+      "n.1509631150752",
+      "n.1510071806797",
+      "n.1510072006319"
     ]
   },
   {
@@ -4757,12 +4763,12 @@
   },
   {
     "ID": "n.1481121889643",
-    "Title": "NCIR 16A Administration | CURA8002-16A",
+    "Title": "NCIR 17 Administration | CURA80020-K-1700",
     "Icon": "img/i.1472887616277.2190.png",
     "Url": "#getQuote",
-    "Description": "<p>To acquire this curriculum, complete all learning elements on the curriculum path.</p>Required: <ul><li>Telco Cloud Basics Web Based </li><li>Nokia Cloud Infrastructure Real-time Optimized OpenStack (NCIR) Administration </li></ul><p>Optional: </p><ul><li>Telco Cloud Basics Instructor led </li><li>NCIR 16A Delta</li></ul>",
-    "Duration": "<p>Required: 9 days + 3 hours</p><p>Optional : 2 days + 1 hour</p>",
-    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=dd4a147d-ccbe-4a78-b195-52d35184ee85\" target=\"_blank\">NCIR Administration | CURA8002-16A</a>"
+    "Description": "<p>To acquire this curriculum, complete all learning elements on the curriculum path.</p>Required: <ul><li>Telco Cloud Basics Web Based</li><li>Nokia Cloud Infrastructure Real-time Optimized OpenStack (NCIR) Administration</li></ul><p>Optional:</p><ul><li>NCIR 17 Installation and Configuration | RA80010-V-1700_VILT</li><li>NCIR 17 Delta (Deep Dive) | RA80030-K-1700</li></ul>",
+    "Duration": "<p>Required: 9 days + 2 hours</p><p>Optional : 5 days + 2 hour</p>",
+    "More information": "<div>NCIR 17 Administration | CURA80020-K-<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=ff19ce3f-5e63-4eca-9c16-c83be8dff4b6\" target=\"_blank\">1700</a></div>"
   },
   {
     "ID": "n.1481205666993",
@@ -5643,6 +5649,7 @@
     "Solutions": [
       "n.1479370258446",
       "n.1486738528893",
+      "n.1510132259405",
       "n.1486738365323",
       "n.1486738456044",
       "n.1486738242660",
@@ -5726,7 +5733,9 @@
       "n.1505117204314",
       "n.1503483659667",
       "n.1502879052551",
-      "n.1504704423397"
+      "n.1504704423397",
+      "n.1509092811317",
+      "n.1509093197095"
     ]
   },
   {
@@ -6417,7 +6426,7 @@
     "Objectives": "<p>Upon completion of this curriculum, learners will be able to Describe and Provision</p><p>- Public tables (Network, Announcements, Numbering Plan, Tariffs)</p><p>- Services (Call Processing, Charging, Account Management, ...)</p><p>- Discounts, Buckets and Bundles.</p>",
     "Duration": "10 days",
     "Prerequisites": "Basic knowledge of general telecom",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=5bfeddd6-e42e-41f2-9480-c102988ce69f\" target=\"_blank\">SurePay Service Description</a></p><p>((WBT) 3 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b4599548-4ab9-4e46-8d99-4a029e5c7b04\" target=\"_blank\">eSM Introduction and Provisioning</a></p><p>(1 day)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=617febe5-ee11-4a57-88c7-d9fe24e9790a\" target=\"_blank\">SurePay Public Tables Provisioning</a></p><p>(2 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=6c82f84a-960e-4e47-91c1-79de4cad3bb1\" target=\"_blank\">SurePay Service Provisioning</a></p><p>(3 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=745dbb77-3f46-4f6e-9755-5deb4d3177f3\" target=\"_blank\">SurePay Buckets and Bundles</a></p><p>(2 days )</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=23f0b695-6b62-4cc8-8d25-5efa8aff06ac\" target=\"_blank\">SurePay Charging Interfaces for Applications</a></p><p>((Optional) 1.5 day)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=5bfeddd6-e42e-41f2-9480-c102988ce69f\" target=\"_blank\">SurePay Service Description</a></p><p>((WBT) 3 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c0043e0d-9930-4f31-9734-05e29a18b90e\" target=\"_blank\">eSM Introduction and Provisioning</a></p><p>(1 day)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=abce8518-7875-4eb8-aba5-9042095d62a4\" target=\"_blank\">SurePay Public Tables Provisioning</a></p><p>(2 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=86fc0aee-c585-45d9-bbb7-cc2c304ef301\" target=\"_blank\">SurePay Service Provisioning</a></p><p>(3 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c2126c1d-444c-4604-a265-6489528b02d8\" target=\"_blank\">SurePay Buckets and Bundles</a></p><p>(2 days )</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=581a0cc5-acbe-4d82-9ee1-ccbe5427dfc4\" target=\"_blank\">SurePay Charging Interfaces for Applications</a></p><p>((Optional) 1.5 day)</p>"
   },
   {
     "ID": "n.1490113344458",
@@ -6462,7 +6471,7 @@
     "ID": "n.1490186698151",
     "Title": "Telco Cloud Starter",
     "Icon": "img/i.1472887514849.5742.png",
-    "Description": "<p>This curricula is the starting point for studying Telco Cloud </p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1481207348112\" target=\"_blank\">Telco Cloud Starter</a> (Curricula)</p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1493991371788\" target=\"_blank\">Telco Cloud Overview</a> (WBT 60 min)</p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1494188841906\" target=\"_blank\">Telco Cloud Fundamentals</a> (WBT 70 min)</p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1494441380511\" target=\"_blank\">Telco Cloud and CloudBand Overview</a> (WBT 2h)</p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1494441586521\" target=\"_blank\">Telco Cloud Fundamentals Classroom</a> (CILT 7h)</p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1494441740340\" target=\"_blank\">Telco Cloud Fundamentals Virtual Classroom</a> (VIL 7h)</p><p>Telco Cloud Troubleshooting</p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1494442215555\" target=\"_blank\">Telco Cloud Troubleshooting Overview (VMware)</a>&nbsp;</p><p>(WBT 30 min)</p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1494442476124\" target=\"_blank\">Telco Cloud NCI-R Troubleshooting Overview</a></p><p> (WBT 30 min)</p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1494442476124\" target=\"_blank\">Telco Cloud Troubleshooting Overview&nbsp;CloudBand</a></p><p>(WBT 30 min)</p>",
+    "Description": "<p>This curricula is the starting point for studying Telco Cloud </p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1481207348112\" target=\"_blank\">Telco Cloud Starter</a> (Curricula)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=2f03d5f4-c4f0-45d2-9dab-fa6a2e272823\" target=\"_blank\">Virtualisation and Telco Cloud Introduction </a>(WBT 2h)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=091c0d1b-3d1b-4bd3-83a0-abff35f47838\" target=\"_blank\">CloudBand Introduction</a> (WBT 30mn)</p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1494442215555\" target=\"_blank\">Telco Cloud Troubleshooting Overview (VMware)</a>&nbsp;&nbsp;<span style=\"background-color: rgb(241, 241, 241);\" contenteditable=\"true\" class=\"editable\">(WBT 30 min)</span></p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1494442476124\" target=\"_blank\">Telco Cloud NCI-R Troubleshooting Overview</a>&nbsp;<span style=\"background-color: rgb(241, 241, 241);\" contenteditable=\"true\" class=\"editable\">(WBT 30 min)</span></p><p><a href=\"http://learningstore.nokia.com/customer/#?item=n.1494442476124\" target=\"_blank\">Telco Cloud Troubleshooting Overview&nbsp;CloudBand</a>&nbsp;<span style=\"background-color: rgb(241, 241, 241);\" contenteditable=\"true\" class=\"editable\">(WBT 30 min)</span></p>",
     "Solutions": []
   },
   {
@@ -7019,33 +7028,11 @@
     "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=193b6356-9183-4cce-b50f-3d9ff8733ccb\" target=\"_blank\">1830 PSS-8/16II/16/32 R8.x to R9.1 Delta</a> (TOP54114 - 2 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d809a90c-be0b-4a05-a6f7-e04434c1f9e1\" target=\"_blank\">1830 PSS R8.x to R9.1 L2 Networking Delta</a> (TOP54115 - 1 day)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=83a10137-e000-4c83-a173-ef2d682db1df\" target=\"_blank\">1830 PSS R9.x to R10.x SWDM Delta</a> (TOP54114 - 1 day)</p>"
   },
   {
-    "ID": "n.1493416587657",
-    "Title": "One-NDS Deltas",
-    "Icon": "img/i.1472890025810.9905.jpg",
-    "Description": "One-NDS Deltas",
-    "Solutions": []
-  },
-  {
-    "ID": "n.1493416618171",
-    "Title": "NT HLR Deltas",
-    "Icon": "img/i.1472890025810.9905.jpg",
-    "Description": "NT HLR Deltas",
-    "Solutions": []
-  },
-  {
     "ID": "n.1493416748928",
     "Title": "One-AAA Overviews",
     "Icon": "img/i.1472890025810.9905.jpg",
     "Solutions": [
       "n.1481105002800"
-    ]
-  },
-  {
-    "ID": "n.1493416850204",
-    "Title": "One-NDS OAM Specialist",
-    "Icon": "img/i.1472890025810.9905.jpg",
-    "Solutions": [
-      "n.1481101000734"
     ]
   },
   {
@@ -7061,16 +7048,6 @@
     "Icon": "img/i.1472890025810.9905.jpg",
     "Description": "CMS8200 Provisioning and Administration",
     "Solutions": []
-  },
-  {
-    "ID": "n.1493416999095",
-    "Title": "One-MNP OAM Specialist",
-    "Icon": "img/i.1472890025810.9905.jpg",
-    "Description": "One-MNP OAM Specialist",
-    "Solutions": [
-      "n.1481104881136",
-      "n.1480338737741"
-    ]
   },
   {
     "ID": "n.1493817343403",
@@ -7234,7 +7211,7 @@
     "ID": "n.1494508676230",
     "Title": "LTE Certification Program",
     "Icon": "img/i.1494508676230.6610.jpg",
-    "Description": "<p><strong></strong></p><p><strong>Gain knowledge &amp; proficiency from a leader in LTE</strong></p><p><strong>The Nokia LTE Certification program a</strong><strong>ccelerates time to market</strong></p><p>To know more about our LTE certification program please&nbsp;download our&nbsp;LTE leaflet <a href=\"http://learningstore.nokia.com/customer/doc/LTE_brochure-rev1.1\" target=\"_blank\">here</a>.</p><p><strong>Nokia LTE Certification Program</strong> consists of&nbsp;seven certifications, divided into two job oriented programs, one focusing on OAM job roles and the other one focusing on RF Optimization and Cells Design roles (click on related programs below for more details) :</p>",
+    "Description": "<p><strong></strong></p><p><strong>Gain knowledge &amp; proficiency from a leader in LTE</strong></p><p><strong>The Nokia LTE Certification program a</strong><strong>ccelerates time to market</strong></p><p>To know more about our LTE certification program please&nbsp;download our&nbsp;LTE leaflet <a href=\"http://learningstore.nokia.com/customer/doc/LTE_brochure-rev1.2.pdf\" target=\"_blank\">here</a>.</p><p><strong>Nokia LTE Certification Program</strong> consists of&nbsp;seven certifications, divided into two job oriented programs, one focusing on OAM job roles and the other one focusing on RF Optimization and Cells Design roles (click on related programs below for more details) :</p>",
     "Solutions": [
       "n.1494510417283",
       "n.1494514742351"
@@ -7244,7 +7221,7 @@
     "ID": "n.1494510417283",
     "Title": "LTE Networks Operation Certification Program",
     "Icon": "img/i.1494510417283.6140.jpg",
-    "Description": "<p>The Nokia LTE Networks Operation&nbsp;Training &amp; Certification Program contains&nbsp;two different levels of expertise from Nokia Certified Associate (NCA) level to Nokia Certified Professional (NCP) level .&nbsp;For every level one or more separate training &amp; certifications are available. </p><p>Below the complete training &amp; certification program for LTE RAN Operation Administration and Maintenance, LTE Network Operation Center and VoLTE Operation. Click on any of the levels for more details. A certification tag © indicates that a certification exam is offered for that level.</p><p><a href=\"none\" target=\"_blank\">Blank Box</a></p><p><a href=\"none\" target=\"_blank\">Nokia Certified&nbsp;Associate </a>(NCA)</p><p><a href=\"./#n.1494517492415\" target=\"_blank\">NCA - LTE Network Fundamentals</a>(certification)</p><p><a href=\"none\" target=\"_blank\">Nokia Certified Professional </a>(NCP)</p><p><a href=\"./#n.1508156030727\" target=\"_blank\">NCP RAN Operation and Maintenance (TDD &amp; FDD)</a>(<em>November 2017</em>)</p><p><a href=\"./#n.1508158556484\" target=\"_blank\">NCP LTE Network Operation Center (NOC)</a>(<em>November 2017</em>)</p><p><a href=\"./#n.1508413017577\" target=\"_blank\">NCP Core (Volte) Operation and Maintenance</a>&nbsp;(<em>December 2017</em>)</p>",
+    "Description": "<p>The Nokia LTE Networks Operation&nbsp;Training &amp; Certification Program contains&nbsp;two different levels of expertise from Nokia Certified Associate (NCA) level to Nokia Certified Professional (NCP) level .&nbsp;For every level one or more separate training &amp; certifications are available. </p><p>Below the complete training &amp; certification program for LTE RAN Operation Administration and Maintenance, LTE Network Operation Center and VoLTE Operation. Click on any of the levels for more details. A certification tag © indicates that a certification exam is offered for that level.</p><p><a href=\"none\" target=\"_blank\">Blank Box</a></p><p><a href=\"none\" target=\"_blank\">Nokia Certified&nbsp;Associate </a>(NCA)</p><p><a href=\"./#n.1494517492415\" target=\"_blank\">NCA - LTE Network Fundamentals</a>(certification)</p><p><a href=\"none\" target=\"_blank\">Nokia Certified Professional </a>(NCP)</p><p><a href=\"./#n.1508156030727\" target=\"_blank\">NCP RAN Operation and Maintenance (TDD &amp; FDD)</a>(<em>November 2017</em>)</p><p><a href=\"./#n.1508158556484\" target=\"_blank\">NCP LTE Network Operation Center (NOC)</a>(<em>November 2017</em>)</p><p><a href=\"./#n.1508413017577\" target=\"_blank\">NCP Core (Volte) Operation and Maintenance</a>&nbsp;(<em>November 2017</em>)</p>",
     "Solutions": []
   },
   {
@@ -7264,7 +7241,7 @@
     "Objectives": "<p>By passing this exam, the candidate will have demonstrated that he is be able to: </p><ul><li>List the detailed architectural elements of a mobile network and its evolution toward LTE,</li><li>Identify all functions and interfaces of each LTE Nodes, </li><li>Detail all steps of mobile call establishment,</li><li>Describe the packet service continuity during mobility,</li><li>Describe the voice services continuity during mobility,</li><li>Define the new LTE QoS model, </li><li>List how and where the security is implemented,</li><li>Describe the IP transport layer in the Radio Access Network,</li><li>List the key RF differentiators of the LTE standard compared to the other technologies,</li><li>Define the principles of OFDMA,</li><li>Describe the structure of the radio frame and how the channels (logical, transport and physical) are mapped on to the resources,</li><li>List the different antenna systems available and compare their interest,</li><li>Describe the mechanism of mobility when the UE is connected (handover) and when the UE is not connected (idle mode and paging)</li></ul>",
     "Duration": "<p>Equivalent to 10 hours training (Self-Study option) or 21 hours (Instructor Led)</p><p>Exam test:&nbsp;35 questions/60 min.</p>",
     "Prerequisites": "No mandatory Prerequisites, nevertheless background in wireless telecommunication network is recommended.",
-    "More information": "<p><u><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=48d08f7e-7656-4f0e-9112-53aab0a056e0\" target=\"_blank\">Self-Study Package | RA00177-K-0001</a></u> (Self-Study option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b1f69518-8094-4796-890c-0db9872ab805\" target=\"_blank\">Introduction to LTE/SAE Architecture | RA00136-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=a14989a7-46c6-4001-8138-db479fa3ec68\" target=\"_blank\">LTE Radio Interface - Physical Layer | RA00139-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c6a5965b-afe2-4851-80d5-71b896aae23f\" target=\"_blank\">LTE Mobility - ECM-Idle | RA00140-W-0016 </a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1484b4b7-731f-4ce9-88a4-e789a5c7471f\" target=\"_blank\">LTE Mobility - ECM-Connected | RA00138-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=a14989a7-46c6-4001-8138-db479fa3ec68\" target=\"_blank\">LTE Blended features - Voice, Interoperability, Charging and Location | RA00137-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=16bdd0b3-ef93-47fd-9d43-eb007f626b8e\" target=\"_blank\">LTE Transport Solutions | RA00141-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1adcdfc8-a4cc-458b-a2f1-0d89b13f5735\" target=\"_blank\">LTE Security Solutions | RA00142-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b381bb56-19a7-4bce-9aa2-97abedb08193\" target=\"_blank\">LTE QoS Solutions | RA00143-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=47c416c3-d017-4ae9-b0ab-a0a84a48a3fe\" target=\"_blank\">NCA - LTE Network Fundamentals Exam | RA00177-E-0001</a>(1 hours)</p><p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=21766ee6-bdec-432c-9275-304eb87773c9\" target=\"_blank\">LTE-EPS Fundamentals| TM5115-04A-LTE_CILT</a>(CILT 21 h)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=47c416c3-d017-4ae9-b0ab-a0a84a48a3fe\" target=\"_blank\">NCA - LTE Network Fundamentals Exam | RA00177-E-0001</a>(1 hours)</p><p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7ea4a781-81ab-4c36-948c-5f56673953f0\" target=\"_blank\">LTE-EPS Fundamentals| TM5115-04A-LTE_VILT</a>(VCL 21 h)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=47c416c3-d017-4ae9-b0ab-a0a84a48a3fe\" target=\"_blank\">NCA - LTE Network Fundamentals Exam | RA00177-E-0001</a>(Online Exam 1 hour)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4616da91-75a6-452d-9a34-63b1111d7f47\" target=\"_blank\">Self-Study Package | RA00177-K-0001</a>(Self-Study option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b1f69518-8094-4796-890c-0db9872ab805\" target=\"_blank\">Introduction to LTE/SAE Architecture | RA00136-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=a14989a7-46c6-4001-8138-db479fa3ec68\" target=\"_blank\">LTE Radio Interface - Physical Layer | RA00139-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c6a5965b-afe2-4851-80d5-71b896aae23f\" target=\"_blank\">LTE Mobility - ECM-Idle | RA00140-W-0016 </a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1484b4b7-731f-4ce9-88a4-e789a5c7471f\" target=\"_blank\">LTE Mobility - ECM-Connected | RA00138-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=a14989a7-46c6-4001-8138-db479fa3ec68\" target=\"_blank\">LTE Blended features - Voice, Interoperability, Charging and Location | RA00137-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=16bdd0b3-ef93-47fd-9d43-eb007f626b8e\" target=\"_blank\">LTE Transport Solutions | RA00141-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1adcdfc8-a4cc-458b-a2f1-0d89b13f5735\" target=\"_blank\">LTE Security Solutions | RA00142-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b381bb56-19a7-4bce-9aa2-97abedb08193\" target=\"_blank\">LTE QoS Solutions | RA00143-W-0016</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/LMS/Certification/CertificationDetails.aspx?certid=370\" target=\"_blank\">NCA (Nokia Certified Associate) LTE Networks Fundamentals | RA00177-F-0001</a>(online exam 1 hours)</p><p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=21766ee6-bdec-432c-9275-304eb87773c9\" target=\"_blank\">LTE-EPS Fundamentals| TM5115-04A-LTE_CILT</a>(CILT 21 h)</p><p><a href=\"https://nokialearn.csod.com/LMS/Certification/CertificationDetails.aspx?certid=370\" target=\"_blank\">NCA (Nokia Certified Associate) LTE Networks Fundamentals | RA00177-F-0001</a>(online exam 1 hours)</p><p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7ea4a781-81ab-4c36-948c-5f56673953f0\" target=\"_blank\">LTE-EPS Fundamentals| TM5115-04A-LTE_VILT</a>(VCL 21 h)</p><p><a href=\"https://nokialearn.csod.com/LMS/Certification/CertificationDetails.aspx?certid=370\" target=\"_blank\">NCA (Nokia Certified Associate) LTE Networks Fundamentals | RA00177-F-0001</a>(Online Exam 1 hour)</p>"
   },
   {
     "ID": "n.1494597437318",
@@ -7829,7 +7806,7 @@
     "Objectives": "<p>The participant is able to:&nbsp;</p><ul><li>recall the LTE/SAE Architecture and technological benefits</li><li>define the OFDMA and SC-FDMA concepts</li><li>describe the LTE Air interface physical structure</li><li>describe the LTE Air Interface protocol structure</li></ul>",
     "Duration": "<p>1 Hour</p>",
     "Prerequisites": "<p>&nbsp;Basic knowledge of telecommunications systems in general.&nbsp;</p>",
-    "More information": "<p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=a14989a7-46c6-4001-8138-db479fa3ec68\" target=\"_blank\">LTE Radio Interface - Physical Layer| RA00139-W-0016</a>(WBT 1h)</p></p>"
+    "More information": "<p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=33c05255-60a0-4fdf-934e-b6dda801fa21\" target=\"_blank\">LTE Radio Interface - Physical Layer| RA00139-W-0016</a>(WBT 1h)"
   },
   {
     "ID": "n.1497045133401",
@@ -7862,7 +7839,7 @@
     "Objectives": "<p>The participant is able to:&nbsp;</p><ul><li>recognize the Voice Evolution with the LTE system</li><li>recognize Interoperability between LTE and 2G/3G/3GPP2</li><li>define the LTE Charging Solutions</li><li>describe the LTE Location Solutions</li></ul>",
     "Duration": "<p> 1 Hour </p>",
     "Prerequisites": "<p>The learner should understand the basic operation of mobile telecommunication systems in general before starting to study this course. </p><p>LTE Mobility - ECM-Idle | RA00140-W-0016&nbsp;</p>",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/default.aspx?p=nokialearn&amp;c=anon&amp;dlink=%2fDeepLink%2fProcessRedirect.aspx%3fmodule%3dlodetails%26lo%3da14989a7-46c6-4001-8138-db479fa3ec68\" target=\"_blank\">LTE Blended features - Voice, Interoperability, Charging and Location| RA00137-W-0016</a><p>(WBT 1h)</p></p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=a14989a7-46c6-4001-8138-db479fa3ec68\" target=\"_blank\">LTE Blended features - Voice, Interoperability, Charging and Location| RA00137-W-0016</a>(WBT 1h)"
   },
   {
     "ID": "n.1497045992946",
@@ -8062,8 +8039,12 @@
     "Icon": "img/i.1494598769655.1433.jpg",
     "Description": "Covers the Public Safety Products: Public Safety Deployable Infrastructure, Public Safety Devices, Public Safety Applications&nbsp;",
     "Solutions": [
-      "n.1500384344766",
-      "n.1500384635005"
+      "n.1500468505503",
+      "n.1498055850127",
+      "n.1500309058312",
+      "n.1499960191652",
+      "n.1500308877689",
+      "n.1499960452733"
     ]
   },
   {
@@ -8098,6 +8079,13 @@
     "Audience": "available soon",
     "Description": "This curriculum aims at providing the necessary knowledge about main functionalities, architecture, hardware, provisioning and maintenance of IoT EC-GSM Radio Network elements",
     "Prerequisites": "IoT Fundamentals (WBT)  - IO10001-W-17"
+  },
+  {
+    "ID": "n.1498055850127",
+    "Title": "Ultra Compact Network (UCN) 17",
+    "Icon": "img/seeMore.png",
+    "Description": "This curriculum aims at providing the necessary knowledge about main functionalities, architecture, hardware, provisioning and maintenance of UCN17 Product",
+    "More information": "Public Safety Products Overview&nbsp; ( coming soon)"
   },
   {
     "ID": "n.1498728256189",
@@ -8216,6 +8204,7 @@
     "ID": "n.1499279142048",
     "Title": "One-NDS 17 Platform Directory Fundamental | CUCN2005-K-17",
     "Icon": "img/i.1499279142048.4066.png",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=41bce6a1-cc92-4021-a365-8d7db23289ac",
     "Description": "<p>This curriculum provides the One-NDS platform directory fundamental knowledge required for provisioning, administration, operation, maintenance and troubleshooting One-NDS and SDM products and solutions.</p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li>One-NDS System Architecture</li><li>One-NDS Interfaces and Protocols</li><li>One-NDS Directory Basics</li><li>One-NDS Directory Server Basic</li><li>One-NDS Common Data Model</li></ul>",
     "Objectives": "<p>The participant is able to:</p><ul><li>&nbsp;describe the One-NDS components in the system architecture</li><li>recognize interfaces and protocols for One-NDS</li><li>explain the One-NDS directory structure and features in relationship to the SDM products and solutions</li><li>explain the concept of a X.500 directory structure and features </li><li>describe the basic structure of the common data model</li></ul>",
     "Duration": "10 hours",
@@ -8258,7 +8247,7 @@
     "Title": "Group Communication (GC) 17",
     "Icon": "img/i.1499960452733.3727.png",
     "Description": "This curriculum aims at providing the necessary knowledge about main functionalities, architecture, hardware, provisioning and maintenance of GC17 MP1&nbsp;Product",
-    "More information": "<p><a href=\"Group Communications ( GC) Operation and Configuration on Dispatch Console and Recording Server GC17 MP1 | MN00333-V-171\" target=\"_blank\">Configuration on Dispatch Console and Recording Server GC17 MP1</a></p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7bef7c6f-9a4e-4813-a41e-1313b176206f\" target=\"_blank\">WAS Operation, Administration and Troubleshooting GC17 MP1</a></p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=46f62a40-bdda-4576-b47a-d67ee45d21f0\" target=\"_blank\">WAS) Operation, Administration and Troubleshooting GC17 MP1 </a></p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b49dfc65-ddc3-4663-b655-431e5f473899\" target=\"_blank\">Installation and Commissioning GC17 MP1 </a></p><p> {/3-]</p>"
+    "More information": "<p><a href=\"Group Communications ( GC) Operation and Configuration on Dispatch Console and Recording Server GC17 MP1 | MN00333-V-171\" target=\"_blank\">Configuration on Dispatch Console and Recording Server GC17 MP1</a></p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7bef7c6f-9a4e-4813-a41e-1313b176206f\" target=\"_blank\">WAS Operation, Administration and Troubleshooting GC17 MP1</a></p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=46f62a40-bdda-4576-b47a-d67ee45d21f0\" target=\"_blank\">ON LINE course: WAS Operation, Administration and Troubleshooting&nbsp; </a></p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b49dfc65-ddc3-4663-b655-431e5f473899\" target=\"_blank\">Installation and Commissioning GC17 MP1 </a></p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=81b02cb2-9fb6-42a6-8239-ebf4af394451\" target=\"_blank\">ON LINE course: Configuration on Dispatch Console and Recording server</a> </p>"
   },
   {
     "ID": "n.1499960751170",
@@ -8269,6 +8258,20 @@
       "n.1492782132812",
       "n.1480331077157"
     ]
+  },
+  {
+    "ID": "n.1500308877689",
+    "Title": "Micro Core Network (MCN) 17",
+    "Icon": "img/i.1481021752353.4665.png",
+    "Description": "This curriculum aims at providing the necessary knowledge about main functionalities, architecture, hardware, provisioning and maintenance of MCN 17 Product",
+    "More information": "coming soon"
+  },
+  {
+    "ID": "n.1500309058312",
+    "Title": "Compact Network (CN) 17",
+    "Icon": "img/i.1481021752353.4665.png",
+    "Description": "This curriculum aims at providing the necessary knowledge about main functionalities, architecture, hardware, provisioning and maintenance of CN17 Product",
+    "More information": "coming soon"
   },
   {
     "ID": "n.1500384344766",
@@ -8368,7 +8371,7 @@
   },
   {
     "ID": "n.1502879052551",
-    "Title": "Mobile Fronthaul Solution Network Maintenance",
+    "Title": "Mobile Fronthaul Solution - 1830 VWM (Versatile WDM Module)",
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1502879252705"
@@ -8380,11 +8383,11 @@
     "Icon": "img/i.1472887632557.9561.png",
     "Url": "#getQuote",
     "Description": "<p>This course provides an overview of the Mobile Fronthaul Solution, including a description of the used hardware.</p><p>Configuration of the equipment, set up of services and maintenance activities will be described. The main focus is on OAM based on CLI, including pro-active monitoring and re-active alarm handling procedures.</p>",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=5155d951-1214-4905-aa2d-133a65a5362d\" target=\"_blank\">Mobile Fronthaul Solution Operation &amp; Maintenance</a>&nbsp;(TOP54109 - 2 days)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=631f6cfc-4151-48c1-9667-585070bd00b0\" target=\"_blank\">Mobile Fronthaul Solution Operation &amp; Maintenance</a>&nbsp;(TOP54109 - 2 days)</p>"
   },
   {
     "ID": "n.1502880181000",
-    "Title": "Mobile Fronthaul Solution Configuration &amp; Administration",
+    "Title": "Mobile Fronthaul Solution - 1830 VWM (Versatile WDM Module) Configuration &amp; Administration",
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1502880255468"
@@ -8395,12 +8398,12 @@
     "Title": "Mobile Fronthaul Solution Network Configuration and Operations Engineer",
     "Icon": "img/i.1472887632557.9561.png",
     "Url": "#getQuote",
-    "Description": "<p>This curriculum aims at providing the necessary knowledge to manage the Mobile Fronthaul Solution via the 5620 SAM (Service Aware Manager).</p>",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=5155d951-1214-4905-aa2d-133a65a5362d\" target=\"_blank\">Mobile Fronthaul Solution Operation &amp; Maintenance</a>&nbsp;(TOP54109 - 2 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=6af70e3c-d0ab-40fe-95a8-4478e2250bfa\" target=\"_blank\">5620 SAM Management for Mobile Fronthaul Solution</a>&nbsp;(TOP54113 - 1 day)</p>"
+    "Description": "<p>This curriculum aims at providing the necessary knowledge to manage the Mobile Fronthaul Solution via the management system NFM-P.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=631f6cfc-4151-48c1-9667-585070bd00b0\" target=\"_blank\">Mobile Fronthaul Solution Operation &amp; Maintenance</a>&nbsp;(TOP54109 - 2 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=5e2890a4-f20f-4728-bca7-8a50b2d24f0c\" target=\"_blank\">NFM-P&nbsp;Management for Mobile Fronthaul Solution</a>&nbsp;(OP00501-V - 1 day)</p>"
   },
   {
     "ID": "n.1502881502425",
-    "Title": "Mobile Fronthaul Solution Operations",
+    "Title": "Mobile Fronthaul Solution - 1830 VWM (Versatile WDM Module) Operations",
     "Icon": "img/seeMore.png",
     "Solutions": [
       "n.1502880255468"
@@ -8632,7 +8635,7 @@
     "Icon": "img/i.1505823470349.7082.jpg",
     "Description": "<p><span style=\"background-color: rgb(241, 241, 241);\">It provides the centralized network management via the management system NFM-T of  a network made of 1830 PSS products in managed plane configuration.</span></p>",
     "Prerequisites": "<p>Before attending the NMF-T courses is necessary to follow one or more 1830 PSS family O&amp;M courses on the network elements present in the customer network.&nbsp;</p>",
-    "More information": "<p>(*) select one of the two.</p><p>(**) optional for L2 services.</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=cef4e671-87c8-471a-91f2-e0cc63a5e35a\" target=\"_blank\">NFM-T R. 17.9 Managed Plane Network construction with 1830 products operation </a>(OP00090 2 days )</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b7a653c2-00bb-455f-9af8-99b3359ed2a1\" target=\"_blank\">NFM-T  Provisioning and Network maintenance -managed plane</a>&nbsp;( OP00092 3 days (*) )</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=da7e9d8f-b4fa-4c06-b878-0859d634f45a\" target=\"_blank\">NSP Carrier SDN R. 17.9  IP &amp; Optical Services Provisioning </a>( OS00283 2 days (*) )&nbsp;</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4830d15f-75d8-4edc-9ee1-bfe1ce702234\" target=\"_blank\">NFM-T ESM R. 17.9 Operation &amp; Maintenance </a>( OP00095 3 days (**) )</p><p>&nbsp;<span style=\"background-color: transparent;\"></span></p>"
+    "More information": "<p>(*) select one of the two.</p><p>(**) optional for L2 services.</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=cef4e671-87c8-471a-91f2-e0cc63a5e35a\" target=\"_blank\">NFM-T R. 17.9 Managed Plane Network construction with 1830 products operation </a>(OP00090 2 days )</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b7a653c2-00bb-455f-9af8-99b3359ed2a1\" target=\"_blank\">NFM-T  Provisioning and Network maintenance -managed plane</a>&nbsp;( OP00092 3 days (*) )</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4830d15f-75d8-4edc-9ee1-bfe1ce702234\" target=\"_blank\">NFM-T ESM R. 17.9 Operation &amp; Maintenance </a>( OP00095 3 days (**) )</p><p>&nbsp;<span style=\"background-color: transparent;\"></span></p>"
   },
   {
     "ID": "n.1503501353772",
@@ -8640,7 +8643,7 @@
     "Icon": "img/i.1505823400844.8854.jpg",
     "Description": "<p>It provides the centralized network management via the management system NFM-T of a network made of 1830 PSS products in GMPLS L0 or L1 configuration.</p>",
     "Prerequisites": "<p>Before attending the NMF-T courses is necessary to follow one or more 1830 PSS family O&amp;M courses on the network elements present in the customer network.&nbsp;</p>",
-    "More information": "<p>(*) in alternative</p><p>(**) optional for L2 services</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=a97ca161-36ba-45df-81cc-899e6b25f797\" target=\"_blank\">NFM -T R.17.9 GMPLS Network construction with 1830 products operations </a>( OP00091 1 day )</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=3394f303-601b-47f8-859d-201c56f96815\" target=\"_blank\">NFM-T R.17.9  Provisioning and Network maintenance -GMPLS L0 &nbsp;</a>(OP00093 3 days (*) )&nbsp;</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c5688be6-ff05-417d-99f0-0824f35afd92\" target=\"_blank\">NFM-T R.17.9  Provisioning and Network maintenance -GMPLS L1 </a>&nbsp;( OP00094 3 days (*) )</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=da7e9d8f-b4fa-4c06-b878-0859d634f45a\" target=\"_blank\">NSP &nbsp;Carrier SDN R.17.9 IP &amp; Optical Services Provisioning </a>( OS00283 2 days (*))</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4830d15f-75d8-4edc-9ee1-bfe1ce702234\" target=\"_blank\">NFM-T R. 17.9 ESM O&amp;M</a> ( &nbsp;OP00095 3 days (**) )</p>"
+    "More information": "<p>(*) in alternative</p><p>(**) optional for L2 services</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=a97ca161-36ba-45df-81cc-899e6b25f797\" target=\"_blank\">NFM -T R.17.9 GMPLS Network construction with 1830 products operations </a>( OP00091 1 day )</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=3394f303-601b-47f8-859d-201c56f96815\" target=\"_blank\">NFM-T R.17.9  Provisioning and Network maintenance -GMPLS L0 &nbsp;</a>(OP00093 3 days (*) )&nbsp;</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c5688be6-ff05-417d-99f0-0824f35afd92\" target=\"_blank\">NFM-T R.17.9  Provisioning and Network maintenance -GMPLS L1 </a>&nbsp;( OP00094 3 days (*) )</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4830d15f-75d8-4edc-9ee1-bfe1ce702234\" target=\"_blank\">NFM-T R. 17.9 ESM O&amp;M</a> ( &nbsp;OP00095 3 days (**) )</p>"
   },
   {
     "ID": "n.1503502496139",
@@ -8719,7 +8722,7 @@
     "Icon": "img/i.1472887632557.9561.png",
     "Url": "#getQuote",
     "Description": "<p>This course provides the necessary knowledge about main functionalities, architecture, hardware, provisioning and maintenance of 1830 PSD (Photonic Service Demarcation) network element.</p>",
-    "More information": "<p><span style=\"background-color: rgb(241, 241, 241);\"><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b1307d9d-db94-4076-ba4f-607510152c60\" target=\"_blank\">1830 PSD Operation and Maintenance</a>&nbsp;(OP00001 - 1 day)</span></p><p><span style=\"background-color: rgb(241, 241, 241);\"></span></p>"
+    "More information": "<p><span style=\"background-color: rgb(241, 241, 241);\"><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b1307d9d-db94-4076-ba4f-607510152c60\" target=\"_blank\">1830 PSD Operation and Maintenance</a>&nbsp;(OP00001-V - 1 day)</span></p><p><span style=\"background-color: rgb(241, 241, 241);\"></span></p>"
   },
   {
     "ID": "n.1505197337467",
@@ -8898,7 +8901,7 @@
     "Icon": "img/i.1481021752353.4665.png",
     "Description": "<p>Curriculum for personnel who operate and maintain Femto Network. To acquire this curriculum, complete all learning elements on the curriculum path:</p>",
     "Duration": "6 days",
-    "More information": "<p><a href=\"https://extrafed.ext.net.nokia.com/idp/profile/SAML2/Unsolicited/SSO?providerId=https://nokialearn.csod.com&amp;target=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d243586f5-47f4-4517-a2ca-bd091c4c0a83\" target=\"_blank\">Small Cells Femto Operations and Maintenance for Technical support LR16.1 SC | RA00037-K-161</a></p>"
+    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=bfc89723-7395-449d-8e79-f599e42edf57\" target=\"_blank\">RA00037-K-161</a>"
   },
   {
     "ID": "n.1507018260428",
@@ -8940,7 +8943,7 @@
     "Objectives": "<p>By passing this exam, the candidate will have demonstrated that he is be able to:</p><ul><li>Maintain the HW and the SW of an eNodeB,</li><li>Manage the eNode B alarm,</li><li>Integration and configure an eNode B element.</li><li>Practice operation on eNode B in Lab practice (on site or remote in classroom)</li></ul>",
     "Duration": "Learning track [63 hours / 9 days]Written exam 45 Questions/2 Hours",
     "Prerequisites": "Passed the NCA (Nokia Certified Associate) LTE Networks Fundamentals",
-    "More information": "<p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=be3e6d30-f800-4d1e-ba60-7d63b3332b85\" target=\"_blank\">Airscale BTS and Flexi MR BTS LTE Operation, Administration and Maintenance LTE 17A | RA41120-V-17A</a>(VILT 21 h)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8a8de6e9-d8fe-4ebc-987c-56eeb42b3813\" target=\"_blank\">NetAct 17.8 LTE Fault Management (LTE 17A) | OS85390-V-17A</a>(VILT 21 h)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=f195e342-6344-42e5-9388-ea677d7ad838\" target=\"_blank\">NetAct 17.8 LTE Configuration Management (LTE 17A) | OS85420-V-17A</a>(VILT 21 h)</p><p><a href=\"none\" target=\"_blank\">NCP - LTE RAN Operation and Maintenance Exam | RA00178-E-0001</a>(online&nbsp;2 hours)</p><p><a href=\"none\" target=\"_blank\">Online Course option</a> (Self-Study Material)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d561fbdb-a2c5-496b-be00-74eeecc10809\" target=\"_blank\">Airscale BTS and Flexi MR BTS LTE Operation, Administration and Maintenance Release LTE 17 | RA41120-K-17SP</a>(WBT&nbsp;14 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0956bca6-33b1-44b3-8016-7218f956c20f\" target=\"_blank\">Fault Management Basic Operations in NetAct | OS0513-17A-NRM_WBT</a>(WBT&nbsp;1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=bfe8168a-ee48-48c8-8390-4a072a9cd369\" target=\"_blank\">Configuration Management Operations in NetAct | OS0563-17A-NRM_WBT</a>(WBT&nbsp;1 hour)</p><p> </p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=22112c68-57b1-490a-9f6a-a94a468a1a3d\" target=\"_blank\">Program Package | RA00178-K-0001 --&gt;</a> (Recommended Learning)</p><p><a href=\"https://nokialearn.csod.com/LMS/Certification/CertificationDetails.aspx?certid=374\" target=\"_blank\">NCP - LTE RAN Operation and Maintenance Exam | RA00178-F-0001</a>(online exam 2 hours)</p><p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=be3e6d30-f800-4d1e-ba60-7d63b3332b85\" target=\"_blank\">Airscale BTS and Flexi MR BTS LTE Operation, Administration and Maintenance LTE 17A | RA41120-V-17A</a>(VILT 21 h)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8a8de6e9-d8fe-4ebc-987c-56eeb42b3813\" target=\"_blank\">NetAct 17.8 LTE Fault Management (LTE 17A) | OS85390-V-17A</a>(VILT 21 h)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=f195e342-6344-42e5-9388-ea677d7ad838\" target=\"_blank\">NetAct 17.8 LTE Configuration Management (LTE 17A) | OS85420-V-17A</a>(VILT 21 h)</p><p><a href=\"none\" target=\"_blank\">Online Course option</a> (Self-Study Material)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d561fbdb-a2c5-496b-be00-74eeecc10809\" target=\"_blank\">Airscale BTS and Flexi MR BTS LTE Operation, Administration and Maintenance Release LTE 17 | RA41120-K-17SP</a>(WBT&nbsp;14 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0956bca6-33b1-44b3-8016-7218f956c20f\" target=\"_blank\">Fault Management Basic Operations in NetAct | OS0513-17A-NRM_WBT</a>(WBT&nbsp;1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=bfe8168a-ee48-48c8-8390-4a072a9cd369\" target=\"_blank\">Configuration Management Operations in NetAct | OS0563-17A-NRM_WBT</a>(WBT&nbsp;1 hour)</p><p> </p>"
   },
   {
     "ID": "n.1508158556484",
@@ -8952,7 +8955,7 @@
     "Objectives": "<p>By passing this exam, the candidate will have demonstrated that he is be able to:</p><ul><li>Describe how NetAct applications are used for basic monitoring, configuration and management of the network</li><li>Perform fault management operations of a network using NetAct system. </li><li>Illustrates the steps to monitor and locate faults; </li><li>Perform initial problem handling </li><li>Generate reports containing alarm statistics.</li></ul>",
     "Duration": "<p>Learning track [7 hours/1 day]</p><p>Written exam [35 Questions/1 Hour]</p>",
     "Prerequisites": "<p>Passed the NCA (Nokia Certified Associate) LTE Networks Fundamentals</p>",
-    "More information": "<p><p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4900fd70-000c-4fb4-b21e-5a61eca02be0\" target=\"_blank\">NetAct Fault Management (NetAct 17.x) | OS8216-17A-NRM_v1.0</a>(VILT 7 hours)</p><p><a href=\"none\" target=\"_blank\">NCP - LTE Network Operation Center (NOC) | AP00179-E-0001</a>(Online Exam 1 hour)</p><p><a href=\"none\" target=\"_blank\">Online Course</a>(Self-Study Material)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d5615af6-8243-497d-965b-073ae916ae90\" target=\"_blank\">Introduction to NetAct 17 | OS0582-17A-NRM</a>(WBT 2 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0956bca6-33b1-44b3-8016-7218f956c20f\" target=\"_blank\">Fault Management Basic Operations in NetAct | OS0513-17A-NRM</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=72be4309-7b19-4efd-82c8-b2fa4f156f1c\" target=\"_blank\">Fault Management Administration | OS0514-17A-NRM</a>(WBT 1 hour)</p>"
+    "More information": "<p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=9ee2d6e9-e266-4592-9abc-acc2048e51ae\" target=\"_blank\">Program Package | AP00179-K-0001 --&gt;</a> (Recommended Learning)</p><p><a href=\"https://nokialearn.csod.com/LMS/Certification/CertificationDetails.aspx?certid=372\" target=\"_blank\">NCP - LTE Network Operation Center (NOC) | AP00179-F-0001</a>(Online Exam 1 hour)</p><p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4900fd70-000c-4fb4-b21e-5a61eca02be0\" target=\"_blank\">NetAct Fault Management (NetAct 17.x) | OS8216-17A-NRM_v1.0</a>(VILT 7 hours)</p><p><a href=\"none\" target=\"_blank\">Online Course</a>(Self-Study Material)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d5615af6-8243-497d-965b-073ae916ae90\" target=\"_blank\">Introduction to NetAct 17 | OS0582-17A-NRM</a>(WBT 2 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0956bca6-33b1-44b3-8016-7218f956c20f\" target=\"_blank\">Fault Management Basic Operations in NetAct | OS0513-17A-NRM</a>(WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=72be4309-7b19-4efd-82c8-b2fa4f156f1c\" target=\"_blank\">Fault Management Administration | OS0514-17A-NRM</a>(WBT 1 hour)</p>"
   },
   {
     "ID": "n.1508161582316",
@@ -8964,7 +8967,7 @@
     "Objectives": "<p>By passing this exam, the candidate will have demonstrated that he is be able to:</p><ul><li>List the main steps of the LTE FDD RAN optimization process and associated Nokia tools,</li><li>Classify the Nokia e-Node B FDD parameters, </li><li>Describe the main FDD Radio Resources Management mechanisms and their associated parameters (MIMO, resources allocation, Physical Channel Configuration, link adaptation),</li><li>Describe the Call Setup procedures and their associated parameters (RRC Connection, Idle mode, S1 and X2 bearer setup, ...),</li><li>Describe the Mobility Management procedures and their associated parameters (Standby mode, Active mode),</li><li>List the main Nokia Performance Monitoring tools,</li><li>List the main counters and indicators to monitor the key LTE FDD RAN Performance issues (accessibility, retain ability, mobility, traffic load, radio condition),</li><li>Detect typical LTE FDD RAN performance issues through use cases analysis.</li></ul>",
     "Duration": "<p>Learning track [112 hours/16 days]</p><p>Written exam 45 Questions/2 Hours</p>",
     "Prerequisites": "Passed the NCA (Nokia Certified Associate) LTE Networks Fundamentals",
-    "More information": "<p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=749b53b2-ab30-45ff-83d2-8819b1afeced\" target=\"_blank\">LTE Parameters 1 [FL17A] | RA41210-V-17A </a>(VILT 4 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=f9dc000a-bcb0-4cef-b9a4-96c306d9a16e\" target=\"_blank\">LTE Parameters 2 [FL17A] | RA41220-V-17A</a> (VILT 4 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=75ad51a3-35ea-43fb-bc95-aada83b28dd6\" target=\"_blank\">Inter-layer Mobility Parameters | RA47030-V-17A </a>(VILT 5 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0a164620-0bff-404a-a6b9-0a2ad09655d6\" target=\"_blank\">LTE Counters and KPI [FL17A] | RA41330-V-17A </a>(VILT 3 days)</p><p><p><a href=\"none\" target=\"_blank\">NCP - Radio Network Optimization FDD | RN00181-E-0001</a>(Online Exam 2 hours)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=e94810eb-a50d-474d-93a3-c9d96db1dae2\" target=\"_blank\">Program Package | RN00181-K-0001 --&gt;</a> (Recommended Learning)</p><p><a href=\"https://nokialearn.csod.com/LMS/Certification/CertificationDetails.aspx?certid=371\" target=\"_blank\">NCP - Radio Network Optimization FDD | RN00181-F-0001</a>(Online Exam 2 hours)</p><p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=749b53b2-ab30-45ff-83d2-8819b1afeced\" target=\"_blank\">LTE Parameters 1 [FL17A] | RA41210-V-17A </a>(VILT 4 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=f9dc000a-bcb0-4cef-b9a4-96c306d9a16e\" target=\"_blank\">LTE Parameters 2 [FL17A] | RA41220-V-17A</a> (VILT 4 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=75ad51a3-35ea-43fb-bc95-aada83b28dd6\" target=\"_blank\">Inter-layer Mobility Parameters | RA47030-V-17A </a>(VILT 5 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0a164620-0bff-404a-a6b9-0a2ad09655d6\" target=\"_blank\">LTE Counters and KPI [FL17A] | RA41330-V-17A </a>(VILT 3 days)</p><p>"
   },
   {
     "ID": "n.1508162312407",
@@ -8976,7 +8979,7 @@
     "Objectives": "<p>By passing this exam, the candidate will have demonstrated that he is be able to:</p><ul><li>List the main steps of the LTE TDD RAN optimization process and associated Nokia tools,</li><li>Classify the Nokia e-Node B TDD parameters, </li><li>Describe the main TDD Radio Resources Management mechanisms and their associated parameters (MIMO, resources allocation, Physical Channel Configuration, link adaptation),</li><li>Describe the Call Setup procedures and their associated parameters (RRC Connection, Idle mode, S1 and X2 bearer setup, ...),</li><li>Describe the Mobility Management procedures and their associated parameters (Standby mode, Active mode),</li><li>List the main Nokia Performance Monitoring tools,</li><li>List the main counters and indicators to monitor the key LTE TDD RAN Performance issues (accessibility, retain ability, mobility, traffic load, radio condition),</li><li>Detect typical LTE TDD RAN performance issues through use cases analysis.</li></ul>",
     "Duration": "<p>Learning track [105 hours/15 days]</p><p>Written exam 45 Questions/2 Hours</p>",
     "Prerequisites": "Passed the NCA (Nokia Certified Associate) LTE Networks Fundamentals",
-    "More information": "<p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=749b53b2-ab30-45ff-83d2-8819b1afeced\" target=\"_blank\">TDD-LTE Parameters 1 [TL17A] | RA47000-V-17A</a> (VILT 4 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=f9dc000a-bcb0-4cef-b9a4-96c306d9a16e\" target=\"_blank\">TDD-LTE Radio Parameters 2 [TL17A] | RA47010-V-17A </a>(VILT 3 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=75ad51a3-35ea-43fb-bc95-aada83b28dd6\" target=\"_blank\">Inter-layer Mobility Parameters | RA47030-V-17A </a>(VILT 5 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0a164620-0bff-404a-a6b9-0a2ad09655d6\" target=\"_blank\">LTE Counters and KPI [FL17A] | RA41330-V-17A </a>(VILT 3 days)</p><p><a href=\"none\" target=\"_blank\">NCP - Radio Network Optimization TD-LTE | RN00182-E-0001</a>(Online Exam 2 hours)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=49442a9c-6899-48dd-a0a5-e11d1b0a2318\" target=\"_blank\">Program Package | RN00182-K-0001 --&gt;</a> (Recommended Learning)</p><p><a href=\"https://nokialearn.csod.com/LMS/Certification/CertificationDetails.aspx?certid=375\" target=\"_blank\">NCP - Radio Network Optimization TD-LTE | RN00182-F-0001</a>(Online Exam 2 hours)</p><p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=749b53b2-ab30-45ff-83d2-8819b1afeced\" target=\"_blank\">TDD-LTE Parameters 1 [TL17A] | RA47000-V-17A</a> (VILT 4 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=f9dc000a-bcb0-4cef-b9a4-96c306d9a16e\" target=\"_blank\">TDD-LTE Radio Parameters 2 [TL17A] | RA47010-V-17A </a>(VILT 3 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=75ad51a3-35ea-43fb-bc95-aada83b28dd6\" target=\"_blank\">Inter-layer Mobility Parameters | RA47030-V-17A </a>(VILT 5 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0a164620-0bff-404a-a6b9-0a2ad09655d6\" target=\"_blank\">LTE Counters and KPI [FL17A] | RA41330-V-17A </a>(VILT 3 days)</p>"
   },
   {
     "ID": "n.1508166177216",
@@ -8988,18 +8991,273 @@
     "Objectives": "<p>By passing this exam, the candidate will have demonstrated that he is be able to:</p><ul><li>Recall the Air IF protocol architecture </li><li>Review the principles of OFDM </li><li>Describe the LTE Channels </li><li>Express the main tasks of Radio Resource Management functionalities </li><li>Discuss the MIMO technology applied in LTE </li><li>Describe and perform the generic day-to-day tasks of an LTE Radio Planner (with exception to planning tool specifics)</li><li>Plan small cell/Micro Cell deployment</li></ul>",
     "Duration": "<p>Learning track [77 hours/11 days]</p><p>Written exam 40 Questions/2 Hours</p>",
     "Prerequisites": "Completion of the NCA (Nokia Certified Associate) LTE Networks Fundamentals",
-    "More information": "<p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual Classroom option)</p><p><a href=\"none\" target=\"_blank\">LTE Air Interface | TM5117-04A-LTE</a>(VILT 4 days)</p><p><a href=\"none\" target=\"_blank\">FDD and TDD LTE Radio Planning [FL17A/TL17A] | RA41200-V-17A</a>(VILT 4 days)</p><p><a href=\"none\" target=\"_blank\">LTE Small Cells Planning and Dimensioning [FL17A] | RA47060-V-17A</a>(VILT 3 days)</p><p><a href=\"none\" target=\"_blank\">NCP - Radio Network Planning FDD &amp; TD-LTE | RN00183-E-0001</a>(Online Exam 2 hours)</p><p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c1868855-b9c5-4587-a369-1ab3f93c9c85\" target=\"_blank\">Program Package | RN00183-K-0001 --&gt;</a> (Recommended Learning)</p><p><a href=\"https://nokialearn.csod.com/LMS/Certification/CertificationDetails.aspx?certid=376\" target=\"_blank\">NCP - Radio Network Planning FDD &amp; TD-LTE | RN00183-F-0001</a>(Online Exam 2 hours)</p><p><a href=\"none\" target=\"_blank\">Instructor-Led</a>(Virtual or Classroom option)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=a27c0a05-9fb6-4f78-af85-90d8c917ef58\" target=\"_blank\">LTE Air Interface | TM5117-04A-LTE</a>(VILT 4 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=e6d4079b-0183-461f-b841-80bde36762b1\" target=\"_blank\">FDD and TDD LTE Radio Planning [FL17A/TL17A] | RA41200-V-17A</a>(VILT 4 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8b2e59e3-4fca-4557-ba4a-7e1d6a4b04b3\" target=\"_blank\">LTE Small Cells Planning and Dimensioning [FL17A] | RA47060-V-17A</a>(VILT 3 days)</p>"
   },
   {
     "ID": "n.1508413017577",
-    "Title": "NCP (Nokia Certified Professional) CORE (VoLTE) Operation and Maintenance | CN00180-K-0001",
+    "Title": "NCP (Nokia Certified Professional) CORE (VoLTE) Operation and Maintenance",
     "Icon": "img/i.1489667025432.4697.png",
     "Url": "#getQuote",
     "Audience": "designed for individual who need to specialized into VoLTE Core network operation",
     "Description": "<p>The Certification Program for CORE (VoLTE) Operation And Maintenance is designed for people who are performing the following tasks: VoLTE Core Network monitoring, performance management, configuration management, software and license management for TAS and NTHLR from the central EMS.</p>",
     "Objectives": "<p>By passing this exam, the candidate will have demonstrated that he is be able to:</p><ul><li>Describe VoLTE Architecture and Subscriber Registration </li><li>Describe VoLTE Call Setup Procedure </li><li>Describe VoLTE Roaming and CS Interworking </li><li>Describe how NetAct applications are used for basic monitoring, configuration and management of the network</li><li>Utilize NetAct Monitor tools to perform network fault analysis and network topology handling. </li><li>Utilize NetAct Performance Management applications to manage Traffic Measurements, Reports, KPIs, and monitor performance indicators. </li><li>Utilize the Configurator tools for executing basic tasks for configuration upload, plan management, data export and CM history reporting. </li><li>Utilize NetAct for executing basic License Management tasks: license reporting, license import and distribution. </li><li>Set up tasks to manage the SW configuration for the network elements. </li><li>Create network element remote backups</li></ul>",
-    "Duration": "<p>Learning track [70 hours/10 days]</p><p>Written exam 45 Questions/2 Hours</p>",
+    "Duration": "<p>Learning track [63 hours/9 days]</p><p>Written exam 45 Questions/2 Hours</p>",
     "Prerequisites": "Passed the NCA (Nokia Certified Associate) LTE Networks Fundamentals",
-    "More information": "<p><a href=\"none\" target=\"_blank\">Blended Learning Program</a>(Online and Classroom courses)</p><p><a href=\"none\" target=\"_blank\">VoLTE Architecture and Subscriber Registration Overview | CN61000-W-175</a>(WBT Nov. 2017)</p><p><a href=\"none\" target=\"_blank\">VoLTE Call Setup Procedure Overview | CN61010-W-175</a>(WBT Nov. 2017)</p><p><a href=\"none\" target=\"_blank\">VoLTE Roaming and CS Interworking Overview | CN61020-W-175</a>(WBT Nov. 2017)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7e346087-6562-4724-afd1-c8229e18510a\" target=\"_blank\">NetAct for VoLTE (NetAct 16.x)| OS8213-16A-NRM_CILT</a>(CILT 28 h)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=de46db29-6026-41f6-9735-b354c0037fcc\" target=\"_blank\">NetAct Configurator for Core R4| OS8521-16A-NRM_CILT</a>(CILT 14 h)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=5da6d168-a22d-458e-a345-8f4e08f6e8b1\" target=\"_blank\">NetAct 17.x management functions for core elements (NT HLR, IMS)| CN9074-17A-SDM_VILT</a>(VILT 21 h)</p><p><a href=\"none\" target=\"_blank\">NCP - CORE (VOLTE) Operation And Maintenance | CN00180-E-0001</a>(2 hours)</p><p><a href=\"none\" target=\"_blank\">Online course </a>(Additional Self-Study Material)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d5615af6-8243-497d-965b-073ae916ae90\" target=\"_blank\">Introduction to NetAct 17 | OS0582-17A-NRM</a>(WBT 2 hours)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=fa303add-e704-420e-a6f1-6748a57d2470\" target=\"_blank\">Program Package | CN00180-K-0001 --&gt;</a> (Recommended Learning)</p><p><a href=\"https://nokialearn.csod.com/LMS/Certification/CertificationDetails.aspx?certid=373\" target=\"_blank\">NCP - CORE (VOLTE) Operation And Maintenance | CN00180-F-0001</a>(Online exam 2 hours)</p><p><a href=\"none\" target=\"_blank\">Blended Learning Track</a>(WBT and Classroom courses)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=5bb3f0a7-d855-479a-9bd5-528d1e2ec502\" target=\"_blank\">VoLTE Architecture and Subscriber Registration Overview | CN61000-W-175</a>(WBT 22min - Nov. 2017)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=f6c2c531-9758-40b9-b569-608a77472068\" target=\"_blank\">VoLTE Call Setup Procedure Overview | CN61010-W-175</a>(WBT 13 min - Nov. 2017)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=2195a99b-e9f8-44b2-a182-4e060f9cce22\" target=\"_blank\">VoLTE Roaming and CS Interworking Overview | CN61020-W-175</a>(WBT 33min - Nov. 2017)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=77a1d65b-f9c0-42f9-bd8f-c2e2a09dc912\" target=\"_blank\">VoLTE e2e Signaling| CN6112-16A-COR_CILT</a>(CILT 35 h)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7e346087-6562-4724-afd1-c8229e18510a\" target=\"_blank\">NetAct for VoLTE (NetAct 16.x)| OS8213-16A-NRM_CILT</a>(CILT 28 h)</p><p><a href=\"none\" target=\"_blank\">Online course </a>(Additional Self-Study Material)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d5615af6-8243-497d-965b-073ae916ae90\" target=\"_blank\">Introduction to NetAct 17 | OS0582-17A-NRM</a>(WBT 2 hours)</p>"
+  },
+  {
+    "ID": "n.1508782654547",
+    "Title": "One-EIR 17 to 18 Delta | CN00062-K-1711",
+    "Icon": "img/i.1499443551365.0024.png",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=a55b864d-e9f3-43d7-a033-a613362e5c97",
+    "Description": "This curriculum provides for experience administrators and operators a look at features being introduced in 17.5 and 18 release for One-EIR",
+    "Objectives": "<p>The trainee is able to</p><ul><li>&nbsp;describe how release 18 supports SVs in IMEI ranges</li><li>&nbsp;describe deployment of the cloud environment under CBAM control</li><li>&nbsp;describe provisioning GUI for One-EIR</li><li>&nbsp;describe platform and security improvements</li></ul>",
+    "Duration": "22 mins",
+    "Prerequisites": "Experience with 16.5 release"
+  },
+  {
+    "ID": "n.1508859544101",
+    "Title": "One-MNP 17 to 18 Delta | CN00063-K-18",
+    "Icon": "img/i.1499443551365.0024.png",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=f2f2204f-c167-4241-ac77-e64b6f0bad23",
+    "Description": "This&nbsp;curriculum covers the key feature changes and impact from One-MNP 17 to One-MNP 18 releases.",
+    "Objectives": "<p>In detail the participant is able to:</p><p><strong>Fixed Number Portability</strong></p><ul><li>&nbsp;identify the differences between earlier and new implementation of the feature</li><li>&nbsp;recognize the impact on the Directory Information Tree</li><li>&nbsp;recall basic requirements to configure the feature using the reference documents</li></ul><p><strong>Basic ENUM functionality in One-MNP</strong></p><ul><li>&nbsp;recall the ENUM concept</li><li>&nbsp;name the usage modes of the feature</li><li>&nbsp;define basic requirements to configure the feature using the reference documents</li></ul><p><strong>Optimal routing support in One-MNP</strong></p><ul><li>&nbsp;identify the concept and benefits of the network traffic feature</li><li>&nbsp;recognize the MAP protocol implementation of the feature</li><li>&nbsp;recall basic requirements to configure the feature using the reference documents</li></ul><p><strong>One-MNP Open Stack deployment via CBAM</strong></p><ul><li>&nbsp;recall the basic concept and flow of One-MNP 18 Open Stack/VMware deployment via CBAM</li><li>&nbsp;recall basic requirements for the feature using the reference documents</li></ul><p><strong>Provisioning GUI for One-EIR and One-MNP</strong></p><ul><li>&nbsp;explain the limitations of the previous One-MNP provisioning concept</li><li>&nbsp;recall the concept of the new provisioning tool</li><li>&nbsp;describe the benefits of the new provisioning tool</li></ul><p><strong>Platform and security improvements</strong></p><ul><li>list the enhancements introduced between Rel. 17-18</li><li>describe the recognized enhancements</li></ul>",
+    "Duration": "28 mins",
+    "Prerequisites": "Experience with One-MNP/One-NDS previous implementations"
+  },
+  {
+    "ID": "n.1509007767477",
+    "Title": "Bell Labs FutureX Workshops",
+    "Icon": "img/i.1509007767477.3550.jpg",
+    "Description": "<p>We are at the dawn of a new era of human existence that will be <b>shaped by digitization</b> with the goal of automating much of life and augmenting our intelligence - effectively creating time. </p><p>The Future X Network Workshop Series explores <b>Bell Labs’ view of this future</b>, examining the key technological breakthroughs that will be essential at both the architectural and systems levels. It provides the basis for discussion about future business models and critical business issues. This series includes an introductory workshop that addresses the over-arching concepts of leading Future X domains, as well as several deeper dive domain workshops.</p><p>Key questions addressed across the workshop series include:</p><ul><li>What are the fundamentals of the Bell Labs Future X vision, its 8 value vectors and its relevance for network transformation?</li><li>What are the coming technological, network architecture and operations changes, and how to incorporate this knowledge as part of a strategic business plan?</li><li>What is the <b>impact of cloudification</b> and its effect on market dynamics?</li><li>What steps are mandatory in <b>preparing for 5G</b>?</li><li>What <b>new digital services</b> are emerging and what requirements will they impose on my network?</li><li>How can I effectively <b>incorporate data analytics and machine learning</b> as part of a comprehensive Future X evolution?</li><li>What opportunities and threats are triggered by the evolution of new business and operating paradigms?</li></ul><p>These workshops are designed to be highly interactive with Bell Labs domain specialists leading focused discussions, sharing experiences and challenges, and examining best practices that you can start to implement today.</p>",
+    "Solutions": [
+      "n.1510133143553",
+      "n.1509012137100",
+      "n.1509012371422",
+      "n.1509026734124",
+      "n.1509026785843",
+      "n.1509026843494"
+    ]
+  },
+  {
+    "ID": "n.1509012137100",
+    "Title": "Bell Labs: Leveraging Data Analytics",
+    "Icon": "img/i.1509012137100.3065.png",
+    "Url": "#getQuote",
+    "Audience": "<p>For thought leaders in the telecommunication industry</p>",
+    "Description": "<p>At the cusp of the current information revolution, <b>big data analytics platforms and machine learning (ML) techniques</b> are playing a central role and are becoming an increasingly critical differentiating factor in <b>accelerating digital transformation</b> and the emergence of new business models.</p><p>In the Future X Network, <b>hyper-scale analytics and intelligent automation</b> play a central role. Using real-time analytics, network programmability and automated control enables an intelligent network operating system that can communicate effectively with distributed intelligent modules. </p><p>This workshop is customized for the application of ML and big data analytics to telecom service providers, focusing on topics relevant to Future X networks.  It discusses practical insights, industry benchmarks, near-term applications and future trends relevant to the telecommunications industry.</p>",
+    "Objectives": "<p>After completion of this workshop you should be able to:</p><ul><li>Identify telco opportunities for <b>leveraging big data analytics</b>; including new business models and high-value solutions for the digital economy</li><li>Understand where and how <b>machine learning</b> will be deployed in Future X networks</li><li>List examples of <b>data collection and governance methods</b> based on best practices</li><li>Articulate <b>industry best practices</b> on how to use data analytics to drive business outcomes, including customer experience, capital efficiency and service agility improvements</li><li>Describe best practices for <b>performance measurement</b> applicable to different types of ML techniques, and industry benchmarks for each type of measurement</li><li>Explain how ML evolves toward <b>artificial intelligence</b></li></ul><p>This workshop is designed to be highly interactive with Bell Labs domain specialists leading focused discussions, sharing experiences and challenges, and examining best practices that you can start to implement today.</p>",
+    "Duration": "<p>Two days</p>"
+  },
+  {
+    "ID": "n.1509012371422",
+    "Title": "Bell Labs: Realizing the Benefits of Cloud SDN/NFV",
+    "Icon": "img/i.1509012371422.7376.png",
+    "Url": "#getQuote",
+    "Audience": "<p>For thought leaders in the telecommunication industry</p>",
+    "Description": "<p>Cloud SDN/NFV technologies are a core element of the Future X Network. These technologies have reached sufficient maturity whereby network operators can develop clearly articulated <b>virtualization strategies</b> and associated <b>transformation plans</b> in a bid to remain competitive. While SDN and NFV offer significant potential for expanding services, cutting costs and improving agility, they also present difficult <b>implementation challenges</b>.</p><p>This workshop addresses the technology, architecture and strategy pillars of SDN/NFV, and provides a global perspective of emerging trends, industry best practices and key near-term steps. It is intended to help service providers create an <b>actionable transformation strategy</b> to adopt SDN/NFV.</p>",
+    "Objectives": "<p>After completion of this workshop you will be able to: </p><ul><li>Gain insights into SDN/NFV reference architectures, adoption strategies and best practices employed by operators worldwide as they move toward a Future X network</li><li>Understand how <b>Edge Cloud improves the performance of ultra-reliable, low-latency</b> applications (URLLC)</li><li>Discover how SDN/NFV generates <b>top-line growth</b>, including dynamic enablement of 5G services and IoT applications, and the monetization of global-local cloud solutions</li><li>Gain insights into how SDN/NFV will impact operations, including the necessary process and platform changes, and the <b>required organizational transformation</b></li><li>Understand how SDN/NFV can <b>leverage predictive analytics and machine learning </b>to enhance service revenue, reduce network costs and increase agility</li><li>Discover <b>how SDN/NFV impacts overall security</b> at the service, network and device levels – what new threats are introduced by these technologies; how do they mitigate current threats; what is the return on investment for security measures</li></ul><p>This workshop is designed to be highly interactive with Bell Labs domain specialists leading focused discussions, sharing experiences and challenges, and examining best practices that you can start to implement today.</p>",
+    "Duration": "<p>Two days</p>"
+  },
+  {
+    "ID": "n.1509026734124",
+    "Title": "Bell Labs: Transforming to Digital Operations",
+    "Icon": "img/i.1509026734124.6413.png",
+    "Url": "#getQuote",
+    "Audience": "<p>For thought leaders in the telecommunication industry</p>",
+    "Description": "<p>Realizing the full benefits of the Future X network, requires service providers to transform their operations <b>from reactive support to cognitive enablement</b>. Operations must evolve to become more service-oriented and contextualized, leading to new opportunities for monetization. This will require targeted and sustained <b>change across the “4P” dimensions of operations</b> (process, people, platforms and performance). Emphasis on leveraging data analytics and machine-learning will be required to achieve high levels of automation across fulfilment and assurance, service personalization, and real-time restoration and optimization.</p><p>This workshop addresses the <b>impact of digitization</b> on network and service operations, and provides a global perspective of emerging trends and industry practices. It is intended to help organizations create an <b>actionable transformation strategy</b> to evolve to Future X operations.</p>",
+    "Objectives": "<p>After completion of this workshop you should be able to: </p><ul><li>Identify the triggers and enablers of the Future X digital operations paradigm</li><li>Articulate an <b>operations maturity model</b> and how it can be used to drive transformation</li><li>Identify the <b>impact of transformation</b> to the Future X network across the 4P dimensions of operations</li><li>Understand how trends in <b>data analytics and machine learning</b> can be leveraged for increased automation and contextualization</li><li>Articulate <b>key steps of an operations transformation program</b>, identify major roadblocks and determine possible resolution approaches</li></ul><p>This workshop is designed to be highly interactive with Bell Labs domain specialists leading focused discussions, sharing experiences and challenges, and examining best practices that you can start to implement today.&nbsp;</p>",
+    "Duration": "<p>2 days</p>"
+  },
+  {
+    "ID": "n.1509026785843",
+    "Title": "Bell Labs: Wireless Evolution to 5G",
+    "Icon": "img/i.1509026785843.4054.png",
+    "Url": "#getQuote",
+    "Audience": "<p>For thought leaders in the telecommunication industry</p>",
+    "Description": "<p>The coming of 5G is nothing less than a revolution. Producing an explosion of possibilities, it will link people and things like never before, bridging our physical, virtual and social worlds. </p><p>Among the myriad business opportunities that can be unearthed through 5G, two initial questions for any Operator are, “<b>what does 5G mean</b> in my specific context” and “<b>what services can I offer</b> using 5G that I cannot offer today nor in the near future.” However, any service must be realized through evolution and <b>disruptive innovations</b> in the underlying network and associated operations.</p><p>This workshop addresses the technology, architecture and economic <b>pillars of 5G evolution</b>, and provides a <b>global perspective</b> of leading industry best practices and key near-term steps. It is intended to help Operators create an <b>actionable 5G transformation strategy</b>.</p>",
+    "Objectives": "<p>After completion of this workshop you should be able to:</p><ul><li>Articulate the <span style=\"background-color: transparent;\">basics of 5G, including drivers, requirements, capabilities and standards status</span></li><li><b>Identify and prioritize 5G service offers</b> relevant for your business and technological context; understand the potential business models and revenue streams</li><li>Examine the high-level impact of 5G service offers on your network and operations, including limitations of current assets</li><li>List the <b>technology enablers</b> needed to satisfy the technical requirements of specific 5G services</li><li>Recognize the steps to take today in <b>preparation for 5G</b>, considering implications on technology, operations and business lines: technology and spectrum <b>migration strategies</b>, starting with 4.5 and 4.9G, RAN <b>cloudification at the edge</b> for reduced latency, the move to unlicensed and higher <b>spectrum</b>, both sub 6GHz and mmWave, the use of <b>massive MIMO</b> across a denser radio network grid and, E2E network <b>transp</b><span style=\"background-color: transparent;\"><b>ort </b>requirements</span></li></ul><p>This workshop is designed to be highly interactive with Bell Labs domain specialists leading focused discussions, sharing experiences and challenges, and examining best practices that you can start to implement today.</p>",
+    "Duration": "<p>2 days</p>"
+  },
+  {
+    "ID": "n.1509026843494",
+    "Title": "Bell Labs: Exploring Internet of Things",
+    "Icon": "img/i.1509026843494.8612.png",
+    "Url": "#getQuote",
+    "Audience": "<p>For thought leaders in the telecommunication industry</p>",
+    "Description": "<p>As an important driver of the Future X network, Internet of Things (IoT) will entail the interconnection of tens of billions of devices to the internet, transforming how humans interact with the digital world.</p><p>Such greater data processing volumes will require <b>innovations in network and cloud connectivity, software platforms and analytical techniques</b>. New applications, ecosystems and business models will evolve, bringing forth dramatic disruptions such as Industry 4.0, smart city applications and automated driving.</p><p>This workshop addresses the network, platform and operations impacts of IoT, and provides a global perspective of emerging trends, industry best practices and key near-term steps. It is intended to help create an <b>actionable digital transformation strategy</b> to unlock the many business opportunities enabled by IoT.</p>",
+    "Objectives": "<p>After completion of this workshop you should be able to: </p><ul><li>Understand IoT concepts, business drivers and challenges</li><li>Explore IoT applications across various industries using relevant <b>use cases</b> and addressable market.</li><li>Gain insights into the IoT value chain, stakeholders, and Operators role in the value chain, using practical <b>examples and current operator strategies</b>.</li><li>Understand the technology elements of IoT, including <b>end-to-end architectures and platforms</b>, and the impact on core and access networks.</li><li>Examine how Operators can <b>maximize value capture </b>via innovative business models</li></ul><p>This workshop is designed to be highly interactive with Bell Labs domain specialists leading focused discussions, sharing experiences and challenges, and examining strategies and best practices that you can start to implement today.&nbsp;</p>",
+    "Duration": "<p>2 days</p>"
+  },
+  {
+    "ID": "n.1509053177106",
+    "Title": "NT HLR 17 to 18 Features Delta | CN06783-K-18",
+    "Icon": "img/i.1499443551365.0024.png",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=0708f41d-aef0-4296-b0bc-02fb940e7d99",
+    "Description": "<p>This curriculum provides for experience administrators and operators a look at features being introduced in the 18 release for NT HLR system. Prerequisites: Experience with NT HLR 17 operations maintenance, and administration. </p>",
+    "Objectives": "<ul><li>describe the distributed Nokia HSS Architecture </li><li>recognize the deployment options for bare metal and telco cloud solution in NT HLR 18</li><li>list the new feature being introduced in NT HLR 18</li><li>describe information and requirements for the Compact VNF solution</li><li>describe basic information and requirements for the High Capacity VNF solution</li><li>describe SS7 Point Code Concentration for Bare Metal and Cloud</li><li>describe the improvements for NT HLR 18</li></ul>",
+    "Duration": "25 mins",
+    "Prerequisites": "Experience with NT HLR 17 release"
+  },
+  {
+    "ID": "n.1509093197095",
+    "Title": "1830 PSI (Photonic Service Interconnect) -2T",
+    "Icon": "img/seeMore.png",
+    "Solutions": [
+      "n.1509093225824"
+    ]
+  },
+  {
+    "ID": "n.1509093225824",
+    "Title": "1830 PSI-2T Field Maintenance Engineer",
+    "Icon": "img/i.1472887632557.9561.png",
+    "Description": "<p>This course provides the necessary knowledge about main functionalities, architecture, hardware, provisioning and maintenance of 1830 PSI (Photonic Service Interconnect) -2T network element.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=e8baa84c-29ee-40fe-bbe7-941d85441350\" target=\"_blank\">1830 PSI- 2T Overview, Operation &amp; Maintenance</a>&nbsp;(OP00002-K - 2,5 hours)</p>"
+  },
+  {
+    "ID": "n.1509565600301",
+    "Title": "NT HLR Administration on Bare Metal 18 | CUCN2018-04A",
+    "Icon": "img/i.1499443551365.0024.png",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=d9600fdc-2198-47d4-bdf4-59bb97becfac",
+    "Audience": "In Development",
+    "Description": "<p>This curriculum provides the skills needed to successfully perform standard and extended management and administration of the NT HLR 18 both locally as well as in the system. </p><p>To acquire this curriculum, compete all learning elements on the curriculum path.</p><ul><li>NT HLR OAM Specialist on Bare Metal 18 </li><li>NetAct Applications elearning </li><li>One-NDS Administration for release 17</li><li><p>NT HLR FE System Administration for Release 18 </p></li><li><p>NT HLR Protocols, Interfaces and Procedures </p></li></ul><p><p><strong>Note regarding curriculum:</strong> </p><ul><li>NT HLR 16.x Protocols, Interfaces and Procedures training requirements is dependent on participant’s system</li><li>NetAct Application eLearning recommend at minimum: Introduction to NetAct |OS0582-16A-NRM_WBT plus Fault Management, Configuration Management, Performance Management, and Tracing. Software and Licensing modules are also available as part of the curriculum.</li></ul>",
+    "Duration": "16 days",
+    "Prerequisites": "<p>Basic knowledge in telecommunications preferably in the Mobile Networks field is recommended.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=05ec7e0d-2ea4-4040-b336-a30ddac03222\" target=\"_blank\">NT HLR OAM Specialist on Bare Metal 18</a> (Curriculum) </p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=dad16ff9-5173-4941-92fa-3f71879b7979\" target=\"_blank\">NetAct Applications elearning</a> (Curriculum) </p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0b1c7a82-4ea1-46f4-ab6c-1de1040a2963\" target=\"_blank\">One-NDS Administration for release 17</a>  (ILT 3 days)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=3589f0fb-9779-4387-9907-64c5a0957122\" target=\"_blank\">NT HLR FE System Administration for Release 18</a> (ILT 3 days)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7aeaed41-a85d-4555-a4b3-982b733c7fea\" target=\"_blank\">NT HLR 16.x Protocols, Interfaces and Procedures (ULTICOM stack)</a> (ILT 3 days)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=588bee9b-3b84-44a1-a207-84900aafc588\" target=\"_blank\">NT HLR 16.x Protocols, Interfaces and Procedures</a> (TELESYS stack) (ILT 3 days)</p>"
+  },
+  {
+    "ID": "n.1509567165546",
+    "Title": "NT HLR Administration on Telco Cloud 18 | CUCN2009-18A",
+    "Icon": "img/i.1481103882489.0883.png",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=d9600fdc-2198-47d4-bdf4-59bb97becfac",
+    "Audience": "Under Development",
+    "Description": "<p>This curriculum provides the skills needed to successfully perform standard and extended management and administration of the NT HLR 18 both locally as well as in the system. </p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li>NT HLR OAM Specialist on Telco Cloud 18 </li><li>NetAct Applications elearning </li><li>One-NDS Administration for release 17</li><li>NT HLR FE System Administration for Release 18 </li><li>NT HLR Protocols, Interfaces and Procedures </li><li>Optional: Telco Cloud and CloudBand Overview Curriculum</li></ul><p><p><strong>Note regarding curriculum:</strong> </p><ul><li>NT HLR 16.x Protocols, Interfaces and Procedures training requirements is dependent on participant’s system</li><li>NetAct Application eLearning recommend at minimum: Introduction to NetAct |OS0582-16A-NRM_WBT plus Fault Management, Configuration Management, Performance Management, and Tracing. Software and Licensing modules are also available as part of the curriculum.</li></ul>",
+    "Duration": "16 days",
+    "Prerequisites": "<p>Basic knowledge in telecommunications preferably in the Mobile Networks field is recommended.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=29941879-8d16-4924-a835-e3582281960d\" target=\"_blank\">NT HLR 17 OAM Specialist on Telco Cloud</a>(curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=dad16ff9-5173-4941-92fa-3f71879b7979\" target=\"_blank\">NetAct Applications elearning </a>(Curriculum) </p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0b1c7a82-4ea1-46f4-ab6c-1de1040a2963\" target=\"_blank\">One-NDS Administration for release 17</a>  (ILT 3 days)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=3589f0fb-9779-4387-9907-64c5a0957122\" target=\"_blank\">NT HLR FE System Administration for Release 18</a> (ILT 3 days)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7aeaed41-a85d-4555-a4b3-982b733c7fea\" target=\"_blank\">NT HLR 16.x Protocols, Interfaces and Procedures (ULTICOM stack)</a> (ILT 3 days)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=588bee9b-3b84-44a1-a207-84900aafc588\" target=\"_blank\">NT HLR 16.x Protocols, Interfaces and Procedures (TELESYS stack)</a> (ILT 3 days)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c0802dff-60db-4dc0-8129-3adb2ccc30f8\" target=\"_blank\">Optional: Telco Cloud and CloudBand Overview</a> (Curriculum)</p><p><p>&nbsp;</p>"
+  },
+  {
+    "ID": "n.1509568569460",
+    "Title": "One-MNP&nbsp;18&nbsp;OAM Specialist on Bare Metal&nbsp;| CN02040-K-18",
+    "Icon": "img/i.1499443551365.0024.png",
+    "Description": "<p>This curriculum provides the skills needed to successfully perform all standard administration and operation tasks concerning One-MNP. </p><p>To acquire this curriculum, complete all learning elements on the curriculum path</p><ul><li>One-NDS 17 Platform Directory Fundamental </li><li>One-MNP 16.5 Operations</li></ul>",
+    "Duration": "3 days plus 3 hours",
+    "Prerequisites": "<p>Good general understanding of core network technology regarding protocols, interfaces and procedures for subscriber data management with various applications.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory Fundamental </a>(Curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=3a04efeb-2b8a-4b1c-a1cc-c8071cc95f1d\" target=\"_blank\">One-MNP 16.5 Operation and Maintenance</a> (ILT 2 days)</p><p> </p>"
+  },
+  {
+    "ID": "n.1509628862645",
+    "Title": "One-EIR 18 OAM Specialist on Bare Metal | CUCN2038-K-18&nbsp;",
+    "Icon": "img/i.1499443551365.0024.png",
+    "Audience": "Under Development",
+    "Description": "<p>This curriculum provides the skills needed to successfully perform all standard administration and operation tasks concerning One-EIR 18. </p><p>To acquire this curriculum, complete all learning elements on the curriculum path:</p><ul><li>One-NDS 17 Platform Directory Fundamental</li><li>One-EIR Provisioning, Operations and Maintenance for 18  </li></ul>",
+    "Duration": "3 days plus 3 hours",
+    "Prerequisites": "<p>Good general understanding of core network technology regarding protocols, interfaces and procedures for subscriber data management with various applications. Underpinning knowledge Unix/Solaris.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory Fundamental</a> (Curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4f6564e9-4a83-4634-a1b2-260ab423c7bb\" target=\"_blank\">One-EIR Provisioning, Operations and Maintenance for 18</a> (ILT 2 days) </p><p><p> </p></p>"
+  },
+  {
+    "ID": "n.1509631150752",
+    "Title": "One-EIR 18 OAM Specialist on Telco Cloud | CUCN2042-K-18",
+    "Icon": "img/i.1499443551365.0024.png",
+    "Audience": "In Development",
+    "Description": "<p>This curriculum provides the skills needed to successfully perform all standard and extended operation and maintenance, and administration tasks concerning One-EIR 18. </p><p>To acquire this curriculum, complete all learning elements on the curriculum path:</p><ul><li>One-NDS 17 Platform Directory Fundamental</li><li>One-EIR Provisioning, Operations and Maintenance for 18&nbsp; </li><li>Optional: Telco Cloud and CloudBand Overview</li></ul>",
+    "Duration": "<p>3 days plus 3 hours&nbsp; </p><p>Optional Telco Cloud and CloudBand Overview: 12 hours&nbsp;</p>",
+    "Prerequisites": "<p>Good general understanding of core network technology regarding protocols, interfaces and procedures for subscriber data management with various applications. Underpinning knowledge Unix/Solaris.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c0802dff-60db-4dc0-8129-3adb2ccc30f8\" target=\"_blank\">Telco Cloud and CloudBand Overview</a> ( Optional Curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory Fundamental</a> (Curriculum)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4f6564e9-4a83-4634-a1b2-260ab423c7bb\" target=\"_blank\">One-EIR Provisioning, Operations and Maintenance for 18</a>&nbsp;</p><p>"
+  },
+  {
+    "ID": "n.1510045915809",
+    "Title": "Nokia Airscale and Flexi Multiradio BTS LTE 17A (Classroom)",
+    "Icon": "img/i.1481021752353.4665.png",
+    "Description": "LTE curricula for installation, commissioning, integration and troubleshooting for Release 17A",
+    "Objectives": "<ul><li>LTE Fundamental </li><li>Nokia AirScale and Flexi Multiradio OAM and Integration (FDD-LTE) </li><li>Nokia AirScale and Flexi Multiradio OAM and Integration (TD-LTE) </li><li>LTE NetAct FM and CM </li><li>LTE Signaling and Troubleshooting </li><li>LTE OMS </li><li>LTE Release Delta</li></ul>",
+    "Duration": "From 3 days to 32 days",
+    "More information": "<p><a href=\"none\" target=\"_blank\">LTE Fundamental </a>(For New Comers)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7ea4a781-81ab-4c36-948c-5f56673953f0\" target=\"_blank\">LTE-EPS Fundamentals| TM5115-04A-LTE_VILT </a>(21 hours)</p><p><a href=\"none\" target=\"_blank\">Nokia AirScale and Flexi Multiradio OAM and Integration (FDD-LTE)</a> </p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=844f8e54-2fa8-4b08-9992-c3a28afbcf32\" target=\"_blank\">Nokia AirScale BTS LTE Commissioning and Integration (FDD-LTE-17A)| RA41110-V-17A</a>(14 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=be3e6d30-f800-4d1e-ba60-7d63b3332b85\" target=\"_blank\">Airscale BTS and Flexi MR BTS LTE Operation, Administration and Maintenance LTE 17A | RA41120-V-17A</a>(21 hours)</p><p><a href=\"none\" target=\"_blank\">Nokia AirScale and Flexi Multiradio OAM and Integration (TD-LTE)</a> </p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c5dfa3db-ef0c-4469-8e7b-7babdedbec6d\" target=\"_blank\">Nokia AirScale BTS LTE Commissioning, Integration and OAM (TD-LTE-17A)| RA41510-V-17A </a>(14 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=002370e3-fd05-48a0-9d6e-559ace6ca1c3\" target=\"_blank\">Nokia AirScale BTS LTE Commissioning, Integration and OAM (TD-LTE-17A)| RA41520-V-17A </a>(21 hours)</p><p><a href=\"none\" target=\"_blank\">LTE NetAct FM and CM </a></p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0956bca6-33b1-44b3-8016-7218f956c20f\" target=\"_blank\">Fault Management Basic Operations in NetAct | OS0513-17A-NRM_WBT</a> (1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8a8de6e9-d8fe-4ebc-987c-56eeb42b3813\" target=\"_blank\">NetAct 17.8 LTE Fault Management (LTE 17A) | OS85390-V-17A</a>(21 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=bfe8168a-ee48-48c8-8390-4a072a9cd369\" target=\"_blank\">Configuration Management Operations in NetAct | OS0563-17A-NRM_WBT</a>(1h10)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=f195e342-6344-42e5-9388-ea677d7ad838\" target=\"_blank\">NetAct 17.8 LTE Configuration Management (LTE 17A) | OS85420-V-17A</a>(21 hours)</p><p><a href=\"none\" target=\"_blank\">LTE Signaling and Troubleshooting </a></p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=597e4595-0514-4c60-b8e1-0c5f2814f481\" target=\"_blank\">LTE Radio Link Signaling Release (LTE 17A) | RA41230-V-17A </a>(35 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=edaa60d5-2abc-4ca5-abbc-26680a8e718a\" target=\"_blank\">Nokia AirScale BTS LTE Troubleshooting Workshop (LTE 17A)| RA41130-V-17A </a>(21 hours)</p><p><a href=\"none\" target=\"_blank\">LTE OMS </a></p><p><a href=\"none\" target=\"_blank\">LTE OMS17A Installation, Commissioning, Integration, OAM, Upgrade and Troubleshooting| RA41180-V-17A </a>(Coming Soon)</p><p><a href=\"none\" target=\"_blank\">LTE Release Delta </a>(For Experienced Users)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=90f40e35-a09a-4116-a993-445abad6f698\" target=\"_blank\">Delta Nokia AirScale and Flexi MR BTS (FL17A) Virtual Classroom| RA41400-V-17A </a>(21 hours)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=479b4ae3-eaf5-411b-9fee-31e9d17a2eb2\" target=\"_blank\">Delta Nokia AirScale and Flexi MR BTS (TL17A) Virtual Classroom| RA41600-V-17A </a>(21 hours)</p>"
+  },
+  {
+    "ID": "n.1510071806797",
+    "Title": "NT HLR OAM Specialist on Bare Metal 18 | CUCN2018-13A",
+    "Icon": "img/i.1481104881136.5282.png",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=05ec7e0d-2ea4-4040-b336-a30ddac03222",
+    "Audience": "Under Development",
+    "Description": "<p>This curriculum provides the skills needed to successfully provision and administer mobile subscriber in the NT HLR environment.</p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li>One-NDS 17 Platform Directory Fundamental</li><li>One-NDS 17 Provisioning, Operations and Maintenance</li><li>Mobile Subscriber Feature Provisioning and Administration for release 18</li></ul>",
+    "Duration": "5 days plus 3 hours",
+    "Prerequisites": "<p>Basic knowledge in telecommunications preferably in the Mobile Networks field is recommended.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory&nbsp;Fundamental</a> (Curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0c76578b-35d0-4119-881e-3732488eca49\" target=\"_blank\">One-NDS 17 Provisioning, Operations and Maintenance</a> (ILT&nbsp;2 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=546d0a4e-f1ea-4b34-bef9-8a991b95a6a0\" target=\"_blank\">Mobile Subscriber Feature Provisioning and Administration for release 18</a> (ILT 2 days)</p>"
+  },
+  {
+    "ID": "n.1510072006319",
+    "Title": "NT HLR OAM Specialist on Telco Cloud 18 | CUCN2018-20",
+    "Icon": "img/i.1481104881136.5282.png",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=ca6bb99d-e3a9-4d0c-973b-3768762ae7d5",
+    "Audience": "Under Development",
+    "Description": "<p>This curriculum provides the skills needed to successfully provision and administer mobile subscriber in the NT HLR environment.</p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li>One-NDS 17 Platform Directory Fundamental</li><li>One-NDS 17 Provisioning, Operations and Maintenance</li><li>Mobile Subscriber Feature Provisioning and Administration for release 18</li><li>Optional: Telco Cloud and CloudBand Overview </li></ul>",
+    "Duration": "5 days plus 3 hours",
+    "Prerequisites": "<p>Basic knowledge in telecommunications preferably in the Mobile Networks field is recommended.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory&nbsp;Fundamental</a> (Curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0c76578b-35d0-4119-881e-3732488eca49\" target=\"_blank\">One-NDS 17 Provisioning, Operations and Maintenance</a> (ILT&nbsp;2 days)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=546d0a4e-f1ea-4b34-bef9-8a991b95a6a0\" target=\"_blank\">Mobile Subscriber Feature Provisioning and Administration for release 18</a> (ILT 2 days)</p><p>Optional: <a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c0802dff-60db-4dc0-8129-3adb2ccc30f8\" target=\"_blank\">Telco Cloud and CloudBand Overview</a> </p>"
+  },
+  {
+    "ID": "n.1510087156969",
+    "Title": "CMS-8200 HSS-FE 17 to 18 Delta",
+    "Icon": "img/i.1481104881136.5282.png",
+    "Audience": "Under development",
+    "Description": "<p>This curriculum provides for experience operators and administrators a look at features being introduced in the 18 release for CMS8200 system. </p><p>This curriculum is a series of recorded sessions of the CMS-8200 HSS-FE 18 features. </p>",
+    "Prerequisites": "Experience with previous release."
+  },
+  {
+    "ID": "n.1510088035384",
+    "Title": "IMS Protocols and Call Flows | CN09324-K-18",
+    "Icon": "img/i.1481104881136.5282.png",
+    "Audience": "Under Development",
+    "Description": "<p>This eLearning curriculum provides an introduction to the IMS Protocols and Call Flows for CMS8200.</p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li>Introduction to the Nokia IMS Solution </li><li>DIAMETER Base Protocol </li><li>Cx and Dx - DIAMETER Applications </li><li>Sh and Dh - DIAMETER Applications </li><li>S6a/S6d DIAMETER Application </li><li>IMS Basic Signaling Flows </li><li>S6t Diameter Application </li><li>SWx Diameter Application </li></ul>",
+    "Duration": "3 hours and 30 mins",
+    "Prerequisites": "<p>One-NDS 17 Platform Directory Fundamental </p><p>Introduction to the Nokia IMS Solution </p>"
+  },
+  {
+    "ID": "n.1510093716536",
+    "Title": "NT HLR Provisioning on Bare Metal 18 | CUCN2018-05A",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=8da4f707-9745-4ab3-9f20-7f0fdeffe3b0",
+    "Audience": "Under Development",
+    "Description": "<p>This curriculum provides the skills needed to successfully create XML files for subscriber administration in NT HLR 18.</p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li>NT HLR Introduction</li><li>One-NDS 17 Platform Directory Fundamental </li><li>HLR Application Service Provisioning SPML Interface </li></ul>",
+    "Prerequisites": "<p>Good knowledge of SDM solutions </p><p>Good knowledge of NT HLR and Provisioning Gateway </p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b1b5dafe-f07f-4a75-9eec-4dd4067f3611\" target=\"_blank\">NT HLR Introduction</a> (curriculum)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory Fundamental</a> (curriculum)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=63809971-09c0-445a-8410-82212dc0ae9c\" target=\"_blank\">HLR Application Service Provisioning SPML Interface</a> (ILT 3 days)</p><p>"
+  },
+  {
+    "ID": "n.1510094161537",
+    "Title": "NT HLR Provisioning on Telco Cloud | CUCN2012-18A",
+    "Icon": "img/i.1481104881136.5282.png",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=7ab227c1-0582-4fb5-8cc5-1f57f08fbd22",
+    "Audience": "Under development",
+    "Description": "<p>This curriculum provides the skills needed to successfully create XML files for subscriber administration in NT HLR 18.</p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li>NT HLR Introduction</li><li>One-NDS 17 Platform Directory Fundamental </li><li>HLR Application Service Provisioning SPML Interface </li><li>Optional: Telco Cloud and CloudBand Overview Curriculum</li></ul>",
+    "Duration": "32 hours",
+    "Prerequisites": "<p>Good knowledge of SDM solutions </p><p>Good knowledge of NT HLR and Provisioning Gateway </p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b1b5dafe-f07f-4a75-9eec-4dd4067f3611\" target=\"_blank\">NT HLR Introduction</a> (curriculum)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory Fundamental</a> (curriculum)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=63809971-09c0-445a-8410-82212dc0ae9c\" target=\"_blank\">HLR Application Service Provisioning SPML Interface</a> (ILT 3 days)</p><p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=c0802dff-60db-4dc0-8129-3adb2ccc30f8\" target=\"_blank\">Optional: Telco Cloud and CloudBand Overview</a> (Curriculum)</p>"
+  },
+  {
+    "ID": "n.1510131959369",
+    "Title": "WaveSuite Commissioning Expert",
+    "Icon": "img/i.1472887632557.9561.png",
+    "Description": "<p>This curriculum aims at providing an introduction to the WaveSuite Commissioning Expert Work Order Tool and the Mobile App to commission 1830 PSD (Photonic Service Demarcation) network elements.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=f1a02639-6279-4e4f-9623-2380b0e647c3\" target=\"_blank\">WaveSuite Commissioning Expert – Network Planning</a> (OP00259-K - 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=344ddc79-3143-4af2-82ae-aeb64bb5576c\" target=\"_blank\">WaveSuite Commissioning Expert – Mobile App</a> (OP00260-K - 1hour)</p>"
+  },
+  {
+    "ID": "n.1510132259405",
+    "Title": "Optical Networks Commissioning",
+    "Icon": "img/seeMore.png",
+    "Description": "<p>Covers the learning solution needed to commission 1830 PSD (Photonic Service Demarcation) network elements using the WaveSuite Commissioning Expert. Hover over the collections with your mouse pointer to get an idea what Nokia Products are covered inside.</p>",
+    "Solutions": [
+      "n.1510131959369"
+    ]
+  },
+  {
+    "ID": "n.1510133143553",
+    "Title": "Bell Labs: Preparing for the Coming Revolution",
+    "Icon": "img/i.1510133143553.7626.png",
+    "Url": "#getQuote",
+    "Audience": "<p>For thought leaders in the telecommunication industry</p>",
+    "Description": "<p>We are at the dawn of a <b>new era</b> of human existence that will be <b>shaped by digitization</b> with the goal of automating much of life and augmenting our intelligence - effectively creating time. </p><p>Operators are being challenged to look beyond their traditional strengths, in order to successfully transform and become key players in this <b>new digital era.</b> This will require leveraging and monetizing innovative technologies such as cloud, Internet of Things, Data Analytics, 5G and Digital Operations.</p><p>This <b>Future X introductory workshop</b> examines the current and forthcoming breakthroughs in these technologies at both the architectural and systems levels and provides the basis for <b>discussion of the critical business issues</b> that need to be considered today. </p><p>It discusses practical insights, industry trends and near-term applications relevant for the telecommunications industry. It incorporates select elements from the five associated domain-focused workshops in the series.</p>",
+    "Objectives": "<p>Through the Future X Introduction workshop, you will:</p><ul><li>Understand the Bell Labs Future X vision, its <b>eight value vectors</b> and its relevance to digital transformation</li><li>Gain insights into the assumptions, trends and service impacts of the predicted ‘<b>100-year shift</b>’ in network architecture</li><li>Understand the drivers and impacts of 5G evolution, hybrid cloud transformation, IoT proliferation, data analytics and digital operations</li><li>Recognize the <b>steps to take today</b> in preparation for these technology breakthroughs</li><li>Identify the opportunities and threats posed by the evolution of new Future X business and operating paradigms</li></ul><p>This workshop is designed to be highly interactive with Bell Labs domain specialists leading focused discussions, sharing experiences and challenges, and examining strategies and best practices that you can start to implement today.</p>",
+    "Duration": "<p>2 days</p>"
   }
 ]
