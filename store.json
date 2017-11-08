@@ -336,6 +336,18 @@
     "url": "http://learningstore.nokia.com/employee",
     "carousel": [
         {
+            "img": "img/carousel-mandatory-training2.png",
+            "id": "n.1484819939262"
+        },
+        {
+            "img": "img/carousel-gdol2017encore.jpg",
+            "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/learn.aspx"
+        },
+        {
+            "img": "img/carousel-Nokia_PM_day.jpg",
+            "id": "n.1508484546549"
+        },
+        {
             "img": "img/LS Top Banner - MNT.png",
             "id": "n.1507731846549"
         },
@@ -354,10 +366,6 @@
         {
             "img": "img/geps-carousel1.jpg",
             "id": "n.1498045456054"
-        },
-        {
-            "img": "img/carousel-mandatory-training.jpg",
-            "id": "n.1484819939262"
         },
         {
             "img": "img/carousel-connected-emp.jpg",
@@ -400,7 +408,7 @@
             "id": "n.1486545096146"
         },
         {
-            "title": "Professional Dev.",
+            "title": "Professional Development",
             "category": true,
             "content":[
             {
