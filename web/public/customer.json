@@ -4,18 +4,18 @@
     "Title": "What's New",
     "Description": "This collection shows the latest learning solutions added to the store.",
     "Solutions": [
-      "n.1510133143553",
-      "n.1510132259405",
-      "n.1510131959369",
-      "n.1510094161537",
-      "n.1510093716536",
-      "n.1510088035384",
-      "n.1510087156969",
-      "n.1510072006319",
-      "n.1510071806797",
-      "n.1510045915809",
-      "n.1509631150752",
-      "n.1509628862645"
+      "n.1511257634504",
+      "n.1511257524032",
+      "n.1511257301925",
+      "n.1511256797202",
+      "n.1511254646414",
+      "n.1510871097746",
+      "n.1510869885626",
+      "n.1510865140709",
+      "n.1510820554364",
+      "n.1510763344354",
+      "n.1510762380525",
+      "n.1510237507359"
     ]
   },
   {
@@ -328,7 +328,6 @@
       "n.1493041711776",
       "n.1493416748928",
       "n.1493416890027",
-      "n.1493416925570",
       "n.1494508676230",
       "n.1494510417283",
       "n.1494514742351",
@@ -402,7 +401,25 @@
       "n.1507306165376",
       "n.1509007767477",
       "n.1509093197095",
-      "n.1510132259405"
+      "n.1510132259405",
+      "n.1510176727411",
+      "n.1510178007113",
+      "n.1510178671483",
+      "n.1510178997146",
+      "n.1510234828866",
+      "n.1510234987368",
+      "n.1510235375992",
+      "n.1510235627478",
+      "n.1510235943518",
+      "n.1510236116040",
+      "n.1510236610545",
+      "n.1510236961016",
+      "n.1510237239805",
+      "n.1510237507359",
+      "n.1510762380525",
+      "n.1511257301925",
+      "n.1511257524032",
+      "n.1511257634504"
     ]
   },
   {
@@ -528,13 +545,16 @@
     "ID": "n.1472890025810",
     "Title": "Subscriber Data Management",
     "Icon": "img/i.1472890025810.9905.jpg",
-    "Description": "<p>Covers Subscriber Data Management products including One-NDS and various Front-Ends applications (HLR, One-EIR, One-MNP &amp; One-AAA). </p>",
+    "Description": "<p>Subscriber Data Management (SDM) brings fixed and mobile networks together by introducing a back-end common data store defined as a  User Data Repository (UDR).&nbsp;&nbsp;</p><ul><li>There are two options for UDR available;&nbsp;One-NDS for bare metal cases and Shared Data Layer (SDL) for cloud native cases starting in release 18. </li></ul><p>The UDR stores subscriber data&nbsp;for specific front end applications:</p><ul><li><strong>Combined HSS/HLR</strong> solution: CMS8200, NT HLR </li><li><strong>One-EIR</strong> (Equipment Identity Register),&nbsp;</li><li><strong>One-MNP</strong> (Mobile Number Portability), </li><li><strong>One-AAA</strong>&nbsp; (Authentication, Authorization and Accounting.</li></ul>",
     "Solutions": [
-      "n.1481105313674",
-      "n.1481105267971",
-      "n.1481105628966",
-      "n.1481105409048",
-      "n.1481105215424"
+      "n.1481105215424",
+      "n.1510178007113",
+      "n.1510234828866",
+      "n.1510235375992",
+      "n.1510235627478",
+      "n.1510235943518",
+      "n.1510237507359",
+      "n.1510762380525"
     ]
   },
   {
@@ -875,7 +895,7 @@
     "Url": "#getQuote",
     "Description": "It provides an introduction to the Passive Optical LAN Solution. It describes what the Passive Optical LAN (POL) is, why it is needed, what the typical deployments are, and explains the Nokia Solution for POL",
     "Duration": "0.50h",
-    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=9faf2f36-c44e-42de-9ff1-4ba57699c166\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)"
+    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=10a50494-1450-4225-9869-d3f3326d2aec\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)"
   },
   {
     "ID": "n.1477661944586",
@@ -884,7 +904,7 @@
     "Url": "#getQuote",
     "Description": "<p>To provide an overview on the Passive Optical LAN addressing strategic direction, business/sales ambition, vision/mission and key directions of the products and solutions. This will cover following topics: portfolio elements, evolution strategy, market positioning, and value messaging (including highest level portfolio decisions/rationale + impact + key changes). </p><p>This training package also includes the POL Product Overview solution</p>",
     "Duration": "Learning min.: 2hours 15minutes",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=867689c2-5d44-467e-8a56-a7bbcbc75a3d\" target=\"_blank\">POL Technologies and Products - Full Program</a> (TAC15016k - 2,25h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7920f7c8-3fca-4ca7-9dbf-a3c6276d467c\" target=\"_blank\">POL Technologies and Products - Full Program</a> (TAC15016k - 2,25h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p>"
   },
   {
     "ID": "n.1477662235556",
@@ -893,7 +913,7 @@
     "Url": "#getQuote",
     "Description": "<p>Designed for professionals who need to configure, operate and maintain a POL network with standard layer 2 services like for example HSI (High Speed Internet access) and typical LAN setups.</p><p>In this level we will also cover POL Video, Voice and Advanced Configurations. These cover more in depth details on how to configure STP, LAG, redundancy on the equipment. More operational data monitoring and how to configure and deploy video services, including high level debugging.</p><p>This training package also includes the POL Technology solution</p>",
     "Duration": "Learning min. 38hours 15minutes",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b0e3afc9-48f2-41e7-9095-dc3f72c03cb2\" target=\"_blank\">POL Operations &amp; Advanced Configurations- Full Program</a> (TAC15017k - 2,25h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p><p><a href=\"none\" target=\"_blank\">POL Integration &amp; L2 operations</a> (TAC03526K - 24h)</p><p><a href=\"none\" target=\"_blank\">POL Voice, Video &amp; Advanced configurations</a> (TAC03527K - 12h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4a00cdad-82cf-4ac0-bfcb-9e8ff3d2077d\" target=\"_blank\">POL Operations &amp; Advanced Configurations- Full Program</a> (TAC15017k - 2,25h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p><p><a href=\"none\" target=\"_blank\">POL Integration &amp; L2 operations</a> (TAC03526K - 24h)</p><p><a href=\"none\" target=\"_blank\">POL Voice, Video &amp; Advanced configurations</a> (TAC03527K - 12h)</p>"
   },
   {
     "ID": "n.1477662487721",
@@ -902,7 +922,7 @@
     "Url": "#getQuote",
     "Description": "<p>Designed for professionals who need to configure, operate and maintain a POL network with standard layer 2 services like for example HSI (High Speed Internet access) and typical LAN setups.</p><p>In this level we will also cover POL Video, Voice and Advanced Configurations. These cover more in depth details on how to configure STP, LAG, redundancy on the equipment. More operational data monitoring and how to configure and deploy video services, including high level debugging.</p><p>This training package also includes the POL Technology solution</p>",
     "Duration": "Learning min. 38hours 15minutes",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b0e3afc9-48f2-41e7-9095-dc3f72c03cb2\" target=\"_blank\">POL Operations &amp; Advanced configurations - Full Program</a> (TAC15017k - 2,25h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p><p><a href=\"none\" target=\"_blank\">POL Integration &amp; L2 operations</a> (TAC03526K - 24h)</p><p><a href=\"none\" target=\"_blank\">POL Voice, Video &amp; Advanced configurations</a> (TAC03527K - 12h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4a00cdad-82cf-4ac0-bfcb-9e8ff3d2077d\" target=\"_blank\">POL Operations &amp; Advanced configurations - Full Program</a> (TAC15017k - 2,25h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p><p><a href=\"none\" target=\"_blank\">POL Integration &amp; L2 operations</a> (TAC03526K - 24h)</p><p><a href=\"none\" target=\"_blank\">POL Voice, Video &amp; Advanced configurations</a> (TAC03527K - 12h)</p>"
   },
   {
     "ID": "n.1477662611529",
@@ -911,7 +931,7 @@
     "Url": "#getQuote",
     "Description": "<p>Designed for professionals who need to configure, operate and maintain a POL network with standard layer 2 services like for example HSI (High Speed Internet access) and typical LAN setups.</p><p>In this level we will also cover POL Video, Voice and Advanced Configurations. These cover more in depth details on how to configure STP, LAG, redundancy on the equipment. More operational data monitoring and how to configure and deploy video services, including high level debugging.</p><p>This training package also includes the POL Technology solution</p>",
     "Duration": "Learning min. 38hours 15minutes",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b0e3afc9-48f2-41e7-9095-dc3f72c03cb2\" target=\"_blank\">POL Operations &amp; Advanced configurations - Full Program</a> (TAC15017k - 2,25h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p><p><a href=\"none\" target=\"_blank\">POL Integration &amp; L2 operations</a> (TAC03526K - 24h)</p><p><a href=\"none\" target=\"_blank\">POL Voice, Video &amp; Advanced configurations</a> (TAC03527K - 12h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4a00cdad-82cf-4ac0-bfcb-9e8ff3d2077d\" target=\"_blank\">POL Operations &amp; Advanced configurations - Full Program</a> (TAC15017k - 2,25h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p><p><a href=\"none\" target=\"_blank\">POL Integration &amp; L2 operations</a> (TAC03526K - 24h)</p><p><a href=\"none\" target=\"_blank\">POL Voice, Video &amp; Advanced configurations</a> (TAC03527K - 12h)</p>"
   },
   {
     "ID": "n.1477662857903",
@@ -927,7 +947,7 @@
     "Url": "#getQuote",
     "Description": "Designed for professionals who need to have a good understanding of POL hardware, how to bring it into service and under network management, and be able to configure the physical access layer (GPON) for testing purposes of the fiber cabling.",
     "Duration": "Learning min. 9 hours",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1c64c53f-9031-4462-bc5a-cb754b347b41\" target=\"_blank\">POL Deployment - Full Program</a> (TAC15018k - 9h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p><p><a href=\"none\" target=\"_blank\">POL Deployment</a> (TAC03528K - 6,75h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=76fa9ef4-1f2f-40e5-8e6a-7ba9c5a0439f\" target=\"_blank\">POL Deployment - Full Program</a> (TAC15018k - 9h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p><p><a href=\"none\" target=\"_blank\">POL Deployment</a> (TAC03528K - 6,75h)</p>"
   },
   {
     "ID": "n.1477663107075",
@@ -936,7 +956,7 @@
     "Url": "#getQuote",
     "Description": "Designed for professionals who need to have a good understanding of POL hardware, how to bring it into service and under network management, and be able to configure the physical access layer (GPON) for testing purposes of the fiber cabling.",
     "Duration": "Learning min. 9 hours",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1c64c53f-9031-4462-bc5a-cb754b347b41\" target=\"_blank\">POL Deployment - Full Program</a> (TAC15018k - 9h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p><p><a href=\"none\" target=\"_blank\">POL Deployment</a> (TAC03528K - 6,75h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=76fa9ef4-1f2f-40e5-8e6a-7ba9c5a0439f\" target=\"_blank\">POL Deployment - Full Program</a> (TAC15018k - 9h)</p><p><a href=\"none\" target=\"_blank\">POL Solution Introduction</a> (TAC03532K - 0,5h)</p><p><a href=\"none\" target=\"_blank\">POL Technologies &amp; Products</a> (TAC03525K - 1,75h)</p><p><a href=\"none\" target=\"_blank\">POL Deployment</a> (TAC03528K - 6,75h)</p>"
   },
   {
     "ID": "n.1477663858649",
@@ -1885,16 +1905,16 @@
     "Title": "WDM Network Design / Planning Engineer",
     "Icon": "img/i.1472887632557.9561.png",
     "Url": "#getQuote",
-    "Description": "This curriculum aims at providing the necessary knowledge to design and plan pure WDM networks composed of 1830 PSS (Photonic Service Switch) network elements.<p>The duration of the course 1830 PSS Engineering &amp; Planning Tool (EPT) R8.x to R9.1 Delta can be reduced to 1 day if it is taken directly after the 1830 PSS (Engineering &amp; Planning Tool (EPT) course, and optionally the 1830 PSS Engineering &amp; Planning Tool (EPT) Advanced course.</p>",
-    "More information": "<p>This training consists of these courses that should be taken in the listed order:</p><ul><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&amp;lo=20c64a9f-3ba2-4a66-933c-b423c21a8f0c\" target=\"_blank\">1830 PSS Introduction</a> (TOP54079W - 1 hour)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=9ea787be-79c6-4d58-95ea-ea1c3b245888\" target=\"_blank\">1830 PSS-8/16II/16/32 SWDM Architecture and Hardware</a> (TOP54080 - 1 day)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8e7a6c6e-f965-4bfe-a499-61304695253f\" target=\"_blank\">Advanced on DWDM Dimensioning</a> (optional TOP63103 - 2 days)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1b40156f-c0a8-4e99-ad65-355654809b9d\" target=\"_blank\">1830 PSS (Engineering &amp; Planning Tool (EPT)</a> (TOP30021 - 2 days)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=708347fe-f3f0-484d-884c-20d1418d9542\" target=\"_blank\">1830 PSS Engineering &amp; Planning Tool (EPT) Advanced</a> (optional TOP30044 - 2 days)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=292cbeb3-2849-41cb-9912-192c1536e139\" target=\"_blank\">1830 PSS Engineering &amp; Planning Tool (EPT) R8.x to R9.1 Delta</a> (TOP54116 - 2 days)</li></ul>"
+    "Description": "<p>This curriculum aims at providing the necessary knowledge to design and plan pure WDM networks composed of 1830 PSS (Photonic Service Switch) network elements.</p>",
+    "More information": "<p>This training consists of these courses that should be taken in the listed order:</p><ul><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&amp;lo=20c64a9f-3ba2-4a66-933c-b423c21a8f0c\" target=\"_blank\">1830 PSS Introduction</a> (TOP54079W - 1 hour)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=2fb23678-b122-4215-8502-87b05922735b\" target=\"_blank\">1830 PSS-8/16II/16/32 SWDM Architecture and Hardware</a> (TOP54080 - 1 day)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8e7a6c6e-f965-4bfe-a499-61304695253f\" target=\"_blank\">Advanced on DWDM Dimensioning</a> (optional TOP63103 - 2 days)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=e490f2d9-d323-4e31-8465-8fd1e443d90e\" target=\"_blank\">1830 PSS (Engineering &amp; Planning Tool (EPT)</a> (TOP30021 - 2 days)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d7283765-3804-486e-8d08-fa3af788b9b1\" target=\"_blank\">1830 PSS Engineering &amp; Planning Tool (EPT) Advanced</a> (optional TOP30044 - 2 days)</li></ul>"
   },
   {
     "ID": "n.1479372764267",
     "Title": "Mixed WDM – OCS Network Design / Planning Engineer",
     "Icon": "img/i.1472887632557.9561.png",
     "Url": "#getQuote",
-    "Description": "This curriculum aims at providing the necessary knowledge to design and plan mixed WDM – OCS networks composed of 1830 PSS (Photonic Service Switch) network elements.<p>The duration of the course 1830 PSS Engineering &amp; Planning Tool (EPT) R8.x to R9.1 Delta can be reduced to 1 day if it is taken directly after the 1830 PSS (Engineering &amp; Planning Tool (EPT) course, and optionally the 1830 PSS Engineering &amp; Planning Tool (EPT) Advanced course.</p>",
-    "More information": "<p>This training consists of these courses that should be taken in the listed order:</p><ul><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&amp;lo=20c64a9f-3ba2-4a66-933c-b423c21a8f0c\" target=\"_blank\">1830 PSS Introduction</a> (TOP54079W - 1 hour)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=9ea787be-79c6-4d58-95ea-ea1c3b245888\" target=\"_blank\">1830 PSS-8/16II/16/32 SWDM Architecture and Hardware</a> (TOP54080 - 1 day)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=efdb3581-508b-44fe-b8ef-8a77531627c0\" target=\"_blank\">1830 PSS-24x Architecture and Hardware</a> (TOP54112 - 1 day)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8113ee87-8eda-4eeb-9aae-a6971cb3ef7b\" target=\"_blank\">1830 PSS- 36/64 Architecture and Hardware</a> (TOP54081 - 1 day)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8e7a6c6e-f965-4bfe-a499-61304695253f\" target=\"_blank\" style=\"background-color: rgb(241, 241, 241);\">Advanced on DWDM Dimensioning</a> (optional TOP63103 - 2 days)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1b40156f-c0a8-4e99-ad65-355654809b9d\" target=\"_blank\" style=\"background-color: rgb(241, 241, 241);\">1830 PSS (Engineering &amp; Planning Tool (EPT)</a> (TOP30021 - 2 days)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=708347fe-f3f0-484d-884c-20d1418d9542\" target=\"_blank\" style=\"background-color: rgb(241, 241, 241);\">1830 PSS Engineering &amp; Planning Tool (EPT) Advanced</a> (optional TOP30044 - 2 days)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=292cbeb3-2849-41cb-9912-192c1536e139\" target=\"_blank\">1830 PSS Engineering &amp; Planning Tool (EPT) R8.x to R9.1 Delta</a> (TOP54116 - 2 days)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=ddeda443-0db6-44ac-9320-1c9fcfe7f19f\" target=\"_blank\">1390 NPT Multilayer Network &amp; Planning Tool Operation</a> (TOP63096 - 2 days)</li></ul>"
+    "Description": "<p>This curriculum aims at providing the necessary knowledge to design and plan mixed WDM – OCS networks composed of 1830 PSS (Photonic Service Switch) network elements.</p>",
+    "More information": "<p>This training consists of these courses that should be taken in the listed order:</p><ul><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=loRegisterAndLaunch&amp;lo=20c64a9f-3ba2-4a66-933c-b423c21a8f0c\" target=\"_blank\">1830 PSS Introduction</a> (TOP54079W - 1 hour)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=2fb23678-b122-4215-8502-87b05922735b\" target=\"_blank\">1830 PSS-8/16II/16/32 SWDM Architecture and Hardware</a> (TOP54080 - 1 day)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=efdb3581-508b-44fe-b8ef-8a77531627c0\" target=\"_blank\">1830 PSS-24x Architecture and Hardware</a> (TOP54112 - 1 day)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8113ee87-8eda-4eeb-9aae-a6971cb3ef7b\" target=\"_blank\">1830 PSS- 36/64 Architecture and Hardware</a> (TOP54081 - 1 day)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8e7a6c6e-f965-4bfe-a499-61304695253f\" target=\"_blank\" style=\"background-color: rgb(241, 241, 241);\">Advanced on DWDM Dimensioning</a> (optional TOP63103 - 2 days)</li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=e490f2d9-d323-4e31-8465-8fd1e443d90e\" target=\"_blank\">1830 PSS (Engineering &amp; Planning Tool (EPT)</a> (TOP30021 - 2 days)</li><li><span style=\"background-color: rgb(241, 241, 241);\"><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d7283765-3804-486e-8d08-fa3af788b9b1\" target=\"_blank\">1830 PSS Engineering &amp; Planning Tool (EPT) Advanced</a>&nbsp;(optional TOP30044 - 2 days)</span></li><li><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=ddeda443-0db6-44ac-9320-1c9fcfe7f19f\" target=\"_blank\">1390 NPT Multilayer Network &amp; Planning Tool Operation</a><span style=\"background-color: transparent;\"> (TOP63096 - 2 days)</span></li></ul>"
   },
   {
     "ID": "n.1479373378344",
@@ -2257,7 +2277,7 @@
     "Description": "<p>Designed for a professional that needs to become an expert on the different PON access layers used in Access Networks. This includes complete design and roll-out strategies along with configurations, expert parameter settings etc.</p><p>See prerequisites!</p><p>Nokia has established a <a href=\"./#n.1489481052247\" target=\"_blank\">FTTx Certification Program</a>.</p><p>The certification level linked to the FTTx Network Optimizer FIber learning is the</p><p>'CNX FBA PON Layer Architect' learning</p>",
     "Duration": "12.5h",
     "Prerequisites": "<p>As a prerequisite, the trainee needs to have one of the following options completed:</p><p>-FTTx Installation Engineer (FTTx Deployment - Full path)</p><p>-FTTx Commissioning Engineer (FTTx Deployment - Full path)</p><p>-FTTx Network Operations Engineer HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTx Field Maintenance Technician HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTx Maintenance Engineer HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTH Installation Engineer (FTTH Deployment - Full path)</p><p>-FTTH Commissioning Engineer (FTTH Deployment - Full path)</p><p>-FTTH Network Operations Engineer (FTTH Integration, Operation and Maintenance - Full path)</p><p>-FTTH Field Maintenance Technician (FTTH Integration, Operation and Maintenance - Full path)</p><p>-FTTH Maintenance Engineer (FTTH Integration, Operation and Maintenance - Full path)</p>",
-    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=bc053dcc-f26f-4223-b9da-b764a254cac1\" target=\"_blank\">PON Layer Architect</a>&nbsp;(TAC03516K - 12,5h)"
+    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1e39639a-c3df-4de8-8392-22073672c3cd\" target=\"_blank\">PON Layer Architect</a>&nbsp;(TAC03516K - 12,5h)"
   },
   {
     "ID": "n.1479994086053",
@@ -2293,7 +2313,7 @@
     "Url": "#getQuote",
     "Description": "Provides a first introduction to the products used in an access network and the element management applications available to manage the different elements of this network. Some optional learning is available to provide more insights into the ISAM product &amp; solutions.",
     "Duration": "Learning min. 1h 15minutes",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=74de4acc-b74e-4676-a67c-0ff143d62864\" target=\"_blank\">552x Element Management Foundations</a> (TAC03518K - 1,25h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=53c6a0ee-515b-4ea2-9501-1b3a0c405124\" target=\"_blank\">552x Element Management Foundations</a> (TAC03518K - 1,25h)</p>"
   },
   {
     "ID": "n.1479996221452",
@@ -2302,7 +2322,7 @@
     "Url": "#getQuote",
     "Description": "<p>To learn the basics of the features and characteristics of the 5520 AMS. And be able to explain features of the 5520 AMS GUI (Graphical User Interface). Define the 5520 AMS Network Configuration. Optional learning takes us deeper into understanding the ISAM hardware and 5571 PCC, used for POL </p><p>management</p><p>This training package also includes the 552x Product Overview solution</p>",
     "Duration": "Learning min. 2h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=7852aa50-f565-46e7-a2d3-924b9f42a30b\" target=\"_blank\">5520 AMS Description - Full program</a> (TAC15012K - 2h)</p><p><a href=\"none\" target=\"_blank\">552x Element Management Foundations</a> (TAC03518K - 1,25h)</p><p><a href=\"none\" target=\"_blank\">5520 AMS Description</a> (TAC03519K - 0,75h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d6793826-b73a-4436-badb-1fbe9d879908\" target=\"_blank\">5520 AMS Description - Full program</a> (TAC15012K - 2h)</p><p><a href=\"none\" target=\"_blank\">552x Element Management Foundations</a> (TAC03518K - 1,25h)</p><p><a href=\"none\" target=\"_blank\">5520 AMS Description</a> (TAC03519K - 0,75h)</p>"
   },
   {
     "ID": "n.1479996476632",
@@ -2347,7 +2367,7 @@
     "Url": "#getQuote",
     "Description": "<p>Designed for a professional that needs to install &amp; administer the 5520 AMS or any of the 5529 AMS plugin applications.</p><p>This training package also includes the 552x Technology solution</p>",
     "Duration": "Learning min. 16hours 15minutes",
-    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8962aed1-fa85-4b43-8ab0-eca3735be87f\" target=\"_blank\">552x Applications Installations &amp; Admin - Full program</a> (TAC15013K - 16,25h)<p><a href=\"none\" target=\"_blank\">552x Element Management Foundations</a> (TAC03518K - 1,25h)</p><p><a href=\"none\" target=\"_blank\">5520 AMS Description</a> (TAC03519K - 0,75h)</p><p><a href=\"none\" target=\"_blank\">552x Applications Installation &amp; Administration</a> (TAC03524K - 14,25h)</p>"
+    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=308e3bf5-5c11-4317-9fbe-d10390a0368f\" target=\"_blank\">552x Applications Installations &amp; Admin - Full program</a> (TAC15013K - 16,25h)<p><a href=\"none\" target=\"_blank\">552x Element Management Foundations</a> (TAC03518K - 1,25h)</p><p><a href=\"none\" target=\"_blank\">5520 AMS Description</a> (TAC03519K - 0,75h)</p><p><a href=\"none\" target=\"_blank\">552x Applications Installation &amp; Administration</a> (TAC03524K - 14,25h)</p>"
   },
   {
     "ID": "n.1479996856233",
@@ -2356,7 +2376,7 @@
     "Url": "#getQuote",
     "Description": "<p>Designed for a professional that needs to install &amp; administer the 5520 AMS or any of the 5529 AMS plugin applications.</p><p>This training package also includes the 552x Technology solution</p>",
     "Duration": "Learning min. 16hours 15minutes",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8962aed1-fa85-4b43-8ab0-eca3735be87f\" target=\"_blank\">552x Applications Installations &amp; Admin - Full program</a> (TAC15013K - 16,25h)</p><p><a href=\"none\" target=\"_blank\">552x Element Management Foundations</a> (TAC03518K - 1,25h)</p><p><a href=\"none\" target=\"_blank\">5520 AMS Description</a> (TAC03519K - 0,75h)</p><p><a href=\"none\" target=\"_blank\">552x Applications Installation &amp; Administration</a> (TAC03524K - 14,25h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=308e3bf5-5c11-4317-9fbe-d10390a0368f\" target=\"_blank\">552x Applications Installations &amp; Admin - Full program</a> (TAC15013K - 16,25h)</p><p><a href=\"none\" target=\"_blank\">552x Element Management Foundations</a> (TAC03518K - 1,25h)</p><p><a href=\"none\" target=\"_blank\">5520 AMS Description</a> (TAC03519K - 0,75h)</p><p><a href=\"none\" target=\"_blank\">552x Applications Installation &amp; Administration</a> (TAC03524K - 14,25h)</p>"
   },
   {
     "ID": "n.1479997082225",
@@ -2396,7 +2416,7 @@
     "Description": "<p>Designed for professionals who need to specialize in the 5529 IDM, OAD &amp; SDC plugins of the 5520 AMS. And so you can obtain here a full understanding on how to operate the IDM, OAD &amp; SDC and retrieve results through them.</p><p>See prerequisites!</p>",
     "Duration": "9h",
     "Prerequisites": "<p>As a prerequisite, the trainee needs to have one of the following options completed:</p><p>-FTTx Network Operations Engineer HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTx Field Maintenance Technician HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTx Maintenance Engineer HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTH Network Operations Engineer (FTTH Integration, Operation and Maintenance - Full path)</p><p>-FTTH Field Maintenance Technician (FTTH Integration, Operation and Maintenance - Full path)</p><p>-FTTH Maintenance Engineer (FTTH Integration, Operation and Maintenance - Full path)</p>",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1d98b318-b2b8-4330-a817-366b4007f083\" target=\"_blank\">FBA 5529 IDM, OAD &amp; SDC Operator</a> (TAC03509K - 9h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=2ae14272-a53e-4c8d-8f54-199905b7d178\" target=\"_blank\">FBA 5529 IDM, OAD &amp; SDC Operator</a> (TAC03509K - 9h)</p>"
   },
   {
     "ID": "n.1480069357515",
@@ -2406,7 +2426,7 @@
     "Description": "<p>Designed for professionals who need to specialize in the 5529 IDM, OAD &amp; SDC plugins of the 5520 AMS. And so you can obtain here a full understanding on how to operate the IDM, OAD &amp; SDC and retrieve results through them.</p><p>See prerequisites!</p>",
     "Duration": "9h",
     "Prerequisites": "<p>As a prerequisite, the trainee needs to have one of the following options completed:</p><p>-FTTx Network Operations Engineer HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTx Field Maintenance Technician HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTx Maintenance Engineer HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTH Network Operations Engineer (FTTH Integration, Operation and Maintenance - Full path)</p><p>-FTTH Field Maintenance Technician (FTTH Integration, Operation and Maintenance - Full path)</p><p>-FTTH Maintenance Engineer (FTTH Integration, Operation and Maintenance - Full path)</p>",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1d98b318-b2b8-4330-a817-366b4007f083\" target=\"_blank\">FBA 5529 IDM, OAD &amp; SDC Operator</a> (TAC03509K - 9h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=2ae14272-a53e-4c8d-8f54-199905b7d178\" target=\"_blank\">FBA 5529 IDM, OAD &amp; SDC Operator</a> (TAC03509K - 9h)</p>"
   },
   {
     "ID": "n.1480069438739",
@@ -2416,7 +2436,7 @@
     "Description": "<p>Designed for professionals who need to specialize in the 5529 IDM, OAD &amp; SDC plugins of the 5520 AMS. And so you can obtain here a full understanding on how to operate the IDM, OAD &amp; SDC and retrieve results through them.</p><p>See prerequisites!</p>",
     "Duration": "9h",
     "Prerequisites": "<p>As a prerequisite, the trainee needs to have one of the following options completed:</p><p>-FTTx Network Operations Engineer HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTx Field Maintenance Technician HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTx Maintenance Engineer HC NT (FTTx High Capacity NT Integration, Operation and Maintenance - Full path)</p><p>-FTTH Network Operations Engineer (FTTH Integration, Operation and Maintenance - Full path)</p><p>-FTTH Field Maintenance Technician (FTTH Integration, Operation and Maintenance - Full path)</p><p>-FTTH Maintenance Engineer (FTTH Integration, Operation and Maintenance - Full path)</p>",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1d98b318-b2b8-4330-a817-366b4007f083\" target=\"_blank\">FBA 5529 IDM, OAD &amp; SDC Operator</a> (TAC03509K - 9h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=2ae14272-a53e-4c8d-8f54-199905b7d178\" target=\"_blank\">FBA 5529 IDM, OAD &amp; SDC Operator</a> (TAC03509K - 9h)</p>"
   },
   {
     "ID": "n.1480071768837",
@@ -2425,7 +2445,7 @@
     "Url": "#getQuote",
     "Description": "This training provides an introduction to Nokia Motive NA-C including their positioning in the network, building blocks, and their features.",
     "Duration": "1.00h",
-    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=6f73ed73-ffde-4ae4-8b49-3b2365a710b0\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K - 1h)"
+    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0f15579d-1ece-4604-97b4-62983fc7fcae\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K - 1h)"
   },
   {
     "ID": "n.1480072180330",
@@ -2434,7 +2454,7 @@
     "Url": "#getQuote",
     "Description": "<p>This learning introduces the NA Field Tech Console with the GUI and provides an explanation on some common FTC use case.</p><p>This learning package also includes the Network Analyzer Copper Product Overview solution</p>",
     "Duration": "2.00h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=992bf6f0-2181-4763-bc8c-cccce8637a32\" target=\"_blank\">NA-C Field Technician Console - Full program</a> (TAP15000K - 2h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Field Technician Console</a> (TAP03500K- 1h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=992bf6f0-2181-4763-bc8c-cccce8637a32\" target=\"_blank\">NA-C Field Technician Console - Full program</a> (TAP15000K - 2h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Field Technician Console</a> (TAP03500K- 1h)</p>"
   },
   {
     "ID": "n.1480072537597",
@@ -2452,7 +2472,7 @@
     "Url": "#getQuote",
     "Description": "<p>This learning introduces the NA Field Tech Console with the GUI and provides an explanation on some common FTC use case.</p><p>This training package also includes the Network Analyzer Fiber Product Overview solution</p>",
     "Duration": "1.75h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=94771610-1d81-4da6-8ca7-ea5e836acde0\" target=\"_blank\">Network Analyzer Fiber Field Technician Console - Full program</a> (TAP15001K - 1.75h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Fiber Introduction</a> (TAP03514K- 0.75h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Field Technician Console</a> (TAP03500K- 1h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=24bc8dd3-0400-4e70-a781-61ad1eef842f\" target=\"_blank\">Network Analyzer Fiber Field Technician Console - Full program</a> (TAP15001K - 1.75h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Fiber Introduction</a> (TAP03514K- 0.75h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Field Technician Console</a> (TAP03500K- 1h)</p>"
   },
   {
     "ID": "n.1480079413531",
@@ -2511,7 +2531,7 @@
     "Url": "#getQuote",
     "Description": "<p>This learning explains the NA-C Operations including operations via GUI, network diagnosis tools, reporting, and DLM. You will also understand to use the NA-C, reporting and analysis features, data collection mechanism, configure filters and triggers.</p><p>This learning package also include the Network Analyzer Copper Technology solution</p>",
     "Duration": "16.00h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=291cb2ee-52f7-492d-9be4-b919b6937b36\" target=\"_blank\">Network Analyzer Copper Operations & Reporting - Full Program</a> (TAP15002K - 16h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Operations & Reporting</a> (TAP03501K- 15h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=291cb2ee-52f7-492d-9be4-b919b6937b36\" target=\"_blank\">Network Analyzer Copper Operations &amp; Reporting - Full Program</a> (TAP15002K - 16h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Operations &amp; Reporting</a> (TAP03501K- 15h)</p>"
   },
   {
     "ID": "n.1480079814726",
@@ -2520,7 +2540,7 @@
     "Url": "#getQuote",
     "Description": "<p>This learning explains the NA-C cluster deployment, operator configuration, service provider configuration, port management, system management, log file management, installation and migration</p><p>This learning package also include the Network Analyzer Copper Network Planning Engineer solution</p>",
     "Duration": "16.00h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=b8892714-bf4d-4000-b664-fee8ef90efa8\" target=\"_blank\">NA-C Operations, Reporting, Install and Admin - Full program</a> (TAP15004K - 16h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Installation, Administration &Integration</a> (TAC03502K- 15h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=07a3f6a1-810b-41c8-ad70-b8746c2392b6\" target=\"_blank\">NA-C Operations, Reporting, Install and Admin - Full program</a> (TAP15004K - 16h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Installation, Administration &amp;Integration</a> (TAC03502K- 15h)</p>"
   },
   {
     "ID": "n.1480079902491",
@@ -2529,7 +2549,7 @@
     "Url": "#getQuote",
     "Description": "<p>This learning explains the NA-C cluster deployment, operator configuration, service provider configuration, port management, system management, log file management, installation and migration</p><p>This learning package also include the Network Analyzer Copper Network Planning Engineer solution</p>",
     "Duration": "16.00h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=b8892714-bf4d-4000-b664-fee8ef90efa8\" target=\"_blank\">NA-C Operations, Reporting, Install and Admin - Full program</a> (TAP15004K - 16h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Installation, Administration &Integration</a> (TAC03502K- 15h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=07a3f6a1-810b-41c8-ad70-b8746c2392b6\" target=\"_blank\">NA-C Operations, Reporting, Install and Admin - Full program</a> (TAP15004K - 16h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Installation, Administration &amp;Integration</a> (TAC03502K- 15h)</p>"
   },
   {
     "ID": "n.1480080226063",
@@ -2538,7 +2558,7 @@
     "Url": "#getQuote",
     "Description": "<p>This learning explains the NA-C cluster deployment, operator configuration, service provider configuration, port management, system management, log file management, installation and migration</p><p>This learning package also include the Network Analyzer Copper Network Planning Engineer solution</p>",
     "Duration": "16.00h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=b8892714-bf4d-4000-b664-fee8ef90efa8\" target=\"_blank\">NA-C Operations, Reporting, Install and Admin - Full program</a> (TAP15004K - 16h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Installation, Administration &Integration</a> (TAC03502K- 15h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=07a3f6a1-810b-41c8-ad70-b8746c2392b6\" target=\"_blank\">NA-C Operations, Reporting, Install and Admin - Full program</a> (TAP15004K - 16h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Installation, Administration &amp;Integration</a> (TAC03502K- 15h)</p>"
   },
   {
     "ID": "n.1480080292922",
@@ -2547,7 +2567,7 @@
     "Url": "#getQuote",
     "Description": "<p>This learning explains the NA-C cluster deployment, operator configuration, service provider configuration, port management, system management, log file management, installation and migration</p><p>This learning package also include the Network Analyzer Copper Network Planning Engineer solution</p>",
     "Duration": "16.00h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=b8892714-bf4d-4000-b664-fee8ef90efa8\" target=\"_blank\">NA-C Operations, Reporting, Install and Admin - Full program</a> (TAP15004K - 16h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Installation, Administration &Integration</a> (TAC03502K- 15h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=07a3f6a1-810b-41c8-ad70-b8746c2392b6\" target=\"_blank\">NA-C Operations, Reporting, Install and Admin - Full program</a> (TAP15004K - 16h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Introduction</a> (TAP03513K- 1h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Copper Installation, Administration &amp;Integration</a> (TAC03502K- 15h)</p>"
   },
   {
     "ID": "n.1480080406024",
@@ -2689,7 +2709,7 @@
     "Url": "#getQuote",
     "Description": "This learning provides an introduction to NA-F, work with the GUI, details on parameters to analyze, fault management, optical link diagnostics, and northbound interface management.",
     "Duration": "12.75h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=f88fdf29-9405-4a6b-85c5-cc20bc0597ab\" target=\"_blank\">Network Analyzer Fiber Operations & Reporting - Full program</a> (TAP15003K - 12.75h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Fiber Introduction</a> (TAP03514K- 0.75h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Fiber Operations</a> (TAP03515K- 12h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=38f5b586-bf7e-4d99-81b4-934d9cd4c02a\" target=\"_blank\">Network Analyzer Fiber Operations &amp; Reporting - Full program</a> (TAP15003K - 12.75h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Fiber Introduction</a> (TAP03514K- 0.75h)</p><p><a href=\"none\" target=\"_blank\">Network Analyzer Fiber Operations</a> (TAP03515K- 12h)</p>"
   },
   {
     "ID": "n.1480325686595",
@@ -2758,14 +2778,12 @@
     "Solutions": [
       "n.1480328904011",
       "n.1480331658699",
-      "n.1480328675596",
       "n.1480329397905",
       "n.1480331077157",
       "n.1481639723979",
+      "n.1511254646414",
       "n.1481639821464",
-      "n.1481640272004",
       "n.1482311142337",
-      "n.1482311803102",
       "n.1482308577871",
       "n.1481104402397",
       "n.1500658938988",
@@ -3601,7 +3619,8 @@
       "n.1481033784274",
       "n.1481033915166",
       "n.1481033874861",
-      "n.1507306165376"
+      "n.1507306165376",
+      "n.1510820554364"
     ]
   },
   {
@@ -4084,29 +4103,22 @@
     "ID": "n.1481105215424",
     "Title": "Subscriber Data Management Product Overview",
     "Icon": "img/i.1472887445473.9264.png",
-    "Description": "This training provides an introduction and overview to the Subscriber Data Management concepts.  Also include, is an overview of the SDM products and release deltas.",
+    "Description": "<p>This Learning Path will provide you with the pre-requisite Subscriber Data Management Nokia solutions and products knowledge. </p>",
     "Solutions": [
       "n.1481105002800",
-      "n.1481102510873",
       "n.1481102837100",
-      "n.1495226283556",
-      "n.1495226949588",
-      "n.1495556876431",
       "n.1481102575727",
       "n.1499279142048",
       "n.1501597334418",
-      "n.1508782654547",
-      "n.1508859544101",
-      "n.1509053177106",
-      "n.1510087156969",
-      "n.1510088035384"
+      "n.1510088035384",
+      "n.1504126780354"
     ]
   },
   {
     "ID": "n.1481105267971",
-    "Title": "Subscriber Data Management Installation & Commissioning",
+    "Title": "One-NDS&nbsp;Installation &amp; Commissioning",
     "Icon": "img/i.1472887445473.9264.png",
-    "Description": "The Subscriber Data Management&nbsp;installation&nbsp;&amp; Commissioning&nbsp;curriculum contains trainings paths for One-NDS and various application Front-Ends applications.",
+    "Description": "The Subscriber Data Management&nbsp;installation&nbsp;&amp; Commissioning&nbsp;curriculum contains trainings paths for One-NDS.",
     "Solutions": [
       "n.1481101212469"
     ]
@@ -4119,24 +4131,14 @@
     "Solutions": [
       "n.1480337143026",
       "n.1481103882489",
-      "n.1480337974762",
       "n.1480329397905",
-      "n.1481103939665",
-      "n.1481105137531",
-      "n.1499443551365",
       "n.1500658938988",
       "n.1509565600301",
       "n.1509567165546",
-      "n.1509568569460",
-      "n.1481104881136",
-      "n.1499279142048",
-      "n.1509628862645",
-      "n.1509631150752",
-      "n.1481104402397",
-      "n.1510071806797",
-      "n.1510072006319",
       "n.1510093716536",
-      "n.1510094161537"
+      "n.1510094161537",
+      "n.1499443551365",
+      "n.1481105137531"
     ]
   },
   {
@@ -4149,14 +4151,6 @@
       "n.1481103939665",
       "n.1482308397671",
       "n.1482308577871",
-      "n.1481104402397",
-      "n.1481105137531",
-      "n.1499443551365",
-      "n.1509568569460",
-      "n.1481104881136",
-      "n.1499279142048",
-      "n.1509628862645",
-      "n.1509631150752",
       "n.1510071806797",
       "n.1510072006319"
     ]
@@ -4168,18 +4162,18 @@
     "Description": "The Subscriber Data Management Maintenance curriculum contains trainings paths for One-NDS and various application Front-Ends applications. (One-NDS, HLR, One-EIR, One-MNP & One-AAA).",
     "Solutions": [
       "n.1481103042800",
-      "n.1481105137531",
-      "n.1481104402397",
       "n.1480337974762",
       "n.1481103939665",
       "n.1499443551365",
-      "n.1509568569460",
-      "n.1481104881136",
       "n.1499279142048",
+      "n.1510071806797",
+      "n.1510072006319",
+      "n.1481105137531",
+      "n.1481104402397",
       "n.1509628862645",
       "n.1509631150752",
-      "n.1510071806797",
-      "n.1510072006319"
+      "n.1509568569460",
+      "n.1481104881136"
     ]
   },
   {
@@ -4217,7 +4211,8 @@
     "Icon": "img/i.1472887445473.9264.png",
     "Description": "This training will provide a basic understanding of IMS (CFX-5000) functions and administration for CFX-5000 release 17 on ATCA, HP platforms or VmWare. ",
     "Solutions": [
-      "n.1481105917403"
+      "n.1481105917403",
+      "n.1510865140709"
     ]
   },
   {
@@ -4553,7 +4548,7 @@
     "Objectives": "<p>The participant will be able to describe CEMoD solution and business models, list CEMoD content packs and use CEMoD Portal.</p>",
     "Duration": "<p>1 day</p>",
     "Prerequisites": "High level understanding of the telecommunication operator's operations support systems. Good understanding of Telecom Network elements and the fields used for report creation.",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=83b43dbb-a3e0-4c78-bcb3-42f41ca38c61\" target=\"_blank\">CEMoD 17 End to End Overview| OS8850-17A-NRM_CILT</a></p><p>( ILT 1 day)</p>"
+    "More information": "<p><span style=\"background-color: transparent;\"></span><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=83b43dbb-a3e0-4c78-bcb3-42f41ca38c61\"><span style=\"background-color: transparent;\">CEMoD 17 End to End Overview| OS8850-17A-NRM_CILT</span>&nbsp;</a></p><p>( ILT 1 day)</p>"
   },
   {
     "ID": "n.1481118208337",
@@ -5334,7 +5329,7 @@
     "Objectives": "The participant will be able to: <ul><li>describe NetAct Architecture; </li><li>create new NetAct users; </li><li>operate NetAct database management; </li><li>verify the security implementation in NetAct; </li><li>verify alarm flow; </li><li>verify measurement flow; </li><li>verify Configuration flow; </li><li>practice System Level troubleshooting.</li></ul>",
     "Duration": "<p>Required: 4 days + 8 hours </p><p>Optional: 8 days</p>",
     "Prerequisites": "Basics of RedHat Linux, Oracle database administration and SQL.",
-    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=499a9fbb-564e-48b6-b80d-715eb4bafc68\" target=\"_blank\">NetAct 17.x Cloud Administrator | CUOS4036-17A</a>"
+    "More information": "<u><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d4f7738c-9d47-4840-8d33-543c21ef4547\" target=\"_blank\">NetAct 17.x Cloud Administrator | CUOS4036-17A</a></u>"
   },
   {
     "ID": "n.1481789916876",
@@ -5735,7 +5730,8 @@
       "n.1502879052551",
       "n.1504704423397",
       "n.1509092811317",
-      "n.1509093197095"
+      "n.1509093197095",
+      "n.1511257634504"
     ]
   },
   {
@@ -5746,7 +5742,8 @@
     "Solutions": [
       "n.1479376864650",
       "n.1502880181000",
-      "n.1503502496139"
+      "n.1503502496139",
+      "n.1511257301925"
     ]
   },
   {
@@ -5757,7 +5754,8 @@
     "Solutions": [
       "n.1479376903067",
       "n.1502881502425",
-      "n.1503502801823"
+      "n.1503502801823",
+      "n.1511257524032"
     ]
   },
   {
@@ -6164,7 +6162,7 @@
     "Url": "#getQuote",
     "Description": "<p>In this course you will learn about the different aspects of the Motive SMP.</p><p>- Motive SMP process: For SMP to effectively serve the service provider, the system must be established to match the service provider's needs. The SMP process is the process in which SMP is established to successfully fulfill its intended purpose.</p><p>- Motive SMP's Customer Console (CSC)</p><p>- Motive SMP MORSE: An overview of the Motive SMP Object Repository for Services and Enterprises (MORSE) data model.</p><p>- Motive SMP Workflow buider</p><p>- Several Motive SMP use cases.</p><p>This learning package also includes the SMP Product Overview solution.</p>",
     "Duration": "3h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=95306614-7e67-4b50-85b1-c9dbb4acabfa\" target=\"_blank\">SMP Process, Architecture and Use cases - Full program</a> (TAP15010K- 3h)</p><p><a href=\"none\" target=\"_blank\">SMP Introduction</a> (TAP03518K- 0.5h)</p><p><a href=\"none\" target=\"_blank\">SMP Process, Architecture and Use cases</a> (TAP03505K- 2.5h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=e80d898d-8b5f-456a-9b10-b82d4bcba4e4\" target=\"_blank\">SMP Process, Architecture and Use cases - Full program</a> (TAP15010K- 3h)</p><p><a href=\"none\" target=\"_blank\">SMP Introduction</a> (TAP03518K- 0.5h)</p><p><a href=\"none\" target=\"_blank\">SMP Process, Architecture and Use cases</a> (TAP03505K- 2.5h)</p>"
   },
   {
     "ID": "n.1490029922269",
@@ -6173,7 +6171,7 @@
     "Url": "#getQuote",
     "Description": "In this training module you will receive a brief introduction to the Motive SMP platform.",
     "Duration": "0.5h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=ccd343fd-2f45-4286-b8e2-1d2dcde8ad6f\" target=\"_blank\">SMP Introduction</a> (TAP03518K- 0.5h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=ccd343fd-2f45-4286-b8e2-1d2dcde8ad6f\" target=\"_blank\">SMP Introduction</a> (TAP03518K- 0.5h)</p>"
   },
   {
     "ID": "n.1490029949356",
@@ -6190,7 +6188,7 @@
     "Url": "#getQuote",
     "Description": "<p>One of the prime components of SMP is the Workflow Builder. The Workflow Builder allows service providers to quickly create, deploy, and test customer care and service troubleshooting workflows. Workflow designers are equipped with an out-of-the-box palette of Flow Control, Control Transfer, Display, and Device/Service Operation objects.</p><p>In this training solution, you will learn how to master the Workflow builder administration, SMP Administration and reporting.</p><p>This learning package also includes the SMP Technology solution.</p>",
     "Duration": "15h",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=33fb6cf1-f378-475d-aad4-b6a476199cef\" target=\"_blank\">SMP Administrator - Full program</a> (TAP15011K- 15h)</p><p><a href=\"none\" target=\"_blank\">SMP Introduction</a> (TAP03518K- 0.5h)</p><p><a href=\"none\" target=\"_blank\">SMP Process, Architecture and Use cases</a> (TAP03505K- 2.5h)</p><p><a href=\"none\" target=\"_blank\">SMP Administration and Reporting</a> (TAP03075K- 6h)</p><p><a href=\"none\" target=\"_blank\">SMP Workflow Builder Administration</a> (TAP03072K- 6h)</p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8d4e2f7f-adb8-4771-ab7f-1365bd091963\" target=\"_blank\">SMP Administrator - Full program</a> (TAP15011K- 15h)</p><p><a href=\"none\" target=\"_blank\">SMP Introduction</a> (TAP03518K- 0.5h)</p><p><a href=\"none\" target=\"_blank\">SMP Process, Architecture and Use cases</a> (TAP03505K- 2.5h)</p><p><a href=\"none\" target=\"_blank\">SMP Administration and Reporting</a> (TAP03075K- 6h)</p><p><a href=\"none\" target=\"_blank\">SMP Workflow Builder Administration</a> (TAP03072K- 6h)</p>"
   },
   {
     "ID": "n.1490030055342",
@@ -7043,13 +7041,6 @@
     "Solutions": []
   },
   {
-    "ID": "n.1493416925570",
-    "Title": "CMS8200 Provisioning and Administration",
-    "Icon": "img/i.1472890025810.9905.jpg",
-    "Description": "CMS8200 Provisioning and Administration",
-    "Solutions": []
-  },
-  {
     "ID": "n.1493817343403",
     "Title": "Open MSS 17 Platform Operation and Maintenance Delta",
     "Icon": "img/seeMore.png",
@@ -7123,8 +7114,8 @@
   },
   {
     "ID": "n.1494351481891",
-    "Title": "NetAct Delta from NetAct Standard to NetAct Cloud | OS9060-17A-NRM_VILT",
-    "Icon": "img/seeMore.png",
+    "Title": "NetAct Delta from NetAct Standard to NetAct Cloud| OS9060-17A-NRM_VILT",
+    "Icon": "img/i.1505823400844.8854.jpg",
     "Url": "#getQuote",
     "Description": "<p>This course is intended for experienced NetAct administrators. The differences between the NetAct standard and the cloud deliveries and the differences in the administration tasks and responsibilities will be presented. There are no exercises for the students: trainer will present practical parts as demonstration.</p>",
     "Objectives": "<ul><li>identify the differences between the standard delivery of NetAct and the Cloud delivery.</li><li>identify the new administration tasks and responsibilities for the NetAct Cloud Administrator.</li><li>explain the new high availability functions available for NetAct cloud.</li><li>verify the new functions for load balancing provided in NetAct cloud.</li><li>explain the implementation of DCN for NetAct cloud deliveries.</li><li>explain the backup strategies implemented in NetAct cloud.&nbsp;</li></ul>",
@@ -7517,7 +7508,7 @@
     "Objectives": "<ul><li>recognize the purpose of NetAct and its related applications</li><li>describe the architecture of the NetAct System</li><li>describe how NetAct applications are used for basic monitoring, configuration and management of the network.&nbsp;</li></ul>",
     "Duration": "<p>2 hours</p>",
     "Prerequisites": "<p>None</p>",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d5615af6-8243-497d-965b-073ae916ae90\" target=\"_blank\"> Introduction to NetAct </a>&nbsp;(OS0582-17 - 2 hours)</p>"
+    "More information": "<p> Introduction to NetAct &nbsp;(OS0582-17 - 2 hours)</p>"
   },
   {
     "ID": "n.1495226283556",
@@ -8235,12 +8226,12 @@
     "ID": "n.1499960191652",
     "Title": "Public Safety Devices (PSD) 17",
     "Icon": "img/i.1499960191652.9353.gif",
-    "Audience": "Public Safety Devices (PSD) Getting started with Group Communication App on the Smartphone Release 17 MN00458-K-17",
+    "Audience": "Public Safety Devices (PSD) Getting started with Group Communication App on the Smartphone Release 17 | RN00458-K-17",
     "Description": "This curriculum aims at providing the necessary knowledge about main functionalities of PSD17 Product",
     "Objectives": "<p>install Group Communication release 17 on their smartphone</p><p>- configure the application</p><p>- learn how to use this application </p><p>- solve frequent issues</p>",
     "Duration": "45 minutes",
     "Prerequisites": "no prerequisites",
-    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=32da2034-ce48-46b3-b1f1-de532d3a8d41\" target=\"_blank\">Public Safety Devices (PSD) Getting started with Group Communication App on the Smartphone Release 17 | MN00458-K-17</a>"
+    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=85b20043-000c-4d39-a588-494aae4e9ce5\" target=\"_blank\">Public Safety Devices (PSD) Getting started with Group Communication App on the Smartphone Release 17 | RN00458-K-17</a>"
   },
   {
     "ID": "n.1499960452733",
@@ -8757,7 +8748,7 @@
     "ID": "n.1505224315939",
     "Title": "CDP Fundamentals and positioning",
     "Icon": "img/seeMore.png",
-    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=900047e6-94d2-48d0-abbc-69e555ad0614",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=32c5bccb-2495-4398-8986-78df9af1661f",
     "Description": "<p>This curriculum will give you a good basic understanding of the Connected Device Platform, including an short introduction video</p>",
     "Objectives": "<ul><li>Explain CDP with its use cases</li><li>Explain CDP functional architecture</li><li>Explain CDP deployment architecture</li></ul>",
     "Duration": "<p>40min</p>"
@@ -8835,7 +8826,7 @@
   },
   {
     "ID": "n.1506369228284",
-    "Title": "SBC (Session&nbsp; Border Controller) Overview",
+    "Title": "SBC (Session&nbsp; Border Controller) 17.5 Overview",
     "Icon": "img/i.1506369228284.0854.jpg",
     "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=e20e7953-d271-429a-b63f-9420e088ce6b",
     "Audience": "Target audience - This course is for those who need to understand the architecture, functions, and platforms of the Session Border Controller.",
@@ -8846,7 +8837,7 @@
   },
   {
     "ID": "n.1506369877924",
-    "Title": "SBC (Session Border Controller) OAMP Concepts",
+    "Title": "SBC (Session Border Controller) 17.5 OAMP Concepts",
     "Icon": "img/i.1506369877924.8115.png",
     "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=239d8451-1b2c-49f1-90ce-fab1c3691fee",
     "Audience": "Target Audience -&nbsp; This course is for personnel who operate, administer, maintain and provision&nbsp;the Session Border Controller.",
@@ -8857,9 +8848,9 @@
   },
   {
     "ID": "n.1506370348826",
-    "Title": "SBC (Session Border Controller) OAMP Workshop",
+    "Title": "SBC (Session Border Controller) 17.5 OAMP Workshop",
     "Icon": "img/i.1506370348826.5714.jpg",
-    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=239d8451-1b2c-49f1-90ce-fab1c3691fee",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=9a346b23-4c7c-4fea-9f5b-a9232a6b1ba6",
     "Audience": "Target Audience -  This course is for personnel who operate, administer, maintain and provision the Session Border Controller.",
     "Description": "<p>This course contains OAMP exercises for the Nokia Session Border Controller (SBC) OAMP Concepts.</p><p><strong></strong></p><p><strong>Course Contents</strong></p><p>1. Getting familiar with the Web UI</p><p>2. State Management functionality</p><p>3. Create a Core Bearer Realm Table</p><p>4. Alarms (Fault Management)</p><p>5. Performance Management</p><p>6. Tools (Backup)</p>",
     "Objectives": "<p>Upon completion of this course, student will be able to:</p><p>▪ Access SBC User Interfaces</p><p>▪ Perform OAMP tasks.</p>",
@@ -8910,7 +8901,7 @@
     "Audience": "RA32200-K-17A",
     "Description": "<p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><p>    Flexi Zone BTS OAM</p><p>    Flexi Zone BTS Troubleshooting</p><p>    cloud Flexi Zone Controller OAM</p><p>    cloud Flexi Zone Controller Troubleshooting</p>",
     "Duration": "12 days",
-    "More information": "Small Cell Flexi Zone BTS and cloud Flexi Zone Controller LTE 17A | RA32200-K-17A"
+    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4a766f16-c07d-4485-859d-9466808be314\" target=\"_blank\">Small Cell Flexi Zone BTS and cloud Flexi Zone Controller LTE 17A | RA32200-K-17A</a>"
   },
   {
     "ID": "n.1507305890850",
@@ -8920,7 +8911,7 @@
     "Objectives": "Participant will acquire how to operate new LR16.1 SC features",
     "Duration": "3 days",
     "Prerequisites": "LR15.1 SC previous experience",
-    "More information": "Small Cells Femto Solutions delta LR15.1SC -LR16.1 SC | RA00038-K-161"
+    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=b3e75f2f-84fc-47f6-b721-6d87fde45fbf\" target=\"_blank\">Small Cells Femto Solutions delta LR15.1SC -LR16.1 SC | RA00038-K-161</a>"
   },
   {
     "ID": "n.1507306165376",
@@ -9012,7 +9003,7 @@
     "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=a55b864d-e9f3-43d7-a033-a613362e5c97",
     "Description": "This curriculum provides for experience administrators and operators a look at features being introduced in 17.5 and 18 release for One-EIR",
     "Objectives": "<p>The trainee is able to</p><ul><li>&nbsp;describe how release 18 supports SVs in IMEI ranges</li><li>&nbsp;describe deployment of the cloud environment under CBAM control</li><li>&nbsp;describe provisioning GUI for One-EIR</li><li>&nbsp;describe platform and security improvements</li></ul>",
-    "Duration": "22 mins",
+    "Duration": "32 mins",
     "Prerequisites": "Experience with 16.5 release"
   },
   {
@@ -9022,14 +9013,14 @@
     "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=f2f2204f-c167-4241-ac77-e64b6f0bad23",
     "Description": "This&nbsp;curriculum covers the key feature changes and impact from One-MNP 17 to One-MNP 18 releases.",
     "Objectives": "<p>In detail the participant is able to:</p><p><strong>Fixed Number Portability</strong></p><ul><li>&nbsp;identify the differences between earlier and new implementation of the feature</li><li>&nbsp;recognize the impact on the Directory Information Tree</li><li>&nbsp;recall basic requirements to configure the feature using the reference documents</li></ul><p><strong>Basic ENUM functionality in One-MNP</strong></p><ul><li>&nbsp;recall the ENUM concept</li><li>&nbsp;name the usage modes of the feature</li><li>&nbsp;define basic requirements to configure the feature using the reference documents</li></ul><p><strong>Optimal routing support in One-MNP</strong></p><ul><li>&nbsp;identify the concept and benefits of the network traffic feature</li><li>&nbsp;recognize the MAP protocol implementation of the feature</li><li>&nbsp;recall basic requirements to configure the feature using the reference documents</li></ul><p><strong>One-MNP Open Stack deployment via CBAM</strong></p><ul><li>&nbsp;recall the basic concept and flow of One-MNP 18 Open Stack/VMware deployment via CBAM</li><li>&nbsp;recall basic requirements for the feature using the reference documents</li></ul><p><strong>Provisioning GUI for One-EIR and One-MNP</strong></p><ul><li>&nbsp;explain the limitations of the previous One-MNP provisioning concept</li><li>&nbsp;recall the concept of the new provisioning tool</li><li>&nbsp;describe the benefits of the new provisioning tool</li></ul><p><strong>Platform and security improvements</strong></p><ul><li>list the enhancements introduced between Rel. 17-18</li><li>describe the recognized enhancements</li></ul>",
-    "Duration": "28 mins",
+    "Duration": "44&nbsp;mins",
     "Prerequisites": "Experience with One-MNP/One-NDS previous implementations"
   },
   {
     "ID": "n.1509007767477",
-    "Title": "Bell Labs FutureX Workshops",
-    "Icon": "img/i.1509007767477.3550.jpg",
-    "Description": "<p>We are at the dawn of a new era of human existence that will be <b>shaped by digitization</b> with the goal of automating much of life and augmenting our intelligence - effectively creating time. </p><p>The Future X Network Workshop Series explores <b>Bell Labs’ view of this future</b>, examining the key technological breakthroughs that will be essential at both the architectural and systems levels. It provides the basis for discussion about future business models and critical business issues. This series includes an introductory workshop that addresses the over-arching concepts of leading Future X domains, as well as several deeper dive domain workshops.</p><p>Key questions addressed across the workshop series include:</p><ul><li>What are the fundamentals of the Bell Labs Future X vision, its 8 value vectors and its relevance for network transformation?</li><li>What are the coming technological, network architecture and operations changes, and how to incorporate this knowledge as part of a strategic business plan?</li><li>What is the <b>impact of cloudification</b> and its effect on market dynamics?</li><li>What steps are mandatory in <b>preparing for 5G</b>?</li><li>What <b>new digital services</b> are emerging and what requirements will they impose on my network?</li><li>How can I effectively <b>incorporate data analytics and machine learning</b> as part of a comprehensive Future X evolution?</li><li>What opportunities and threats are triggered by the evolution of new business and operating paradigms?</li></ul><p>These workshops are designed to be highly interactive with Bell Labs domain specialists leading focused discussions, sharing experiences and challenges, and examining best practices that you can start to implement today.</p>",
+    "Title": "Future X Workshops",
+    "Icon": "img/i.1509007767477.2541.jpg",
+    "Description": "<p>We are at the dawn of a new era of human existence that will be <b>shaped by digitization</b> with the goal of automating much of life and augmenting our intelligence - effectively creating time. </p><p>The Future X Workshop Series explores <b>Bell Labs’ view of this future</b>, examining the key technological breakthroughs that will be essential at both the architectural and systems levels. It provides the basis for discussion about future business models and critical business issues. This series includes an introductory workshop that addresses the over-arching concepts of leading Future X domains, as well as several deeper dive domain workshops.</p><p>Key questions addressed across the workshop series include:</p><ul><li>What are the fundamentals of the Bell Labs Future X vision, its 8 value vectors and its relevance for network transformation?</li><li>What are the coming technological, network architecture and operations changes, and how to incorporate this knowledge as part of a strategic business plan?</li><li>What is the <b>impact of cloudification</b> and its effect on market dynamics?</li><li>What steps are mandatory in <b>preparing for 5G</b>?</li><li>What <b>new digital services</b> are emerging and what requirements will they impose on my network?</li><li>How can I effectively <b>incorporate data analytics and machine learning</b> as part of a comprehensive Future X evolution?</li><li>What opportunities and threats are triggered by the evolution of new business and operating paradigms?</li></ul><p>These workshops are designed to be highly interactive with Bell Labs domain specialists leading focused discussions, sharing experiences and challenges, and examining best practices that you can start to implement today.</p>",
     "Solutions": [
       "n.1510133143553",
       "n.1509012137100",
@@ -9041,8 +9032,8 @@
   },
   {
     "ID": "n.1509012137100",
-    "Title": "Bell Labs: Leveraging Data Analytics",
-    "Icon": "img/i.1509012137100.3065.png",
+    "Title": "Future X Workshop: Leveraging Data Analytics",
+    "Icon": "img/i.1509012137100.3045.png",
     "Url": "#getQuote",
     "Audience": "<p>For thought leaders in the telecommunication industry</p>",
     "Description": "<p>At the cusp of the current information revolution, <b>big data analytics platforms and machine learning (ML) techniques</b> are playing a central role and are becoming an increasingly critical differentiating factor in <b>accelerating digital transformation</b> and the emergence of new business models.</p><p>In the Future X Network, <b>hyper-scale analytics and intelligent automation</b> play a central role. Using real-time analytics, network programmability and automated control enables an intelligent network operating system that can communicate effectively with distributed intelligent modules. </p><p>This workshop is customized for the application of ML and big data analytics to telecom service providers, focusing on topics relevant to Future X networks.  It discusses practical insights, industry benchmarks, near-term applications and future trends relevant to the telecommunications industry.</p>",
@@ -9051,8 +9042,8 @@
   },
   {
     "ID": "n.1509012371422",
-    "Title": "Bell Labs: Realizing the Benefits of Cloud SDN/NFV",
-    "Icon": "img/i.1509012371422.7376.png",
+    "Title": "Future X Workshop: Realizing the Benefits of Cloud SDN/NFV",
+    "Icon": "img/i.1509012371422.1374.png",
     "Url": "#getQuote",
     "Audience": "<p>For thought leaders in the telecommunication industry</p>",
     "Description": "<p>Cloud SDN/NFV technologies are a core element of the Future X Network. These technologies have reached sufficient maturity whereby network operators can develop clearly articulated <b>virtualization strategies</b> and associated <b>transformation plans</b> in a bid to remain competitive. While SDN and NFV offer significant potential for expanding services, cutting costs and improving agility, they also present difficult <b>implementation challenges</b>.</p><p>This workshop addresses the technology, architecture and strategy pillars of SDN/NFV, and provides a global perspective of emerging trends, industry best practices and key near-term steps. It is intended to help service providers create an <b>actionable transformation strategy</b> to adopt SDN/NFV.</p>",
@@ -9061,8 +9052,8 @@
   },
   {
     "ID": "n.1509026734124",
-    "Title": "Bell Labs: Transforming to Digital Operations",
-    "Icon": "img/i.1509026734124.6413.png",
+    "Title": "Future X Workshop: Transforming to Digital Operations",
+    "Icon": "img/i.1509026734124.6006.png",
     "Url": "#getQuote",
     "Audience": "<p>For thought leaders in the telecommunication industry</p>",
     "Description": "<p>Realizing the full benefits of the Future X network, requires service providers to transform their operations <b>from reactive support to cognitive enablement</b>. Operations must evolve to become more service-oriented and contextualized, leading to new opportunities for monetization. This will require targeted and sustained <b>change across the “4P” dimensions of operations</b> (process, people, platforms and performance). Emphasis on leveraging data analytics and machine-learning will be required to achieve high levels of automation across fulfilment and assurance, service personalization, and real-time restoration and optimization.</p><p>This workshop addresses the <b>impact of digitization</b> on network and service operations, and provides a global perspective of emerging trends and industry practices. It is intended to help organizations create an <b>actionable transformation strategy</b> to evolve to Future X operations.</p>",
@@ -9071,8 +9062,8 @@
   },
   {
     "ID": "n.1509026785843",
-    "Title": "Bell Labs: Wireless Evolution to 5G",
-    "Icon": "img/i.1509026785843.4054.png",
+    "Title": "Future X Workshop: Wireless Evolution to 5G",
+    "Icon": "img/i.1509026785843.0827.png",
     "Url": "#getQuote",
     "Audience": "<p>For thought leaders in the telecommunication industry</p>",
     "Description": "<p>The coming of 5G is nothing less than a revolution. Producing an explosion of possibilities, it will link people and things like never before, bridging our physical, virtual and social worlds. </p><p>Among the myriad business opportunities that can be unearthed through 5G, two initial questions for any Operator are, “<b>what does 5G mean</b> in my specific context” and “<b>what services can I offer</b> using 5G that I cannot offer today nor in the near future.” However, any service must be realized through evolution and <b>disruptive innovations</b> in the underlying network and associated operations.</p><p>This workshop addresses the technology, architecture and economic <b>pillars of 5G evolution</b>, and provides a <b>global perspective</b> of leading industry best practices and key near-term steps. It is intended to help Operators create an <b>actionable 5G transformation strategy</b>.</p>",
@@ -9081,8 +9072,8 @@
   },
   {
     "ID": "n.1509026843494",
-    "Title": "Bell Labs: Exploring Internet of Things",
-    "Icon": "img/i.1509026843494.8612.png",
+    "Title": "Future X Workshop: Exploring Internet of Things",
+    "Icon": "img/i.1509026843494.7659.png",
     "Url": "#getQuote",
     "Audience": "<p>For thought leaders in the telecommunication industry</p>",
     "Description": "<p>As an important driver of the Future X network, Internet of Things (IoT) will entail the interconnection of tens of billions of devices to the internet, transforming how humans interact with the digital world.</p><p>Such greater data processing volumes will require <b>innovations in network and cloud connectivity, software platforms and analytical techniques</b>. New applications, ecosystems and business models will evolve, bringing forth dramatic disruptions such as Industry 4.0, smart city applications and automated driving.</p><p>This workshop addresses the network, platform and operations impacts of IoT, and provides a global perspective of emerging trends, industry best practices and key near-term steps. It is intended to help create an <b>actionable digital transformation strategy</b> to unlock the many business opportunities enabled by IoT.</p>",
@@ -9149,17 +9140,15 @@
     "ID": "n.1509628862645",
     "Title": "One-EIR 18 OAM Specialist on Bare Metal | CUCN2038-K-18&nbsp;",
     "Icon": "img/i.1499443551365.0024.png",
-    "Audience": "Under Development",
     "Description": "<p>This curriculum provides the skills needed to successfully perform all standard administration and operation tasks concerning One-EIR 18. </p><p>To acquire this curriculum, complete all learning elements on the curriculum path:</p><ul><li>One-NDS 17 Platform Directory Fundamental</li><li>One-EIR Provisioning, Operations and Maintenance for 18  </li></ul>",
     "Duration": "3 days plus 3 hours",
     "Prerequisites": "<p>Good general understanding of core network technology regarding protocols, interfaces and procedures for subscriber data management with various applications. Underpinning knowledge Unix/Solaris.</p>",
-    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory Fundamental</a> (Curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4f6564e9-4a83-4634-a1b2-260ab423c7bb\" target=\"_blank\">One-EIR Provisioning, Operations and Maintenance for 18</a> (ILT 2 days) </p><p><p> </p></p>"
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=41bce6a1-cc92-4021-a365-8d7db23289ac\" target=\"_blank\">One-NDS 17 Platform Directory Fundamental</a> (Curriculum)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=4f6564e9-4a83-4634-a1b2-260ab423c7bb\" target=\"_blank\">One-EIR Provisioning, Operations and Maintenance for 18</a> (ILT 2 days) </p><p><p> </p>"
   },
   {
     "ID": "n.1509631150752",
     "Title": "One-EIR 18 OAM Specialist on Telco Cloud | CUCN2042-K-18",
     "Icon": "img/i.1499443551365.0024.png",
-    "Audience": "In Development",
     "Description": "<p>This curriculum provides the skills needed to successfully perform all standard and extended operation and maintenance, and administration tasks concerning One-EIR 18. </p><p>To acquire this curriculum, complete all learning elements on the curriculum path:</p><ul><li>One-NDS 17 Platform Directory Fundamental</li><li>One-EIR Provisioning, Operations and Maintenance for 18&nbsp; </li><li>Optional: Telco Cloud and CloudBand Overview</li></ul>",
     "Duration": "<p>3 days plus 3 hours&nbsp; </p><p>Optional Telco Cloud and CloudBand Overview: 12 hours&nbsp;</p>",
     "Prerequisites": "<p>Good general understanding of core network technology regarding protocols, interfaces and procedures for subscriber data management with various applications. Underpinning knowledge Unix/Solaris.</p>",
@@ -9199,9 +9188,11 @@
   {
     "ID": "n.1510087156969",
     "Title": "CMS-8200 HSS-FE 17 to 18 Delta",
-    "Icon": "img/i.1481104881136.5282.png",
+    "Icon": "img/i.1499279142048.4066.png",
     "Audience": "Under development",
-    "Description": "<p>This curriculum provides for experience operators and administrators a look at features being introduced in the 18 release for CMS8200 system. </p><p>This curriculum is a series of recorded sessions of the CMS-8200 HSS-FE 18 features. </p>",
+    "Description": "<p>This curriculum is designed for experience operators and administrators. This curriculum consists of a series of recorded sessions which explains key features in the CMS-8200 18 release.&nbsp; </p>",
+    "Objectives": "<p>Describe\teach key&nbsp;feature being implemented in CMS-8200 18 release.</p>",
+    "Duration": "The curriculum will be dynamic learning. Once you enroll in the curriculum, as part of your transcript, you can progress through each feature recording as each one becomes available.",
     "Prerequisites": "Experience with previous release."
   },
   {
@@ -9238,6 +9229,7 @@
     "ID": "n.1510131959369",
     "Title": "WaveSuite Commissioning Expert",
     "Icon": "img/i.1472887632557.9561.png",
+    "Url": "#getQuote",
     "Description": "<p>This curriculum aims at providing an introduction to the WaveSuite Commissioning Expert Work Order Tool and the Mobile App to commission 1830 PSD (Photonic Service Demarcation) network elements.</p>",
     "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=f1a02639-6279-4e4f-9623-2380b0e647c3\" target=\"_blank\">WaveSuite Commissioning Expert – Network Planning</a> (OP00259-K - 1 hour)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=344ddc79-3143-4af2-82ae-aeb64bb5576c\" target=\"_blank\">WaveSuite Commissioning Expert – Mobile App</a> (OP00260-K - 1hour)</p>"
   },
@@ -9252,12 +9244,277 @@
   },
   {
     "ID": "n.1510133143553",
-    "Title": "Bell Labs: Preparing for the Coming Revolution",
-    "Icon": "img/i.1510133143553.7626.png",
+    "Title": "Future X Workshop: Preparing for the Coming Revolution",
+    "Icon": "img/i.1510133143553.3189.png",
     "Url": "#getQuote",
     "Audience": "<p>For thought leaders in the telecommunication industry</p>",
     "Description": "<p>We are at the dawn of a <b>new era</b> of human existence that will be <b>shaped by digitization</b> with the goal of automating much of life and augmenting our intelligence - effectively creating time. </p><p>Operators are being challenged to look beyond their traditional strengths, in order to successfully transform and become key players in this <b>new digital era.</b> This will require leveraging and monetizing innovative technologies such as cloud, Internet of Things, Data Analytics, 5G and Digital Operations.</p><p>This <b>Future X introductory workshop</b> examines the current and forthcoming breakthroughs in these technologies at both the architectural and systems levels and provides the basis for <b>discussion of the critical business issues</b> that need to be considered today. </p><p>It discusses practical insights, industry trends and near-term applications relevant for the telecommunications industry. It incorporates select elements from the five associated domain-focused workshops in the series.</p>",
     "Objectives": "<p>Through the Future X Introduction workshop, you will:</p><ul><li>Understand the Bell Labs Future X vision, its <b>eight value vectors</b> and its relevance to digital transformation</li><li>Gain insights into the assumptions, trends and service impacts of the predicted ‘<b>100-year shift</b>’ in network architecture</li><li>Understand the drivers and impacts of 5G evolution, hybrid cloud transformation, IoT proliferation, data analytics and digital operations</li><li>Recognize the <b>steps to take today</b> in preparation for these technology breakthroughs</li><li>Identify the opportunities and threats posed by the evolution of new Future X business and operating paradigms</li></ul><p>This workshop is designed to be highly interactive with Bell Labs domain specialists leading focused discussions, sharing experiences and challenges, and examining strategies and best practices that you can start to implement today.</p>",
     "Duration": "<p>2 days</p>"
+  },
+  {
+    "ID": "n.1510176727411",
+    "Title": "One-NDS",
+    "Icon": "img/i.1481104881136.5282.png",
+    "Solutions": []
+  },
+  {
+    "ID": "n.1510178007113",
+    "Title": "One-NDS",
+    "Icon": "img/i.1481104881136.5282.png",
+    "Description": "<p>One-NDS enables front end applications to share subscriber data by storing the data in a single centralized repository.</p>",
+    "Solutions": [
+      "n.1481105267971",
+      "n.1510178671483",
+      "n.1510178997146"
+    ]
+  },
+  {
+    "ID": "n.1510178671483",
+    "Title": "One-NDS Operations, Administration, Maintenance",
+    "Icon": "img/i.1481104881136.5282.png",
+    "Solutions": [
+      "n.1481101000734",
+      "n.1499443551365",
+      "n.1499279142048"
+    ]
+  },
+  {
+    "ID": "n.1510178997146",
+    "Title": "One-NDS Delta",
+    "Icon": "img/i.1481104881136.5282.png",
+    "Description": "This training provides&nbsp;the training path to&nbsp;&nbsp;One-NDS release deltas.",
+    "Solutions": [
+      "n.1495556876431"
+    ]
+  },
+  {
+    "ID": "n.1510234828866",
+    "Title": "One-EIR",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Description": "One-EIR completes GSM and LTE network security after the commonly deployed Authentication Center (AUC), by adding a device identity validation based on mobile International Mobile Equipment Identity (IMEI)  numbers to the network.",
+    "Solutions": [
+      "n.1481104402397",
+      "n.1508782654547",
+      "n.1509628862645",
+      "n.1509631150752"
+    ]
+  },
+  {
+    "ID": "n.1510234987368",
+    "Title": "One-EIR Configuration &amp; Administration",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Description": "Subscriber Data Management Configuration &amp; Administration curriculum contains trainings paths for One-NDS, HLR and CMS8200",
+    "Solutions": []
+  },
+  {
+    "ID": "n.1510235375992",
+    "Title": "One-MNP",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Description": "<p>One-MNP provides Fixed number portability and basic ENUM support to offer a complete Number portability solution catering to all domains. </p>",
+    "Solutions": [
+      "n.1508859544101",
+      "n.1509568569460",
+      "n.1481104881136"
+    ]
+  },
+  {
+    "ID": "n.1510235627478",
+    "Title": "One-AAA",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Description": "<p>Provides authentication, authorization and accounting services for subscribers in a converged, multi-domain environment.</p>",
+    "Solutions": [
+      "n.1481105002800",
+      "n.1481105137531"
+    ]
+  },
+  {
+    "ID": "n.1510235943518",
+    "Title": "Nokia HSS/HLR",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Description": "<p>The Nokia HSS solution acts as home subscriber server with standard compliant HLR and HSS functionality, providing secure access to subscriber database functions for subscriber profiles and authentication data to support 2G/3G/4G/IMS network access and subscriber authentication, inter-domain roaming, subscriber services and administration for the network and service domains.</p>",
+    "Solutions": [
+      "n.1506363195597",
+      "n.1510236116040",
+      "n.1510236610545",
+      "n.1510236961016",
+      "n.1510237239805"
+    ]
+  },
+  {
+    "ID": "n.1510236116040",
+    "Title": "HSS Configuration &amp; Administration",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Solutions": [
+      "n.1481103042800",
+      "n.1481103882489",
+      "n.1480337143026",
+      "n.1482308397671",
+      "n.1482308577871",
+      "n.1500658938988",
+      "n.1480329397905",
+      "n.1509565600301",
+      "n.1509567165546",
+      "n.1510071806797",
+      "n.1510072006319",
+      "n.1510093716536",
+      "n.1510094161537"
+    ]
+  },
+  {
+    "ID": "n.1510236610545",
+    "Title": "Nokia HSS Maintenance",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Solutions": [
+      "n.1481103042800",
+      "n.1481103939665",
+      "n.1480337974762",
+      "n.1495226949588",
+      "n.1495226283556",
+      "n.1510071806797",
+      "n.1510072006319"
+    ]
+  },
+  {
+    "ID": "n.1510236961016",
+    "Title": "Nokia HSS Operations",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Solutions": [
+      "n.1481103939665",
+      "n.1480337974762",
+      "n.1510071806797",
+      "n.1510072006319"
+    ]
+  },
+  {
+    "ID": "n.1510237239805",
+    "Title": "Nokia HSS Delta",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Solutions": [
+      "n.1481102510873",
+      "n.1509053177106",
+      "n.1495226949588",
+      "n.1495226283556",
+      "n.1510087156969"
+    ]
+  },
+  {
+    "ID": "n.1510237507359",
+    "Title": "Subscriber Data Management Delta",
+    "Icon": "img/i.1499279142048.4066.png",
+    "Description": "This curriculum provides the delta learning solution for experience&nbsp;technicians and engineers&nbsp;release features updates for Subscriber Data Management.",
+    "Solutions": [
+      "n.1508859544101",
+      "n.1508782654547",
+      "n.1481102510873",
+      "n.1509053177106",
+      "n.1495226949588",
+      "n.1495226283556",
+      "n.1510087156969"
+    ]
+  },
+  {
+    "ID": "n.1510762380525",
+    "Title": "Subscriber Data Layer",
+    "Icon": "img/i.1481103882489.0883.png",
+    "Description": "<p>Subscriber Data Layer (SDL) &nbsp;is our new product which will be commercial available starting in release 18. SDL is designed for the Cloud and 5G ready environment.  SDL is not only a subscriber data repository but provides an open, cloud optimized data layer for all VNF data allowing for data sharing and analytics. SDL and One-NDS can coexist in the network therefor providing a stepwise approach for migrating VNFs. </p>",
+    "Solutions": [
+      "n.1510763344354"
+    ]
+  },
+  {
+    "ID": "n.1510763344354",
+    "Title": "Subscriber Data Layer Directory &nbsp;Fundamental &nbsp;| CNCN2052-K-17",
+    "Icon": "img/i.1481103882489.0883.png",
+    "Audience": "Under Development",
+    "Description": "<p>This curriculum provides the SDL platform directory fundamental knowledge required for provisioning, administration, operation, and maintenance&nbsp;of&nbsp;SDL&nbsp;solutions.</p><p>To acquire this curriculum, complete all learning elements on the curriculum path.</p><ul><li>SDL High level Architecture </li><li>SDL Interface and Protocol</li><li>SDL Data Architecture</li></ul>",
+    "Prerequisites": "<p>Shared Data Layer Overview | CN000072-W-170</p>"
+  },
+  {
+    "ID": "n.1510820554364",
+    "Title": "Flexi Zone new features overview description for Small Cells FDD/TD-LTE 17A | RA41991-V-17A",
+    "Icon": "img/i.1497285417694.5588.png",
+    "Description": "delta features bewteen L16A and L17A",
+    "Duration": "2H",
+    "More information": "Flexi Zone new features overview description for Small Cells FDD/TD-LTE 17A| RA41991-V-17A"
+  },
+  {
+    "ID": "n.1510865140709",
+    "Title": "IP Multimedia Subsystem (IMS) -CFX-5000 17.5 System Administration Curriculum",
+    "Icon": "img/i.1510865140709.3411.jpg",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=062f67af-ea74-44c9-be6d-a67c1468ce1c",
+    "Audience": "This curriculum consists of 10 short web-based courses applicable to IMS (CFX-5000) release&nbsp;17.5&nbsp;regardless of&nbsp;which hardware or Cloud platform. This curriculum covers IMS fundamental concepts, the Nokia IMS solution components&nbsp;and CFX-5000 functions, operational and system administration tasks.",
+    "Description": "<p><strong>Curriculum Contents</strong></p><p><em>CN37350-D-1000 Introduction to Nokia IMS Solution</em> (22 mins.) – optional</p><p>•\tDescribe the Nokia IMS solution architecture and components</p><p><em>CN37531-D-1751 Administration Interfaces for CFX-5000</em> (1 hr. 12 mins.)</p><p>•\tDescribe the administration interfaces</p><p>•\tPerform configuration management using NetAct and OM Agent</p><p>•\tPerform fault management using NetAct and OM Agent</p><p><em>CN37532-D-1751 CFX-5000 Hardware Platforms </em>(15 mins.)</p><p>•\tDescribe the ATCA hardware</p><p>•\tDescribe the HP hardware</p><p>•\tDescribe the Nokia Airframe hardware used by Cloudband</p><p><em>CN3734-D-170 CFX-5000/CMS-8200 IMS 17.0 Functional Delta on Bare Metal to Cloud</em> (2 hrs.)  optional</p><p>•\tDescribe the virtualized CFX-5000 (CSCF) </p><p>•\tDescribe the virtualized CMS-8200 (HSS-FE)</p><p>•\tDescribe the virtualized CMS-8200 (DRA)</p><p>•\tDescribe the operational differences between IMS on ATCA, IMS on HP and IMS in the Cloud</p><p><em>CN37533-D-1751 CFX-5000 Registration</em> (1 hr. 48 mins.)</p><p>•\tDescribe subscriber registration from LTE access networks and from the Wi-Fi area</p><p>•\tExplain various types of authentication procedures</p><p>•\tSet parameters for registration-related scenarios via NetAct</p><p>•\tSet parameters for roaming policy control on P-CSCF, I-CSCF and HSS via NetAct</p><p><em>CN37534-D-1751 CFX-5000 Session Handling and Routing</em> (1 hr. 12 mins.) </p><p>•\tDescribe message flows for session handling and routing</p><p>•\tSet parameters for session handling in IMS</p><p>•\tDescribe supplementary services via application servers</p><p>•\tSet emergency call parameters</p><p>•\tDescribe resource management for application servers</p><p>•\tPerform node monitoring</p><p><em>CN37535-D-1751 CFX-5000 Interface to IP Connectivity Networks (Gm Interface)</em>  (42 mins.)</p><p>•\tConfigure GM interface for IP connectivity</p><p>•\tPerform PCRF administration in IMS</p><p>•\tPerform SBC administration in IMS </p><p><em>CN37536-D-1751 CFX-5000 Session Handling for I-SBC</em> (1 hr. 20 mins.)</p><p>•\tConfigure registration and session handling parameters for roaming</p><p>•\tConfigure optimal media routing parameters</p><p>•\tConfigure optimized bearer path</p><p>•\tConfigure message manipulation</p><p><em>CN37537-D-1751 CFX-5000 Session Handling for SRVCC and eSRVCC</em>&nbsp;  (42 mins.)</p><p>•\tDescribe registration handling and session anchoring for VCC</p><p>•\tDescribe transcoding after eSRVCC</p><p>•\tConfigure parameters for domain transfer from LTE to CS</p><p><em>CN37538-D-1751 CFX-5000 Charging</em> (1hr. 20 mins.)</p><p>•\tDescribe offline charging in IMS</p><p>•\tConfigure offline charging parameters</p><p>•\tDescribe online charging in IMS </p><p>•\tConfigure online charging parameters</p><p><strong>Audience</strong></p><p>This training is designed for persons who need to operate and maintain the CFX-5000.</p>",
+    "Objectives": "<p>By the end of the curriculum, participants will be able to:</p><p>•\tDescribe the fundamentals of IP Multimedia Subsystems (IMS)</p><p>•\tDescribe the Nokia IMS solution</p><p>•\tDescribe the IMS administration interfaces</p><p>•\tDescribe the functional delta between IMS on bare metal and on Cloud</p><p>•\tDescribe CFX-5000 registration</p><p>•\tDescribe the CFX-5000 interface to IP connectivity networks (Gm interface)</p><p>•\tDescribe CFX-5000 session handling and routing </p><p>•\tDescribe CFX-5000 session handling and configuration for I-SBC</p><p>•\tDescribe session handling for SRVCC and eSRVCC</p><p>•\tDescribe charging and configuration of parameters</p>",
+    "Duration": "10 hrs. 49 mins.",
+    "Prerequisites": "<p>•\tTelecommunications and IP knowledge</p><p>•\tKnowledge of TCIP, SIP and other Internet Protocols</p><p>•\tBasic knowledge of IMS (IP Multimedia Subsystem Solution)</p><p>•\tBasic knowledge or experience with NetAct 16.x or higher management functions for CFX-5000</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=1ed95201-c55e-49bf-b816-dedde96ca4ea\" target=\"_blank\">Introduction to the Nokia IMS Solution </a>(22 mins.)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8e3128fc-b221-489e-a4ed-12741b8da51b\" target=\"_blank\">Administration Interfaces for CFX-5000</a>&nbsp;(1 hr. 12 mins.)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=80a6c3c7-9431-404c-9ee1-a7baf793693c\" target=\"_blank\">CFX-5000 Hardware Platforms</a>&nbsp;(15 mins.)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8f0d0070-b567-4277-ac3a-677b51f4c924\" target=\"_blank\">IMS Functional Delta on Bare Metal to Cloud</a>&nbsp;(2 hrs.)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=a158e6ff-3edd-4c8d-98f6-d2db8b76f0c6\" target=\"_blank\">CFX-5000 Registration</a>&nbsp;(1 hr. 48 mins.)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=0984551f-a7f9-43d1-8a06-f652cbfa9c48\" target=\"_blank\">CFX-5000 Session Handling and Routing</a>&nbsp;(1hr. 12 mins.)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=24a808fa-dc98-4d38-9f82-55de644657cb\" target=\"_blank\">CFX-5000&nbsp;IP Interface to Interconnectivity to IP Networks (Gm Interface)</a>&nbsp;(42 mins.)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=fe8294b6-91c4-430d-adbc-e9e9ebcee739\" target=\"_blank\">CFX-5000 Session Handling for I-SBC</a>&nbsp;(1 hr. 20 mins.</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=98677f4e-06db-4710-bc29-45ec879c9a87\" target=\"_blank\">CFX-5000 Session Handling for SRVCC and eSRVCC</a>&nbsp;(42 mins.)</p><p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=58bcfa17-2848-4444-86fb-54e702e6b1d5\" target=\"_blank\">CFX-5000 Charging</a>&nbsp;(1 hr. 20 mins.)</p><p>(1 2 3 4 5 6 7 8 9 10)</p>"
+  },
+  {
+    "ID": "n.1510869885626",
+    "Title": "IP Multimedia Subsystem (IMS) CFX-5000 and CMS-8200&nbsp;17.0 Troubleshooting",
+    "Icon": "img/i.1510869885626.5358.jpg",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=3335c312-dfb8-4b98-bb91-13b0b41fca58",
+    "Audience": "This course&nbsp;describes how to&nbsp;troubleshoot CFX-5000 and CMS-8200 on bare metal (ATCA/HP) and Cloud (VMware and CloudBand) using diagnostic tools.",
+    "Description": "<p><strong>Course Content Topics</strong></p><p><strong></strong></p><p><em>Introduction to the Nokia IMS solution</em> </p><p>•\tDescribe the 3GPP IMS network architecture </p><p>•\tSpecify the Nokia products to realize the Nokia IMS solution</p><p>•\tDescribe the ATCA and HP-based bare metal IMS architecture</p><p>•\tDescribe the VMware and CloudBand virtualized IMS architecture</p><p><em>OAM Interfaces, Usage of cmcli and TSP WEB GUI</em></p><p>•\tBriefly describe the OAM Interfaces</p><p>•\tUse the Configuration Management Command line Interface tool (cmcli) </p><p>•\tConnect to TSP WEB GUI and use the appropriate management functions</p><p>•\tPerform fault management and internal trace</p><p>•\tCheck counter values</p><p>•\tCheck processes and subsystems</p><p><em></em></p><p><em>Diagnostic tools</em></p><p>•\tSpecify diagnostic tools that can be used to troubleshoot IMS (e.g. RapidStat, RtpDumpLog, …)</p><p>•\tPractice the use of the existing diagnostic tools to collect diagnostic data</p><p><em></em></p><p><em>Basic System Check</em> </p><p>•\tPerform basic system checks </p><p>•\tPractice the use of the correct tools (e.g. Alarm Checks, netstat, …) and procedures.</p><p><em></em></p><p><em>Symptom Collection</em></p><p>•\tPerform symptom collection by applying the learned procedures and diagnostic tools.</p><p>•\tPractice network packet capturing (e.g. by using snoop and tcpdump) and analysis with Wireshark tool.</p><p>•\tDescribe how Load balancer logging is performed</p><p>•\tDescribe IP plumbing </p><p><em></em></p><p><em>Case-Based Troubleshooting</em> </p><p>•\tRecognize successful and unsuccessful IMS registration </p><p>•\tRecognize connection problems </p><p>•\tRecognize other problems, like missing domain, realm, PCRF problem, …</p><p>•\tExecute for the above-mentioned cases the troubleshooting procedures and find the root cause </p><p>•\tApply the solutions for the above recognized root causes. </p><p><p><strong>Reference Material</strong></p><p>•\tIMS operations documentation </p><p><strong>Audience</strong></p><p>Personnel who maintain and troubleshoot IMS 17.0</p></p>",
+    "Objectives": "<p>Upon completion of this course, the student will be able to troubleshoot CFX-5000 and CMS-8200 on bare metal (ATCA/HP) and Cloud (VMware and CloudBand) </p>",
+    "Duration": "2 days",
+    "Prerequisites": "<p>•\tLinux knowledge</p><p>•&nbsp;Knowledge of the&nbsp;Nokia IMS Solution </p><p>• Good knowledge or extensive experience&nbsp; with CFX-5000 administration and operation and&nbsp;CMS-8200 provisioning and administration </p>",
+    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=3335c312-dfb8-4b98-bb91-13b0b41fca58\" target=\"_blank\">CFX/CMS IMS 17.0 Troubleshooting </a>(2 days)"
+  },
+  {
+    "ID": "n.1510871097746",
+    "Title": "CFX-5000/CMS-8200 IMS 17.5/17.5 SP4 Troubleshooting",
+    "Icon": "img/i.1510871097746.0183.jpg",
+    "Url": "https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&lo=d02b28ec-f8eb-44e7-bc61-6789a6154ebd",
+    "Audience": "This course describes how to troubleshoot CFX-5000 and CMS-8200 on bare metal (ATCA, HP)&nbsp;or Cloud (VMware, Cloudband)&nbsp;platforms.",
+    "Description": "<p><strong>Course Content Topics</strong></p><p><em>Introduction to the Nokia IMS solution</em> </p><p>•\tDescribe the 3GPP IMS network architecture </p><p>•\tIdentify the Nokia products to realize the Nokia IMS solution</p><p>•\tDescribe the ATCA and HP-based bare metal IMS architecture</p><p>•\tDescribe the VMware and CloudBand virtualized IMS architecture</p><p><em>OAM Interfaces, Usage of cmcli and TSP WEB GUI</em></p><p>•\tBriefly describe the OAM Interfaces</p><p>•\tUse the Configuration Management Command line Interface tool (cmcli) </p><p>•\tConnect to TSP WEB GUI and use the appropriate management functions</p><p>•\tPerform fault management and internal trace</p><p>•\tCheck counter values</p><p>•\tCheck processes and subsystems</p><p><em>Diagnostic tools</em></p><p>•\tSpecify diagnostic tools that can be used to troubleshoot IMS (e.g. RapidStat, RtpDumpLog, …)</p><p>•\tPractice the use of the existing diagnostic tools to collect diagnostic data</p><p><em>Basic System Check</em> </p><p>•\tPerform basic system checks </p><p>•\tPractice the use of the correct tools (e.g. Alarm Checks, netstat, …) and procedures.</p><p><em></em></p><p><em>Symptom Collection</em></p><p>•\tPerform symptom collection by applying the learned procedures and diagnostic tools.</p><p>•\tPractice network packet capturing (e.g. by using snoop and tcpdump) and analysis with Wireshark tool.</p><p>•\tDescribe how Load balancer logging is performed</p><p>•\tDescribe IP plumbing </p><p><em>Case-Based Troubleshooting</em> </p><p>•\tRecognize successful and unsuccessful IMS registration </p><p>•\tRecognize connection problems </p><p>•\tRecognize other problems, like missing domain, realm, PCRF problem, …</p><p>•\tExecute for the above-mentioned cases the troubleshooting procedures and find the root cause </p><p>•\tApply the solutions for the above recognized root causes. </p><p><strong>Reference Material</strong></p><p>•\tIMS operations documentation </p><p><strong>Audience</strong></p><p>Personnel who maintain and troubleshoot IMS 17.5 or 17.5 SP4</p>",
+    "Objectives": "<p>•\tDescribe general troubleshooting procedures</p><p>•\tIdentify troubleshooting tools.</p><p>•\tCollect fault-related background information.</p><p>•\tAnalyze the nature of the fault.</p><p>•\tUse needed tools.</p><p>•\tPerform call failure troubleshooting.</p>",
+    "Duration": "2 days",
+    "Prerequisites": "<p>•\tLinux knowledge</p><p>•&nbsp;Knowledge of or experience with&nbsp;the Nokia IMS Solution </p><p>•\tExtensive knowledge or experience with CFX-5000 system administration or operational tasks&nbsp;and/or CMS-8200 provisioning and administration </p>",
+    "More information": "<a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=d02b28ec-f8eb-44e7-bc61-6789a6154ebd\" target=\"_blank\">CFX-5000/CMS-8200 IMS 17.5/17.5 SP4 Troubleshooting </a>(2 days)"
+  },
+  {
+    "ID": "n.1511254646414",
+    "Title": "CMM 17.5 OAM Specialist",
+    "Icon": "img/i.1472890008901.8760.jpg",
+    "Audience": "<p>Nokia CMM (Cloud Mobility Manager) is a virtualized MME running on CloudBand Infrastructure environment.</p>",
+    "Description": "<p>The CMM 17.5 OAM specialist proposes theorical solution description and hands on courses on operation and maintenance tasks</p>",
+    "Objectives": "<ul><li>Describe the CMM role in EPC network</li><li>Explain the architecture of CMM</li><li>List the external interfaces of CMM</li><li>Describe the features of CMM</li><li>Integrate CMM to Telco Cloud</li><li>Perform operation and maintenance tasks of CMM</li></ul>",
+    "Duration": "<p>Overview courses: 4 hours WBTS or 14 hours V-ILT</p><p>Integration and OAM.: 21 hours</p>",
+    "Prerequisites": "<p>Good knowledge on Evolved Packet Core networks</p><p>Good knowledge on Telco Cloud</p><p>Good knowledge on CloudBand</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=a7589a10-ba83-4664-81ec-5525068b34ae\" target=\"_blank\">CMM 17.5 Solution Description</a> (WBT 1 hour )</p><p><a href=\"https://nokialearn.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=6c599610-a68b-4416-9b46-efe75207d07d\" target=\"_blank\">CMM 17.5 Software Architecture Description</a> (WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=e7b78517-cb7b-4073-a1a4-0838fa8ab770\" target=\"_blank\">CMM 17.5 Interfaces Description</a> (WBT 1 hour)</p><p><a href=\"https://nokialearn.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=eabdbe14-6af6-4e72-a810-a0cb17c13994\" target=\"_blank\">CMM 17.5 Feature Description</a> (WBT 1 hour&gt;</p><p><a href=\"https://nokialearn.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=3a944476-f714-4577-926f-ef6ee72042c8\" target=\"_blank\">CMM 17.5 Solution</a>&nbsp; (V-ILT 14 hours)</p><p><span style=\"background-color: rgb(241, 241, 241);\"><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=837ffc6e-1acb-4386-8ddf-28e8f2529f44\" target=\"_blank\">CMM IoT features Overview</a>&nbsp; (WBT 2 hours)</span></p><p>CMM 17.5 Integration (V-ILT 1 day)</p><p><a href=\"https://nokialearn.csod.com/LMS/LoDetails/DetailsLo.aspx?loid=87b5fe18-9df5-4cd0-a1be-03e0d4026af6\" target=\"_blank\">CMM 17.5 Operation and Maintenance</a> (V-ILT 2 days)</p>"
+  },
+  {
+    "ID": "n.1511256797202",
+    "Title": "1830 SMS (Security Management Server) Operation and Administration",
+    "Icon": "img/i.1472887632557.9561.png",
+    "Url": "#getQuote",
+    "Description": "<p>This curriculum aims at providing an introduction to the 1830 SMS (Security Management Server).&nbsp;It describes its functions, and shows its administration and use.</p>",
+    "More information": "<p><a href=\"https://nokialearn.csod.com/DeepLink/ProcessRedirect.aspx?module=lodetails&amp;lo=8e6bcab5-2270-4650-a5b5-070fe0d5ce06\" target=\"_blank\">1830 SMS Operation and Administration</a> (OP00320-K 3 hours)</p>"
+  },
+  {
+    "ID": "n.1511257301925",
+    "Title": "1830 SMS (Security Management Server) Configuration &amp; Administration",
+    "Icon": "img/seeMore.png",
+    "Solutions": [
+      "n.1511256797202"
+    ]
+  },
+  {
+    "ID": "n.1511257524032",
+    "Title": "1830 SMS (Security Management Server) Operations",
+    "Icon": "img/seeMore.png",
+    "Solutions": [
+      "n.1511256797202"
+    ]
+  },
+  {
+    "ID": "n.1511257634504",
+    "Title": "1830 SMS (Security Management Server)",
+    "Icon": "img/seeMore.png",
+    "Solutions": [
+      "n.1511256797202"
+    ]
   }
 ]
