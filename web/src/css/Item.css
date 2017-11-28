@@ -21,7 +21,7 @@
 }
 .itemTitle{
   background: orange;
-  padding: 5px;
+  padding: 10px;
   font-size: 130%;
   border-radius: 2px 2px 0px 0px;
   color: #fff;
@@ -29,7 +29,7 @@
 }
 .itemClose{
   float: right;
-  margin-top: 4px;
+  margin-top: 1px;
 }
 .itemIcon img{
   width: 180px;
@@ -39,14 +39,15 @@
   display: block;
   float: right;
   margin-top: -95px;
+  /* 
   border: 1px solid orange;
   padding: 6px 35px;
   color: #333;
-  text-decoration: none;
+  text-decoration: none; */
 }
 .itemLaunch:hover{
-  color: #fff;
-  background: orange;
+  /* color: #fff;
+  background: orange; */
 }
 .itemFields{
   padding: 5px 15px;

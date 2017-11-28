@@ -4,17 +4,17 @@
   border-radius: 2px;
   cursor: pointer;
   width: 17%; 
-  height: 140px;
+  height: 130px;
   margin-right: 3.7%;
   display: inline-block;
   vertical-align: top;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-top: 6px;
+  /* padding-top: 6px;
   padding-bottom: 10px;
   padding-left: 10px;
-  padding-right: 10px;
-  border-top: 4px solid transparent;
+  padding-right: 10px; */
+  border-bottom: 4px solid transparent;
   text-decoration: none;
 }
 
@@ -27,27 +27,33 @@
 /* .thumbnail:nth-child(5n + 0){
   margin-left: 0px;
 } */
-.collection{
+.collec{
   position: absolute;
-  margin-top: -18px;
-  /* margin-left: -14px; */
-  width: 10%;
+  margin-top: -8px;
+  margin-left: 10px;
+  width: 11%;
   height: 8px;
   border-radius: 2px 2px 0px 0px;
   background: white;
   border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid rgb(233, 233, 233);
+  border-left: 1px solid rgb(233, 233, 233);
+  border-right: 1px solid rgb(233, 233, 233);
+  border-radius: 3px 3px 0px 0px;
 }
 .thumbnail:hover{
-  border-top: 4px solid orange;
+  border-bottom: 4px solid orange;
 }
   .thumbnailLogo img{
     width: 100%;
-    height: 74px;
+    height: 84px;
   }
   .thumbnailTitle{
     word-break: break-all;
     word-wrap: break-word;
-    padding: 5px;
-    font-size: 80%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size: 85%;
     color: #383838;
   }

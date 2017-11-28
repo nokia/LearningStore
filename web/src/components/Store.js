@@ -11,6 +11,7 @@ import SliderHome from './SliderHome';
 import Source from './data';
 import Navigation from './Navigation';
 import HeaderComponent from './Header';
+import FooterComponent from './Footer';
 import Thumbnail from './Thumbnail';
 import B from './back';
 
@@ -22,6 +23,10 @@ export default class Store extends Component {
     const {name} = this.props.match.params;    
     Source.fetch(name).then( () => this.setState({isLoading:false}) );
     B.back = true;
+  }
+
+  componentDidMount () {
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -86,6 +91,7 @@ export default class Store extends Component {
             { thumbnails }
           </div>
         </div>
+        <FooterComponent props={this.props} data={storeDef}/>
       </div>
     );
   }

@@ -12,6 +12,7 @@ import MdClose from 'react-icons/lib/md/close';
 import renderHTML from 'react-render-html';
 import FaAngleRight from 'react-icons/lib/fa/angle-right';
 
+import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
 const urlDelim = '>>';
 
 export default class Item extends Component{
@@ -70,9 +71,12 @@ export default class Item extends Component{
               <img src={this.url + "/" + item.Icon} alt=''/>
             </div>
             <a className="itemLaunch" href={url[0]} title="Launch" target="_blank">
+              <Button labelPosition='right' basic color='orange' icon='right chevron' content={ url[1] || 'Launch' } />
+            </a>
+            {/* <a className="itemLaunch" href={url[0]} title="Launch" target="_blank">
               { url[1] || 'Launch' }
               <FaAngleRight style={{marginTop: '-4px', marginLeft: '6px'}} />
-            </a>
+            </a> */}
             { fields }
           </div>
         </div>

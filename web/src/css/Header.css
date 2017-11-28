@@ -16,12 +16,12 @@
   }
   .header-search{
     float: right;
-    height: 34px;
+    height: 31px;
     cursor: pointer;
-    line-height: 37px;
+    line-height: 34px;
     width: 60px;
     background: #ef6c00;
-    margin-top: 8px;
+    margin-top: 9px;
     text-align: center;
   }
   .header-input{
@@ -52,6 +52,7 @@
       font-size: 98%;
       border: 1px solid #D8D8D8;
       color: #666;
+      line-height: 1;
     }
     .header-input input:focus{
       outline: none;

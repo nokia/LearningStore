@@ -12,6 +12,7 @@ import HeaderComponent from './Header';
 import Thumbnail from './Thumbnail';
 import B from './back';
 import NotFound from './NotFound';
+import FooterComponent from './Footer';
 
 export default class Collection extends Component {
 
@@ -84,6 +85,8 @@ export default class Collection extends Component {
             { this.map(coll) }
           </div>
         </div>
+        
+        <FooterComponent props={this.props} data={this.storeDef}/>
       </div>
     );
   }

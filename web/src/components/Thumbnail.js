@@ -36,7 +36,7 @@ export default class Thumbnail extends Component {
             pathname: `/${store.id}/item/${data.ID}`
           }}
         >
-          <div className="collection"></div>
+          <div className="collec"></div>
           <div title={data.Title}>
             <div className="thumbnailLogo">
               <img src={store.url + "/" + data.Icon} alt=''/>
