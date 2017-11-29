@@ -17,7 +17,7 @@ const urlDelim = '>>';
 
 export default class Item extends Component{
 
-  state = { isLoading:true }
+  state = { isLoading:true, open: true}
  
   componentWillMount() {
     window.scrollTo(0, 0);
@@ -28,6 +28,7 @@ export default class Item extends Component{
     Source.getSync(name)
     .then( store => this.setState({isLoading:false, store:store}) )
   }
+
 
   render() {
     B.set(this);
@@ -58,29 +59,33 @@ export default class Item extends Component{
     });
 
     const url = item.Url ? item.Url.split(urlDelim) : [''];
+
+
     return (
-      <div className="itemOverlay">
-        <div className='modal'>
-          <div className="itemTitle">
-            { Source.format(item.Title) }
-            <MdClose color='#FFFFFF' className="pointer itemClose" onClick={back}/>
-          </div>
-          
-          <div className="itemFields">
-            <div className="itemIcon">
-              <img src={this.url + "/" + item.Icon} alt=''/>
-            </div>
-            <a className="itemLaunch" href={url[0]} title="Launch" target="_blank">
-              <Button labelPosition='right' basic color='orange' icon='right chevron' content={ url[1] || 'Launch' } />
-            </a>
-            {/* <a className="itemLaunch" href={url[0]} title="Launch" target="_blank">
-              { url[1] || 'Launch' }
-              <FaAngleRight style={{marginTop: '-4px', marginLeft: '6px'}} />
-            </a> */}
+      <Modal 
+        open={this.state.open}
+        closeOnEscape="true"
+        closeOnRootNodeClick="true"
+        onClose={back}
+        closeIcon
+      >
+        <Modal.Header>
+          { Source.format(item.Title) }
+        </Modal.Header>
+        <Modal.Content image>
+          <Image wrapped size='large' src={this.url + "/" + item.Icon} />
+          <Modal.Description>
             { fields }
-          </div>
-        </div>
-      </div>
+          </Modal.Description>
+        </Modal.Content>
+        <Modal.Actions>
+          <a className="itemLaunch" href={url[0]} title="Launch" target="_blank">
+            <Button primary>
+              { url[1] || 'Launch' } <Icon name='right chevron' />
+            </Button>
+          </a>
+        </Modal.Actions>
+      </Modal>
     )
   }
 }

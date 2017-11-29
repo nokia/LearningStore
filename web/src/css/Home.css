@@ -1,9 +1,9 @@
 .select {
-  width: 40%;
+  width: 900px;
   margin: auto;
 }
 .home{
-  background-image: url(../img/stars.jpg);
+  background-image: url(../img/stars_black.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,12 +12,56 @@
   overflow: scroll;
   /* height: 100%; */
 }
+  .storePellet{
+    
+    display: inline-block;
+    vertical-align: top;
+    width: 255px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+  .storePellet1{
+    background: rgb(223, 223, 223);
+    width: 255px;
+    border-radius: 180px;
+    height: 255px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+    .storePellet1_icon{
+      margin-top: 30px;
+    }
+    .storePellet1_title{
+      margin-top: 50px;
+      font-size: 20px;
+      color: #3d3d3d;
+    }
+    .storePellet2_icon{
+      margin-top: 30px;
+    }
+    .storePellet2_subtitle{
+      margin-top: 30px;
+      font-size: 16px;
+      color: white;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  .storePellet2{
+    background: orange;
+    width: 255px;
+    border-radius: 180px;
+    height: 255px;
+    box-sizing: border-box;
+    text-align: center;
+  }
   .selectTitle{
-    font-size: 300%;
+    font-size: 350%;
     text-align: center;
     color: #fff;
-    padding-top: 60px;
+    padding-top: 110px;
     padding-bottom: 20px; 
+    margin-bottom: 110px;
     font-weight: 300;
   }
   .selectStore a{
@@ -28,7 +72,7 @@
     background: rgba(255, 255, 255, 0.8);
   }
     .SelectStoreTitle{
-      background-color: orange;
+      background-color: rgba(255,165,0, 0.7);
       text-decoration: none;
       font-size: 120%;
       color: #fff;

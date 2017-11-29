@@ -2,13 +2,20 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Open Sans' !important;;
+  font-family: 'Open Sans';
+}
+*:not(i){
+  
+  font-family: 'Open Sans' !important;
 }
 html {
   overflow-y: initial !important;
 }
 html, body{
-  height: auto; 
+  height: 100%; 
+}
+html body #root, html body #root .home{
+  height: 100%;
 }
 .pointer{
   cursor: pointer;
