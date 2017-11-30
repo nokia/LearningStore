@@ -24,7 +24,6 @@ export default class Navigation extends Component {
   }
 
   render() {
-
     //Generate "Categories" menu
     let cat = false;
     let categories = this.props.data.menu.map( (link, index) => {

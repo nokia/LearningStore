@@ -8,11 +8,13 @@ import renderHTML from 'react-render-html';
 
 import Source from './data';
 import Navigation from './Navigation';
+import NavigationEdit from './NavigationEdit';
 import HeaderComponent from './Header';
 import Thumbnail from './Thumbnail';
 import B from './back';
 import NotFound from './NotFound';
 import FooterComponent from './Footer';
+import Edit from './editCtl';
 
 export default class Collection extends Component {
 
@@ -57,9 +59,14 @@ export default class Collection extends Component {
     }
     return ret;
   }
-
+  componentDidUpdate(){
+    if(Edit.isEditMode()){
+      document.getElementById("edit").style.display = 'block';
+      document.getElementsByClassName('store')[0].style.marginTop='150px';
+    }
+  }
   render() {
-    
+   
     if (this.state.isLoading) return null;
 
     B.set(this);
@@ -70,11 +77,17 @@ export default class Collection extends Component {
 
     return (
       <div>
+        <div id="editDimmer"><div ><img src="" id="editDimmerImg"/><div id="editDimmerText"></div></div></div>
         <div className="head">
           <HeaderComponent props={this.props} data={this.storeDef}/>
           <div className="menu">
             <div className="wrapper">
               <Navigation props={this.props} data={this.storeDef}/>
+            </div>
+          </div>
+          <div id="edit">
+            <div className="wrapper">
+              <NavigationEdit props={this.props} data={this.storeDef}/>
             </div>
           </div>
         </div>
@@ -88,6 +101,9 @@ export default class Collection extends Component {
         
         <FooterComponent props={this.props} data={this.storeDef}/>
       </div>
+      
     );
+    
+    document.getElementById("edit").style.display = 'block';
   }
 }

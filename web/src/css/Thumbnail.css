@@ -8,7 +8,7 @@
   margin-right: 3.7%;
   display: inline-block;
   vertical-align: top;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
   /* padding-top: 6px;
   padding-bottom: 10px;
@@ -30,10 +30,10 @@
 } */
 .collec{
     /* position: absolute; */
-    margin-top: -8px;
-    margin-left: 10px;
+    margin-top: -10px;
+    margin-left: 9px;
     width: 90%;
-    height: 8px;
+    height: 10px;
     border-radius: 2px 2px 0px 0px;
     background: white;
     border-bottom: 1px solid #e8e8e8;

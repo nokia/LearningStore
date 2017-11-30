@@ -1,0 +1,43 @@
+#edit{
+  border-top: 1px solid rgb(206, 206, 206);
+  border-bottom: 1px solid rgb(206, 206, 206);
+  background-color: rgb(219, 218, 218);
+  display: none;
+}
+.navigationEdit{
+}
+.navigationEdit .rc-menu{
+  border: none;
+  color: rgb(75, 75, 75);
+  background-color: rgb(219, 218, 218);
+}
+.rc-menu-horizontal > .rc-menu-item, .rc-menu-horizontal > .rc-menu-submenu > .rc-menu-submenu-title{
+  padding: 10px 20px;
+}
+.rc-menu-vertical > .rc-menu-item, .rc-menu-inline > .rc-menu-item, .rc-menu-vertical > .rc-menu-submenu > .rc-menu-submenu-title, .rc-menu-inline > .rc-menu-submenu > .rc-menu-submenu-title {
+  padding: 10px 30px 10px 20px;
+}
+.navigationEdit .rc-menu-submenu, .navigationEdit .rc-menu-item{
+  cursor: pointer;
+}
+.navigationEdit .rc-menu-item{
+  border-bottom: 2px solid transparent;
+}
+.navigationEdit .rc-menu-submenu-active, .navigationEdit .rc-menu-item-active{
+  border-bottom: 2px solid rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+  background-color: #F3F5F7;
+}
+.navigationEdit .rc-menu-submenu-active .rc-menu-submenu-title{
+  background-color: #F3F5F7;
+}
+.navigationEdit .rc-menu-item-selected, .navigationEdit .rc-menu-submenu-selected{
+  background-color: #fff8f8;
+}
+.rc-menu-submenu{
+  border-bottom: 2px solid #F3F5F7;
+}
+.chevron{
+  margin-bottom: 2px;
+  margin-left: 3px;
+}

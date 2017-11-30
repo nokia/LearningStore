@@ -10,10 +10,12 @@ import '../css/Store.css';
 import SliderHome from './SliderHome';
 import Source from './data';
 import Navigation from './Navigation';
+import NavigationEdit from './NavigationEdit';
 import HeaderComponent from './Header';
 import FooterComponent from './Footer';
 import Thumbnail from './Thumbnail';
 import B from './back';
+import Edit from './editCtl';
 
 export default class Store extends Component {
   
@@ -23,6 +25,13 @@ export default class Store extends Component {
     const {name} = this.props.match.params;    
     Source.fetch(name).then( () => this.setState({isLoading:false}) );
     B.back = true;
+  }
+
+  componentDidUpdate(){
+    if(Edit.isEditMode()){
+      document.getElementById("edit").style.display = 'block';
+      document.getElementsByClassName('store')[0].style.marginTop='150px';
+    }
   }
 
   componentDidMount () {
@@ -77,11 +86,17 @@ export default class Store extends Component {
 
     return (
       <div>
+        <div id="editDimmer"><div ><img src="" id="editDimmerImg"/><div id="editDimmerText"></div></div></div>
         <div className="head">
           <HeaderComponent props={this.props} data={storeDef}/>
           <div className="menu">
             <div className="wrapper">
               <Navigation props={this.props} data={storeDef}/>
+            </div>
+          </div>
+          <div id="edit">
+            <div className="wrapper">
+              <NavigationEdit props={this.props} data={this.storeDef}/>
             </div>
           </div>
         </div>
