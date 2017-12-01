@@ -6,19 +6,38 @@ html {
 }    
 .editLabel {
     font-size: 110%;
-    width: 12%;
+    width: 18%;
     float: left;
     color: #ef6c00;
     padding-left: 10px;
+    margin-top: 10px;
 }
-
+#form{
+    margin-top: 150px;
+}
+.quill > div{
+    border-color: #E6E6E6 !important;
+}
+.wrapperEdit{
+    width: 700px;
+    margin: auto;
+}
+.edit_box{
+    background: #fff;
+}
 .editField {
     width:80%;
-    background-color: #F1F1F1;
+    background-color: #F9F9F9;
     border-style: solid;
-    border-color: lightgray;
+    padding: 10px 5px;
+    border-color: #E6E6E6;
     border-width: 1px;
     outline-style:none;
+    margin-top: 10px;
+}
+.editFieldDisabled{
+    background-color: rgb(230, 230, 230);
+    color: rgb(156, 156, 156);;
 }
 .item {
     background-color: #F1F1F1;    
@@ -34,7 +53,7 @@ html {
 }
 
 .RTE {
-    margin-left: 12%;
+    margin-left: 18%;
     width:80%;
     /* border-style: solid;
     border-color: lightgray;
@@ -42,11 +61,9 @@ html {
 }
 
 .editSave {
-    margin-left: 12%;
-    height: 34px;
+    margin-left: 18%;
+    padding: 14px 40px;
     cursor: pointer;
-    line-height: 37px;
-    width: 10%;
     color: white;
     background: #ef6c00;
     margin-top: 8px;

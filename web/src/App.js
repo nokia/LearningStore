@@ -82,9 +82,7 @@ export default class App extends Component {
   render() {
     if (this.state.isLoading) {
       return (
-        <div>
-          <div className="head">
-          </div>
+        <div>          
           <div className="store">
             <div className="loading">
               <Loader color="#FFA500" size="16px" margin="4px"/>

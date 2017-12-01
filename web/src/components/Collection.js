@@ -14,7 +14,7 @@ import Thumbnail from './Thumbnail';
 import B from './back';
 import NotFound from './NotFound';
 import FooterComponent from './Footer';
-import Edit from './editCtl';
+import EditCtl from './editCtl';
 
 export default class Collection extends Component {
 
@@ -60,10 +60,7 @@ export default class Collection extends Component {
     return ret;
   }
   componentDidUpdate(){
-    if(Edit.isEditMode()){
-      document.getElementById("edit").style.display = 'block';
-      document.getElementsByClassName('store')[0].style.marginTop='150px';
-    }
+    EditCtl.toolbar();
   }
   render() {
    

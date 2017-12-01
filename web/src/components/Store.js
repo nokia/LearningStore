@@ -15,7 +15,7 @@ import HeaderComponent from './Header';
 import FooterComponent from './Footer';
 import Thumbnail from './Thumbnail';
 import B from './back';
-import Edit from './editCtl';
+import EditCtl from './editCtl';
 
 export default class Store extends Component {
   
@@ -28,10 +28,7 @@ export default class Store extends Component {
   }
 
   componentDidUpdate(){
-    if(Edit.isEditMode()){
-      document.getElementById("edit").style.display = 'block';
-      document.getElementsByClassName('store')[0].style.marginTop='150px';
-    }
+    EditCtl.toolbar();
   }
 
   componentDidMount () {

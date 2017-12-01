@@ -10,12 +10,16 @@ import FaPlus from 'react-icons/lib/fa/plus-square-o';
 
 import HeaderComponent from './Header';
 import Navigation from './Navigation';
+import NavigationEdit from './NavigationEdit';
 import {Config} from '../config.js';
 import Source from './data';
 import B from './back';
 import NotFound from './NotFound';
 import Ctl from './editCtl';
 import wipC from './editWip';
+import EditCtl from './editCtl';
+import { Radio, Segment } from 'semantic-ui-react'
+import { Icon, Input } from 'semantic-ui-react'
 
 import '../css/Edit.css';
 
@@ -45,7 +49,9 @@ export default class Edit extends Component {
     });
     B.back = true;
   }
-
+  componentDidUpdate(){
+    EditCtl.switchEditMode(true, false);
+  }
   componentDidMount() { 
     ready = false;
     setTimeout( () => ready = true, 100  ); // html can be improved by Quill, but no user changes
@@ -97,6 +103,7 @@ export default class Edit extends Component {
     const storeDef = Source.getDef(this.state.name);
     const header = (
       <div>
+        <div id="editDimmer"><div ><img src="" id="editDimmerImg"/><div id="editDimmerText"></div></div></div>
         <div className="head">
           <HeaderComponent props={this.props} data={storeDef}/>
           <div className="menu">
@@ -104,23 +111,31 @@ export default class Edit extends Component {
               <Navigation props={this.props} data={storeDef}/>
             </div>
           </div>
+          <div id="edit">
+            <div className="wrapper">
+              <NavigationEdit props={this.props} data={this.storeDef}/>
+            </div>
+          </div>
         </div>
         <div className='top'></div>
-
-        <div className='editFlow'>
-          <label className='editLabel'>ID</label>
-          <TextField className='editField' name="ID" fieldAttributes={{disabled:true, style:{border:0, fontSize:'110%'}}}/>
+      
+        <div className="wrapperEdit edit_box">
+          <div className='editFlow'>
+            <label className='editLabel'>ID</label>
+            <TextField className='editField editFieldDisabled' name="ID" fieldAttributes={{disabled:true, style:{border:0, fontSize:'110%'}}}/>
+            </div>
+          <div className='editFlow'>
+            <label className='editLabel'>Title</label>
+            <TextField className='editField' name="Title" />
+          </div>
+          <div className='editFlow'>
+            <label className='editLabel'>Icon</label>
+            <TextField className='editField' name="Icon" />
+          </div>  
         </div>
-        <div className='editFlow'>
-          <label className='editLabel'>Title</label>
-          <TextField className='editField' name="Title" />
-        </div>
-        <div className='editFlow'>
-          <label className='editLabel'>Icon</label>
-          <TextField className='editField' name="Icon" />
-        </div>  
       </div>
     );
+    //<TextField className='editField ' name="ID" fieldAttributes={{disabled:true, style:{border:0, fontSize:'110%'}}}/>
     
     const submit = <SubmitField className='editSave' value="Save" />
     const add = <FaPlus />
@@ -136,17 +151,19 @@ export default class Edit extends Component {
       return (
         <Form onSubmit={submitMethod} model={item} eventsListener={eventsListener} >
           {header}
-          <Quill name='Description'/>
-          <div className='editFlow'>
-            <label className='editLabel'>Items</label>
-            <div>
-              <ListField name='Solutions' className='listfield' addButton={{className:'addButton', value:add}} removeButton={{className:'delButton', value:remove}}>
-                <TextField className='item' />
-              </ListField>
+          <div className="wrapperEdit edit_box">
+            <Quill name='Description'/>
+            <div className='editFlow'>
+              <label className='editLabel'>Items</label>
+              <div>
+                <ListField name='Solutions' className='listfield' addButton={{className:'addButton', value:add}} removeButton={{className:'delButton', value:remove}}>
+                  <TextField className='item' />
+                </ListField>
+              </div>
             </div>
+            {wip}
+            {submit}
           </div>
-          {wip}
-          {submit}
         </Form>
       );
     }
@@ -160,13 +177,15 @@ export default class Edit extends Component {
     return (
       <Form onSubmit={submitMethod} model={item} eventsListener={eventsListener} >
         {header}
-        <div className='editFlow'>
-          <label className='editLabel'>Url</label>
-          <TextField className='editField' name="Url" />
+        <div className="wrapperEdit edit_box">
+            <div className='editFlow'>
+              <label className='editLabel'>Url</label>
+              <TextField className='editField' name="Url" />
+            </div>
+            {fields}
+            {wip}
+            {submit}
         </div>
-        {fields}
-        {wip}
-        {submit}
       </Form>
     );
   }

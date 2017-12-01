@@ -43,8 +43,12 @@ export default class Navigation extends Component {
       case 'r':
         Edit.reset();
         break;
-        case 's':
+      case 's':
         Edit.saveAs();
+        break;
+      case 'ex':
+        Edit.switchEditMode(false, true);
+        B.history.push('/');
         break;
       case 'u':
         Edit.upload();
@@ -81,6 +85,7 @@ export default class Navigation extends Component {
               <MenuItem key="w">Toggle work in progress (WIP)</MenuItem>
               <MenuItem key="h">Go Home</MenuItem>
               <MenuItem key="r">Reset all saved operations</MenuItem>
+              <MenuItem key="ex">Exit edit mode</MenuItem>
             </SubMenu>
             <SubMenu className="floatRight" title={<span>File operations <FaAngleDown color='#7C7B7B' /></span>}>
               <MenuItem key="s">Download to a local file all modifications saved</MenuItem>

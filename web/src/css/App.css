@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Open Sans';
 }
+
 #editDimmer{
   opacity: 0;
   background: black;
@@ -15,7 +16,7 @@
   font-weight: bold;
   /* transition: visibility 1s, opacity 0.5s linear; */
   top: 0px;
-  z-index: 99999999;
+  z-index: 9999999999999;
   height: 100%;
   text-align: center;
   font-size: 200%;

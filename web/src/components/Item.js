@@ -12,6 +12,8 @@ import MdClose from 'react-icons/lib/md/close';
 import renderHTML from 'react-render-html';
 import FaAngleRight from 'react-icons/lib/fa/angle-right';
 
+import NavigationEdit from './NavigationEdit';
+import EditCtl from './editCtl';
 import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
 const urlDelim = '>>';
 
@@ -27,6 +29,9 @@ export default class Item extends Component{
     this.url = Source.getDef(name).url || '.';
     Source.getSync(name)
     .then( store => this.setState({isLoading:false, store:store}) )
+  }
+  componentDidUpdate(){
+    EditCtl.toolbar();
   }
 
 
@@ -62,13 +67,17 @@ export default class Item extends Component{
 
 
     return (
-      <Modal 
+      <div>
+        <Modal 
         open={this.state.open}
         closeOnEscape="true"
         closeOnRootNodeClick="true"
         onClose={back}
         closeIcon
       >
+        <div id="editItem">
+          <NavigationEdit props={this.props} data={this.storeDef}/>
+        </div>
         <Modal.Header>
           { Source.format(item.Title) }
         </Modal.Header>
@@ -86,6 +95,8 @@ export default class Item extends Component{
           </a>
         </Modal.Actions>
       </Modal>
+      </div>
+      
     )
   }
 }
