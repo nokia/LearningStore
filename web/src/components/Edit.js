@@ -18,9 +18,7 @@ import NotFound from './NotFound';
 import Ctl from './editCtl';
 import wipC from './editWip';
 import EditCtl from './editCtl';
-import { Radio, Segment } from 'semantic-ui-react'
-import { Icon, Input } from 'semantic-ui-react'
-
+import { Radio, Button } from 'semantic-ui-react'
 import '../css/Edit.css';
 
 const origin = [] // contains original item values 
@@ -40,14 +38,21 @@ const setunLoad = () => window.onbeforeunload = wipC.stay() ? unload : null;
 export default class Edit extends Component {
 
   state = { isLoading:true }
-
+  storeDef;
   componentWillMount() {
     const {name, id} = this.props.match.params;
     Source.fetch(name).then( store => {
       this.item = (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
-      this.setState({isLoading:false, name:name});
+      this.setState({name:name, store:store, isLoading:false});
+      // console.log('ss', store);
+
     });
     B.back = true;
+
+
+
+
+    
   }
   componentDidUpdate(){
     EditCtl.switchEditMode(true, false);
@@ -68,7 +73,31 @@ export default class Edit extends Component {
     }, 100)
   }
 */  
+
+  selectItems(itemList){
+    // console.log('selecttt', itemList.length, typeof itemList);
+    const d =  Object.keys(itemList).map( i => itemList[i])
+    .filter( (item1, index1) => {
+      if (item1 === wipC || item1 === wipC.unsaved) return false;
+      return true;
+    })
+    .map( (item2, index2) => {
+         console.log('tab', item2, index2);
+        // return (<div key={index2}>{item2.Title}</div>)
+    });
+
+
+
+    // console.log(d, itemList.length);
+    return (
+      <ul>
+        {d}
+      </ul>
+    );
+  }
   render() {
+
+    // console.log('eeeeed', this.state.store);
     if (this.state.isLoading) return null;    
     
     let item = this.item;
@@ -103,7 +132,7 @@ export default class Edit extends Component {
     const storeDef = Source.getDef(this.state.name);
     const header = (
       <div>
-        <div id="editDimmer"><div ><img src="" id="editDimmerImg"/><div id="editDimmerText"></div></div></div>
+        <div id="editDimmer"><div ><img src="" id="editDimmerImg" alt="Dimmer"/><div id="editDimmerText"></div></div></div>
         <div className="head">
           <HeaderComponent props={this.props} data={storeDef}/>
           <div className="menu">
@@ -118,7 +147,7 @@ export default class Edit extends Component {
           </div>
         </div>
         <div className='top'></div>
-      
+        
         <div className="wrapperEdit edit_box">
           <div className='editFlow'>
             <label className='editLabel'>ID</label>
@@ -137,15 +166,39 @@ export default class Edit extends Component {
     );
     //<TextField className='editField ' name="ID" fieldAttributes={{disabled:true, style:{border:0, fontSize:'110%'}}}/>
     
-    const submit = <SubmitField className='editSave' value="Save" />
+    // const submit = <SubmitField className='editSave' value="Save" />
+    const submit = <Button content='Save' className='editSave' icon='right arrow' color='orange' labelPosition='right' />
     const add = <FaPlus />
     const remove = <FaTrash />
     const wip = (
       <div className='editFlow'>
-        <label className='editLabel'>Edit Mode</label>
-        <CheckboxField name="Wip" />
+        <label id="toggleWipLabel" className='editLabel'>Edit Mode</label>
+        <Radio 
+          className="toggleWip"
+          name="Wip" 
+          toggle 
+        />
+        
       </div>
     );
+
+  //   <div>
+  //   <ListField name='Solutions' className='listfield' addButton={{className:'addButton', value:add}} removeButton={{className:'delButton', value:remove}}>
+  //     <TextField className='item' />
+  //   </ListField>
+  // </div>
+
+    // const selectItems = (
+
+      
+    //   <div className='editFlow'>
+    //     <label for="toggle1" id="toggleWipLabel" className='editLabel'>Edit Mode</label>
+    //     <CheckboxField id="toggleWip" name="Wip" />
+        
+    //   </div>
+    // );
+  
+    
 
     if (item.Solutions) {
       return (
@@ -155,11 +208,7 @@ export default class Edit extends Component {
             <Quill name='Description'/>
             <div className='editFlow'>
               <label className='editLabel'>Items</label>
-              <div>
-                <ListField name='Solutions' className='listfield' addButton={{className:'addButton', value:add}} removeButton={{className:'delButton', value:remove}}>
-                  <TextField className='item' />
-                </ListField>
-              </div>
+                {this.selectItems(this.state.store.ids)}
             </div>
             {wip}
             {submit}

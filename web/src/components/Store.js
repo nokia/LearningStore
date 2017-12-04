@@ -83,7 +83,7 @@ export default class Store extends Component {
 
     return (
       <div>
-        <div id="editDimmer"><div ><img src="" id="editDimmerImg"/><div id="editDimmerText"></div></div></div>
+        <div id="editDimmer"><div ><img src="" id="editDimmerImg" alt="Dimmer"/><div id="editDimmerText"></div></div></div>
         <div className="head">
           <HeaderComponent props={this.props} data={storeDef}/>
           <div className="menu">

@@ -10,7 +10,7 @@ import '../css/NavigationEdit.css';
 import FaAngleDown from 'react-icons/lib/fa/angle-down';
 import Edit from './editCtl';
 import B from './back';
-const item = 'item/';
+// const item = 'item/';
 
 export default class Navigation extends Component {
 

@@ -11,7 +11,7 @@ import B from './back';
 import {Config} from '../config.js';
 import wipC from './editWip';
 import Toast from './toast';
-import { log } from 'util';
+// import { log } from 'util';
 
 const itemParse = /\/item\/|\/edit\//;
 
@@ -221,11 +221,12 @@ class Edit {
         op = op - 0.2;
       }, 10);
     }
+    var el;
     if(this.editMode){
       document.getElementById("editDimmer").style.display = 'block';
       document.getElementById("editDimmerText").innerHTML="Welcome to edit mode!";
       document.getElementById("editDimmerImg").src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqklEQVR4XuWb4XHbMAxGP2zQEdwNukGyQeoJ2kzQeIJmg7oTtJ6g7gRNNvAGiTdIJkAPPtEny5INUKRF0LzTD99RMt8jREGkSKikMPMXALfNMWuwNgDkWBPR3z5U8s7PzJ8B/AAQoIeQXgEsiGjdruBaADN/BfDL2IlLIlqEc9wKiIQP3D+J6EF+uBQwEj5ImMvt4E5AIniR8EpEH69ZgEiYuxMgrU4YBSuXAhJK2BQvoOntGyK67z7uUkRC0QI6gL9zSChWwEDvppawLVLAmdBOKaG8QVB5X6eScF9UBCjhw1g4VsKWiGbFCDDCp5BQTiocCT9GwoqI5E1y+pehkfAxEvbwkwtIBG+RcAA/qQAD/DuAJYDviomPUwPjbQj7yWeEjPDS8I3hnF4JQ/Iu/hQwgEjP7+BD4w3nqiVcVIAB4Ai+JeFxzO3QjYSLCUgE/wnAPwAfFOPB0YA32bR4qfAXeQqUDJ9dQOnwWQV4gM8mwAt8FgGe4JML8AafVIBH+GQCvMInEeAZfrQA7/CjBNQAHy2gFvgoATXBmwXUBm8SUCO8WkCt8CoBNcOfFVA7/EkB1wA/KOBa4HsFXBP8kQBmlg+OXxRTzqfm7ZNPXSvaE13lYF2g+fL6j+Jq8vn5vFuPmV3B90WALEJ+UwiQKgfLTx7h+wQ8AbhRCthL8ArfJ4AN8KGqbECQnRrJlqsi2hB9yn4MYGaBkHW3XEW1Vpfrz4eu2xYgGwhk60mOUiT8wS3AzBLKdxnoi4XvCpDn/7mNR1Y/RcPvBRgSIIuA4uHbAmTrmSYB0gpwAd8WYEmAzklwA98WYE2AhiS4gm8LiEmAuhLcwe8EjEiAnpt9uRI9GyKSranuigjQJEDbDqxAV1FEQF8CVEXvanpIBEhvvgEIoVxN72oE/AeLazLkUOkDDwAAAABJRU5ErkJggg==";
-      var el = document.getElementById("editDimmer");
+      el = document.getElementById("editDimmer");
       fadeIn(el);
       setTimeout(function () {
         fadeOut(el, function(){
@@ -236,7 +237,7 @@ class Edit {
       document.getElementById("editDimmer").style.display = 'block';
       document.getElementById("editDimmerText").innerHTML="Exit edit mode!";
       document.getElementById("editDimmerImg").src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABr0lEQVR4Xu3bbW7DIAwGYL8nW4+y3WQ7Sbeb7GZMVI200AQwX8HG+VNVaSP81Dh8NHDOORJ0AEDL5sIALAOsC6RqwC8RfQHwr8OPsIteWQMugZgJYPv1h0LMCDAUYmaAIRASALpCSALoAiERoCmEZIAHRO192wCCoXotaDiS6z4Zqm2wZYBlwH6yFmaUc+4O4KN0kiK+Czy7yHcpghYAnwBFCJoAihCmB0j17YMlPVYmaARgZYJWgGwEzQBZCMMBLliGj9aEFQCimbAKwCnCSgCHCKsB/AB4/z+2WAngJfjHgk3vqnwwe0vtRKUGfyXnD4NfBeA0+EsASn6+2HcSGRwNXjtAMnjNAFnBawXIDl4EQGpVODjPCl4bADt4TQBFwWsB8NPd3fCWc6sdPhLkNM5/NlUDuNezrbFAwDJg9GSIm7LWBWxzNL45ys0oK4JWBPcC3e8CtSn6krL2vIA9MGFPjLTsVr4G3Ijok4jeWl54u1btv8R6tGm3L7C96QUhBqAXhDiA1hBiAVpBiAeohVADUAqhDoALoRYgF0I9QApiGYAziOUAQggAfqg97fEH9vT2UHiK4H8AAAAASUVORK5CYII=";      
-      var el = document.getElementById("editDimmer");
+      el = document.getElementById("editDimmer");
       fadeIn(el);
       setTimeout(function () {
         fadeOut(el, function(){
@@ -248,7 +249,9 @@ class Edit {
   toolbar(){  
     if(this.editMode){
       document.getElementById("root").style.marginTop='150px';
-      document.getElementById("edit").style.display = 'block';
+      if(document.getElementById("edit")){
+        document.getElementById("edit").style.display = 'block';
+      }
       if(document.getElementById("editItem")){
         document.getElementById("editItem").style.display = 'block';
       }

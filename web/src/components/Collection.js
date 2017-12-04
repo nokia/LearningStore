@@ -74,7 +74,7 @@ export default class Collection extends Component {
 
     return (
       <div>
-        <div id="editDimmer"><div ><img src="" id="editDimmerImg"/><div id="editDimmerText"></div></div></div>
+        <div id="editDimmer"><div ><img src="" id="editDimmerImg" alt="Dimmer"/><div id="editDimmerText"></div></div></div>
         <div className="head">
           <HeaderComponent props={this.props} data={this.storeDef}/>
           <div className="menu">
@@ -101,6 +101,6 @@ export default class Collection extends Component {
       
     );
     
-    document.getElementById("edit").style.display = 'block';
+    // document.getElementById("edit").style.display = 'block';
   }
 }

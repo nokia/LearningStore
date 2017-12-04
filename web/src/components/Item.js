@@ -8,13 +8,13 @@ import B from './back';
 import {Config} from './../config.js';
 import Source from './data';
 import '../css/Item.css';
-import MdClose from 'react-icons/lib/md/close';
+// import MdClose from 'react-icons/lib/md/close';
 import renderHTML from 'react-render-html';
-import FaAngleRight from 'react-icons/lib/fa/angle-right';
+// import FaAngleRight from 'react-icons/lib/fa/angle-right';
 
 import NavigationEdit from './NavigationEdit';
 import EditCtl from './editCtl';
-import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
+import { Button, Icon, Image, Modal } from 'semantic-ui-react'
 const urlDelim = '>>';
 
 export default class Item extends Component{

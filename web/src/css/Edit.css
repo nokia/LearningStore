@@ -61,17 +61,16 @@ html {
 }
 
 .editSave {
-    margin-left: 18%;
+    margin-left: 18% !important;
     padding: 14px 40px;
     cursor: pointer;
     color: white;
-    background: #ef6c00;
-    margin-top: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
     text-align: center;
     border: 0;
     box-shadow:none;
-    border-radius: 0px;    
+    border-radius: 0px;   
+    margin-top: 40px !important; 
 }
 
 .listfield {
@@ -87,5 +86,7 @@ html {
     cursor: pointer;
     margin-left: 25%;
 }
-
+.toggleWip{
+    margin-top: 10px;
+}
 

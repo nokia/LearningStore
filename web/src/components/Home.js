@@ -7,9 +7,9 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import {Config} from './../config.js';
 import '../css/Home.css';
-import FaAngleRight from 'react-icons/lib/fa/angle-right';
+// import FaAngleRight from 'react-icons/lib/fa/angle-right';
 import MdSchool from 'react-icons/lib/md/school';
-import { Image, Reveal } from 'semantic-ui-react'
+import { Reveal } from 'semantic-ui-react'
 
 export default class Home extends Component {
 
