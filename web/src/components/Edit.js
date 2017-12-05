@@ -18,7 +18,7 @@ import NotFound from './NotFound';
 import Ctl from './editCtl';
 import wipC from './editWip';
 import EditCtl from './editCtl';
-import { Radio, Button } from 'semantic-ui-react'
+import { Radio, Button, Input } from 'semantic-ui-react'
 import '../css/Edit.css';
 
 const origin = [] // contains original item values 
@@ -37,13 +37,18 @@ const setunLoad = () => window.onbeforeunload = wipC.stay() ? unload : null;
 
 export default class Edit extends Component {
 
-  state = { isLoading:true }
+  state = { isLoading:true, selectedItems:[] }
   storeDef;
+  itemsSolutions = [];
   componentWillMount() {
     const {name, id} = this.props.match.params;
     Source.fetch(name).then( store => {
       this.item = (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
-      this.setState({name:name, store:store, isLoading:false});
+      var selectedItems = Object.keys(store.ids).map( key => store.ids[key] )
+      
+      this.setState({name:name, store:selectedItems, selectedItems:selectedItems, isLoading:false});
+      this.selectItems(20);
+      console.log(selectedItems);
       // console.log('ss', store);
 
     });
@@ -74,26 +79,29 @@ export default class Edit extends Component {
   }
 */  
 
-  selectItems(itemList){
-    // console.log('selecttt', itemList.length, typeof itemList);
-    const d =  Object.keys(itemList).map( i => itemList[i])
-    .filter( (item1, index1) => {
+  selectItems(limit, search){
+    var data = this.state.store
+    if(search){
+      data = data.filter(item0 => {
+        if(item0.Title.indexOf(search) !== -1){
+          return true;
+        }
+      });
+    }
+    data = data.filter( (item1) => {
       if (item1 === wipC || item1 === wipC.unsaved) return false;
       return true;
     })
-    .map( (item2, index2) => {
-         console.log('tab', item2, index2);
-        // return (<div key={index2}>{item2.Title}</div>)
-    });
+    .slice(0, limit);
+    this.setState({selectedItems:data});  
+  }
 
+  handleSearch(btn){
+    this.selectItems(20, btn.target.value);
+  }
 
-
-    // console.log(d, itemList.length);
-    return (
-      <ul>
-        {d}
-      </ul>
-    );
+  handleAdd(id){
+    console.log(id.target.value, id);
   }
   render() {
 
@@ -199,8 +207,22 @@ export default class Edit extends Component {
     // );
   
     
+    const selectedItemsMap = this.state.selectedItems.map((item) =>{
+      // console.log(item);
+          return (
+            <div className="selectItem" title="Click to add this item" onClick={this.handleAdd.bind(this)} >
+              <div className="selectItemTitle">
+                {item.Title}
+              </div>
+            </div>
+          )
+
+      })
+        
+  
 
     if (item.Solutions) {
+      
       return (
         <Form onSubmit={submitMethod} model={item} eventsListener={eventsListener} >
           {header}
@@ -208,7 +230,11 @@ export default class Edit extends Component {
             <Quill name='Description'/>
             <div className='editFlow'>
               <label className='editLabel'>Items</label>
-                {this.selectItems(this.state.store.ids)}
+              
+              <div className='editFlow selectItems'>
+                <Input className="selectSearch" fluid onChange={this.handleSearch.bind(this)} size='mini' icon='search' placeholder='Search...' />
+                {selectedItemsMap}
+              </div>
             </div>
             {wip}
             {submit}
