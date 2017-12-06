@@ -18,7 +18,9 @@ import NotFound from './NotFound';
 import Ctl from './editCtl';
 import wipC from './editWip';
 import EditCtl from './editCtl';
+import Toast from './toast';
 import { Radio, Button, Input } from 'semantic-ui-react'
+import { Divider, Segment } from 'semantic-ui-react'
 import '../css/Edit.css';
 
 const origin = [] // contains original item values 
@@ -37,13 +39,23 @@ const setunLoad = () => window.onbeforeunload = wipC.stay() ? unload : null;
 
 export default class Edit extends Component {
 
-  state = { isLoading:true, selectedItems:[] }
+  state = { isLoading:true, selectedItems:[], itemsSolutions:[], checked:false}
   storeDef;
   itemsSolutions = [];
+  limit = 20;
+  moreItems = false;
   componentWillMount() {
     const {name, id} = this.props.match.params;
     Source.fetch(name).then( store => {
       this.item = (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
+      if(this.item.Solutions){
+        this.item.Solutions.forEach( itemID => {
+          this.handleAdd(store.getByID(itemID));
+        });
+      }
+      if(this.item.Wip){
+        this.setState({ checked: true });
+      }
       var selectedItems = Object.keys(store.ids).map( key => store.ids[key] )
       
       this.setState({name:name, store:selectedItems, selectedItems:selectedItems, isLoading:false});
@@ -91,18 +103,43 @@ export default class Edit extends Component {
     data = data.filter( (item1) => {
       if (item1 === wipC || item1 === wipC.unsaved) return false;
       return true;
-    })
-    .slice(0, limit);
+    });
+    if(data.length > limit){
+      this.moreItems = true;
+      data = data.slice(0, limit);
+    }else{
+      this.moreItems = false;
+    }
+    
     this.setState({selectedItems:data});  
   }
 
   handleSearch(btn){
-    this.selectItems(20, btn.target.value);
+    this.setState({inputSearch:btn.target.value});  
+    this.selectItems(this.limit, btn.target.value);
   }
 
-  handleAdd(id){
-    console.log(id.target.value, id);
+
+  handleAdd(el, it){
+    if(this.itemsSolutions.indexOf(el) != -1){
+      Toast.set("This item is already added");
+      Toast.display(2000);
+    }else{
+      this.itemsSolutions.push(el);
+      this.setState({itemsSolutions:this.itemsSolutions});  
+    }
+    
   }
+
+  toggleWip = () => this.setState({ checked: !this.state.checked })
+
+  handleRemove(el, it){
+    this.itemsSolutions.splice(this.itemsSolutions.indexOf(el),1);
+    this.setState({itemsSolutions:this.itemsSolutions});  
+  }
+
+  
+  
   render() {
 
     // console.log('eeeeed', this.state.store);
@@ -111,6 +148,7 @@ export default class Edit extends Component {
     let item = this.item;
     if (!item) return (<NotFound />);
 
+    console.log('item', item)
     if (item.sid) origin[item.ID] = origin[item.ID] || JSON.stringify(item);
     else {
       console.log('creating new item', item.ID);
@@ -127,11 +165,25 @@ export default class Edit extends Component {
     currentID = item.ID;
     
     const submitMethod = (model) => {
+      if(item.Solutions){
+        item.Solutions = [];
+        // console.log('sub1', item);
+        this.state.itemsSolutions.forEach( it => {
+          item.Solutions.push(it.ID);
+        });
+      }
+      
+      if(this.state.checked){
+        item.Wip = true;
+      }else{
+        item.Wip = false;
+      }
       item.date = new Date().getTime();
+      console.log('itID', item.ID, origin[item.ID]);
       Ctl._push(origin[item.ID], item);
       delete origin[item.ID];
       wipC.save(item.ID);
-      // console.log(model, item)
+      // console.log('sub', model, item)
       setunLoad();
 
       if (B.back) this.props.history.goBack();
@@ -175,15 +227,17 @@ export default class Edit extends Component {
     //<TextField className='editField ' name="ID" fieldAttributes={{disabled:true, style:{border:0, fontSize:'110%'}}}/>
     
     // const submit = <SubmitField className='editSave' value="Save" />
-    const submit = <Button content='Save' className='editSave' icon='right arrow' color='orange' labelPosition='right' />
+    const submit = <Button onClick={submitMethod} content='Save' className='editSave' icon='right arrow' color='orange' labelPosition='right' />
     const add = <FaPlus />
     const remove = <FaTrash />
     const wip = (
       <div className='editFlow'>
         <label id="toggleWipLabel" className='editLabel'>Edit Mode</label>
-        <Radio 
+        < Radio
           className="toggleWip"
           name="Wip" 
+          checked={this.state.checked}
+          onChange={this.toggleWip}
           toggle 
         />
         
@@ -205,26 +259,34 @@ export default class Edit extends Component {
         
     //   </div>
     // );
-  
     
-    const selectedItemsMap = this.state.selectedItems.map((item) =>{
-      // console.log(item);
-          return (
-            <div className="selectItem" title="Click to add this item" onClick={this.handleAdd.bind(this)} >
-              <div className="selectItemTitle">
-                {item.Title}
-              </div>
+    
+    let selectedItemsMap = this.state.selectedItems.map((item) =>{
+        return (
+          <div className="selectItem" title="Click to add this item" onClick={this.handleAdd.bind(this, item)} >
+            <div className="selectItemTitle">
+              {item.Title}
             </div>
-          )
+          </div>
+        )
+    });
 
-      })
-        
+    let selectedSolutions = this.state.itemsSolutions.map((item) =>{
+      return (
+        <div className="selectItem" title="Click to remove this item" onClick={this.handleRemove.bind(this, item)} >
+          <div className="selectItemTitle">
+            {item.Title}
+          </div>
+        </div>
+      )
+  });
+  
   
 
     if (item.Solutions) {
       
       return (
-        <Form onSubmit={submitMethod} model={item} eventsListener={eventsListener} >
+        <Form  model={item} eventsListener={eventsListener} >
           {header}
           <div className="wrapperEdit edit_box">
             <Quill name='Description'/>
@@ -234,7 +296,19 @@ export default class Edit extends Component {
               <div className='editFlow selectItems'>
                 <Input className="selectSearch" fluid onChange={this.handleSearch.bind(this)} size='mini' icon='search' placeholder='Search...' />
                 {selectedItemsMap}
+                {this.moreItems && <div className="selectMore">Search for more...</div>}
+
+
               </div>
+
+              <div className="selectedItems">
+                <Divider horizontal>Selected items</Divider>
+                {!selectedSolutions.length>0 && <div className="selectedItemsEmpty">Empty</div>}
+                {selectedSolutions}
+              </div>
+              
+
+              
             </div>
             {wip}
             {submit}
@@ -250,7 +324,7 @@ export default class Edit extends Component {
     });
 
     return (
-      <Form onSubmit={submitMethod} model={item} eventsListener={eventsListener} >
+      <Form model={item} eventsListener={eventsListener} >
         {header}
         <div className="wrapperEdit edit_box">
             <div className='editFlow'>

@@ -90,7 +90,7 @@ html {
     margin-top: 10px;
 }
 .selectItems{
-    border: 1px solid #E6E6E6;
+    /* border: 1px solid #E6E6E6; */
     padding: 5px;
     margin-right: 13px;
     margin-top: 12px;
@@ -106,4 +106,19 @@ html {
 }
 .selectItem:hover{
     background: rgb(223, 223, 223);
+}
+.selectMore{
+    background: #f2711c30;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 4px;
+    text-align: center;
+}
+.selectedItems{
+    padding: 12px;
+    margin-bottom: 10px;
+}
+.selectedItemsEmpty{
+    text-align: center;
+    color: #666;
 }
