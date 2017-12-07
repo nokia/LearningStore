@@ -9,6 +9,7 @@ import Loader from 'halogen/PulseLoader';
 import '../css/Store.css';
 import SliderHome from './SliderHome';
 import Source from './data';
+// import Style from './style';
 import Navigation from './Navigation';
 import NavigationEdit from './NavigationEdit';
 import HeaderComponent from './Header';
@@ -23,13 +24,18 @@ export default class Store extends Component {
 
   componentWillMount() {
     const {name} = this.props.match.params;    
+    
+    document.body.style.overflow = 'auto';
     Source.fetch(name).then( () => this.setState({isLoading:false}) );
     B.back = true;
   }
 
   componentDidUpdate(){
     EditCtl.toolbar();
+    // Style.applyColor();
   }
+
+  
 
   componentDidMount () {
     window.scrollTo(0, 0);
@@ -70,6 +76,8 @@ export default class Store extends Component {
             <Thumbnail  key={index2} props={this.props} data={item} store={storeDef} />  
           );
       }) : [];
+
+      
 
       return (
         <div key={index} className="thumbnails">

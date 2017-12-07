@@ -22,6 +22,8 @@ export default class Collection extends Component {
   storeDef;
 
   componentWillMount() {
+    
+    document.body.style.overflow = 'auto';
     window.scrollTo(0, 0);
     const {name} = this.props.match.params;
     Source.getSync(name)

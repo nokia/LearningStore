@@ -45,6 +45,8 @@ export default class Edit extends Component {
   limit = 20;
   moreItems = false;
   componentWillMount() {
+    
+    document.body.style.overflow = 'auto';
     const {name, id} = this.props.match.params;
     Source.fetch(name).then( store => {
       this.item = (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
@@ -219,7 +221,8 @@ export default class Edit extends Component {
           </div>
           <div className='editFlow'>
             <label className='editLabel'>Icon</label>
-            <TextField className='editField' name="Icon" />
+            {/* <TextField className='editField' name="Icon" /> */}
+            
           </div>  
         </div>
       </div>

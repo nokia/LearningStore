@@ -6,5 +6,6 @@ export const Config = {
   defaultIcon: 'img/seeMore.png',
   trackingID: 'UA-107717760-1', // Google Analytics 
   // gun: 'https://nls-orvpzmwtij.now.sh/gun'
-  gun: 'https://nokiaedu-gun.herokuapp.com/gun'
+  gun: 'https://nokiaedu-gun.herokuapp.com/gun',
+  primaryColor: "orange"
 };

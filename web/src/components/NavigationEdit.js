@@ -72,7 +72,7 @@ export default class Navigation extends Component {
   }
 
   render() {
-    console.log(Edit);
+    // console.log(Edit);
     return(
       <div>
         <div className="navigationEdit" id="navigationEdit">
