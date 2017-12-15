@@ -6,7 +6,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Loader from 'halogen/PulseLoader';
-
 import './css/App.css';
 import {Config} from './config.js';
 import Store  from './components/Store';
@@ -17,7 +16,6 @@ import Edit from './components/Edit';
 import Source from './components/data';
 import Home  from './components/Home';
 import B from './components/back';
-
 const item = '/item/';
 const pattern = /\/(item|search)\//;
 

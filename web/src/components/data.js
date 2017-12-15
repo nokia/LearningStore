@@ -25,6 +25,7 @@ class Data {
         // if (typeof item.Url === 'object')
         //   if (item.Url.all) item.Url = item.Url.all; // old schema
         //   else delete item.Url; 
+    
         if (item.Url) {
           item.Url = item.Url.replace('(', ' >>').split(')')[0];
         }

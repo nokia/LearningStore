@@ -15,7 +15,7 @@ export default class Navigation extends Component {
 
   onClick(info) {
     // console.log('history', this.props.props)
-    console.log('key',info.key);
+    // console.log('key',info.key);
     if (info.key.indexOf('http') === 0)
       window.open(info.key);
     else

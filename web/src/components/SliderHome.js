@@ -5,12 +5,25 @@
 
 import React, {Component} from 'react';
 import Slider from 'react-slick';
+// import ModalWindow from './ModalWindow';
 import {Link} from 'react-router-dom'
 import '../css/slick-theme.min.css';
 import '../css/slick.min.css';
 import '../css/sliderHome.css';
+// import {  Modal } from 'semantic-ui-react'
 
 export default class SliderHome extends Component {
+  constructor(){
+    super()
+    this.state = {ModalOpen: false};
+    this.showModalWindow = this.showModalWindow.bind(this);
+  }
+  showModalWindow() {
+    console.log('shooow');
+    this.setState({
+      ModalOpen: !this.state.ModalOpen,
+    });
+  }
   render () {
     let dragging = false;
     let settings = {
@@ -25,6 +38,7 @@ export default class SliderHome extends Component {
       beforeChange: () => dragging = true,
       afterChange: () => dragging = false
     };
+    
     const slides = this.props.data.carousel.map((slide, index) => {
       const img = <div><img src={this.props.data.url + "/" + slide.img} alt=''/></div>
       let link = slide.id ? (
@@ -35,6 +49,11 @@ export default class SliderHome extends Component {
         <a href={slide.url} target='_blank'>
           { img }
         </a>
+      ) : slide.html ? (
+        // <div onClick={this.showModalWindow}>
+          <div>{img}</div>
+          // <ModalWindow open={this.state.ModalOpen} />
+        // </div>
       ) : (
         <div>
           { img }
