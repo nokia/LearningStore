@@ -366,6 +366,18 @@
             "id": "n.1484819939262"
         },
         {
+            "img": "img/carousel-left-shift-quality.png",
+            "id": "n.1510665534155"
+        },
+        {
+            "img": "img/carousel-2018-leadership.jpg"
+        },
+        {
+            "img": "img/carousel-jj-video.jpg",
+            "title": "Root Cause Analysis",
+            "html": "<a target=_blank href=https://nokia.sharepoint.com/portals/hub/_layouts/15/PointPublishing.aspx?app=video&p=p&chid=6cb8cc70%2D6f9a%2D4828%2D9017%2D4ac9886e7a8f&vid=e85231f4%2D95d1%2D4914%2Dab59%2Df4531bc35fd4&from=1><img src=img/jj-video-tn.jpg></a><BR><BR><a target=_blank href=https://nokia.sharepoint.com/portals/hub/_layouts/15/PointPublishing.aspx?app=video&p=p&chid=6cb8cc70%2D6f9a%2D4828%2D9017%2D4ac9886e7a8f&vid=e85231f4%2D95d1%2D4914%2Dab59%2Df4531bc35fd4&from=1><b>View video</b></a> of JJ Lhospital, Quality Execution Lead and Chief Quality Office Deputy with a message about Root Cause Analysis.<BR><BR>NOTE: Video will open in a new window on the Nokia video portal.<BR><BR>Access the training within the <a href=#?item=n.1462216522338><b>Purple Recognition Paths</b></a>."
+        },
+        {
             "img": "img/carousel-gdol2017encore.jpg",
             "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/learn.aspx"
         },
@@ -388,22 +400,6 @@
         {
             "img": "img/carousel-be-cloud-native.jpg",
             "id": "n.1497274965164"
-        },
-        {
-            "img": "img/geps-carousel1.jpg",
-            "id": "n.1498045456054"
-        },
-        {
-            "img": "img/carousel-connected-emp.jpg",
-            "id": "n.1486545096146"
-        },
-        {
-            "img": "img/slider-privacy-matters.jpg",
-            "id": "n.1472562893764"
-        },
-        {
-            "img": "img/slider-stratey-rebalancing-for-growth.jpg",
-            "id": "n.1480345000661"
         }
    ],
     "homepage": [
@@ -546,6 +542,10 @@
             {
                 "title": "For MCA",
                 "id": "n.1483622418242"
+            },
+            {
+                "title": "For IT",
+                "id": "n.1504858585544"
             }
             ]
         },
