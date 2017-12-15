@@ -70,8 +70,8 @@ export default class Item extends Component{
       <div>
         <Modal 
         open={this.state.open}
-        closeOnEscape="true"
-        closeOnRootNodeClick="true"
+        closeOnEscape={true}
+        closeOnRootNodeClick={true}
         onClose={back}
         closeIcon
       >

@@ -3,10 +3,10 @@
   Copyright Nokia 2017. All rights reserved.
 */
 import React, { Component } from 'react';
-import { Form, TextField, ListField, CheckboxField, SubmitField, FormEventsListener } from 'react-components-form';
+import { Form, TextField, FormEventsListener } from 'react-components-form';
 import Quill from './Quill';
-import FaTrash from 'react-icons/lib/fa/trash-o';
-import FaPlus from 'react-icons/lib/fa/plus-square-o';
+// import FaTrash from 'react-icons/lib/fa/trash-o';
+// import FaPlus from 'react-icons/lib/fa/plus-square-o';
 
 import HeaderComponent from './Header';
 import Navigation from './Navigation';
@@ -20,7 +20,7 @@ import wipC from './editWip';
 import EditCtl from './editCtl';
 import Toast from './toast';
 import { Radio, Button, Input } from 'semantic-ui-react'
-import { Divider, Segment } from 'semantic-ui-react'
+import { Divider } from 'semantic-ui-react'
 import '../css/Edit.css';
 
 const origin = [] // contains original item values 
@@ -62,7 +62,7 @@ export default class Edit extends Component {
       
       this.setState({name:name, store:selectedItems, selectedItems:selectedItems, isLoading:false});
       this.selectItems(20);
-      console.log(selectedItems);
+      // console.log(selectedItems);
       // console.log('ss', store);
 
     });
@@ -100,6 +100,7 @@ export default class Edit extends Component {
         if(item0.Title.indexOf(search) !== -1){
           return true;
         }
+        return false;
       });
     }
     data = data.filter( (item1) => {
@@ -123,7 +124,7 @@ export default class Edit extends Component {
 
 
   handleAdd(el, it){
-    if(this.itemsSolutions.indexOf(el) != -1){
+    if(this.itemsSolutions.indexOf(el) !== -1){
       Toast.set("This item is already added");
       Toast.display(2000);
     }else{
@@ -150,10 +151,10 @@ export default class Edit extends Component {
     let item = this.item;
     if (!item) return (<NotFound />);
 
-    console.log('item', item)
+    // console.log('item', item)
     if (item.sid) origin[item.ID] = origin[item.ID] || JSON.stringify(item);
     else {
-      console.log('creating new item', item.ID);
+      // console.log('creating new item', item.ID);
       item.sid = this.state.name;
       item.ID = 'n.' + new Date().getTime();
       item.del = true;
@@ -181,7 +182,7 @@ export default class Edit extends Component {
         item.Wip = false;
       }
       item.date = new Date().getTime();
-      console.log('itID', item.ID, origin[item.ID]);
+      // console.log('itID', item.ID, origin[item.ID]);
       Ctl._push(origin[item.ID], item);
       delete origin[item.ID];
       wipC.save(item.ID);
@@ -231,8 +232,8 @@ export default class Edit extends Component {
     
     // const submit = <SubmitField className='editSave' value="Save" />
     const submit = <Button onClick={submitMethod} content='Save' className='editSave' icon='right arrow' color='orange' labelPosition='right' />
-    const add = <FaPlus />
-    const remove = <FaTrash />
+    // const add = <FaPlus />
+    // const remove = <FaTrash />
     const wip = (
       <div className='editFlow'>
         <label id="toggleWipLabel" className='editLabel'>Edit Mode</label>

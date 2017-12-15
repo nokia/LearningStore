@@ -256,7 +256,9 @@ class Edit {
         document.getElementById("editItem").style.display = 'block';
       }
     }else{
-      document.getElementById("edit").style.display = 'none';
+      if(document.getElementById("edit")){
+        document.getElementById("edit").style.display = 'none';
+      }
       document.getElementById("root").style.marginTop='120px';
       if(document.getElementById("editItem")){
         document.getElementById("editItem").style.display = 'none';
@@ -323,7 +325,14 @@ class Edit {
   }
 
   modify() {
-    const a = this._getItem();
+    let a = null;
+    try {
+      a = this._getItem();
+    } catch (e) {
+      // console.log('eeeeer', e);
+    }
+    
+    // console.log('a', a);
     if (!a){
       Toast.set("You can't modify the home page");
       Toast.display(3000);
@@ -339,7 +348,7 @@ class Edit {
     const a = this._getItem();
     if (!a) return;
 
-    console.log('deleting', a.id, 'from', a.name);
+    // console.log('deleting', a.id, 'from', a.name);
     const old = JSON.stringify(a.item); // make a copy of the item
     const cur = {sid:a.item.sid, ID:a.item.ID, del:true}
     this._push(old, cur);
@@ -402,7 +411,7 @@ class Edit {
 
   clipboard() {
     const item = this._getItem();
-    console.log(item);
+    // console.log(item);
     if (item) {
       const tmp = document.createElement("input");
       document.body.appendChild(tmp);
@@ -438,7 +447,7 @@ class Edit {
   upload() {
     getStorage().forEach( item => {
       const k = 'store/' + item.new.sid + '/' + localStorage.authorID + '/' + item.new.ID;
-      console.log('key', k)
+      // console.log('key', k)
       gun.get('store/updates').set(
         gun.get(k).put({ v:JSON.stringify(item) })
       );
