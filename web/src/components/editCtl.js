@@ -309,7 +309,12 @@ class Edit {
   create(type) {
     let name = this._getName();
     if (!name) return;
-    B.history.push('/' + name + '/edit/' + type);
+    if(type == "item"){
+      B.history.push('/' + name + '/edit-item/' + type);
+    }else if(type == "collection"){
+      B.history.push('/' + name + '/edit-collection/' + type);
+    }
+   
   }
 
   _getItem() {
@@ -320,6 +325,7 @@ class Edit {
     name = name[name.length-1];
 
     const item = Source.get(name).getByID(id);
+    if (!item) return;
     if (item.sid !== name) return;
     return { name:name, id:id, item:item }    
   }
@@ -333,8 +339,8 @@ class Edit {
     }
     
     // console.log('a', a);
-    if (!a){
-      Toast.set("You can't modify the home page");
+    if (!a || a.item.ReadOnly){
+      Toast.set("You can't modify this page");
       Toast.display(3000);
       return; 
     }
@@ -345,10 +351,15 @@ class Edit {
   }
 
   del() {
+    console.log('try del');
     const a = this._getItem();
-    if (!a) return;
-
-    // console.log('deleting', a.id, 'from', a.name);
+    console.log('del', a);
+    if (!a || a.item.ReadOnly){
+      Toast.set("You can't delete this page");
+      Toast.display(3000);
+      return; 
+    }
+    console.log('deleting', a.id, 'from', a.name);
     const old = JSON.stringify(a.item); // make a copy of the item
     const cur = {sid:a.item.sid, ID:a.item.ID, del:true}
     this._push(old, cur);
@@ -409,19 +420,19 @@ class Edit {
     item.del ? delete ids[item.ID] : ids[item.ID] = item;
   }
 
-  clipboard() {
-    const item = this._getItem();
-    // console.log(item);
-    if (item) {
-      const tmp = document.createElement("input");
-      document.body.appendChild(tmp);
-      tmp.setAttribute("id", "dummy_id");
-      tmp.setAttribute('value', item.id);
-      tmp.select();
-      document.execCommand("copy");
-      document.body.removeChild(tmp);     
-    }
-  }
+  // clipboard() {
+  //   const item = this._getItem();
+  //   // console.log(item);
+  //   if (item) {
+  //     const tmp = document.createElement("input");
+  //     document.body.appendChild(tmp);
+  //     tmp.setAttribute("id", "dummy_id");
+  //     tmp.setAttribute('value', item.id);
+  //     tmp.select();
+  //     document.execCommand("copy");
+  //     document.body.removeChild(tmp);     
+  //   }
+  // }
 
   log(text) { logs.push(new Date().toLocaleString() +  ' | ' + text); }
 

@@ -12,7 +12,7 @@ import '../css/Thumbnail.css';
 export default class Thumbnail extends Component {
 
   render() {
-    let lim = 48;
+    let lim = 45;
     let data = this.props.data;
     let noMargin = this.props.noMargin;
     let store = this.props.store;

@@ -16,9 +16,9 @@ export default class Navigation extends Component {
 
   onClick(info) {
     switch (info.key) {
-      case 'c': 
-        Edit.clipboard();
-        break;
+      // case 'c': 
+      //   Edit.clipboard();
+      //   break;
       case 'd': 
         Edit.dump();
         break;
@@ -101,7 +101,7 @@ export default class Navigation extends Component {
             <SubMenu className="floatRight" title={<span>Current item <FaAngleDown color='#7C7B7B' /></span>}>
               <MenuItem key="e">Edit current item</MenuItem>
               <MenuItem key="x">Delete current item</MenuItem>
-              <MenuItem key="c">Copy the ID of current item</MenuItem>
+              {/* <MenuItem key="c">Copy the ID of current item</MenuItem> */}
             </SubMenu>
           </Menu>
         </div>
