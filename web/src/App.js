@@ -56,8 +56,14 @@ class ModalSwitch extends Component {
         <Switch location={isModal ? this.previousLocation : location}>
           <Route path='/:name/search/:text' component={Search} />
           <Route path='/:name/item/:id' component={Collection} />
-          <Route path='/:name/edit-item/:id' component={Edit} />
-          <Route path='/:name/edit-collection/:id' component={Edit} />
+          <Route path='/:name/edit/:id' component={Edit} />
+          <Route path='/:name/create-collection' render={props => (
+            <Edit {...props} type="collection"/>
+          )}/>
+          <Route path='/:name/create-item' render={props => (
+            <Edit {...props} type="item"/>
+          )}/>
+          {/* <Route path='/:name/create-item' type={"item"} component={Edit} /> */}
           <Route path='/:name' component={Store} />
         </Switch>
         {isModal ? <Route path='/:name/item/:id' component={Item} /> : null}

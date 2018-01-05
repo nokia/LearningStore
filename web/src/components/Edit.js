@@ -44,12 +44,21 @@ export default class Edit extends Component {
   itemsSolutions = [];
   limit = 20;
   moreItems = false;
+  // constructor(props){
+  //   super();
+  //   console.log(this, props);
+  // }
   componentWillMount() {
     
     document.body.style.overflow = 'auto';
     const {name, id} = this.props.match.params;
     Source.fetch(name).then( store => {
-      this.item = (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
+      // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
+      // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
+      var typeRoute = this.props.type;
+      this.resetData(typeRoute, store, id);
+
+
       if(this.item.Solutions){
         this.item.Solutions.forEach( itemID => {
           this.handleAdd(store.getByID(itemID));
@@ -73,6 +82,10 @@ export default class Edit extends Component {
 
     
   }
+  componentWillReceiveProps(newProps){
+    console.log('myprop', this.props, newProps);
+    this.resetData(newProps.type);
+  }
   componentDidUpdate(){
     EditCtl.switchEditMode(true, false);
   }
@@ -80,6 +93,23 @@ export default class Edit extends Component {
     ready = false;
     setTimeout( () => ready = true, 100  ); // html can be improved by Quill, but no user changes
   } 
+  resetData(type, store, id){
+      if(type === "item"){
+        this.item = {};
+        console.log('new item');
+      }
+      else if(type === "collection"){
+
+        this.item = {};
+        this.item.Solutions = [];
+        // this.item.Description = "hjhhjg jgjhg jhhjg jhghj"
+        console.log('new collection');
+      }
+      else{
+        this.item = store.getByID(id);
+      }
+      // this.setState({checked: true});
+  }
 /*
   componentDidMount() {
     setTimeout(() => {
@@ -144,11 +174,12 @@ export default class Edit extends Component {
   
   
   render() {
-
+    B.set(this);
     // console.log('eeeeed', this.state.store);
     if (this.state.isLoading) return null;    
     
     let item = this.item;
+    console.log('edit what ?', item);
     if (!item) return (<NotFound />);
 
     // console.log('item', item)
@@ -265,9 +296,9 @@ export default class Edit extends Component {
     // );
     
     
-    let selectedItemsMap = this.state.selectedItems.map((item) =>{
+    let selectedItemsMap = this.state.selectedItems.map((item, index) =>{
         return (
-          <div className="selectItem" title="Click to add this item" onClick={this.handleAdd.bind(this, item)} >
+          <div key={index} className="selectItem" title="Click to add this item" onClick={this.handleAdd.bind(this, item)} >
             <div className="selectItemTitle">
               {item.Title}
             </div>
@@ -275,9 +306,9 @@ export default class Edit extends Component {
         )
     });
 
-    let selectedSolutions = this.state.itemsSolutions.map((item) =>{
+    let selectedSolutions = this.state.itemsSolutions.map((item, index) =>{
       return (
-        <div className="selectItem" title="Click to remove this item" onClick={this.handleRemove.bind(this, item)} >
+        <div key={index} className="selectItem" title="Click to remove this item" onClick={this.handleRemove.bind(this, item)} >
           <div className="selectItemTitle">
             {item.Title}
           </div>
@@ -287,7 +318,9 @@ export default class Edit extends Component {
   
   
 
-    if (item.Solutions) {
+  console.log('item', item)
+  if (item.Solutions) {
+    console.log('item2', item)
       
       return (
         <Form  model={item} eventsListener={eventsListener} >

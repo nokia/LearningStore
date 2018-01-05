@@ -309,10 +309,12 @@ class Edit {
   create(type) {
     let name = this._getName();
     if (!name) return;
-    if(type == "item"){
-      B.history.push('/' + name + '/edit-item/' + type);
-    }else if(type == "collection"){
-      B.history.push('/' + name + '/edit-collection/' + type);
+    if(type === "item"){
+      // console.log('bbbb ww', this.props);
+      B.history.push('/' + name + '/create-item/');
+    }else if(type === "collection"){
+      // console.log('bbbb ww', this.props);
+      B.history.push('/' + name + '/create-collection/');
     }
    
   }
@@ -351,15 +353,15 @@ class Edit {
   }
 
   del() {
-    console.log('try del');
+    // console.log('try del');
     const a = this._getItem();
-    console.log('del', a);
+    // console.log('del', a);
     if (!a || a.item.ReadOnly){
       Toast.set("You can't delete this page");
       Toast.display(3000);
       return; 
     }
-    console.log('deleting', a.id, 'from', a.name);
+    // console.log('deleting', a.id, 'from', a.name);
     const old = JSON.stringify(a.item); // make a copy of the item
     const cur = {sid:a.item.sid, ID:a.item.ID, del:true}
     this._push(old, cur);

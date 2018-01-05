@@ -36,6 +36,7 @@ export default class Item extends Component{
 
 
   render() {
+    // console.log('hii', this);
     B.set(this);
 
     if (this.state.isLoading) return null;

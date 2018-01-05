@@ -17,8 +17,8 @@ export default class Home extends Component {
     // console.log('Home', this.props.stores.length, this.props.stores)
     const myStores = this.props.stores.map((store, index) => {
       return (
-        <Link to={"/" + store.id + "/"}>
-          <div key={index} title={store.title} className="storePellet" >
+        <Link key={index} to={"/" + store.id + "/"}>
+          <div title={store.title} className="storePellet" >
             <Reveal animated='small fade'>
               <Reveal.Content visible>
                 <div  className="storePellet1">
