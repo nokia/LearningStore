@@ -310,13 +310,10 @@ class Edit {
     let name = this._getName();
     if (!name) return;
     if(type === "item"){
-      // console.log('bbbb ww', this.props);
-      B.history.push('/' + name + '/create-item/');
+      B.history.push('/' + name + '/create/item');
     }else if(type === "collection"){
-      // console.log('bbbb ww', this.props);
-      B.history.push('/' + name + '/create-collection/');
+      B.history.push('/' + name + '/create/collection');
     }
-   
   }
 
   _getItem() {

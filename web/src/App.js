@@ -57,12 +57,13 @@ class ModalSwitch extends Component {
           <Route path='/:name/search/:text' component={Search} />
           <Route path='/:name/item/:id' component={Collection} />
           <Route path='/:name/edit/:id' component={Edit} />
-          <Route path='/:name/create-collection' render={props => (
+          <Route path='/:name/create/:type' component={Edit} />
+          {/* <Route path='/:name/create-collection' render={props => (
             <Edit {...props} type="collection"/>
           )}/>
           <Route path='/:name/create-item' render={props => (
             <Edit {...props} type="item"/>
-          )}/>
+          )}/> */}
           {/* <Route path='/:name/create-item' type={"item"} component={Edit} /> */}
           <Route path='/:name' component={Store} />
         </Switch>

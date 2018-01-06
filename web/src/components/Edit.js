@@ -51,12 +51,11 @@ export default class Edit extends Component {
   componentWillMount() {
     
     document.body.style.overflow = 'auto';
-    const {name, id} = this.props.match.params;
+    const {name, id, type} = this.props.match.params;
     Source.fetch(name).then( store => {
       // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
-      var typeRoute = this.props.type;
-      this.resetData(typeRoute, store, id);
+      this.resetData(type, store.getByID(id));
 
 
       if(this.item.Solutions){
@@ -71,9 +70,6 @@ export default class Edit extends Component {
       
       this.setState({name:name, store:selectedItems, selectedItems:selectedItems, isLoading:false});
       this.selectItems(20);
-      // console.log(selectedItems);
-      // console.log('ss', store);
-
     });
     B.back = true;
 
@@ -83,8 +79,8 @@ export default class Edit extends Component {
     
   }
   componentWillReceiveProps(newProps){
-    console.log('myprop', this.props, newProps);
-    this.resetData(newProps.type);
+    // console.log('myprop', this.props, newProps);
+    this.resetData(newProps.match.params.type, this.item);
   }
   componentDidUpdate(){
     EditCtl.switchEditMode(true, false);
@@ -93,22 +89,19 @@ export default class Edit extends Component {
     ready = false;
     setTimeout( () => ready = true, 100  ); // html can be improved by Quill, but no user changes
   } 
-  resetData(type, store, id){
+  resetData(type, item){
       if(type === "item"){
         this.item = {};
         console.log('new item');
       }
       else if(type === "collection"){
-
-        this.item = {};
-        this.item.Solutions = [];
-        // this.item.Description = "hjhhjg jgjhg jhhjg jhghj"
+        this.item = {Solutions:[]};
         console.log('new collection');
       }
       else{
-        this.item = store.getByID(id);
+        this.item = item;
       }
-      // this.setState({checked: true});
+      eventsListener.callEvent('reset', this.item);
   }
 /*
   componentDidMount() {
@@ -316,14 +309,9 @@ export default class Edit extends Component {
       )
   });
   
-  
-
-  console.log('item', item)
   if (item.Solutions) {
-    console.log('item2', item)
-      
       return (
-        <Form  model={item} eventsListener={eventsListener} >
+        <Form  model={item} eventsListener={eventsListener} onSubmit={ data => {} }>
           {header}
           <div className="wrapperEdit edit_box">
             <Quill name='Description'/>
@@ -361,7 +349,7 @@ export default class Edit extends Component {
     });
 
     return (
-      <Form model={item} eventsListener={eventsListener} >
+      <Form model={item} eventsListener={eventsListener} onSubmit={ data => {} }>
         {header}
         <div className="wrapperEdit edit_box">
             <div className='editFlow'>
