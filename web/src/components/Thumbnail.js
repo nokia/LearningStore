@@ -12,7 +12,7 @@ import '../css/Thumbnail.css';
 export default class Thumbnail extends Component {
 
   render() {
-    let lim = 38;
+    let lim = 45;
     let data = this.props.data;
     let noMargin = this.props.noMargin;
     let store = this.props.store;
@@ -36,7 +36,7 @@ export default class Thumbnail extends Component {
             pathname: `/${store.id}/item/${data.ID}`
           }}
         >
-          <div className="collection"></div>
+          <div className="collec"></div>
           <div title={data.Title}>
             <div className="thumbnailLogo">
               <img src={store.url + "/" + data.Icon} alt=''/>

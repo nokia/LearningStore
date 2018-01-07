@@ -15,12 +15,15 @@ export default class Navigation extends Component {
 
   onClick(info) {
     // console.log('history', this.props.props)
-    this.props.props.history.push('/' + this.props.props.history.location.pathname.split('/')[1] + '/' + item + info.key);
+    // console.log('key',info.key);
+    if (info.key.indexOf('http') === 0)
+      window.open(info.key);
+    else
+      this.props.props.history.push('/' + this.props.props.history.location.pathname.split('/')[1] + '/' + item + info.key);
     // window.location = "#/employee/item/" + info.key;
   }
 
   render() {
-
     //Generate "Categories" menu
     let cat = false;
     let categories = this.props.data.menu.map( (link, index) => {

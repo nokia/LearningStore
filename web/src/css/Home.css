@@ -1,19 +1,67 @@
 .select {
-  width: 40%;
+  width: 900px;
   margin: auto;
 }
 .home{
-  position: absolute;
-  width: 100%;
-  background: url('../img/bg.png') center center #F1F1F1;
+  background-image: url(../img/stars_black.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+  background-color: #fff;
+  overflow: scroll;
   /* height: 100%; */
 }
-  .selectTitle{
-    font-size: 300%;
+  .storePellet{
+    
+    display: inline-block;
+    vertical-align: top;
+    width: 255px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+  .storePellet1{
+    background: rgb(223, 223, 223);
+    width: 255px;
+    border-radius: 180px;
+    height: 255px;
+    box-sizing: border-box;
     text-align: center;
-    padding-top: 60px;
+  }
+    .storePellet1_icon{
+      margin-top: 30px;
+    }
+    .storePellet1_title{
+      margin-top: 50px;
+      font-size: 20px;
+      color: #3d3d3d;
+    }
+    .storePellet2_icon{
+      margin-top: 30px;
+    }
+    .storePellet2_subtitle{
+      margin-top: 30px;
+      font-size: 16px;
+      color: white;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  .storePellet2{
+    background: orange;
+    width: 255px;
+    border-radius: 180px;
+    height: 255px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .selectTitle{
+    font-size: 350%;
+    text-align: center;
+    color: #fff;
+    padding-top: 110px;
     padding-bottom: 20px; 
+    margin-bottom: 110px;
     font-weight: 300;
   }
   .selectStore a{
@@ -21,27 +69,28 @@
   }
   .selectStore { 
     margin: 50px 0px;
+    background: rgba(255, 255, 255, 0.8);
   }
     .SelectStoreTitle{
-      background-color: orange;
+      background-color: rgba(255,165,0, 0.7);
       text-decoration: none;
       font-size: 120%;
       color: #fff;
       padding: 10px 12px;
     }
     .SelectStoreBody{
-      background-color: #fff;
+      /* background-color: #fff; */
       padding: 10px 12px;
       color: #6f6f6f;
       font-size: 95%;
     }
     .SelectStoreButton{
-      background-color: #fff;
+      /* background-color: #fff; */
       text-decoration: none;
       font-size: 100%;
       color: orange;
       text-align: right;
       padding: 10px 12px;
-      border-radius: 0px 0px 5px 5px;
+      /* border-radius: 0px 0px 5px 5px; */
 
     }

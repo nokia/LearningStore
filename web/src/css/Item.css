@@ -1,27 +1,43 @@
-.itemOverlay{
+/* .itemOverlay{
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: 99999999;
-  background: rgba(0, 0, 0, 0.70);
+  ground: rgba(0, 0, 0, 0.70);
+} */
+.dimmed.dimmable>.ui.animating.dimmer, .dimmed.dimmable>.ui.visible.dimmer, .ui.active.dimmer {
+  z-index: 999999999;
 }
-.modal{
+.ui.modal{
+  
+  height: 65%;
+}
+.ui.modal>.content{
+  height: 80%;
+  overflow-y: auto;
+  font-size: 1.1em;
+}
+.ui.modal>.content>.image{
+  min-width: 20%;
+  max-width: 20%;
+}
+/* .modal{
   position: relative;
   top: 50%;
   width: 40%;
   height: 80%;
   margin: auto;
   transform: translateY(-50%);
-  background: #fff;
+  ground: #fff;
   padding: 15;
   z-index: 99999999;
   border-radius: 2px;
-}
-.itemTitle{
-  background: orange;
-  padding: 5px;
+} */
+/* .itemTitle{
+  ground: orange;
+  padding: 10px;
   font-size: 130%;
   border-radius: 2px 2px 0px 0px;
   color: #fff;
@@ -29,31 +45,32 @@
 }
 .itemClose{
   float: right;
-  margin-top: 4px;
+  margin-top: 1px;
 }
 .itemIcon img{
   width: 180px;
   margin-top: 10px;
-}
-.itemLaunch{
+} */
+/* .itemLaunch{
   display: block;
   float: right;
   margin-top: -95px;
+  /* 
   border: 1px solid orange;
   padding: 6px 35px;
   color: #333;
-  text-decoration: none;
-}
-.itemLaunch:hover{
-  color: #fff;
-  background: orange;
-}
+  text-decoration: none; 
+} */
+/* .itemLaunch:hover{
+  /* color: #fff;
+  ground: orange; 
+} */
 .itemFields{
   padding: 5px 15px;
   height: auto;
   height: 100%;
   overflow: auto;
-  background: #fff;
+  ground: #fff;
 }
   .itemField{
     margin-top: 10px;

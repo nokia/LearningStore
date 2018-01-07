@@ -10,6 +10,10 @@
             "url": "https://www.youtube.com/embed/uSTzkzBNkXE"
         },
         {
+            "img": "img/BLC - Banner for CLS.JPG",
+            "id": "n.1509007767477"
+        },
+        {
             "img": "img/nokia-tag.jpg",
             "url": "http://www.nokia.com/en_int/about-us"
         },
@@ -35,7 +39,7 @@
     "homepage": [
         {
             "title": "Featured Technologies",
-            "items": ["n.1472887445473", "n.1472887514849", "n.1472887540319", "n.1472887576282", "n.1472887595746", "n.1472887632557"]
+            "items": ["n.1472887445473", "n.1472887514849", "n.1472887540319", "n.1472887576282", "n.1472887595746", "n.1472887632557", "n.1509007767477"]
         }
     ],
     "menu": [
@@ -126,10 +130,14 @@
             "title": "More",
             "content": [
             {
+                "title": "About the Learning Store",
+                "url": "http://learningstore.nokia.com/customer/doc/LS-Customer_Learning_Store_Flyer.pdf"
+            },
+            {
                 "title": "Nokia Learning & Development Hub",
                 "url": "https://nokialearn.csod.com"
             },
-            {
+                    {
                 "title": "Register for Access",
                 "url": "https://market.alcatel-lucent.com/release/SPRegistrantTypeSvlt"
             },
@@ -153,8 +161,18 @@
             "html": "To complement the release of the new Nokia Certifications introduced this month, we have refreshed the look and feel of our Partner Learning Store.  We hope you find the new Store to be clean and easy to navigate. Here are a few key features we'd like you to notice:<BR><img src=http://learningstore.nokia.com/partner/img/partner-page.jpg width=410 height=285 align=right border=0>1. New Featured content found in the 3 Info Boxes on the home page, including a link to the 2016 Partner Learning Store - for partners who want to complete any training already underway.<BR>2. New 2017 Certifications -- find them in the left navigation under Job Roles.<BR>We hope that you enjoy the new Learning Store. Please reach out to your Learning Leads at Nokia EDU if you have any questions or need further assistance. Their contact details can be found at the bottom of the Home page (3)."
         },
         {
-            "img": "img/carousel-putp.jpg",
-            "url": "https://events-na2.adobeconnect.com/content/connect/c1/927561628/en/events/catalog.html?OWASP_CSRFTOKEN=5b734049d72c7e81f7347ae7a10c770754d029943c4831bed33a21ae6cf454bf"
+            "img": "img/carousel-prm.jpg",
+            "url": "https://events-na2.adobeconnect.com/content/connect/c1/927561628/en/events/catalog.html?OWASP_CSRFTOKEN=5b734049d72c7e81f7347ae7a10c770754d029943c4831bed33a21ae6cf454bfhttps://www.partners.nokia.com/s/article/ka241000000NcvbAAC/PRM-Training"
+        },
+        {
+            "img": "img/carousel-partner-catalog.jpg",
+            "title": "Updated Partner Catalog",
+            "html": "View the updated Partner Catalog on the <a target=_blank  href=https://my-home.alcatel-lucent.com/portal/web/partnerportal/home>Partner Portal</a>.<BR><BR><a target=_blank href=doc/Updated-Partner-Curriculum-Courses-Aug2017.pdf>Click here to view PDF document</a> of what's changed in the catalog."
+        },
+        {
+            "img": "img/slider-mobile.jpg",
+            "title": "The Learning Store for Partners goes mobile",
+            "html": "Our mobile app is designed to support and enhance your learning endeavors by enabling you with the learning tools you need on any device - iPhone, iPad, Windows phone and Android.<UL><LI>Browse the catalog and discover what&rsquo;s in store</LI><LI>Launch specific content directly from the partner store</LI><LI>Register for courses and check progress in My PLE</LI></UL><b>How to Install</b><BR>Available on iOS, Android and Windows phones. Simply install the Partner Store web app on your device by following the instructions below.<BR><BR><b>iOS (iPhone and iPad)</b><UL><LI>Launch the Safari browser and navigate to <a href=http://tiny.cc/partnerstore>http://tiny.cc/partnerstore</a></LI><LI>Tap the Share button on the browser&rsquo;s toolbar - that&rsquo;s the rectangle with an arrow pointing upward (it is on the bar at the bottom of the screen on an iPhone or iPod Touch).</LI><LI>Tap the Add to Home Screen icon in the Share menu.</LI><LI>You will be prompted to name the shortcut before tapping the Add button. The shortcut can be dragged around and placed anywhere.</LI></UL><b>Android</b><UL><LI>Launch Chrome for Android and open <a href=http://tiny.cc/partnerstore>http://tiny.cc/partnerstore</a></LI><LI>Tap the menu button and tap Add to home screen.</LI><LI>You will be able to enter a name for the shortcut and then Chrome will add it to your home screen.</LI></UL><b>Windows phone</b><UL><LI>Launch IE and open <a href=http://tiny.cc/partnerstore>http://tiny.cc/partnerstore</a></LI><LI>Tap the menu button and tap Add to your home screen.</LI></UL>"
         },
         {
             "img": "img/carousel-nrs.png",
@@ -175,7 +193,7 @@
     ],
     "menu": [
         {
-            "title": "Partner Certification / Job Roles",
+            "title": "Partner Cert./Job Roles",
             "content": [
             {
                 "title": "Sales Associate",
@@ -214,13 +232,17 @@
                 "id": "n.1489534509569"
             },
             {
-                "title": "Partner Relationship",
+                "title": "Partner Relationship Manager",
                 "id": "n.1492547772171"
+            },
+            {
+                "title": "Partner Marketing Manager",
+                "id": "n.1502286810775"
             }
             ]
         },
         {
-            "title": "Partner Certification / Portfolio",
+            "title": "Partner Cert./Portfolio",
             "content":[
             {
                 "title": "AirScale Wi-Fi",
@@ -270,7 +292,7 @@
             ]
         },
         {
-            "title": "Continuing Education",
+            "title": "Education",
             "content":[
             {
                 "title": "Datacenter Interconnect",
@@ -303,11 +325,15 @@
             ]
         },
         {
-            "title": "More Resources",
+            "title": "More",
             "content":[
             {
-                "title": "Additional Training",
+                "title": "Additional Portfolio Training",
                 "id": "n.1491587531656"
+            },
+            {
+                "title": "Introduction Video",
+                "id": "n.1508184082051"
             },
             {
                 "title": "Partner Tools",
@@ -336,46 +362,54 @@
     "url": "http://learningstore.nokia.com/employee",
     "carousel": [
         {
-            "img": "img/LS_FBA-Banner.jpg",
-            "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/index.aspx"
+            "img": "img/carousel-mandatory-training2.png",
+            "id": "n.1484819939262"
         },
         {
-            "img": "img/carousel-gdol2017.jpg",
-            "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/index.aspx"
+            "img": "img/carousel-left-shift-quality.png",
+            "id": "n.1510665534155"
+        },
+        {
+            "img": "img/carousel-2018-leadership.jpg"
+        },
+        {
+            "img": "img/carousel-jj-video.jpg",
+            "title": "Root Cause Analysis",
+            "html": "<a target=_blank href=https://nokia.sharepoint.com/portals/hub/_layouts/15/PointPublishing.aspx?app=video&p=p&chid=6cb8cc70%2D6f9a%2D4828%2D9017%2D4ac9886e7a8f&vid=e85231f4%2D95d1%2D4914%2Dab59%2Df4531bc35fd4&from=1><img src=img/jj-video-tn.jpg></a><BR><BR><a target=_blank href=https://nokia.sharepoint.com/portals/hub/_layouts/15/PointPublishing.aspx?app=video&p=p&chid=6cb8cc70%2D6f9a%2D4828%2D9017%2D4ac9886e7a8f&vid=e85231f4%2D95d1%2D4914%2Dab59%2Df4531bc35fd4&from=1><b>View video</b></a> of JJ Lhospital, Quality Execution Lead and Chief Quality Office Deputy with a message about Root Cause Analysis.<BR><BR>NOTE: Video will open in a new window on the Nokia video portal.<BR><BR>Access the training within the <a href=#?item=n.1462216522338><b>Purple Recognition Paths</b></a>."
+        },
+        {
+            "img": "img/carousel-gdol2017encore.jpg",
+            "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/learn.aspx"
+        },
+        {
+            "img": "img/carousel-Nokia_PM_day.jpg",
+            "id": "n.1508484546549"
+        },
+        {
+            "img": "img/LS Top Banner - MNT.png",
+            "id": "n.1507731846549"
+        },
+        {
+            "img": "img/carousel-ipm-day.jpg",
+            "url": "https://www.iil.com/emailfiles/ipmday-2017/nokia.html"
+        },
+        {
+            "img": "img/LS_FBA-Banner.jpg",
+            "id": "n.1505141645980"
         },
         {
             "img": "img/carousel-be-cloud-native.jpg",
             "id": "n.1497274965164"
-        },
-        {
-            "img": "img/geps-carousel1.jpg",
-            "id": "n.1498045456054"
-        },
-        {
-            "img": "img/carousel-mandatory-training.jpg",
-            "id": "n.1484819939262"
-        },
-        {
-            "img": "img/carousel-connected-emp.jpg",
-            "id": "n.1486545096146"
-        },
-        {
-            "img": "img/slider-privacy-matters.jpg",
-            "id": "n.1472562893764"
-        },
-        {
-            "img": "img/slider-stratey-rebalancing-for-growth.jpg",
-            "id": "n.1480345000661"
         }
    ],
     "homepage": [
         {
-            "title": "Featured Learning - Key Skills in a Connected World",
-            "items": ["n.1480939226179", "n.1460033206023", "n.1480938993052", "n.1489224201154", "n.1489224120111"]
+            "title": "Featured Learning",
+            "items": ["n.1468579212114", "n.1489223791549", "n.1508567514004", "c.35", "n.1486545096146"]
         },
         {
-            "title": "\"How Do You EDU?\" Web Sessions",
-            "items": ["n.1479738898063", "n.1500976212073", "n.1500975377185", "n.1500975262095", "n.1500975006224"]
+            "title": "Global Day of Learning ENCORE",
+            "items": ["n.1509378392439", "n.1509378715709", "n.1509378474588", "n.1509378849631", "n.1509378159326"]
         }        
     ],
     "menu": [
@@ -396,7 +430,7 @@
             "id": "n.1486545096146"
         },
         {
-            "title": "Professional Dev.",
+            "title": "Professional Development",
             "category": true,
             "content":[
             {
@@ -508,6 +542,10 @@
             {
                 "title": "For MCA",
                 "id": "n.1483622418242"
+            },
+            {
+                "title": "For IT",
+                "id": "n.1504858585544"
             }
             ]
         },

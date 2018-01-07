@@ -6,19 +6,39 @@ html {
 }    
 .editLabel {
     font-size: 110%;
-    width: 12%;
+    width: 18%;
     float: left;
     color: #ef6c00;
     padding-left: 10px;
+    margin-top: 10px;
 }
-
+#form{
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+.quill > div{
+    border-color: #E6E6E6 !important;
+}
+.wrapperEdit{
+    width: 700px;
+    margin: auto;
+}
+.edit_box{
+    background: #fff;
+}
 .editField {
     width:80%;
-    background-color: #F1F1F1;
+    background-color: #F9F9F9;
     border-style: solid;
-    border-color: lightgray;
+    padding: 10px 5px;
+    border-color: #E6E6E6;
     border-width: 1px;
     outline-style:none;
+    margin-top: 10px;
+}
+.editFieldDisabled{
+    background-color: rgb(230, 230, 230);
+    color: rgb(156, 156, 156);;
 }
 .item {
     background-color: #F1F1F1;    
@@ -34,7 +54,7 @@ html {
 }
 
 .RTE {
-    margin-left: 12%;
+    margin-left: 18%;
     width:80%;
     /* border-style: solid;
     border-color: lightgray;
@@ -42,19 +62,16 @@ html {
 }
 
 .editSave {
-    margin-left: 12%;
-    height: 34px;
+    margin-left: 18% !important;
+    padding: 14px 40px;
     cursor: pointer;
-    line-height: 37px;
-    width: 10%;
     color: white;
-    background: #ef6c00;
-    margin-top: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
     text-align: center;
     border: 0;
     box-shadow:none;
-    border-radius: 0px;    
+    border-radius: 0px;   
+    margin-top: 40px !important; 
 }
 
 .listfield {
@@ -70,5 +87,39 @@ html {
     cursor: pointer;
     margin-left: 25%;
 }
-
-
+.toggleWip{
+    margin-top: 10px;
+}
+.selectItems{
+    /* border: 1px solid #E6E6E6; */
+    padding: 5px;
+    margin-right: 13px;
+    margin-top: 12px;
+    height: 300px;
+    overflow: auto;
+}
+.selectItem{
+    background: #efefef;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    padding: 4px;
+}
+.selectItem:hover{
+    background: rgb(223, 223, 223);
+}
+.selectMore{
+    background: #f2711c30;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 4px;
+    text-align: center;
+}
+.selectedItems{
+    padding: 12px;
+    margin-bottom: 10px;
+}
+.selectedItemsEmpty{
+    text-align: center;
+    color: #666;
+}

@@ -29,6 +29,9 @@ const toolbarOptions = [
 
 class Quill extends Component {
   componentWillMount() { this.state = { text: this.props.value } }
+  componentWillReceiveProps(newProps){
+		this.setState({text:''});
+  }
   
 	render() {
 		return (			

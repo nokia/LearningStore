@@ -4,25 +4,37 @@
  */
 
 import {saveAs} from 'file-saver';
+import Gun from 'gun';
 
 import Source from './data';
 import B from './back';
 import {Config} from '../config.js';
 import wipC from './editWip';
+import Toast from './toast';
+// import { log } from 'util';
 
 const itemParse = /\/item\/|\/edit\//;
 
-localStorage.edit = localStorage.edit || '[]';
-localStorage.editPos = localStorage.editPos || '0';
 localStorage.authorID = localStorage.authorID || new Date().getTime().toString();
-
+localStorage.edit = localStorage.edit || '[]';
+const localify = (data, pos) => localStorage.edit = JSON.stringify(data, null, 2);
+const getStorage = () => JSON.parse(localStorage.edit);
+const resetStorage = () => localStorage.edit = '[]';
+const editTmp = [];
 const logs = [];
+
+const gun = Config.gun ? new Gun(Config.gun) : null;
+// window.gun = gun // for debugging gun
 
 document.addEventListener("keydown", event => {
   if (event.altKey) {
     event.preventDefault();
     event.stopPropagation();
     switch (event.keyCode) {
+      case 13: // alt-enter
+        edit.switchEditMode(!edit.getEditMode(), true);
+        window.scrollTo(0, 0);
+        break;
       case 67: // alt-c
         edit.clipboard();
         break;
@@ -45,13 +57,16 @@ document.addEventListener("keydown", event => {
         edit.create('item');
         break;
       case 79: // alt-o
-        file.click();
+        edit.open();
         break;
       case 82: // alt-r
         edit.reset();
         break;
         case 83: // alt-s
         edit.saveAs();
+        break;
+      case 85: // alt-u
+        edit.upload();
         break;
       case 87: // alt-w
         edit.gotoWip();
@@ -75,7 +90,7 @@ const file = document.createElement('input'); // the file reader
 file.setAttribute("type", "file");
 file.setAttribute("multiple", "true");
 file.addEventListener('change', evt => {
-  console.log(file.files.length)
+  // console.log(file.files.length)
   reader.index = -1;
   readFile();
 });
@@ -85,35 +100,15 @@ const readFile = () => {
     reader.fileName = file.files[reader.index].name;
     reader.readAsText(file.files[reader.index]);
   }
-  else if (reader.conflicts) window.alert('Conflicts detected. Please check the logs');
-  else {
-    window.alert('The application is about to reload.\nCurrent logs:\n' + 
-      JSON.stringify(logs).replace(/","/g, '"\n"').replace(/\[|\]|"|\\/g, ''));
-    window.location.reload(); // since the imported file can contain data for several stores
-  }
 }
 const reader = new FileReader();
 reader.onload = (file) => {
-  console.log(reader.fileName);
+  // console.log(reader.fileName);
   edit.log('Importing file ' + reader.fileName);
-  const pos = JSON.parse(localStorage.editPos);  
-  const storage = JSON.parse(localStorage.edit).slice(0, pos);
+  const name = edit._getName();
+  if (!name) return;
   try {
-    const addon = JSON.parse(reader.result);
-    const newIDs = addon.map( pair => pair.new.ID );
-    const conflicts = storage.filter( pair => newIDs.indexOf(pair.new.ID) > -1 ).map( pair => pair.new.ID );
-    const passed = addon.filter( pair => conflicts.indexOf(pair.new.ID) === -1 );
-    if (conflicts.length) {
-      const IDs = JSON.stringify(conflicts);
-      edit.log('Found conflicts on IDs: ' + IDs)
-      reader.conflicts = true;
-    }
-
-    if (passed.length) {
-      localStorage.edit = JSON.stringify(storage.concat(passed));   
-      localStorage.editPos = JSON.stringify(pos + passed.length);
-      edit.log('Item(s) successfully imported: ' + JSON.stringify(passed.map( pair => pair.new.ID )));  
-    }
+    localify(importData(name, JSON.parse(reader.result), getStorage()));
   }
   catch(e) {
     edit.log('File import failed', e);
@@ -121,30 +116,170 @@ reader.onload = (file) => {
   readFile(); // read next file
 }
 
+const compare = (obj1, obj2) => {
+  // console.log('?', obj1, obj2)
+	for (var p in obj1) {
+    // console.log(p)
+		if (obj1.hasOwnProperty(p) !== obj2.hasOwnProperty(p)) return false; //Check property exists on both objects
+		if (typeof obj1[p] === 'object') { //Deep compare objects
+      if (!compare(obj1[p], obj2[p])) return false;
+    }
+    else if (obj1[p] !== obj2[p]) return false; //Compare values
+  }
+  // console.log('pass 1')
+  for (p in obj2) { //Check object 2 for any extra properties
+    // console.log(p)
+    if (typeof obj1[p] === 'undefined') return false;
+  }
+  // console.log('pass 2')
+  return true;  
+}
+
+const importData = (name, data, storage) => {
+  if (!data.length) return;
+  edit.log('Importing ' + data.length + ' item(s)');
+  const ids = [];
+  data.forEach( pair => { // reduce the list of updates: a->b then b->c becomes a->c
+    if (pair.old.sid === name) {
+      if (!ids[pair.old.ID]) 
+        ids[pair.old.ID] = pair;
+      else {
+        ids[pair.old.ID].new = pair.new;
+        edit.log('Import - reducing ' + pair.old.ID + ' - ' + pair.old.Title);
+      }
+    }
+  });
+  Object.keys(ids).map( id => ids[id]).forEach( pair => {
+    if (pair.old.sid === name) {
+      const local = Source.get(name).getByID(pair.old.ID);
+      if (compare(local, pair.old)) {
+        if (pair.new.del)
+          edit.log('Import - deleting ' + local.ID + ' - ' + local.Title);
+        else {
+          edit.log('Import - updating ' + local.ID + ' - ' + local.Title);
+          wipC.save(local.ID);
+        }
+        edit.update(pair.new);
+        storage.push(pair);
+      }
+      else if (compare(local, pair.new)) {        
+        edit.log('Import - skipping ' + local.ID + ' - ' + local.Title);
+      }
+      else {
+        edit.log('Import - refusing ' + pair.new.ID + ' - ' + pair.new.Title);        
+      }  
+    }
+    else edit.log('Import - skipping ' + pair.old.ID + ' - ' + pair.old.Title +  ' / '  + pair.old.sid);
+  });
+  edit._reload();  
+  return storage;
+}
+
 class Edit {
+  editMode = false;
+  //use case: edit an item twice - apply the change (employee.json) - reload to purge localstorage
+  setEditMode(mode){
+    this.editMode = mode;
+  }
+  getEditMode(){
+    return this.editMode;
+  }
+  switchEditMode(forceMode, dimmer){
+    if(forceMode){
+      this.editMode = true;
+    }else if(!forceMode){
+      this.editMode = false;
+    }else{
+      this.editMode = !this.editMode;
+    }
+    if(dimmer){
+      edit.dimmerEdit();
+    }   
+
+    
+    edit.toolbar();
+  }
+  dimmerEdit(){
+    function fadeIn(element) {
+      var op = 0.1;
+      var timer = setInterval(function () {
+        if (op >= 1){
+          clearInterval(timer);
+        }
+        element.style.opacity = op;
+        op = op + 0.2;
+      }, 10);
+    }
+    function fadeOut(element, callback) {
+      var op = 1;
+      var timer = setInterval(function () {
+        if (op <= 0){
+          clearInterval(timer);
+          callback();
+        }
+        element.style.opacity = op;
+        op = op - 0.2;
+      }, 10);
+    }
+    var el;
+    if(this.editMode){
+      document.getElementById("editDimmer").style.display = 'block';
+      document.getElementById("editDimmerText").innerHTML="Welcome to edit mode!";
+      document.getElementById("editDimmerImg").src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqklEQVR4XuWb4XHbMAxGP2zQEdwNukGyQeoJ2kzQeIJmg7oTtJ6g7gRNNvAGiTdIJkAPPtEny5INUKRF0LzTD99RMt8jREGkSKikMPMXALfNMWuwNgDkWBPR3z5U8s7PzJ8B/AAQoIeQXgEsiGjdruBaADN/BfDL2IlLIlqEc9wKiIQP3D+J6EF+uBQwEj5ImMvt4E5AIniR8EpEH69ZgEiYuxMgrU4YBSuXAhJK2BQvoOntGyK67z7uUkRC0QI6gL9zSChWwEDvppawLVLAmdBOKaG8QVB5X6eScF9UBCjhw1g4VsKWiGbFCDDCp5BQTiocCT9GwoqI5E1y+pehkfAxEvbwkwtIBG+RcAA/qQAD/DuAJYDviomPUwPjbQj7yWeEjPDS8I3hnF4JQ/Iu/hQwgEjP7+BD4w3nqiVcVIAB4Ai+JeFxzO3QjYSLCUgE/wnAPwAfFOPB0YA32bR4qfAXeQqUDJ9dQOnwWQV4gM8mwAt8FgGe4JML8AafVIBH+GQCvMInEeAZfrQA7/CjBNQAHy2gFvgoATXBmwXUBm8SUCO8WkCt8CoBNcOfFVA7/EkB1wA/KOBa4HsFXBP8kQBmlg+OXxRTzqfm7ZNPXSvaE13lYF2g+fL6j+Jq8vn5vFuPmV3B90WALEJ+UwiQKgfLTx7h+wQ8AbhRCthL8ArfJ4AN8KGqbECQnRrJlqsi2hB9yn4MYGaBkHW3XEW1Vpfrz4eu2xYgGwhk60mOUiT8wS3AzBLKdxnoi4XvCpDn/7mNR1Y/RcPvBRgSIIuA4uHbAmTrmSYB0gpwAd8WYEmAzklwA98WYE2AhiS4gm8LiEmAuhLcwe8EjEiAnpt9uRI9GyKSranuigjQJEDbDqxAV1FEQF8CVEXvanpIBEhvvgEIoVxN72oE/AeLazLkUOkDDwAAAABJRU5ErkJggg==";
+      el = document.getElementById("editDimmer");
+      fadeIn(el);
+      setTimeout(function () {
+        fadeOut(el, function(){
+          document.getElementById("editDimmer").style.display = 'none';
+        });
+      }, 800);
+    }else{
+      document.getElementById("editDimmer").style.display = 'block';
+      document.getElementById("editDimmerText").innerHTML="Exit edit mode!";
+      document.getElementById("editDimmerImg").src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABr0lEQVR4Xu3bbW7DIAwGYL8nW4+y3WQ7Sbeb7GZMVI200AQwX8HG+VNVaSP81Dh8NHDOORJ0AEDL5sIALAOsC6RqwC8RfQHwr8OPsIteWQMugZgJYPv1h0LMCDAUYmaAIRASALpCSALoAiERoCmEZIAHRO192wCCoXotaDiS6z4Zqm2wZYBlwH6yFmaUc+4O4KN0kiK+Czy7yHcpghYAnwBFCJoAihCmB0j17YMlPVYmaARgZYJWgGwEzQBZCMMBLliGj9aEFQCimbAKwCnCSgCHCKsB/AB4/z+2WAngJfjHgk3vqnwwe0vtRKUGfyXnD4NfBeA0+EsASn6+2HcSGRwNXjtAMnjNAFnBawXIDl4EQGpVODjPCl4bADt4TQBFwWsB8NPd3fCWc6sdPhLkNM5/NlUDuNezrbFAwDJg9GSIm7LWBWxzNL45ys0oK4JWBPcC3e8CtSn6krL2vIA9MGFPjLTsVr4G3Ijok4jeWl54u1btv8R6tGm3L7C96QUhBqAXhDiA1hBiAVpBiAeohVADUAqhDoALoRYgF0I9QApiGYAziOUAQggAfqg97fEH9vT2UHiK4H8AAAAASUVORK5CYII=";      
+      el = document.getElementById("editDimmer");
+      fadeIn(el);
+      setTimeout(function () {
+        fadeOut(el, function(){
+          document.getElementById("editDimmer").style.display = 'none';
+        });
+      }, 800);
+    }
+  }
+  toolbar(){  
+    if(this.editMode){
+      document.getElementById("root").style.marginTop='150px';
+      if(document.getElementById("edit")){
+        document.getElementById("edit").style.display = 'block';
+      }
+      if(document.getElementById("editItem")){
+        document.getElementById("editItem").style.display = 'block';
+      }
+    }else{
+      if(document.getElementById("edit")){
+        document.getElementById("edit").style.display = 'none';
+      }
+      document.getElementById("root").style.marginTop='120px';
+      if(document.getElementById("editItem")){
+        document.getElementById("editItem").style.display = 'none';
+      }
+    }
+    
+  }
 
   load(name) {
     try {
-      const storage = JSON.parse(localStorage.edit);
-      const pos = JSON.parse(localStorage.editPos);
-      this.log('Found ' + pos + ' local update(s)');
-      for (let i = 0; i < pos; i++) {
-        const item = storage[i];
-        if (item.new.sid === name) {
-          if (item.new.del)
-            this.log('Applying local update: deleting ' + item.new.ID + ' - ' + item.old.Title);
-          else {
-            this.log('Applying local update ' + item.new.ID + ' - ' + item.new.Title);
-            wipC.save(item.new.ID);
-          }
-          this.update(item.new);
-        }        
-      }
+      const newStorage = [];
+      const storage = getStorage();
+      importData(name, storage, newStorage);
+      localify(storage.filter( pair => pair.old.sid !== name).concat(newStorage)); // keep other stores data
     }
     catch(err) {
       this.log('error while loading localStorage.edit', err);
     }
   }
+
+  open() { if (this._getName()) file.click(); }
 
   _getName() {
     let name = window.location.pathname.split(Config.Source)[1];
@@ -157,20 +292,28 @@ class Edit {
     if (!name) return;
     let store = Source.stores[name];
     if (!store) return;
-    saveAs(new Blob([JSON.stringify(store.data.filter( item => item.ID !== 'wip' && item.ID !== 'unsaved'), null, 2)], {type: 'text/plain;charset=utf-8'}), name +'.json');
+    const fileName = name +'.json';
+    // console.log(store.getByID('n.1489224120111'))
+    saveAs(new Blob([JSON.stringify(Object.keys(store.ids).map( key => store.ids[key] )
+    .filter( item => item.ID !== 'wip' && item.ID !== 'unsaved'), null, 2)], {type: 'text/plain;charset=utf-8'}), fileName);
+    this.log('Saving current store in file ' + fileName);
   }
 
   saveAs() {
-    const pos = JSON.parse(localStorage.editPos);
-    let storage = JSON.parse(localStorage.edit).slice(0, pos);
-    saveAs(new Blob([JSON.stringify(storage, null, 2)], 
-      {type: 'text/plain;charset=utf-8'}), 'A-' + localStorage.authorID +'.' + new Date().getTime().toString() + '.json');
+    const fileName = 'A-' + localStorage.authorID +'.' + new Date().getTime().toString() + '.json';
+    saveAs(new Blob([localStorage.edit], 
+      {type: 'text/plain;charset=utf-8'}), fileName);
+    this.log('Saving current modifications in file ' + fileName);
   }
 
   create(type) {
     let name = this._getName();
     if (!name) return;
-    B.history.push('/' + name + '/edit/' + type);
+    if(type === "item"){
+      B.history.push('/' + name + '/create/item');
+    }else if(type === "collection"){
+      B.history.push('/' + name + '/create/collection');
+    }
   }
 
   _getItem() {
@@ -180,14 +323,26 @@ class Edit {
     let name = url[0].split('/');
     name = name[name.length-1];
 
-    let item = Source.get(name).getByID(id);
+    const item = Source.get(name).getByID(id);
+    if (!item) return;
     if (item.sid !== name) return;
     return { name:name, id:id, item:item }    
   }
 
   modify() {
-    const a = this._getItem();
-    if (!a) return;
+    let a = null;
+    try {
+      a = this._getItem();
+    } catch (e) {
+      // console.log('eeeeer', e);
+    }
+    
+    // console.log('a', a);
+    if (!a || a.item.ReadOnly){
+      Toast.set("You can't modify this page");
+      Toast.display(3000);
+      return; 
+    }
     B.history.push({
       pathname: '/' + a.name + '/edit/' + a.id,
       state: { name:a.name, id:a.id }  
@@ -195,10 +350,15 @@ class Edit {
   }
 
   del() {
+    // console.log('try del');
     const a = this._getItem();
-    if (!a) return;
-
-    console.log('deleting', a.id, 'from', a.name);
+    // console.log('del', a);
+    if (!a || a.item.ReadOnly){
+      Toast.set("You can't delete this page");
+      Toast.display(3000);
+      return; 
+    }
+    // console.log('deleting', a.id, 'from', a.name);
     const old = JSON.stringify(a.item); // make a copy of the item
     const cur = {sid:a.item.sid, ID:a.item.ID, del:true}
     this._push(old, cur);
@@ -207,14 +367,9 @@ class Edit {
   }
   
   _push(old, cur) { // old is the item old value stringified
-    let pos = JSON.parse(localStorage.editPos);
-    let storage = JSON.parse(localStorage.edit);
-    storage.slice(0, pos-1); // trim storage to keep up with redo
-
-    old = JSON.parse(old);
-    storage.push({ old:old, new:cur });
-    localStorage.editPos = JSON.stringify(++pos);
-    localStorage.edit = JSON.stringify(storage);
+    const storage = getStorage();
+    storage.push({ old:JSON.parse(old), new:cur });
+    localify(storage);
 
     if (old.del)
       this.log('Creating item '+ cur.ID + ' - ' + cur.Title);
@@ -225,56 +380,58 @@ class Edit {
   }
 
   undo() {
-    let pos = JSON.parse(localStorage.editPos);
-    if (pos) {
-      localStorage.editPos = JSON.stringify(--pos);
-      this.update(JSON.parse(localStorage.edit)[pos].old);
+    const storage = getStorage();
+
+    if (storage.length) {
+      const item = storage.pop();
+      editTmp.push(item); 
+      this.update(item.old);
+      localify(storage);
       this._reload();
-      this.log('Undo last operation');
+      this.log('Undo last operation');      
     }
   }
 
   redo() {
-    let pos = JSON.parse(localStorage.editPos);
-    let storage = JSON.parse(localStorage.edit);
-    if (pos < storage.length) {
-      this.update(storage[pos].new);
-      localStorage.editPos = JSON.stringify(++pos);
+    if (editTmp.length) {
+      const item = editTmp.pop();
+      const storage = getStorage();
+      storage.push(item);
+      this.update(item.new);
+      localify(storage);
       this._reload();
       this.log('Redo last operation');
     }
   }
 
   reset() {
-    localStorage.edit = '[]';
-    localStorage.editPos = '0';
+    resetStorage();
     window.location.reload(); // so that the user can see | clear the logs
   }
 
   _reload() {
     // console.log('rendering...')
-    B.component.setState({toggle:!B.component.state.toggle});
+    if (B.component) B.component.setState({toggle:!B.component.state.toggle});
   }
 
   update(item) { 
-    let ids = Source.stores[item.sid].ids;
+    const ids = Source.stores[item.sid].ids;
     item.del ? delete ids[item.ID] : ids[item.ID] = item;
-    Source.stores[item.sid].data = Object.keys(ids).map( key => ids[key]);
   }
 
-  clipboard() {
-    const item = this._getItem();
-    console.log(item);
-    if (item) {
-      const tmp = document.createElement("input");
-      document.body.appendChild(tmp);
-      tmp.setAttribute("id", "dummy_id");
-      tmp.setAttribute('value', item.id);
-      tmp.select();
-      document.execCommand("copy");
-      document.body.removeChild(tmp);     
-    }
-  }
+  // clipboard() {
+  //   const item = this._getItem();
+  //   // console.log(item);
+  //   if (item) {
+  //     const tmp = document.createElement("input");
+  //     document.body.appendChild(tmp);
+  //     tmp.setAttribute("id", "dummy_id");
+  //     tmp.setAttribute('value', item.id);
+  //     tmp.select();
+  //     document.execCommand("copy");
+  //     document.body.removeChild(tmp);     
+  //   }
+  // }
 
   log(text) { logs.push(new Date().toLocaleString() +  ' | ' + text); }
 
@@ -282,6 +439,7 @@ class Edit {
     const nw = window.open();
     nw.document.write('<h3>Edit Logs</h3>');
     logs.reverse().forEach( line => nw.document.write(line + '<br />')); 
+    logs.reverse();
   }
 
   gotoWip() {
@@ -294,6 +452,17 @@ class Edit {
     if (!name) return;
     wipC.back = true;
     B.history.push(`/${name}/item/wip`);
+  }
+
+  upload() {
+    getStorage().forEach( item => {
+      const k = 'store/' + item.new.sid + '/' + localStorage.authorID + '/' + item.new.ID;
+      // console.log('key', k)
+      gun.get('store/updates').set(
+        gun.get(k).put({ v:JSON.stringify(item) })
+      );
+      logs.push('uploading key ' + k);
+    });
   }
 }
 

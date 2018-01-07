@@ -93,6 +93,7 @@ export default class Store extends Component {
 
     const { name, text } = this.props.match.params; 
     this.search = Source.filter(name, text);
+    console.log('search', this.search)
     this.thumbnails = this.map();
     
     return (

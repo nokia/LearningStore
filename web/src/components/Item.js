@@ -8,13 +8,18 @@ import B from './back';
 import {Config} from './../config.js';
 import Source from './data';
 import '../css/Item.css';
-import MdClose from 'react-icons/lib/md/close';
+// import MdClose from 'react-icons/lib/md/close';
 import renderHTML from 'react-render-html';
-import FaAngleRight from 'react-icons/lib/fa/angle-right';
+// import FaAngleRight from 'react-icons/lib/fa/angle-right';
+
+import NavigationEdit from './NavigationEdit';
+import EditCtl from './editCtl';
+import { Button, Icon, Image, Modal } from 'semantic-ui-react'
+const urlDelim = '>>';
 
 export default class Item extends Component{
 
-  state = { isLoading:true }
+  state = { isLoading:true, open: true}
  
   componentWillMount() {
     window.scrollTo(0, 0);
@@ -25,8 +30,13 @@ export default class Item extends Component{
     Source.getSync(name)
     .then( store => this.setState({isLoading:false, store:store}) )
   }
+  componentDidUpdate(){
+    EditCtl.toolbar();
+  }
+
 
   render() {
+    // console.log('hii', this);
     B.set(this);
 
     if (this.state.isLoading) return null;
@@ -54,26 +64,40 @@ export default class Item extends Component{
       return null;
     });
 
+    const url = item.Url ? item.Url.split(urlDelim) : [''];
+
+
     return (
-      <div className="itemOverlay">
-        <div className='modal'>
-          <div className="itemTitle">
-            { Source.format(item.Title) }
-            <MdClose color='#FFFFFF' className="pointer itemClose" onClick={back}/>
-          </div>
-          
-          <div className="itemFields">
-            <div className="itemIcon">
-              <img src={this.url + "/" + item.Icon} alt=''/>
-            </div>
-            <a className="itemLaunch" href={item.Url} title="Launch" target="_blank">
-              Launch
-              <FaAngleRight style={{marginTop: '-4px', marginLeft: '6px'}} />
-            </a>
-            { fields }
-          </div>
+      <div>
+        <Modal 
+        open={this.state.open}
+        closeOnEscape={true}
+        closeOnRootNodeClick={true}
+        onClose={back}
+        closeIcon
+      >
+        <div id="editItem">
+          <NavigationEdit props={this.props} data={this.storeDef}/>
         </div>
+        <Modal.Header>
+          { Source.format(item.Title) }
+        </Modal.Header>
+        <Modal.Content image>
+          <Image wrapped size='large' src={this.url + "/" + item.Icon} />
+          <Modal.Description>
+            { fields }
+          </Modal.Description>
+        </Modal.Content>
+        <Modal.Actions>
+          <a className="itemLaunch" href={url[0]} title="Launch" target="_blank">
+            <Button primary>
+              { url[1] || 'Launch' } <Icon name='right chevron' />
+            </Button>
+          </a>
+        </Modal.Actions>
+      </Modal>
       </div>
+      
     )
   }
 }

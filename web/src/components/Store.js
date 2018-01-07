@@ -9,10 +9,14 @@ import Loader from 'halogen/PulseLoader';
 import '../css/Store.css';
 import SliderHome from './SliderHome';
 import Source from './data';
+// import Style from './style';
 import Navigation from './Navigation';
+import NavigationEdit from './NavigationEdit';
 import HeaderComponent from './Header';
+import FooterComponent from './Footer';
 import Thumbnail from './Thumbnail';
 import B from './back';
+import EditCtl from './editCtl';
 
 export default class Store extends Component {
   
@@ -20,8 +24,21 @@ export default class Store extends Component {
 
   componentWillMount() {
     const {name} = this.props.match.params;    
+    
+    document.body.style.overflow = 'auto';
     Source.fetch(name).then( () => this.setState({isLoading:false}) );
     B.back = true;
+  }
+
+  componentDidUpdate(){
+    EditCtl.toolbar();
+    // Style.applyColor();
+  }
+
+  
+
+  componentDidMount () {
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -60,6 +77,8 @@ export default class Store extends Component {
           );
       }) : [];
 
+      
+
       return (
         <div key={index} className="thumbnails">
           <div className="catTitle">
@@ -72,11 +91,17 @@ export default class Store extends Component {
 
     return (
       <div>
+        <div id="editDimmer"><div ><img src="" id="editDimmerImg" alt="Dimmer"/><div id="editDimmerText"></div></div></div>
         <div className="head">
           <HeaderComponent props={this.props} data={storeDef}/>
           <div className="menu">
             <div className="wrapper">
               <Navigation props={this.props} data={storeDef}/>
+            </div>
+          </div>
+          <div id="edit">
+            <div className="wrapper">
+              <NavigationEdit props={this.props} data={this.storeDef}/>
             </div>
           </div>
         </div>
@@ -86,6 +111,7 @@ export default class Store extends Component {
             { thumbnails }
           </div>
         </div>
+        <FooterComponent props={this.props} data={storeDef}/>
       </div>
     );
   }

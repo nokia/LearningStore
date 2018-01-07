@@ -8,7 +8,7 @@ import editCtl from './editCtl';
 import wip from './editWip';
 
 class Data {
-  data = [wip, wip.unsaved];
+  // data = [wip, wip.unsaved];
   ids = [];
 
   create(name, data) {
@@ -17,20 +17,25 @@ class Data {
     data.forEach( item => {
       if (item.ID) {
         this.ids[item.ID] = item;
-        this.data.push(item);
+        // this.data.push(item);
         // item.type = item.type || 2;
-        delete item.type; // not needed anymore
+        // delete item.type; // not needed anymore
         // if (!item.Icon) item.Icon = Config.defaultIcon;
         if (!item.sid) item.sid = name;
-        if (item.Url)
-          if (item.Url.all) item.Url = item.Url.all; // old schema
-          else delete item.Url; 
+        // if (typeof item.Url === 'object')
+        //   if (item.Url.all) item.Url = item.Url.all; // old schema
+        //   else delete item.Url; 
+    
         if (item.Url) {
-          const tmp = item.Url.split('(');
-          item.Url = tmp[0].trim();
-          if (tmp[1]) item.btn = tmp[1].split(')')[0];
+          item.Url = item.Url.replace('(', ' >>').split(')')[0];
         }
-        if (item.Solutions) item.Solutions = item.Solutions.filter( id => id );
+        // if (item.Url) {
+        //   const tmp = item.Url.split('(');
+        //   item.Url = tmp[0].trim();
+        //   if (tmp[1]) item.btn = tmp[1].split(')')[0];
+        // }
+        // item.date = item.date || -1;
+        // if (item.Solutions) item.Solutions = item.Solutions.filter( id => id );
       }
     });
 
@@ -41,8 +46,12 @@ class Data {
 
   filter(name, term) {
     term = term.toLowerCase();
-    return this.data.filter( item => {
-      if (item.del) return false;
+    return Object.keys(this.ids).map( key => this.ids[key] ).filter( item => 
+      item.del ? false : Object.keys(item).filter( 
+        key => (typeof item[key] === 'string' || item[key] instanceof String) && item[key].toLowerCase().indexOf(term) > -1 ).length 
+      ); 
+/*
+    return Object.keys(this.ids).map( key => this.ids[key] ).filter( item => {
       let keys = Object.keys(item);
       for (let i=0; i<keys.length; i++) {
         let key = keys[i];
@@ -52,6 +61,7 @@ class Data {
       }
       return false;
     })    
+*/
   }
 }
 
@@ -64,7 +74,7 @@ class Store {
     if (!this.get(name)) {
       this.stores[name] = new Data();
       this.stores[name].create(name, data);
-      console.log('loaded', name, this.stores[name].data.length, 'items');
+      console.log('loaded', name, Object.keys(this.stores[name].ids).length, 'items');
     }
     return this.get(name);
   }

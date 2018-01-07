@@ -6,7 +6,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Loader from 'halogen/PulseLoader';
-
 import './css/App.css';
 import {Config} from './config.js';
 import Store  from './components/Store';
@@ -17,7 +16,6 @@ import Edit from './components/Edit';
 import Source from './components/data';
 import Home  from './components/Home';
 import B from './components/back';
-
 const item = '/item/';
 const pattern = /\/(item|search)\//;
 
@@ -59,6 +57,14 @@ class ModalSwitch extends Component {
           <Route path='/:name/search/:text' component={Search} />
           <Route path='/:name/item/:id' component={Collection} />
           <Route path='/:name/edit/:id' component={Edit} />
+          <Route path='/:name/create/:type' component={Edit} />
+          {/* <Route path='/:name/create-collection' render={props => (
+            <Edit {...props} type="collection"/>
+          )}/>
+          <Route path='/:name/create-item' render={props => (
+            <Edit {...props} type="item"/>
+          )}/> */}
+          {/* <Route path='/:name/create-item' type={"item"} component={Edit} /> */}
           <Route path='/:name' component={Store} />
         </Switch>
         {isModal ? <Route path='/:name/item/:id' component={Item} /> : null}
@@ -77,14 +83,15 @@ export default class App extends Component {
       Source.setDefs(resp);
       this.setState({ items:resp, isLoading:false });
     })
+
+
   }
- 
+
+
   render() {
     if (this.state.isLoading) {
       return (
-        <div>
-          <div className="head">
-          </div>
+        <div>          
           <div className="store">
             <div className="loading">
               <Loader color="#FFA500" size="16px" margin="4px"/>
