@@ -118,6 +118,7 @@ reader.onload = (file) => {
 
 const compare = (obj1, obj2) => {
   // console.log('?', obj1, obj2)
+  // if (!obj1) return false;
 	for (var p in obj1) {
     // console.log(p)
 		if (obj1.hasOwnProperty(p) !== obj2.hasOwnProperty(p)) return false; //Check property exists on both objects
@@ -152,7 +153,13 @@ const importData = (name, data, storage) => {
   Object.keys(ids).map( id => ids[id]).forEach( pair => {
     if (pair.old.sid === name) {
       const local = Source.get(name).getByID(pair.old.ID);
-      if (compare(local, pair.old)) {
+      if (!local) {
+        edit.log('Import - creating ' + pair.new.ID + ' - ' + pair.new.Title);
+        wipC.save(pair.new.ID);
+        edit.update(pair.new);
+        storage.push(pair);
+      }
+      else if (compare(local, pair.old)) {
         if (pair.new.del)
           edit.log('Import - deleting ' + local.ID + ' - ' + local.Title);
         else {
@@ -185,6 +192,8 @@ class Edit {
     return this.editMode;
   }
   switchEditMode(forceMode, dimmer){
+    // console.log('swiitch', B);
+    
     if(forceMode){
       this.editMode = true;
     }else if(!forceMode){
@@ -196,7 +205,16 @@ class Edit {
       edit.dimmerEdit();
     }   
 
-    
+    if(this.editMode == false){
+      let name = this._getName();
+      if(B.pathname.split('/')[2] === "create" || B.pathname.split('/')[3] === "wip"){
+        B.history.push('/' + name);
+        // console.log('specific');
+      }else if(B.pathname.split('/')[2] === "edit"){
+        // console.log('back');
+        B.history.go(-1);
+      }
+    }
     edit.toolbar();
   }
   dimmerEdit(){
@@ -222,6 +240,7 @@ class Edit {
       }, 10);
     }
     var el;
+    
     if(this.editMode){
       document.getElementById("editDimmer").style.display = 'block';
       document.getElementById("editDimmerText").innerHTML="Welcome to edit mode!";
@@ -241,7 +260,9 @@ class Edit {
       fadeIn(el);
       setTimeout(function () {
         fadeOut(el, function(){
-          document.getElementById("editDimmer").style.display = 'none';
+          if(document.getElementById("editDimmer")){
+            document.getElementById("editDimmer").style.display = 'none';
+          }
         });
       }, 800);
     }
@@ -268,14 +289,14 @@ class Edit {
   }
 
   load(name) {
-    try {
       const newStorage = [];
       const storage = getStorage();
       importData(name, storage, newStorage);
       localify(storage.filter( pair => pair.old.sid !== name).concat(newStorage)); // keep other stores data
-    }
+      try {
+      }
     catch(err) {
-      this.log('error while loading localStorage.edit', err);
+      this.log('error while loading localStorage.edit ' + err);
     }
   }
 
@@ -288,9 +309,9 @@ class Edit {
   }
 
   dump() {
-    let name = this._getName();
-    if (!name) return;
-    let store = Source.stores[name];
+      let name = this._getName();
+      if (!name) return;
+      let store = Source.stores[name];
     if (!store) return;
     const fileName = name +'.json';
     // console.log(store.getByID('n.1489224120111'))
@@ -307,12 +328,23 @@ class Edit {
   }
 
   create(type) {
+    let url = B.pathname.split('/')[3];
     let name = this._getName();
     if (!name) return;
     if(type === "item"){
-      B.history.push('/' + name + '/create/item');
+      if(url === "item"){
+        Toast.set("Save before creating another item");
+        Toast.display(3000);
+      }else{
+        B.history.push('/' + name + '/create/item');
+      }
     }else if(type === "collection"){
-      B.history.push('/' + name + '/create/collection');
+      if(url === "collection"){
+        Toast.set("Save before creating another collection");
+        Toast.display(3000);
+      }else{
+        B.history.push('/' + name + '/create/collection');
+      }
     }
   }
 
@@ -443,11 +475,12 @@ class Edit {
   }
 
   gotoWip() {
-    if (wipC.back) {
-      delete wipC.back;
-      B.history.goBack();
-      return;
-    }
+    // if (wipC.back) {
+    //   delete wipC.back;
+    //   B.history.goBack();
+    //   return;
+    // }
+    console.log('wiiip');
     const name = this._getName();
     if (!name) return;
     wipC.back = true;

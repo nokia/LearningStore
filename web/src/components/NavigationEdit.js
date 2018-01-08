@@ -13,7 +13,10 @@ import B from './back';
 // const item = 'item/';
 
 export default class Navigation extends Component {
-
+  constructor(props){
+    super(props)
+    // console.log('nav edit', this.props);
+  }
   onClick(info) {
     switch (info.key) {
       // case 'c': 
@@ -48,12 +51,18 @@ export default class Navigation extends Component {
         break;
       case 'ex':
         Edit.switchEditMode(false, true);
-        B.history.push('/');
+        // console.log('edd', this.props.props.match.params.name);
+        if(this.props.props.match.params.name){
+          B.history.push(`/${this.props.props.match.params.name}`);
+        }else{
+          B.history.push('/');
+        }
         break;
       case 'u':
         Edit.upload();
         break;
       case 'w':
+        // Edit.switchEditMode(true, false);
         Edit.gotoWip();
         break;
       case 'x':
@@ -81,9 +90,9 @@ export default class Navigation extends Component {
             mode="horizontal"
           >
             <SubMenu className="floatRight" title={<span>Other <FaAngleDown color='#7C7B7B' /></span>}>
-              <MenuItem key="l">Open the logs of saved operations</MenuItem>
-              <MenuItem key="w">Toggle work in progress (WIP)</MenuItem>
-              <MenuItem key="h">Go Home</MenuItem>
+              {/* <MenuItem key="l">Open the logs of saved operations</MenuItem> */}
+              
+              {/* <MenuItem key="h">Go Home</MenuItem> */}
               <MenuItem key="r">Reset all saved operations</MenuItem>
               <MenuItem key="ex">Exit edit mode</MenuItem>
             </SubMenu>
@@ -96,8 +105,13 @@ export default class Navigation extends Component {
               <MenuItem key="z">Undo the last saved operation</MenuItem>
               <MenuItem key="y">Redo the last undone operation</MenuItem>
             </SubMenu>
-            <MenuItem className="floatRight" key="f">Create collection</MenuItem>
-            <MenuItem className="floatRight" key="n">Create item</MenuItem>
+            <MenuItem className="floatRight" key="w">Work In Progress (WIP)</MenuItem>
+            <SubMenu className="floatRight" title={<span>Create <FaAngleDown color='#7C7B7B' /></span>}>
+              <MenuItem key="f">Create new collection</MenuItem>
+              <MenuItem key="n">Create new item</MenuItem>
+            </SubMenu>
+            {/* <MenuItem className="floatRight" key="f">Create collection</MenuItem>
+            <MenuItem className="floatRight" key="n">Create item</MenuItem> */}
             <SubMenu className="floatRight" title={<span>Current item <FaAngleDown color='#7C7B7B' /></span>}>
               <MenuItem key="e">Edit current item</MenuItem>
               <MenuItem key="x">Delete current item</MenuItem>

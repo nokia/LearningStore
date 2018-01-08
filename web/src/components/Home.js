@@ -15,6 +15,8 @@ export default class Home extends Component {
 
   render() {
     // console.log('Home', this.props.stores.length, this.props.stores)
+    
+    document.getElementById("root").style.marginTop='0px';
     const myStores = this.props.stores.map((store, index) => {
       return (
         <Link key={index} to={"/" + store.id + "/"}>

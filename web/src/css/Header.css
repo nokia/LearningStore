@@ -14,6 +14,11 @@
     color: #6f6f6f;
     font-weight: bold;
   }
+  .dashboard{
+    display: inline-block;
+    margin-left: -40px;
+    margin-right: 10px;
+  }
   .header-search{
     float: right;
     height: 31px;

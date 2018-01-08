@@ -43,6 +43,7 @@ export default class Edit extends Component {
   storeDef;
   itemsSolutions = [];
   limit = 20;
+  mode;
   moreItems = false;
   // constructor(props){
   //   super();
@@ -81,6 +82,8 @@ export default class Edit extends Component {
   componentWillReceiveProps(newProps){
     // console.log('myprop', this.props, newProps);
     this.resetData(newProps.match.params.type, this.item);
+   
+
   }
   componentDidUpdate(){
     EditCtl.switchEditMode(true, false);
@@ -93,13 +96,16 @@ export default class Edit extends Component {
       if(type === "item"){
         this.item = {};
         console.log('new item');
+        this.mode = "create";
       }
       else if(type === "collection"){
         this.item = {Solutions:[]};
         console.log('new collection');
+        this.mode = "create";
       }
       else{
         this.item = item;
+        this.mode = "edit";
       }
       eventsListener.callEvent('reset', this.item);
   }
@@ -172,7 +178,7 @@ export default class Edit extends Component {
     if (this.state.isLoading) return null;    
     
     let item = this.item;
-    console.log('edit what ?', item);
+    // console.log('edit what ?', item);
     if (!item) return (<NotFound />);
 
     // console.log('item', item)
@@ -213,7 +219,20 @@ export default class Edit extends Component {
       // console.log('sub', model, item)
       setunLoad();
 
-      if (B.back) this.props.history.goBack();
+      // if (B.back) this.props.history.goBack();
+      // `/${store.id}/item/${data.ID}`
+
+      // console.log('submit', storeDef, item.ID, B);
+      if(this.mode == "edit"){
+        if(B.back){
+          this.props.history.goBack();
+        }else{
+          B.history.push(`/${storeDef.id}/item/${item.ID}`);
+        }
+      }else{
+        B.history.push(`/${storeDef.id}/item/${item.ID}`);
+      }
+     
     };
 
     const storeDef = Source.getDef(this.state.name);

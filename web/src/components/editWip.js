@@ -27,6 +27,7 @@ class Wip {
   }
 }
 
+// console.log('wiiiiip');
 const wip   = new Wip({ ID:'wip', Title: '__W.I.P__', Description:'Shows work in progress', Solutions:['unsaved'], Icon:Config.defaultIcon });
 wip.unsaved = new Wip({ ID:'unsaved', Title: 'Unsaved Items*', 
   Description:'Items modified but not saved', Solutions:[]});

@@ -28,6 +28,7 @@ export default class Store extends Component {
     document.body.style.overflow = 'auto';
     Source.fetch(name).then( () => this.setState({isLoading:false}) );
     B.back = true;
+    // console.log('stt');
   }
 
   componentDidUpdate(){
