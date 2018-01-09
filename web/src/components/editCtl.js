@@ -205,7 +205,7 @@ class Edit {
       edit.dimmerEdit();
     }   
 
-    if(this.editMode == false){
+    if(this.editMode === false){
       let name = this._getName();
       if(B.pathname.split('/')[2] === "create" || B.pathname.split('/')[3] === "wip"){
         B.history.push('/' + name);

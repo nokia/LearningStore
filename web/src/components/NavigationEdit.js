@@ -13,10 +13,7 @@ import B from './back';
 // const item = 'item/';
 
 export default class Navigation extends Component {
-  constructor(props){
-    super(props)
-    // console.log('nav edit', this.props);
-  }
+
   onClick(info) {
     switch (info.key) {
       // case 'c': 

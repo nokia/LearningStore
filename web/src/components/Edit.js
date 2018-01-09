@@ -4,6 +4,7 @@
 */
 import React, { Component } from 'react';
 import { Form, TextField, FormEventsListener } from 'react-components-form';
+import Dropzone from 'react-dropzone';
 import Quill from './Quill';
 // import FaTrash from 'react-icons/lib/fa/trash-o';
 // import FaPlus from 'react-icons/lib/fa/plus-square-o';
@@ -16,6 +17,7 @@ import Source from './data';
 import B from './back';
 import NotFound from './NotFound';
 import Ctl from './editCtl';
+import FaCross from 'react-icons/lib/fa/times-circle';
 import wipC from './editWip';
 import EditCtl from './editCtl';
 import Toast from './toast';
@@ -39,7 +41,8 @@ const setunLoad = () => window.onbeforeunload = wipC.stay() ? unload : null;
 
 export default class Edit extends Component {
 
-  state = { isLoading:true, selectedItems:[], itemsSolutions:[], checked:false}
+  state = { isLoading:true, selectedItems:[], itemsSolutions:[], checked:false, image: []}
+  
   storeDef;
   itemsSolutions = [];
   limit = 20;
@@ -95,12 +98,12 @@ export default class Edit extends Component {
   resetData(type, item){
       if(type === "item"){
         this.item = {};
-        console.log('new item');
+        // console.log('new item');
         this.mode = "create";
       }
       else if(type === "collection"){
         this.item = {Solutions:[]};
-        console.log('new collection');
+        // console.log('new collection');
         this.mode = "create";
       }
       else{
@@ -121,7 +124,16 @@ export default class Edit extends Component {
     }, 100)
   }
 */  
-
+  onDrop(file) {
+    this.setState({
+      image: file
+    });
+  }
+  removeImage(){
+    this.setState({
+      image: []
+    })
+  }
   selectItems(limit, search){
     var data = this.state.store
     if(search){
@@ -223,7 +235,7 @@ export default class Edit extends Component {
       // `/${store.id}/item/${data.ID}`
 
       // console.log('submit', storeDef, item.ID, B);
-      if(this.mode == "edit"){
+      if(this.mode === "edit"){
         if(B.back){
           this.props.history.goBack();
         }else{
@@ -234,7 +246,29 @@ export default class Edit extends Component {
       }
      
     };
-
+    let myImage;
+    if(this.state.image.length === 0){
+      myImage = (
+        <div>
+          No selected image
+        </div>
+      )
+    }else{
+      myImage = (
+        <div>
+          <FaCross onClick={this.removeImage.bind(this)} style={{ marginRight: '5px', cursor: 'pointer'}}/>
+          {this.state.image.map(f => 
+            (
+              <span key={f.name}>
+                <span key={f.name}>{f.name}</span>
+                <img src={f.preview} className="dropzonePreview" alt="Preview" />
+              </span>
+            )
+          )}
+        </div>
+      )
+      
+    }
     const storeDef = Source.getDef(this.state.name);
     const header = (
       <div>
@@ -264,7 +298,19 @@ export default class Edit extends Component {
             <TextField className='editField' name="Title" />
           </div>
           <div className='editFlow'>
-            <label className='editLabel'>Icon</label>
+            {/* <label className='editLabel'>Icon</label> */}
+            <label className="editLabel">Icon</label>
+            <div className="dropzone">
+              <Dropzone onDrop={this.onDrop.bind(this)}>
+                <p>Drop your image here, or click to select image to upload.</p>
+              </Dropzone>
+            </div>
+            <div className="dropzoneimage">
+              <span className="dropzoneTitle">Your selected image: </span>
+              {myImage}
+            </div>
+            {/* <label htmlFor="file" className="label-file">Choose an image</label>
+            <input id="file" className='editField input-file' type="file" name="Icon" /> */}
             {/* <TextField className='editField' name="Icon" /> */}
             
           </div>  

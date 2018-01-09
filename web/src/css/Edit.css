@@ -123,3 +123,35 @@ html {
     text-align: center;
     color: #666;
 }
+.dropzone{
+    display: inline-block;
+    margin-top: 15px;
+}
+    .dropzone div{
+        padding: 5px;
+        width: 150px !important;
+        height: 150px !important;
+        padding-top: 35px;
+        text-align: center;
+    }
+    .dropzone div:hover{
+        cursor: pointer;
+        border-style: solid !important;;
+    }
+.dropzoneimage{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 13px;
+    margin-left: 15px;
+}
+    .dropzoneTitle{
+        font-size: 110%;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+.dropzonePreview{
+    width: 100px;
+    display: block;
+    margin-top: 5px;
+}

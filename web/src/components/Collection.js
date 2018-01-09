@@ -15,7 +15,7 @@ import B from './back';
 import NotFound from './NotFound';
 import FooterComponent from './Footer';
 import EditCtl from './editCtl';
-import Edit from './Edit';
+// import Edit from './Edit';
 
 export default class Collection extends Component {
 

@@ -12,6 +12,7 @@
     "react": "^15.6.1",
     "react-components-form": "^2.11.2",
     "react-dom": "^15.6.1",
+    "react-dropzone": "^4.2.3",
     "react-icons": "^2.2.5",
     "react-quill": "^1.1.0",
     "react-render-html": "^0.5.0",
