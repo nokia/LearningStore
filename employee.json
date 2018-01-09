@@ -365,6 +365,7 @@
   {
     "ID": "o.1",
     "Title": "Collections",
+    "ReadOnly": true,
     "Description": "This shows the main collections included in the store but not displayed in the sidebar",
     "Solutions": [
       "o.1",
@@ -1317,6 +1318,7 @@
   {
     "ID": "c.33",
     "Title": "What's New",
+    "ReadOnly": true,
     "Description": "This collection shows the latest learning solutions added to the store.",
     "Solutions": [
       "n.1513083681254",
