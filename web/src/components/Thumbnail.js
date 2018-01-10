@@ -28,6 +28,12 @@ export default class Thumbnail extends Component {
     store.url = store.url || '.';
     
     // console.log(data)
+    let src;
+    if(data.Icon.constructor === Array){
+      src = data.Icon[1];
+    }else{
+      src = store.url + "/" + data.Icon;
+    }
     if(data.Solutions){
       return (
         <Link
@@ -39,7 +45,7 @@ export default class Thumbnail extends Component {
           <div className="collec"></div>
           <div title={data.Title}>
             <div className="thumbnailLogo">
-              <img src={store.url + "/" + data.Icon} alt=''/>
+              <img src={src} alt=''/>
             </div>
             <div className="thumbnailTitle">
               { title }
@@ -57,7 +63,7 @@ export default class Thumbnail extends Component {
       >
         <div title={data.Title}>
           <div className="thumbnailLogo">
-            <img src={store.url + "/" + data.Icon} alt=''/>
+            <img src={src} alt=''/>
           </div>
           <div className="thumbnailTitle">
             { title }
