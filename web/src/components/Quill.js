@@ -30,7 +30,7 @@ const toolbarOptions = [
 class Quill extends Component {
   componentWillMount() { this.state = { text: this.props.value } }
   componentWillReceiveProps(newProps){
-		console.log('quill');
+		// console.log('quill');
 		if (!newProps.value) this.setState({text:''});
 		// this.state = { text: newProps.value }
 		// this.setState({text:''});

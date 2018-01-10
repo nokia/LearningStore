@@ -6,9 +6,6 @@ import React, { Component } from 'react';
 import { Form, TextField, FormEventsListener } from 'react-components-form';
 import Dropzone from 'react-dropzone';
 import Quill from './Quill';
-// import FaTrash from 'react-icons/lib/fa/trash-o';
-// import FaPlus from 'react-icons/lib/fa/plus-square-o';
-
 import HeaderComponent from './Header';
 import Navigation from './Navigation';
 import NavigationEdit from './NavigationEdit';
@@ -41,7 +38,7 @@ const setunLoad = () => window.onbeforeunload = wipC.stay() ? unload : null;
 
 export default class Edit extends Component {
 
-  state = { isLoading:true, selectedItems:[], itemsSolutions:[], checked:false, image: []}
+  state = { isLoading:true, selectedItems:[], itemsSolutions:[], checked:false, image: [], image64: ""}
   
   storeDef;
   itemsSolutions = [];
@@ -60,7 +57,17 @@ export default class Edit extends Component {
       // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       this.resetData(type, store.getByID(id));
-
+      console.log(this.item.Icon);
+      if(this.item.Icon.constructor === Array){
+        this.setState({image: {preview: this.item.Icon[1], name: this.item.Icon[0]}});
+        this.setState({image64: this.item.Icon[1]});
+      }else{
+        let url = Source.getDef(name).url || '.';
+        let preview = url + "/" + this.item.Icon;
+        console.log('prev', preview);
+        this.setState({image: {preview: preview, name: this.item.Icon.split('/')[1]}});
+        this.setState({image64: this.item.Icon});
+      }
 
       if(this.item.Solutions){
         this.item.Solutions.forEach( itemID => {
@@ -125,13 +132,23 @@ export default class Edit extends Component {
   }
 */  
   onDrop(file) {
+    // console.log(file);
+    const image = file[0];
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      this.setState({
+        image64: event.target.result
+      });
+    };
+    reader.readAsDataURL(image);
     this.setState({
-      image: file
+      image: image
     });
   }
   removeImage(){
     this.setState({
-      image: []
+      image: [],
+      image64: ""
     })
   }
   selectItems(limit, search){
@@ -210,6 +227,16 @@ export default class Edit extends Component {
     currentID = item.ID;
     
     const submitMethod = (model) => {
+      if(!this.state.image64){
+        Toast.set("You need to put an icon");
+        Toast.display(2000);
+        return;
+      }
+      if(!item.Title){
+        Toast.set("You need to put a Title");
+        Toast.display(2000);
+        return;
+      }
       if(item.Solutions){
         item.Solutions = [];
         // console.log('sub1', item);
@@ -217,7 +244,7 @@ export default class Edit extends Component {
           item.Solutions.push(it.ID);
         });
       }
-      
+      item.Icon = [this.state.image.name, this.state.image64];
       if(this.state.checked){
         item.Wip = true;
       }else{
@@ -257,14 +284,10 @@ export default class Edit extends Component {
       myImage = (
         <div>
           <FaCross onClick={this.removeImage.bind(this)} style={{ marginRight: '5px', cursor: 'pointer'}}/>
-          {this.state.image.map(f => 
-            (
-              <span key={f.name}>
-                <span key={f.name}>{f.name}</span>
-                <img src={f.preview} className="dropzonePreview" alt="Preview" />
-              </span>
-            )
-          )}
+          <span key={this.state.image.name}>
+            <span key={this.state.image.name}>{this.state.image.name}</span>
+            <img src={this.state.image.preview} className="dropzonePreview" alt="Preview" />
+          </span>
         </div>
       )
       

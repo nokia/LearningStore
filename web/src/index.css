@@ -15,11 +15,11 @@ body {
 }
 #toast_msg{
   background-color: #fff6f6;
-  border: 1px solid #b5444252;
+  border: 1px solid #b5444229;
   /* box-shadow: 0 0 4px 0px #e0e0e099; */
   width: 50%;
   margin: auto;
   padding: 11px 10px;
   color: #9f3a38;
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }

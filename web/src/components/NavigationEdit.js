@@ -10,7 +10,6 @@ import '../css/NavigationEdit.css';
 import FaAngleDown from 'react-icons/lib/fa/angle-down';
 import Edit from './editCtl';
 import B from './back';
-// const item = 'item/';
 
 export default class Navigation extends Component {
 
@@ -109,9 +108,9 @@ export default class Navigation extends Component {
             </SubMenu>
             {/* <MenuItem className="floatRight" key="f">Create collection</MenuItem>
             <MenuItem className="floatRight" key="n">Create item</MenuItem> */}
-            <SubMenu className="floatRight" title={<span>Current item <FaAngleDown color='#7C7B7B' /></span>}>
-              <MenuItem key="e">Edit current item</MenuItem>
-              <MenuItem key="x">Delete current item</MenuItem>
+            <SubMenu className="floatRight" title={<span>This page <FaAngleDown color='#7C7B7B' /></span>}>
+              <MenuItem key="e">Edit this page</MenuItem>
+              <MenuItem key="x">Delete this page</MenuItem>
               {/* <MenuItem key="c">Copy the ID of current item</MenuItem> */}
             </SubMenu>
           </Menu>
