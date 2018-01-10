@@ -1,22 +1,24 @@
 #edit{
-  border-top: 1px solid rgb(206, 206, 206);
-  border-bottom: 1px solid rgb(206, 206, 206);
-  background-color: rgb(219, 218, 218);
+  /* border-top: 1px solid rgb(206, 206, 206); */
+  /* border-bottom: 1px solid rgb(206, 206, 206); */
+  background-color: orange;
   display: none;
 }
 #editItem{
-  border-top: 1px solid rgb(206, 206, 206);
+  /* border-top: 1px solid rgb(206, 206, 206); */
   border-bottom: 1px solid rgb(206, 206, 206);
   background-color: rgb(219, 218, 218);
   display: none;
 }
-#editItem .navigationEdit{
+#editItem .navigationEdit .rc-menu{
   padding-top: 5px;
+  padding-bottom: 3px;
+  border-radius: 3px 3px 0px 0px;
 }
 .navigationEdit .rc-menu{
   border: none;
-  color: rgb(75, 75, 75);
-  background-color: rgb(219, 218, 218);
+  color: white;
+  background-color: orange;
 }
 .rc-menu-horizontal > .rc-menu-item, .rc-menu-horizontal > .rc-menu-submenu > .rc-menu-submenu-title{
   padding: 10px 20px;
@@ -28,11 +30,11 @@
   cursor: pointer;
 }
 .navigationEdit .rc-menu-item{
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
 }
 .navigationEdit .rc-menu-submenu-active, .navigationEdit .rc-menu-item-active{
-  border-bottom: 2px solid rgb(255, 0, 0);
-  color: rgb(255, 0, 0);
+  border-bottom: 2px solid #c17d00;
+  color: #c17d00;
   background-color: #F3F5F7;
 }
 .navigationEdit .rc-menu-submenu-active .rc-menu-submenu-title{
@@ -40,6 +42,7 @@
 }
 .navigationEdit .rc-menu-item-selected, .navigationEdit .rc-menu-submenu-selected{
   background-color: #fff8f8;
+  color: #c17d00;
 }
 .rc-menu-submenu{
   border-bottom: 2px solid #F3F5F7;

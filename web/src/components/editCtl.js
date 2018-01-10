@@ -336,14 +336,14 @@ class Edit {
     if(type === "item"){
       if(url === "item"){
         Toast.set("Save before creating another item");
-        Toast.display(3000);
+        Toast.display(3000, "red");
       }else{
         B.history.push('/' + name + '/create/item');
       }
     }else if(type === "collection"){
       if(url === "collection"){
         Toast.set("Save before creating another collection");
-        Toast.display(3000);
+        Toast.display(3000, "red");
       }else{
         B.history.push('/' + name + '/create/collection');
       }
@@ -374,7 +374,7 @@ class Edit {
     // console.log('a', a);
     if (!a || a.item.ReadOnly){
       Toast.set("You can't modify this page");
-      Toast.display(3000);
+      Toast.display(3000, "red");
       return; 
     }
     B.history.push({
@@ -389,7 +389,7 @@ class Edit {
     // console.log('del', a);
     if (!a || a.item.ReadOnly){
       Toast.set("You can't delete this page");
-      Toast.display(3000);
+      Toast.display(3000, "red");
       return; 
     }
     // console.log('deleting', a.id, 'from', a.name);

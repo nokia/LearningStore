@@ -57,17 +57,20 @@ export default class Edit extends Component {
       // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       this.resetData(type, store.getByID(id));
-      console.log(this.item.Icon);
-      if(this.item.Icon.constructor === Array){
-        this.setState({image: {preview: this.item.Icon[1], name: this.item.Icon[0]}});
-        this.setState({image64: this.item.Icon[1]});
-      }else{
-        let url = Source.getDef(name).url || '.';
-        let preview = url + "/" + this.item.Icon;
-        console.log('prev', preview);
-        this.setState({image: {preview: preview, name: this.item.Icon.split('/')[1]}});
-        this.setState({image64: this.item.Icon});
+      // console.log(this.item.Icon);
+      if(this.item.Icon){
+        if(this.item.Icon.constructor === Array){
+          this.setState({image: {preview: this.item.Icon[1], name: this.item.Icon[0]}});
+          this.setState({image64: this.item.Icon[1]});
+        }else{
+          let url = Source.getDef(name).url || '.';
+          let preview = url + "/" + this.item.Icon;
+          // console.log('prev', preview);
+          this.setState({image: {preview: preview, name: this.item.Icon.split('/')[1]}});
+          this.setState({image64: this.item.Icon});
+        }
       }
+      
 
       if(this.item.Solutions){
         this.item.Solutions.forEach( itemID => {
@@ -155,7 +158,7 @@ export default class Edit extends Component {
     var data = this.state.store
     if(search){
       data = data.filter(item0 => {
-        if(item0.Title.indexOf(search) !== -1){
+        if(item0.Title.toLowerCase().indexOf(search.toLowerCase()) !== -1){
           return true;
         }
         return false;
@@ -181,11 +184,15 @@ export default class Edit extends Component {
   }
 
 
-  handleAdd(el, it){
+  handleAdd(el, it, toast){
     if(this.itemsSolutions.indexOf(el) !== -1){
       Toast.set("This item is already added");
-      Toast.display(2000);
+      Toast.display(1000, "red");
     }else{
+      if(toast){
+        Toast.set("Item added");
+        Toast.display(1000, "green");
+      }
       this.itemsSolutions.push(el);
       this.setState({itemsSolutions:this.itemsSolutions});  
     }
@@ -229,12 +236,12 @@ export default class Edit extends Component {
     const submitMethod = (model) => {
       if(!this.state.image64){
         Toast.set("You need to put an icon");
-        Toast.display(2000);
+        Toast.display(2000, "red");
         return;
       }
       if(!item.Title){
         Toast.set("You need to put a Title");
-        Toast.display(2000);
+        Toast.display(2000, "red");
         return;
       }
       if(item.Solutions){
@@ -379,7 +386,7 @@ export default class Edit extends Component {
     
     let selectedItemsMap = this.state.selectedItems.map((item, index) =>{
         return (
-          <div key={index} className="selectItem" title="Click to add this item" onClick={this.handleAdd.bind(this, item)} >
+          <div key={index} className="selectItem" title="Click to add this item" onClick={this.handleAdd.bind(this, item, true)} >
             <div className="selectItemTitle">
               {item.Title}
             </div>

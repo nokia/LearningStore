@@ -112,7 +112,7 @@ export default class Store extends Component {
             { thumbnails }
           </div>
         </div>
-        <FooterComponent props={this.props} data={storeDef}/>
+        {/* <FooterComponent props={this.props} data={storeDef}/> */}
       </div>
     );
   }

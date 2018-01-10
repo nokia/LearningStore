@@ -101,7 +101,7 @@ export default class Collection extends Component {
           </div>
         </div>
         
-        <FooterComponent props={this.props} data={this.storeDef}/>
+        {/* <FooterComponent props={this.props} data={this.storeDef}/> */}
       </div>
       
     );
