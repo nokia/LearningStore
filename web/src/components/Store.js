@@ -24,10 +24,11 @@ export default class Store extends Component {
 
   componentWillMount() {
     const {name} = this.props.match.params;    
-    
+    // console.log(this.props);
     document.body.style.overflow = 'auto';
     Source.fetch(name).then( () => this.setState({isLoading:false}) );
     B.back = true;
+    // console.log('stt');
   }
 
   componentDidUpdate(){
@@ -111,7 +112,7 @@ export default class Store extends Component {
             { thumbnails }
           </div>
         </div>
-        <FooterComponent props={this.props} data={storeDef}/>
+        {/* <FooterComponent props={this.props} data={storeDef}/> */}
       </div>
     );
   }

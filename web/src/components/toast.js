@@ -7,6 +7,7 @@
 
 class Toast {
   message;
+  available = true;
   fadeIn(element) {
     var op = 0.1;
     var timer = setInterval(function () {
@@ -31,15 +32,32 @@ class Toast {
   set(text){
     this.message = text;
   }
-  display(ms){
+  display(ms, color){
     var self = this;
+
+    if(!this.available){
+      setTimeout(function () {
+        self.display(ms, color);
+      }, 20);
+      return;
+    }
+    // console.log('toast', this.available);
     var el = document.getElementById("toast");
     el.style.display = 'block';
     document.getElementById("toast_msg").innerHTML= this.message;
+    if(color === "red"){
+      document.getElementById("toast_msg").className = "red_toast";
+    }else if(color === "green"){
+      document.getElementById("toast_msg").className = "green_toast";
+    }
+    
+
     self.fadeIn(el);
+    self.available = false;
     setTimeout(function () {
       self.fadeOut(el, function(){
         el.style.display = 'none';
+        self.available = true;
       });
     }, ms);
   }

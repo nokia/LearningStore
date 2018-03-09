@@ -7,11 +7,13 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import '../css/Header.css';
 import FaSearch from 'react-icons/lib/fa/search';
+import FaTH from 'react-icons/lib/fa/th';
 
 export default class Header extends Component {
   firstLoad = false;
   constructor(props) {
     super(props);
+    // console.log('HHH', this.props);
     if(this.props.props.match.params.text){
       this.state = {value: this.props.props.match.params.text};
       this.firstLoad = true;
@@ -48,6 +50,12 @@ export default class Header extends Component {
     return (
       <div className="header">
         <div className="wrapper">
+
+          <Link to={`/`} replace>
+            <div className="dashboard" title="Dashboard">
+              <FaTH color='#6F6F6F'  style={{ marginTop: '-5px', width: '30px', height: '30px' }}/>
+            </div>
+          </Link>
           <Link to={`/${this.props.data.id}/`} replace>
             <div className="header-name" title="Home">
               { this.props.data.title }

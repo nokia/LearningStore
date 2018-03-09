@@ -14,12 +14,17 @@ body {
   text-align: center;
 }
 #toast_msg{
-  background-color: #fff6f6;
-  border: 1px solid #b5444252;
-  /* box-shadow: 0 0 4px 0px #e0e0e099; */
   width: 50%;
   margin: auto;
   padding: 11px 10px;
+}
+.red_toast{
+  background-color: #fff6f6;
+  border: 1px solid #b5444229;
   color: #9f3a38;
-  border-radius: 4px;
+}
+.green_toast{
+  background-color: #a9ffd3;
+  border: 1px solid #6ae0a429;
+  color: green;
 }

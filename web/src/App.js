@@ -16,6 +16,7 @@ import Edit from './components/Edit';
 import Source from './components/data';
 import Home  from './components/Home';
 import B from './components/back';
+// import NotFound from './components/NotFound';
 const item = '/item/';
 const pattern = /\/(item|search)\//;
 

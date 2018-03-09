@@ -15,6 +15,7 @@ import B from './back';
 import NotFound from './NotFound';
 import FooterComponent from './Footer';
 import EditCtl from './editCtl';
+// import Edit from './Edit';
 
 export default class Collection extends Component {
 
@@ -73,7 +74,9 @@ export default class Collection extends Component {
     const { id } = this.props.match.params;
     const coll = this.state.store.getByID(id);
     if (!coll) return <NotFound />
-
+    if (id === "wip"){
+      EditCtl.switchEditMode(true, false);
+    }
     return (
       <div>
         <div id="editDimmer"><div ><img src="" id="editDimmerImg" alt="Dimmer"/><div id="editDimmerText"></div></div></div>
@@ -98,7 +101,7 @@ export default class Collection extends Component {
           </div>
         </div>
         
-        <FooterComponent props={this.props} data={this.storeDef}/>
+        {/* <FooterComponent props={this.props} data={this.storeDef}/> */}
       </div>
       
     );

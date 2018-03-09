@@ -118,6 +118,7 @@ reader.onload = (file) => {
 
 const compare = (obj1, obj2) => {
   // console.log('?', obj1, obj2)
+  // if (!obj1) return false;
 	for (var p in obj1) {
     // console.log(p)
 		if (obj1.hasOwnProperty(p) !== obj2.hasOwnProperty(p)) return false; //Check property exists on both objects
@@ -152,7 +153,13 @@ const importData = (name, data, storage) => {
   Object.keys(ids).map( id => ids[id]).forEach( pair => {
     if (pair.old.sid === name) {
       const local = Source.get(name).getByID(pair.old.ID);
-      if (compare(local, pair.old)) {
+      if (!local) {
+        edit.log('Import - creating ' + pair.new.ID + ' - ' + pair.new.Title);
+        wipC.save(pair.new.ID);
+        edit.update(pair.new);
+        storage.push(pair);
+      }
+      else if (compare(local, pair.old)) {
         if (pair.new.del)
           edit.log('Import - deleting ' + local.ID + ' - ' + local.Title);
         else {
@@ -185,6 +192,8 @@ class Edit {
     return this.editMode;
   }
   switchEditMode(forceMode, dimmer){
+    // console.log('swiitch', B);
+    
     if(forceMode){
       this.editMode = true;
     }else if(!forceMode){
@@ -196,7 +205,16 @@ class Edit {
       edit.dimmerEdit();
     }   
 
-    
+    if(this.editMode === false){
+      let name = this._getName();
+      if(B.pathname.split('/')[2] === "create" || B.pathname.split('/')[3] === "wip"){
+        B.history.push('/' + name);
+        // console.log('specific');
+      }else if(B.pathname.split('/')[2] === "edit"){
+        // console.log('back');
+        B.history.go(-1);
+      }
+    }
     edit.toolbar();
   }
   dimmerEdit(){
@@ -222,10 +240,12 @@ class Edit {
       }, 10);
     }
     var el;
+    
     if(this.editMode){
       document.getElementById("editDimmer").style.display = 'block';
       document.getElementById("editDimmerText").innerHTML="Welcome to edit mode!";
-      document.getElementById("editDimmerImg").src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqklEQVR4XuWb4XHbMAxGP2zQEdwNukGyQeoJ2kzQeIJmg7oTtJ6g7gRNNvAGiTdIJkAPPtEny5INUKRF0LzTD99RMt8jREGkSKikMPMXALfNMWuwNgDkWBPR3z5U8s7PzJ8B/AAQoIeQXgEsiGjdruBaADN/BfDL2IlLIlqEc9wKiIQP3D+J6EF+uBQwEj5ImMvt4E5AIniR8EpEH69ZgEiYuxMgrU4YBSuXAhJK2BQvoOntGyK67z7uUkRC0QI6gL9zSChWwEDvppawLVLAmdBOKaG8QVB5X6eScF9UBCjhw1g4VsKWiGbFCDDCp5BQTiocCT9GwoqI5E1y+pehkfAxEvbwkwtIBG+RcAA/qQAD/DuAJYDviomPUwPjbQj7yWeEjPDS8I3hnF4JQ/Iu/hQwgEjP7+BD4w3nqiVcVIAB4Ai+JeFxzO3QjYSLCUgE/wnAPwAfFOPB0YA32bR4qfAXeQqUDJ9dQOnwWQV4gM8mwAt8FgGe4JML8AafVIBH+GQCvMInEeAZfrQA7/CjBNQAHy2gFvgoATXBmwXUBm8SUCO8WkCt8CoBNcOfFVA7/EkB1wA/KOBa4HsFXBP8kQBmlg+OXxRTzqfm7ZNPXSvaE13lYF2g+fL6j+Jq8vn5vFuPmV3B90WALEJ+UwiQKgfLTx7h+wQ8AbhRCthL8ArfJ4AN8KGqbECQnRrJlqsi2hB9yn4MYGaBkHW3XEW1Vpfrz4eu2xYgGwhk60mOUiT8wS3AzBLKdxnoi4XvCpDn/7mNR1Y/RcPvBRgSIIuA4uHbAmTrmSYB0gpwAd8WYEmAzklwA98WYE2AhiS4gm8LiEmAuhLcwe8EjEiAnpt9uRI9GyKSranuigjQJEDbDqxAV1FEQF8CVEXvanpIBEhvvgEIoVxN72oE/AeLazLkUOkDDwAAAABJRU5ErkJggg==";
+      // document.getElementById("editDimmerImg").src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACqklEQVR4XuWb4XHbMAxGP2zQEdwNukGyQeoJ2kzQeIJmg7oTtJ6g7gRNNvAGiTdIJkAPPtEny5INUKRF0LzTD99RMt8jREGkSKikMPMXALfNMWuwNgDkWBPR3z5U8s7PzJ8B/AAQoIeQXgEsiGjdruBaADN/BfDL2IlLIlqEc9wKiIQP3D+J6EF+uBQwEj5ImMvt4E5AIniR8EpEH69ZgEiYuxMgrU4YBSuXAhJK2BQvoOntGyK67z7uUkRC0QI6gL9zSChWwEDvppawLVLAmdBOKaG8QVB5X6eScF9UBCjhw1g4VsKWiGbFCDDCp5BQTiocCT9GwoqI5E1y+pehkfAxEvbwkwtIBG+RcAA/qQAD/DuAJYDviomPUwPjbQj7yWeEjPDS8I3hnF4JQ/Iu/hQwgEjP7+BD4w3nqiVcVIAB4Ai+JeFxzO3QjYSLCUgE/wnAPwAfFOPB0YA32bR4qfAXeQqUDJ9dQOnwWQV4gM8mwAt8FgGe4JML8AafVIBH+GQCvMInEeAZfrQA7/CjBNQAHy2gFvgoATXBmwXUBm8SUCO8WkCt8CoBNcOfFVA7/EkB1wA/KOBa4HsFXBP8kQBmlg+OXxRTzqfm7ZNPXSvaE13lYF2g+fL6j+Jq8vn5vFuPmV3B90WALEJ+UwiQKgfLTx7h+wQ8AbhRCthL8ArfJ4AN8KGqbECQnRrJlqsi2hB9yn4MYGaBkHW3XEW1Vpfrz4eu2xYgGwhk60mOUiT8wS3AzBLKdxnoi4XvCpDn/7mNR1Y/RcPvBRgSIIuA4uHbAmTrmSYB0gpwAd8WYEmAzklwA98WYE2AhiS4gm8LiEmAuhLcwe8EjEiAnpt9uRI9GyKSranuigjQJEDbDqxAV1FEQF8CVEXvanpIBEhvvgEIoVxN72oE/AeLazLkUOkDDwAAAABJRU5ErkJggg==";
+      document.getElementById("editDimmerImg").src = Config.Source + "img/pencil.png";
       el = document.getElementById("editDimmer");
       fadeIn(el);
       setTimeout(function () {
@@ -236,12 +256,15 @@ class Edit {
     }else{
       document.getElementById("editDimmer").style.display = 'block';
       document.getElementById("editDimmerText").innerHTML="Exit edit mode!";
-      document.getElementById("editDimmerImg").src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABr0lEQVR4Xu3bbW7DIAwGYL8nW4+y3WQ7Sbeb7GZMVI200AQwX8HG+VNVaSP81Dh8NHDOORJ0AEDL5sIALAOsC6RqwC8RfQHwr8OPsIteWQMugZgJYPv1h0LMCDAUYmaAIRASALpCSALoAiERoCmEZIAHRO192wCCoXotaDiS6z4Zqm2wZYBlwH6yFmaUc+4O4KN0kiK+Czy7yHcpghYAnwBFCJoAihCmB0j17YMlPVYmaARgZYJWgGwEzQBZCMMBLliGj9aEFQCimbAKwCnCSgCHCKsB/AB4/z+2WAngJfjHgk3vqnwwe0vtRKUGfyXnD4NfBeA0+EsASn6+2HcSGRwNXjtAMnjNAFnBawXIDl4EQGpVODjPCl4bADt4TQBFwWsB8NPd3fCWc6sdPhLkNM5/NlUDuNezrbFAwDJg9GSIm7LWBWxzNL45ys0oK4JWBPcC3e8CtSn6krL2vIA9MGFPjLTsVr4G3Ijok4jeWl54u1btv8R6tGm3L7C96QUhBqAXhDiA1hBiAVpBiAeohVADUAqhDoALoRYgF0I9QApiGYAziOUAQggAfqg97fEH9vT2UHiK4H8AAAAASUVORK5CYII=";      
+      // document.getElementById("editDimmerImg").src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABr0lEQVR4Xu3bbW7DIAwGYL8nW4+y3WQ7Sbeb7GZMVI200AQwX8HG+VNVaSP81Dh8NHDOORJ0AEDL5sIALAOsC6RqwC8RfQHwr8OPsIteWQMugZgJYPv1h0LMCDAUYmaAIRASALpCSALoAiERoCmEZIAHRO192wCCoXotaDiS6z4Zqm2wZYBlwH6yFmaUc+4O4KN0kiK+Czy7yHcpghYAnwBFCJoAihCmB0j17YMlPVYmaARgZYJWgGwEzQBZCMMBLliGj9aEFQCimbAKwCnCSgCHCKsB/AB4/z+2WAngJfjHgk3vqnwwe0vtRKUGfyXnD4NfBeA0+EsASn6+2HcSGRwNXjtAMnjNAFnBawXIDl4EQGpVODjPCl4bADt4TQBFwWsB8NPd3fCWc6sdPhLkNM5/NlUDuNezrbFAwDJg9GSIm7LWBWxzNL45ys0oK4JWBPcC3e8CtSn6krL2vIA9MGFPjLTsVr4G3Ijok4jeWl54u1btv8R6tGm3L7C96QUhBqAXhDiA1hBiAVpBiAeohVADUAqhDoALoRYgF0I9QApiGYAziOUAQggAfqg97fEH9vT2UHiK4H8AAAAASUVORK5CYII=";      
+      document.getElementById("editDimmerImg").src = Config.Source + "img/exit.png";
       el = document.getElementById("editDimmer");
       fadeIn(el);
       setTimeout(function () {
         fadeOut(el, function(){
-          document.getElementById("editDimmer").style.display = 'none';
+          if(document.getElementById("editDimmer")){
+            document.getElementById("editDimmer").style.display = 'none';
+          }
         });
       }, 800);
     }
@@ -268,14 +291,14 @@ class Edit {
   }
 
   load(name) {
-    try {
       const newStorage = [];
       const storage = getStorage();
       importData(name, storage, newStorage);
       localify(storage.filter( pair => pair.old.sid !== name).concat(newStorage)); // keep other stores data
-    }
+      try {
+      }
     catch(err) {
-      this.log('error while loading localStorage.edit', err);
+      this.log('error while loading localStorage.edit ' + err);
     }
   }
 
@@ -288,9 +311,9 @@ class Edit {
   }
 
   dump() {
-    let name = this._getName();
-    if (!name) return;
-    let store = Source.stores[name];
+      let name = this._getName();
+      if (!name) return;
+      let store = Source.stores[name];
     if (!store) return;
     const fileName = name +'.json';
     // console.log(store.getByID('n.1489224120111'))
@@ -307,12 +330,23 @@ class Edit {
   }
 
   create(type) {
+    let url = B.pathname.split('/')[3];
     let name = this._getName();
     if (!name) return;
     if(type === "item"){
-      B.history.push('/' + name + '/create/item');
+      if(url === "item"){
+        Toast.set("Save before creating another item");
+        Toast.display(3000, "red");
+      }else{
+        B.history.push('/' + name + '/create/item');
+      }
     }else if(type === "collection"){
-      B.history.push('/' + name + '/create/collection');
+      if(url === "collection"){
+        Toast.set("Save before creating another collection");
+        Toast.display(3000, "red");
+      }else{
+        B.history.push('/' + name + '/create/collection');
+      }
     }
   }
 
@@ -340,7 +374,7 @@ class Edit {
     // console.log('a', a);
     if (!a || a.item.ReadOnly){
       Toast.set("You can't modify this page");
-      Toast.display(3000);
+      Toast.display(3000, "red");
       return; 
     }
     B.history.push({
@@ -355,7 +389,7 @@ class Edit {
     // console.log('del', a);
     if (!a || a.item.ReadOnly){
       Toast.set("You can't delete this page");
-      Toast.display(3000);
+      Toast.display(3000, "red");
       return; 
     }
     // console.log('deleting', a.id, 'from', a.name);
@@ -443,11 +477,12 @@ class Edit {
   }
 
   gotoWip() {
-    if (wipC.back) {
-      delete wipC.back;
-      B.history.goBack();
-      return;
-    }
+    // if (wipC.back) {
+    //   delete wipC.back;
+    //   B.history.goBack();
+    //   return;
+    // }
+    console.log('wiiip');
     const name = this._getName();
     if (!name) return;
     wipC.back = true;

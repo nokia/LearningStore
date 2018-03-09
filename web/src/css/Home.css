@@ -1,6 +1,7 @@
 .select {
   width: 900px;
   margin: auto;
+  text-align: center;
 }
 .home{
   background-image: url(../img/stars_black.jpg);

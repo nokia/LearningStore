@@ -4,17 +4,29 @@
 */
 
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
+import {Link, Redirect} from 'react-router-dom'
 import {Config} from './../config.js';
 import '../css/Home.css';
-// import FaAngleRight from 'react-icons/lib/fa/angle-right';
 import MdSchool from 'react-icons/lib/md/school';
 import { Reveal } from 'semantic-ui-react'
 
 export default class Home extends Component {
+  state = {
+    oneStore: ""
+  }
+  componentWillMount(){
+    if(this.props.stores.length === 1){
+      this.setState({oneStore: this.props.stores[0].id});
+    }
+  }
 
   render() {
-    // console.log('Home', this.props.stores.length, this.props.stores)
+    if(this.state.oneStore !== ""){
+      return(
+        <Redirect to={"/" + this.state.oneStore} />
+      )
+    }
+    document.getElementById("root").style.marginTop='0px';
     const myStores = this.props.stores.map((store, index) => {
       return (
         <Link key={index} to={"/" + store.id + "/"}>

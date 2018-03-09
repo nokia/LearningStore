@@ -66,7 +66,12 @@ export default class Item extends Component{
 
     const url = item.Url ? item.Url.split(urlDelim) : [''];
 
-
+    let src;
+    if(item.Icon.constructor === Array){
+      src = item.Icon[1];
+    }else{
+      src = this.url + "/" + item.Icon;
+    }
     return (
       <div>
         <Modal 
@@ -83,7 +88,7 @@ export default class Item extends Component{
           { Source.format(item.Title) }
         </Modal.Header>
         <Modal.Content image>
-          <Image wrapped size='large' src={this.url + "/" + item.Icon} />
+          <Image wrapped size='large' src={src} />
           <Modal.Description>
             { fields }
           </Modal.Description>

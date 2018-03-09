@@ -4,10 +4,8 @@
 */
 import React, { Component } from 'react';
 import { Form, TextField, FormEventsListener } from 'react-components-form';
+import Dropzone from 'react-dropzone';
 import Quill from './Quill';
-// import FaTrash from 'react-icons/lib/fa/trash-o';
-// import FaPlus from 'react-icons/lib/fa/plus-square-o';
-
 import HeaderComponent from './Header';
 import Navigation from './Navigation';
 import NavigationEdit from './NavigationEdit';
@@ -16,6 +14,7 @@ import Source from './data';
 import B from './back';
 import NotFound from './NotFound';
 import Ctl from './editCtl';
+import FaCross from 'react-icons/lib/fa/times-circle';
 import wipC from './editWip';
 import EditCtl from './editCtl';
 import Toast from './toast';
@@ -39,10 +38,12 @@ const setunLoad = () => window.onbeforeunload = wipC.stay() ? unload : null;
 
 export default class Edit extends Component {
 
-  state = { isLoading:true, selectedItems:[], itemsSolutions:[], checked:false}
+  state = { isLoading:true, selectedItems:[], itemsSolutions:[], checked:false, image: [], image64: ""}
+  
   storeDef;
   itemsSolutions = [];
   limit = 20;
+  mode;
   moreItems = false;
   // constructor(props){
   //   super();
@@ -56,7 +57,20 @@ export default class Edit extends Component {
       // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       this.resetData(type, store.getByID(id));
-
+      // console.log(this.item.Icon);
+      if(this.item.Icon){
+        if(this.item.Icon.constructor === Array){
+          this.setState({image: {preview: this.item.Icon[1], name: this.item.Icon[0]}});
+          this.setState({image64: this.item.Icon[1]});
+        }else{
+          let url = Source.getDef(name).url || '.';
+          let preview = url + "/" + this.item.Icon;
+          // console.log('prev', preview);
+          this.setState({image: {preview: preview, name: this.item.Icon.split('/')[1]}});
+          this.setState({image64: this.item.Icon});
+        }
+      }
+      
 
       if(this.item.Solutions){
         this.item.Solutions.forEach( itemID => {
@@ -81,6 +95,8 @@ export default class Edit extends Component {
   componentWillReceiveProps(newProps){
     // console.log('myprop', this.props, newProps);
     this.resetData(newProps.match.params.type, this.item);
+   
+
   }
   componentDidUpdate(){
     EditCtl.switchEditMode(true, false);
@@ -92,14 +108,17 @@ export default class Edit extends Component {
   resetData(type, item){
       if(type === "item"){
         this.item = {};
-        console.log('new item');
+        // console.log('new item');
+        this.mode = "create";
       }
       else if(type === "collection"){
         this.item = {Solutions:[]};
-        console.log('new collection');
+        // console.log('new collection');
+        this.mode = "create";
       }
       else{
         this.item = item;
+        this.mode = "edit";
       }
       eventsListener.callEvent('reset', this.item);
   }
@@ -115,12 +134,31 @@ export default class Edit extends Component {
     }, 100)
   }
 */  
-
+  onDrop(file) {
+    // console.log(file);
+    const image = file[0];
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      this.setState({
+        image64: event.target.result
+      });
+    };
+    reader.readAsDataURL(image);
+    this.setState({
+      image: image
+    });
+  }
+  removeImage(){
+    this.setState({
+      image: [],
+      image64: ""
+    })
+  }
   selectItems(limit, search){
     var data = this.state.store
     if(search){
       data = data.filter(item0 => {
-        if(item0.Title.indexOf(search) !== -1){
+        if(item0.Title.toLowerCase().indexOf(search.toLowerCase()) !== -1){
           return true;
         }
         return false;
@@ -146,11 +184,15 @@ export default class Edit extends Component {
   }
 
 
-  handleAdd(el, it){
+  handleAdd(el, it, toast){
     if(this.itemsSolutions.indexOf(el) !== -1){
       Toast.set("This item is already added");
-      Toast.display(2000);
+      Toast.display(1000, "red");
     }else{
+      if(toast){
+        Toast.set("Item added");
+        Toast.display(1000, "green");
+      }
       this.itemsSolutions.push(el);
       this.setState({itemsSolutions:this.itemsSolutions});  
     }
@@ -172,7 +214,7 @@ export default class Edit extends Component {
     if (this.state.isLoading) return null;    
     
     let item = this.item;
-    console.log('edit what ?', item);
+    // console.log('edit what ?', item);
     if (!item) return (<NotFound />);
 
     // console.log('item', item)
@@ -192,6 +234,16 @@ export default class Edit extends Component {
     currentID = item.ID;
     
     const submitMethod = (model) => {
+      if(!this.state.image64){
+        Toast.set("You need to put an icon");
+        Toast.display(2000, "red");
+        return;
+      }
+      if(!item.Title){
+        Toast.set("You need to put a Title");
+        Toast.display(2000, "red");
+        return;
+      }
       if(item.Solutions){
         item.Solutions = [];
         // console.log('sub1', item);
@@ -199,7 +251,7 @@ export default class Edit extends Component {
           item.Solutions.push(it.ID);
         });
       }
-      
+      item.Icon = [this.state.image.name, this.state.image64];
       if(this.state.checked){
         item.Wip = true;
       }else{
@@ -213,9 +265,40 @@ export default class Edit extends Component {
       // console.log('sub', model, item)
       setunLoad();
 
-      if (B.back) this.props.history.goBack();
-    };
+      // if (B.back) this.props.history.goBack();
+      // `/${store.id}/item/${data.ID}`
 
+      // console.log('submit', storeDef, item.ID, B);
+      if(this.mode === "edit"){
+        if(B.back){
+          this.props.history.goBack();
+        }else{
+          B.history.push(`/${storeDef.id}/item/${item.ID}`);
+        }
+      }else{
+        B.history.push(`/${storeDef.id}/item/${item.ID}`);
+      }
+     
+    };
+    let myImage;
+    if(this.state.image.length === 0){
+      myImage = (
+        <div>
+          No selected image
+        </div>
+      )
+    }else{
+      myImage = (
+        <div>
+          <FaCross onClick={this.removeImage.bind(this)} style={{ marginRight: '5px', cursor: 'pointer'}}/>
+          <span key={this.state.image.name}>
+            <span key={this.state.image.name}>{this.state.image.name}</span>
+            <img src={this.state.image.preview} className="dropzonePreview" alt="Preview" />
+          </span>
+        </div>
+      )
+      
+    }
     const storeDef = Source.getDef(this.state.name);
     const header = (
       <div>
@@ -245,7 +328,19 @@ export default class Edit extends Component {
             <TextField className='editField' name="Title" />
           </div>
           <div className='editFlow'>
-            <label className='editLabel'>Icon</label>
+            {/* <label className='editLabel'>Icon</label> */}
+            <label className="editLabel">Icon</label>
+            <div className="dropzone">
+              <Dropzone onDrop={this.onDrop.bind(this)}>
+                <p>Drop your image here, or click to select image to upload.</p>
+              </Dropzone>
+            </div>
+            <div className="dropzoneimage">
+              <span className="dropzoneTitle">Your selected image: </span>
+              {myImage}
+            </div>
+            {/* <label htmlFor="file" className="label-file">Choose an image</label>
+            <input id="file" className='editField input-file' type="file" name="Icon" /> */}
             {/* <TextField className='editField' name="Icon" /> */}
             
           </div>  
@@ -291,7 +386,7 @@ export default class Edit extends Component {
     
     let selectedItemsMap = this.state.selectedItems.map((item, index) =>{
         return (
-          <div key={index} className="selectItem" title="Click to add this item" onClick={this.handleAdd.bind(this, item)} >
+          <div key={index} className="selectItem" title="Click to add this item" onClick={this.handleAdd.bind(this, item, true)} >
             <div className="selectItemTitle">
               {item.Title}
             </div>
