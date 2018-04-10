@@ -362,6 +362,15 @@
         "url": "http://learningstore.nokia.com/employee",
         "carousel": [
             {
+                "img": "img/carousel-mwc.jpg",
+                "id": "n.1522946721280"
+            },
+            {
+                "img": "img/carousel-suggested-learning-survey.png",
+                "title": "Suggested Learning Survey",
+                "html": "NokiaEDU is applying the principles of machine learning with the launch of our Suggested Learning feature. By analyzing the learning preferences of more than 1,000 Nokia professionals, weve come up with a list of recommended courses by product group.<BR><BR><b>GIVE US YOUR FEEDBACK!</b><BR><BR>We are interested in knowing your thoughts on this new feature. Please take a few minutes to fill out this <b><a href=https://forms.office.com/Pages/ResponsePage.aspx?id=URdHXXWWjUKRe3D0T5YwsFZI871kmxVFj0bgEQJmBdNUNDlKQVhBVlhHTTBJN1VXSlVKTktNWENKWC4u target=_blank>brief, 3-question survey</a></b>"
+            },
+            {
                 "img": "img/carousel-csa-lite.jpg",
                 "id": "n.1506016822176"
             },
@@ -371,10 +380,6 @@
             },
             {
                 "img": "img/carousel-2018-leadership.jpg"
-            },
-            {
-                "img": "img/carousel-gdol2017encore.jpg",
-                "url": "https://nokia.sharepoint.com/sites/gdol2017/SitePages/learn.aspx"
             },
             {
                 "img": "img/carousel-Nokia_PM_day.jpg",
@@ -392,7 +397,7 @@
         "homepage": [
             {
                 "title": "Featured Learning",
-                "items": ["n.1513409994080", "n.1516100571381", "n.1489223791549", "n.1508567514004", "c.35", "n.1486545096146"]
+                "items": ["n.1516100571381", "n.1489223791549", "n.1508567514004", "c.35", "n.1486545096146"]
             }
         ],
         "menu": [
