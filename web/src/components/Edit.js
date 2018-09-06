@@ -57,7 +57,7 @@ export default class Edit extends Component {
       // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       // this.item = (!id) ? {} : (id === 'item') ? {} : (id === 'collection') ? { Solutions:[] } : store.getByID(id);
       this.resetData(type, store.getByID(id));
-      // console.log(this.item.Icon);
+      console.log(this.item.Icon);
       if(this.item.Icon){
         if(this.item.Icon.constructor === Array){
           this.setState({image: {preview: this.item.Icon[1], name: this.item.Icon[0]}});
@@ -138,7 +138,15 @@ export default class Edit extends Component {
     // console.log(file);
     const image = file[0];
     const reader = new FileReader();
+    console.log('file', file[0]);
+    let image_type = file[0].type;
+    if(image_type !== "image/png" && image_type !== "image/jpg" && image_type !== "image/jpeg" && image_type !== "image/gif"){
+      Toast.set("This format is not correct");
+      Toast.display(2000, "red");
+      return;
+    }
     reader.onload = (event) => {
+      console.log('ev', event);
       this.setState({
         image64: event.target.result
       });
