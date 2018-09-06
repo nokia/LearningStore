@@ -28,9 +28,16 @@ export default class Thumbnail extends Component {
     store.url = store.url || '.';
     
     // console.log(data)
+
+  
+
+
     let src;
     if(data.Icon.constructor === Array){
       src = data.Icon[1];
+      if(data.Icon[1].split('/')[0] == "img"){
+        src = store.url + "/" + data.Icon[1];
+      }
     }else{
       src = store.url + "/" + data.Icon;
     }
