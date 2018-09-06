@@ -69,6 +69,9 @@ export default class Item extends Component{
     let src;
     if(item.Icon.constructor === Array){
       src = item.Icon[1];
+      if(item.Icon[1].split('/')[0] == "img"){
+        src = this.url + "/" + item.Icon[1];
+      }
     }else{
       src = this.url + "/" + item.Icon;
     }
