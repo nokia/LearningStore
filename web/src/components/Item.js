@@ -13,6 +13,7 @@ import renderHTML from 'react-render-html';
 // import FaAngleRight from 'react-icons/lib/fa/angle-right';
 
 import NavigationEdit from './NavigationEdit';
+import Recommendations from './Recommendations';
 import EditCtl from './editCtl';
 import { Button, Icon, Image, Modal } from 'semantic-ui-react'
 const urlDelim = '>>';
@@ -94,6 +95,9 @@ export default class Item extends Component{
           <Image wrapped size='large' src={src} />
           <Modal.Description>
             { fields }
+            { item.Recommendations && item.Recommendations.length > 0 &&
+            <Recommendations props={this.props} item={item}/>
+            }
           </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
