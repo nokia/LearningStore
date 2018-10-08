@@ -79,7 +79,7 @@ def return_recommendations_for_id(itemid):
         pass    
     return recommendations;
 
-ds = pd.read_json('5g.json') #you can plug in your own list of products or movies or books here as csv file
+ds = pd.read_json('employee.json') #you can plug in your own list of products or movies or books here as csv file
 ds = cleanDataFrame(ds, 'off', 'off', 'on');
 tf = TfidfVectorizer(analyzer='word', ngram_range=(1, 3), min_df=0, stop_words='english')
 
@@ -98,13 +98,20 @@ num = 5
 itemid =  "d.1"
 
 
-with open('5g.json', encoding="utf8") as f:
+with open('employee.json', encoding="utf8") as f:
     data = json.load(f)
 for row in data:
-    recommendations = return_recommendations_for_id(row.get("ID"))
-    row['Recommendations'] = recommendations 
+    row['Recommendations'] = []
+    try:
+         if row['Keywords']:
+                recommendations = return_recommendations_for_id(row.get("ID"))
+                row['Recommendations'] = recommendations
+    except KeyError:
+        pass
+
+
     
-with open('5g.json', 'w') as f:
+with open('employee.json', 'w') as f:
     json.dump(data, f, indent=4)
   
 
