@@ -23,14 +23,14 @@ class MLStripper(HTMLParser):
     def get_data(self):
         return ''.join(self.fed)
         
-def cleanDataFrame(ds, useDescription, useObjectives, useKeywords):
+def cleanDataFrame(ds, useDescription, useTitle, useKeywords):
     for idx, row in ds.iterrows():
         # remove html tags
         description = ""
         if useDescription == 'on' and 'Description' in ds.columns:
             description += str(row['Description'])
-        if useObjectives == 'on' and 'Objectives' in ds.columns:
-            description += str(row['Objectives'])
+        if useTitle == 'on' and 'Title' in ds.columns:
+            description += str(row['Title'])
         if useKeywords == 'on' and 'Keywords' in ds.columns:
             description += str(row['Keywords'])
         description = strip_tags(description)
@@ -80,8 +80,8 @@ def return_recommendations_for_id(itemid):
     return recommendations;
 
 ds = pd.read_json('employee.json') #you can plug in your own list of products or movies or books here as csv file
-ds = cleanDataFrame(ds, 'off', 'off', 'on');
-tf = TfidfVectorizer(analyzer='word', ngram_range=(1, 3), min_df=0, stop_words='english')
+ds = cleanDataFrame(ds, 'on', 'on', 'off');
+tf = TfidfVectorizer(analyzer='word', ngram_range=(1, 3), min_df=3, stop_words='english')
 
 tfidf_matrix = tf.fit_transform(ds['Description'].astype(str))
 cosine_similarities = cosine_similarity(tfidf_matrix,tfidf_matrix)
@@ -102,12 +102,8 @@ with open('employee.json', encoding="utf8") as f:
     data = json.load(f)
 for row in data:
     row['Recommendations'] = []
-    try:
-         if row['Keywords']:
-                recommendations = return_recommendations_for_id(row.get("ID"))
-                row['Recommendations'] = recommendations
-    except KeyError:
-        pass
+    recommendations = return_recommendations_for_id(row.get("ID"))
+    row['Recommendations'] = recommendations
 
 
     
