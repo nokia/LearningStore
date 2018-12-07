@@ -24,6 +24,7 @@ class MLStripper(HTMLParser):
         return ''.join(self.fed)
         
 def cleanDataFrame(ds, useDescription, useTitle, useKeywords):
+    collectionIndexes = []
     for idx, row in ds.iterrows():
         # remove html tags
         description = ""
@@ -47,24 +48,33 @@ def cleanDataFrame(ds, useDescription, useTitle, useKeywords):
         for stop_word in stop_words:
             description = description.replace(' '+stop_word+' ', ' ')
         
-        ds.set_value(idx,'Description',description) 
+        ds.set_value(idx,'Description',description)
+
+        # remove collections
+        if not isinstance(row['Solutions'], float):
+            length = len(row['Solutions'])
+            if length > 0:
+              collectionIndexes.append(idx);
+
+    ds = ds.drop(collectionIndexes)
+    ds = ds.reset_index()
     return ds;
-    
+
 class Recommendation(object):
     index = 0
     title = ""
     score = 0
 
-    # The class "constructor" - It's actually an initializer 
+    # The class "constructor" - It's actually an initializer
     def __init__(self, index, title, score):
         self.index = index
         self.title = title
         self.score = score
-        
+
 def make_recommendation(index, title, score):
     recommendation = Recommendation(index, title, score)
     return recommendation
-    
+
 def return_recommendations_for_id(itemid):
     recommendations = []
     try:
@@ -76,11 +86,13 @@ def return_recommendations_for_id(itemid):
                 i += 1
         # Do something
     except KeyError:
-        pass    
+        pass
     return recommendations;
 
 ds = pd.read_json('employee.json') #you can plug in your own list of products or movies or books here as csv file
 ds = cleanDataFrame(ds, 'on', 'on', 'off');
+
+
 tf = TfidfVectorizer(analyzer='word', ngram_range=(1, 3), min_df=3, stop_words='english')
 
 tfidf_matrix = tf.fit_transform(ds['Description'].astype(str))
@@ -93,7 +105,7 @@ for idx, row in ds.iterrows(): #iterates through all the rows
     similar_indices = cosine_similarities[idx].argsort()[:-12:-1] #stores 10 most similar books, you can change it as per your needs
     similar_items = [(cosine_similarities[idx][i], ds['ID'][i]) for i in similar_indices]
     results[row['ID']] = similar_items[1:]
-    
+
 num = 5
 itemid =  "d.1"
 
@@ -105,11 +117,9 @@ for row in data:
     recommendations = return_recommendations_for_id(row.get("ID"))
     row['Recommendations'] = recommendations
 
-
-    
 with open('employee.json', 'w') as f:
     json.dump(data, f, indent=4)
-  
+
 
 
 
