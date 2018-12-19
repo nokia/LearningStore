@@ -24,8 +24,13 @@ class MLStripper(HTMLParser):
         return ''.join(self.fed)
         
 def cleanDataFrame(ds, useDescription, useTitle, useKeywords):
-    collectionIndexes = []
+    indexesToBeRemoved = []
     for idx, row in ds.iterrows():
+
+        # remove short descriptions
+        if len( str(row['Description']).split()) < 10:
+          indexesToBeRemoved.append(idx);
+
         # remove html tags
         description = ""
         if useDescription == 'on' and 'Description' in ds.columns:
@@ -54,9 +59,9 @@ def cleanDataFrame(ds, useDescription, useTitle, useKeywords):
         if not isinstance(row['Solutions'], float):
             length = len(row['Solutions'])
             if length > 0:
-              collectionIndexes.append(idx);
+              indexesToBeRemoved.append(idx);
 
-    ds = ds.drop(collectionIndexes)
+    ds = ds.drop(indexesToBeRemoved)
     ds = ds.reset_index()
     return ds;
 
