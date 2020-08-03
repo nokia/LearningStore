@@ -84,3 +84,8 @@ The standard process flow is the following:
 ## Content Edition
 
 All the stores can be edited directly in a web browser. A set of keyboard shortcuts allows to create, modify, save, upload etc. store items. See [Content Edition](web/EDITION.md "Content Edition") for more information.
+
+
+## License
+
+This project is licensed under the BSD-3-Clause license - see the [LICENSE](https://github.com/nokia/LearningStore/blob/master/LICENSE).
